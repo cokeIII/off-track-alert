@@ -1,5 +1,5 @@
 <Page loaded="pageLoaded">
   <ActionBar title="My App" class="action-bar"></ActionBar>
   <!-- Your UI components go here -->
-  <Label text="ss"></Label>
+  <Label text="sssssss"></Label>
 </Page>

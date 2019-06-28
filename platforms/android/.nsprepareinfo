@@ -1,0 +1,20 @@
+{
+	"nativePlatformStatus": "3",
+	"appFilesHashes": {
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\app.css": "5e0e4c50ecc3b997f4c0ac824f9f8593a405bf1b",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\app.js": "0163ed8874a99daf48aa643490627e02ee1ed1b0",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\CODE_OF_CONDUCT.md": "3d921a467f0dc791385eb1d5db82d88e11d620e0",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\LICENSE": "6ddc49e6362739b571c8534657821f6bbc6d09e1",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\main-page.js": "03dd8205b295a6986aca581df772dc0ff49ecc1e",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\main-page.xml": "1444c762e4382ad643b71be1e63583701a8f3d5b",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\package.json": "959ddceb83ea9a3719e2daf27e8726bbd61b6c16",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\README.md": "c6d550a2f77eb68587dea464b008d9216fa7790d",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\images\\apple.jpg": "c033a7a48829675b73f5d1db5360ffd53a737e01"
+	},
+	"release": false,
+	"bundle": false,
+	"changesRequireBuild": true,
+	"time": "Wed Jun 26 2019 17:40:00 GMT+0700 (Indochina Time)",
+	"changesRequireBuildTime": "Wed Jun 26 2019 17:40:00 GMT+0700 (Indochina Time)",
+	"projectFileHash": "979f059d5f6fb335730aa604815a3dbeeb52597b5a73779034ae55d928e05a22"
+}

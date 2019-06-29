@@ -13,5 +13,7 @@
 		"nativescript-theme-core": "~1.0.4",
 		"tns-core-modules": "~4.1.0"
 	},
-	"devDependencies": {}
+	"devDependencies": {
+		"@fortawesome/fontawesome-free": "^5.9.0"
+	}
 }

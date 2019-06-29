@@ -1,0 +1,14 @@
+.map{
+    background-color: aquamarine;
+}
+.map-menu {
+    background-color:white;
+}
+.map-menu Label {
+    background-color:white;
+    width: 33.3%;
+    font-size: 48px;
+    text-align: center;
+    border-right-width: 1px;
+    margin-top: 5%;
+}

@@ -3,9 +3,25 @@
   <!-- Your UI components go here -->
   <DockLayout  width="100%" height="100%" class="fas">
     <AbsoluteLayout dock="top" width="100%" height="90%" class="map">
+      <StackLayout width="80%" height="20%" class="detail-map">
+        <StackLayout width="100%" orientation="horizontal">
+          <Label text="&#xf3c5;" class="map-mark"></Label>
+          <Label text="ชื่อเส้นทาง" class="track-name"></Label>
+        </StackLayout>
+        <StackLayout class="hr-light m-t-10" width="90%"></StackLayout>
+        <StackLayout width="100%" orientation="horizontal">
+          <Label class="user-total" text="&#xf6ec;"></Label>
+          <Label class="user-number" text="10"></Label>
+          <Label class="user-road" text="&#xf018;"></Label>
+          <Label class="road-total" text="3.0/6.0 km"></Label>
+        </StackLayout>
+      </StackLayout>
+      <StackLayout width="40" height="40" class="location">
+        <Label text="&#xf05b;"></Label>
+      </StackLayout>
     </AbsoluteLayout>
     <!-- <StackLayout width="100%" height="10%"> -->
-      <FlexboxLayout  width="100%" height="10%" class="map-menu">
+      <FlexboxLayout  width="100%" height="8%" class="map-menu">
         <Label text="&#xf2bb;"></Label>
         <Label text="&#xf554;"></Label>
         <Label text="&#xf059;"></Label>

@@ -1,5 +1,9 @@
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\app.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\main-page.js
+D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\map.js
+D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-dom\dom.js
+D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-globalevents\globalevents.js
+D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-orientation\orientation.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\application\application-common.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\application\application.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\application-settings\application-settings-common.js

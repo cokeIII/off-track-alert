@@ -102,8 +102,6 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Coca Cola\
 		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:18:3-49
 activity#com.tns.NativeScriptActivity
 ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:24:3-37:14
-	android:screenOrientation
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:25:4-40
 	android:label
 		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:27:4-49
 	android:configChanges

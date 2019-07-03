@@ -1,5 +1,10 @@
 .map{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    background-image: url("~/images/map1.jpg");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: scale(1);
 }
 .map-menu {
     background-color:white;

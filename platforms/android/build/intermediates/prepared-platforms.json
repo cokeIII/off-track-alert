@@ -1,4 +1,5 @@
 {
+    "nativescript-image-zoom": true,
     "nativescript-orientation": true,
     "nativescript-theme-core": true,
     "tns-core-modules": true,

@@ -1,5 +1,9 @@
 [
     {
+        "name": "nativescript-image-zoom",
+        "directory": "..\\..\\node_modules\\nativescript-image-zoom"
+    },
+    {
         "name": "nativescript-orientation",
         "directory": "..\\..\\node_modules\\nativescript-orientation"
     },

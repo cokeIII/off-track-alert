@@ -4,15 +4,17 @@
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\app.js": "f2fd26f6b4a25f2f109e6feacc7685699951427f",
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\app.css": "5f2f2522354f59c518f732dd277bbca73715fec1",
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\CODE_OF_CONDUCT.md": "3d921a467f0dc791385eb1d5db82d88e11d620e0",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\fonts\\fa-regular-400.ttf": "2833f486c98034276a8cf663f639bd985f360bd0",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\images\\map2.jpg": "7ce7477b1a84598489f569b1eb618803c9a66520",
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\LICENSE": "6ddc49e6362739b571c8534657821f6bbc6d09e1",
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\main-page.js": "03dd8205b295a6986aca581df772dc0ff49ecc1e",
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\map.css": "0448af5234271d05137279038636a50e265b55ae",
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\package.json": "959ddceb83ea9a3719e2daf27e8726bbd61b6c16",
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\main-page.xml": "01a5140d4b8e1793ee3dc36936cfe72c49faf2df",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\map.css": "5ed3569bdba3c40c6a0114c126e06447ec47dd31",
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\map.js": "ac33f1bda0a3028c329396e5c013f658ed83b2c1",
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\map.xml": "0d9d483d72bffe35b448f058968e3e8920ef52ba",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\map.xml": "ecf66252288d1ffce2ece26b9007febbef0b7032",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\package.json": "959ddceb83ea9a3719e2daf27e8726bbd61b6c16",
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\fonts\\fa-brands-400.ttf": "07d3f17fa86ddf58c8442ec3bacbcee90fe42bdc",
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\fonts\\fa-regular-400.ttf": "2833f486c98034276a8cf663f639bd985f360bd0",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\images\\map1.jpg": "0ad92790a58769c9d229c3f5b0bd3e928caabd4f",
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\README.md": "c6d550a2f77eb68587dea464b008d9216fa7790d",
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\fonts\\fa-solid-900.ttf": "b7f728ec591ed9dd9028ed3deb6a536d0038c8d6",
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\app\\images\\apple.jpg": "c033a7a48829675b73f5d1db5360ffd53a737e01"
@@ -20,7 +22,7 @@
 	"release": false,
 	"bundle": false,
 	"changesRequireBuild": false,
-	"time": "Sun Jun 30 2019 11:06:45 GMT+0700 (Indochina Time)",
-	"changesRequireBuildTime": "Sun Jun 30 2019 09:11:36 GMT+0700 (Indochina Time)",
-	"projectFileHash": "cc44127a34cd8b9cd149d59b312ff6a5693a670826f2c26df65e8c2c2e143ac6"
+	"time": "Wed Jul 03 2019 18:23:58 GMT+0700 (Indochina Time)",
+	"changesRequireBuildTime": "Wed Jul 03 2019 17:38:00 GMT+0700 (Indochina Time)",
+	"projectFileHash": "12c8924f94eff837201bc374192bedb1fe1b7956a270a5e7bc2ecbe24e167f8f"
 }

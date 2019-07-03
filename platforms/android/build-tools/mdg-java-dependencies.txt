@@ -38,3 +38,4 @@ D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependenc
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\7\classes.jar
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\8\classes.jar
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\9\classes.jar
+D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\intermediates\javac\debug

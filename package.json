@@ -10,6 +10,7 @@
 		}
 	},
 	"dependencies": {
+		"nativescript-image-zoom": "^3.0.3",
 		"nativescript-orientation": "^2.2.1",
 		"nativescript-theme-core": "~1.0.4",
 		"tns-core-modules": "~4.1.0"

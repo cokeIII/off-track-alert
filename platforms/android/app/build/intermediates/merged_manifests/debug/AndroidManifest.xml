@@ -42,6 +42,11 @@
             </intent-filter>
         </activity>
         <activity android:name="com.tns.ErrorReportActivity" />
+
+        <provider
+            android:name="com.squareup.picasso.provider.PicassoContentProvider"
+            android:authorities="org.nativescript.HelloWorld.com.squareup.picasso"
+            android:exported="false" />
     </application>
 
 </manifest>

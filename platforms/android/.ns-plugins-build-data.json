@@ -1,5 +1,8 @@
 {
 	"tns-core-modules-widgets": {
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\tns-core-modules-widgets\\platforms\\android\\widgets-release.aar": "85168be13bc1b546c0f1d53f46bb892118ba3d9f"
+	},
+	"nativescript-image-zoom": {
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-image-zoom\\platforms\\android\\include.gradle": "475ee403a5a4cd308fe2356d284261d6bdfa3acf"
 	}
 }

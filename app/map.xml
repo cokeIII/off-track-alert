@@ -2,7 +2,8 @@
   <ActionBar title="My App" class="action-bar"></ActionBar>
   <!-- Your UI components go here -->
   <DockLayout  width="100%" height="100%" class="fas">
-    <AbsoluteLayout dock="top" width="100%" height="90%" class="map">
+    <AbsoluteLayout dock="top" width="100%" height="90%">
+      <WebView row="0" col="0" loaded="onFirstWebViewLoaded" src="~/images/map1.jpg" width="100%" height="100%"/>
       <StackLayout width="80%" height="20%" class="detail-map">
         <StackLayout width="100%" orientation="horizontal">
           <Label text="&#xf3c5;" class="map-mark"></Label>

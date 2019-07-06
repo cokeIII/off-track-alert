@@ -4,5 +4,8 @@
 	},
 	"nativescript-image-zoom": {
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-image-zoom\\platforms\\android\\include.gradle": "475ee403a5a4cd308fe2356d284261d6bdfa3acf"
+	},
+	"nativescript-bluetooth": {
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-bluetooth\\platforms\\android\\AndroidManifest.xml": "f59c6776083721a3c2da7f9ecc73a524ac07e41d"
 	}
 }

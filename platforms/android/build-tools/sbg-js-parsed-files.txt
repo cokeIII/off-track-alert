@@ -1,6 +1,9 @@
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\app.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\main-page.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\map.js
+D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-bluetooth\base64.js
+D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-bluetooth\bluetooth-common.js
+D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-bluetooth\bluetooth.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-dom\dom.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-globalevents\globalevents.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-image-zoom\image-zoom.common.js

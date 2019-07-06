@@ -1,4 +1,5 @@
 {
+    "nativescript-bluetooth": true,
     "nativescript-image-zoom": true,
     "nativescript-orientation": true,
     "nativescript-theme-core": true,

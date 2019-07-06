@@ -1,5 +1,9 @@
 [
     {
+        "name": "nativescript-bluetooth",
+        "directory": "..\\..\\node_modules\\nativescript-bluetooth"
+    },
+    {
         "name": "nativescript-image-zoom",
         "directory": "..\\..\\node_modules\\nativescript-image-zoom"
     },

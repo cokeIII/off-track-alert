@@ -1,8 +1,9 @@
-<Page loaded="pageLoaded">
+<Page loaded="pageLoaded" id="Page">
   <ActionBar title="My App" class="action-bar"></ActionBar>
   <!-- Your UI components go here -->
   <DockLayout  width="100%" height="100%" class="fas">
-    <AbsoluteLayout dock="top" width="100%" height="90%" class="map">
+    <AbsoluteLayout dock="top" width="100%" height="90%" class="map" id="mapLayout">
+      <!-- <Label width="10" height="10" backgroundColor="red"></Label> -->
       <StackLayout width="80%" height="20%" class="detail-map">
         <StackLayout id="testView" width="100%" orientation="horizontal">
           <Label text="&#xf3c5;" class="map-mark"></Label>
@@ -22,7 +23,7 @@
     </AbsoluteLayout>
     <!-- <StackLayout width="100%" height="10%"> -->
       <FlexboxLayout  width="100%" height="8%" class="map-menu">
-        <Label text="&#xf2bb;"></Label>
+        <Label text="&#xf2bb;" tap="testTap"></Label>
         <Label text="&#xf554;"></Label>
         <Label text="&#xf059;"></Label>
       </FlexboxLayout>

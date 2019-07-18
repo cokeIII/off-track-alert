@@ -6,6 +6,13 @@
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-image-zoom\\platforms\\android\\include.gradle": "475ee403a5a4cd308fe2356d284261d6bdfa3acf"
 	},
 	"nativescript-bluetooth": {
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-bluetooth\\platforms\\android\\AndroidManifest.xml": "f59c6776083721a3c2da7f9ecc73a524ac07e41d"
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-bluetooth\\platforms\\android\\AndroidManifest.xml": "f59c6776083721a3c2da7f9ecc73a524ac07e41d",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-bluetooth\\platforms\\android\\nativescript_bluetooth.aar": "fbc02a7ccc3ef83bae0bbdba12e5f7ee3d54b90a"
+	},
+	"nativescript-camera": {
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-camera\\platforms\\android\\nativescript_camera.aar": "076643dd1be5b20235184a9c65703fa02a930b9b"
+	},
+	"nativescript-ocr": {
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-ocr\\platforms\\android\\include.gradle": "6b04cf9272db8c9ef66ab34a890045c02a8e8d85"
 	}
 }

@@ -945,6 +945,14 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable background
+drawable cio_card_io_logo
+drawable cio_ic_amex
+drawable cio_ic_discover
+drawable cio_ic_jcb
+drawable cio_ic_mastercard
+drawable cio_ic_paypal_monogram
+drawable cio_ic_visa
+drawable cio_paypal_logo
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility

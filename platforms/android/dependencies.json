@@ -1,5 +1,9 @@
 [
     {
+        "name": "digitaltown-nativescript-card-io",
+        "directory": "..\\..\\node_modules\\digitaltown-nativescript-card-io"
+    },
+    {
         "name": "nativescript-bluetooth",
         "directory": "..\\..\\node_modules\\nativescript-bluetooth"
     },

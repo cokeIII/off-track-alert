@@ -4,6 +4,7 @@ ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\Andr
 INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
 INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
 INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+MERGED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:2:1-26:12
 MERGED from [com.github.chrisbanes:PhotoView:2.1.3] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\PhotoView-2.1.3.aar\8d19e512a987530feafb4a1cf925b346\AndroidManifest.xml:2:1-12:12
 MERGED from [com.squareup.picasso:picasso-provider:3.0.0-SNAPSHOT] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\picasso-provider-3.0.0-SNAPSHOT.aar\88acbde91a1cdfae96223d6a80e85b9b\AndroidManifest.xml:2:1-14:12
 MERGED from [jp.wasabeef:picasso-transformations:2.1.2] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\picasso-transformations-2.1.2.aar\b830e6bfee68392b26b345722923125b\AndroidManifest.xml:2:1-12:12
@@ -14,6 +15,8 @@ MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Coca Cola\.gradle\c
 MERGED from [com.android.support:design:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\196e3ba5c9ff304a425be5d6026f5c6b\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\8b11b5365f021646e6477735d59f37d5\AndroidManifest.xml:17:1-22:12
 MERGED from [:nativescript-optimized-with-inspector:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\a7f04f67eaf806b79336adc1fed51914\AndroidManifest.xml:2:1-11:12
+MERGED from [:digitaltown_nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\digitaltown_nativescript_card_io.aar\eab234c0cf6845114206a9d32c94f830\AndroidManifest.xml:2:1-9:12
+MERGED from [:nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_card_io.aar\2d720a7aae80d17dae8c22954170c6a7\AndroidManifest.xml:2:1-9:12
 MERGED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:2:1-17:12
 MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:2:1-25:12
 MERGED from [:widgets-release:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\8c48b8f91557465bbcbcdc19bb62daa6\AndroidManifest.xml:2:1-14:12
@@ -88,6 +91,8 @@ ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\Andr
 		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:15:19-61
 application
 ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:17:2-39:16
+MERGED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:19:5-24:19
+MERGED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:19:5-24:19
 MERGED from [com.squareup.picasso:picasso-provider:3.0.0-SNAPSHOT] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\picasso-provider-3.0.0-SNAPSHOT.aar\88acbde91a1cdfae96223d6a80e85b9b\AndroidManifest.xml:7:5-12:19
 MERGED from [com.squareup.picasso:picasso-provider:3.0.0-SNAPSHOT] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\picasso-provider-3.0.0-SNAPSHOT.aar\88acbde91a1cdfae96223d6a80e85b9b\AndroidManifest.xml:7:5-12:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\196e3ba5c9ff304a425be5d6026f5c6b\AndroidManifest.xml:22:5-20
@@ -146,6 +151,8 @@ uses-sdk
 INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
 INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
+MERGED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:5:5-7:41
+MERGED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.chrisbanes:PhotoView:2.1.3] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\PhotoView-2.1.3.aar\8d19e512a987530feafb4a1cf925b346\AndroidManifest.xml:8:5-10:41
 MERGED from [com.github.chrisbanes:PhotoView:2.1.3] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\PhotoView-2.1.3.aar\8d19e512a987530feafb4a1cf925b346\AndroidManifest.xml:8:5-10:41
 MERGED from [com.squareup.picasso:picasso-provider:3.0.0-SNAPSHOT] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\picasso-provider-3.0.0-SNAPSHOT.aar\88acbde91a1cdfae96223d6a80e85b9b\AndroidManifest.xml:5:5-44
@@ -166,6 +173,10 @@ MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Coca Cola\.gradle
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\8b11b5365f021646e6477735d59f37d5\AndroidManifest.xml:20:5-44
 MERGED from [:nativescript-optimized-with-inspector:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\a7f04f67eaf806b79336adc1fed51914\AndroidManifest.xml:7:5-9:41
 MERGED from [:nativescript-optimized-with-inspector:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\a7f04f67eaf806b79336adc1fed51914\AndroidManifest.xml:7:5-9:41
+MERGED from [:digitaltown_nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\digitaltown_nativescript_card_io.aar\eab234c0cf6845114206a9d32c94f830\AndroidManifest.xml:7:5-47
+MERGED from [:digitaltown_nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\digitaltown_nativescript_card_io.aar\eab234c0cf6845114206a9d32c94f830\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_card_io.aar\2d720a7aae80d17dae8c22954170c6a7\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_card_io.aar\2d720a7aae80d17dae8c22954170c6a7\AndroidManifest.xml:7:5-47
 MERGED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:7:5-47
 MERGED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:7:5-47
 MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:8:5-47
@@ -243,7 +254,41 @@ INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\A
 		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
 		MERGED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
 		MERGED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.CAMERA
+ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:9:5-65
+MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:10:5-65
+MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:10:5-65
+	android:name
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:9:22-62
+uses-permission#android.permission.VIBRATE
+ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:10:5-66
+	android:name
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:10:22-63
+uses-feature#android.hardware.camera
+ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:12:5-14:36
+	android:required
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:14:9-33
+	android:name
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:13:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:15:5-17:36
+	android:required
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:17:9-33
+	android:name
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:16:9-57
+activity#io.card.payment.CardIOActivity
+ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:20:9-22:66
+	android:configChanges
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:22:13-63
+	android:name
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:21:13-58
+activity#io.card.payment.DataEntryActivity
+ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:23:9-70
+	android:name
+		ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:23:19-67
 provider#com.squareup.picasso.provider.PicassoContentProvider
 ADDED from [com.squareup.picasso:picasso-provider:3.0.0-SNAPSHOT] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\picasso-provider-3.0.0-SNAPSHOT.aar\88acbde91a1cdfae96223d6a80e85b9b\AndroidManifest.xml:8:9-11:40
 	android:authorities
@@ -270,10 +315,6 @@ ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transfor
 		ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:15:9-33
 	android:name
 		ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:14:9-53
-uses-permission#android.permission.CAMERA
-ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:10:5-65
-	android:name
-		ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:10:22-62
 provider#android.support.v4.content.FileProvider
 ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:13:9-22:20
 	android:grantUriPermissions

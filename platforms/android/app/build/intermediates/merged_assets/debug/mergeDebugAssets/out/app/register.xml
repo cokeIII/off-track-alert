@@ -1,10 +1,7 @@
 <Page loaded="pageLoaded" id="Page">
   <ActionBar title="My App" class="action-bar"></ActionBar>
   <!-- Your UI components go here -->
-  <StackLayout id="testView" width="100%" >
-    <button  text="Scan Text" tap="takeCamera"></button>
-    <button  text="Scan Text2" tap="takeCamera2"></button>
-    <Label text="{{ scanTxt }}"></Label>
-  </StackLayout>
+  <StackLayout width="100%" >
 
+  </StackLayout>
 </Page>

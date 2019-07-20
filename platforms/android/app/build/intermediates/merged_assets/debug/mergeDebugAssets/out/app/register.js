@@ -4,6 +4,7 @@ var OCRPlugin = require("nativescript-ocr");
 const imageSourceModule = require("tns-core-modules/image-source");
 var Observable = require("data/observable");
 // import { CardIo } from 'nativescript-card-io';
+
 const vision = require('@google-cloud/vision');
 const API_URL = "https://vision.googleapis.com/v1/images:annotate"
 var pageData = new Observable.fromObject({
@@ -14,7 +15,7 @@ exports.pageLoaded = function(args) {
     page = args.object
     page.bindingContext = pageData
 }
-exports.takeCamera = function() {
+exports.takeCamera =  function() {
     camera.requestPermissions().then(
         function success() {
             camera.takePicture()   
@@ -27,10 +28,9 @@ exports.takeCamera = function() {
                 // const path = fileSystemModule.path.join(folder.path, image.src._android);
                 const imageFromLocalFile = imageSourceModule.fromFile(image.src._android);
                 var ocr = new OCRPlugin.OCR();
-               
+                quickstart(image.src._android)
 
                 // Creates a client
-                const client = new vision.ImageAnnotatorClient();
                 
                 /**
                  * TODO(developer): Uncomment the following line before running the sample.
@@ -38,10 +38,7 @@ exports.takeCamera = function() {
                 // const fileName = 'Local image file, e.g. /path/to/image.png';
                 
                 // Performs text detection on the local file
-                const [result] = await client.textDetection(image.src._android);
-                const detections = result.textAnnotations;
-                console.log('Text:');
-                detections.forEach(text => console.log(text));
+                //quickstart()
                 // ocr.retrieveText({
                 // image: imageFromLocalFile
                 // }).then(
@@ -63,3 +60,18 @@ exports.takeCamera = function() {
         }
     );
 }
+
+async function quickstart(imgSrc) {
+    console.log("quickstart")
+    // Imports the Google Cloud client library
+    
+  
+    // Creates a client
+    const client = new vision.ImageAnnotatorClient();
+  
+    // Performs label detection on the image file
+    const [result] = await client.labelDetection(imgSrc);
+    const labels = result.labelAnnotations;
+    console.log('Labels:');
+    labels.forEach(label => console.log(label.description));
+  }

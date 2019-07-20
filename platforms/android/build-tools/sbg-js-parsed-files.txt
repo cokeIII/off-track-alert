@@ -11,8 +11,6 @@ D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-camera\camera.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-dom\dom.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-globalevents\globalevents.js
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-image-zoom\image-zoom.common.js
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-image-zoom\image-zoom.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-ocr\ocr.common.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-ocr\ocr.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-orientation\orientation.js

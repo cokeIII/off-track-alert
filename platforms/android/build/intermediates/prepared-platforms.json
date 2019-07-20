@@ -3,7 +3,6 @@
     "digitaltown-nativescript-card-io": true,
     "nativescript-bluetooth": true,
     "nativescript-camera": true,
-    "nativescript-image-zoom": true,
     "nativescript-ocr": true,
     "nativescript-orientation": true,
     "nativescript-theme-core": true,

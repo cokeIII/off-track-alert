@@ -7,15 +7,20 @@ const labelModule = require("tns-core-modules/ui/label");
 const API_URL = "http://192.168.43.50:3001"
 var pageData = new Observable.fromObject({
     roadName: "testName",
-    map:{}
+    map:{},
+    userData:{},
 })
 let urlMap = API_URL + '/maps'
-
+let dlg = null
+exports.hideDialog = () => {
+    dlg.style.visibility = 'collapse';
+}
 exports.pageLoaded = function(args) {
     page = args.object
     page.bindingContext = pageData
     orientation.setOrientation("portrait")
-
+    dlg = page.getViewById('user-data')
+    //dlg.style.visibility = 'collapse';
     if(appSettings.getString("maps")){
         pageData.map = JSON.parse(appSettings.getString("maps"))
         // console.log("Data seting"+pageData.map)
@@ -59,22 +64,40 @@ function BLE_scan(){
 }
 
 function genMap(UUID){
-    pageData.map.maps.forEach(element => {
-        console.log(element)
-        if(element.uuid == UUID) {
-            const myLabel = new labelModule.Label();
-            myLabel.className = "point"
-            myLabel.width = 28
-            myLabel.height = 28
-            myLabel.left = element.x
-            myLabel.top = element.y
-            myLabel.backgroundColor = "red";
-            page.getViewById("mapLayout").addChild(myLabel)
-            console.log("+++genBeacon+++")
-        }
-    });
+    if(pageData.map.maps){
+        pageData.map.maps.forEach(element => {
+            console.log(element)
+            if(element.uuid == UUID) {
+                const myLabel = new labelModule.Label();
+                myLabel.className = "point"
+                myLabel.width = 28
+                myLabel.height = 28
+                myLabel.left = element.x
+                myLabel.top = element.y
+                myLabel.style.zIndex="-1";
+                myLabel.backgroundColor = "red";
+                page.getViewById("mapLayout").addChild(myLabel)
+                console.log("+++genBeacon+++")
+            }
+        });
+    }
 } 
 
-exports.testTap = function(args) {
-    console.log("testtap")
+exports.user = function() {
+    pageData.userData = JSON.parse(appSettings.getString("userData"))
+    dlg.style.visibility = 'visible'
+    console.log(pageData.userData)
+}
+
+exports.setUser = function() {
+    pageData.userData = JSON.parse(appSettings.getString("userData"))
+    dlg.style.visibility = 'visible'
+    console.log(pageData.userData)
+}
+
+exports.hideDialog = () => {
+    dlg.style.visibility = 'collapse';
+}
+
+exports.noop = () => {
 }

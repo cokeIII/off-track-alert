@@ -21,30 +21,47 @@
         <Label text="&#xf05b;"></Label>
       </StackLayout>
 
-      <!-- dlg -->
-        <StackLayout class="lg-dialog" tap="hideDialog" id="user-data">
-          <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
-              <FlexboxLayout orientation="horizontal" class="title">
-                  <label text="Profile" class="text"/>
-                  <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
-              </FlexboxLayout>
-              <StackLayout class="content">
-                <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
-                  <Label text="id card" class="txt-s"></Label>
-                  <TextField hint="" text="{{ idCard }}" keyboardType="number" class="txt-f"/>
-                </StackLayout>
-                <StackLayout width="100%" orientation="horizontal" class="m-t-10">
-                  <Label text="Name" class="txt-s"></Label>
-                  <TextField hint="" class="txt-f" text="{{ userName }}"/>
-                </StackLayout>
+      <!-- dlg User-->
+      <StackLayout class="lg-dialog" tap="hideDialog" id="user-data">
+        <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
+            <FlexboxLayout orientation="horizontal" class="title">
+                <label text="Profile" class="text"/>
+                <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
+            </FlexboxLayout>
+            <StackLayout class="content">
+              <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
+                <Label text="id card" class="txt-s"></Label>
+                <TextField hint="" text="{{ idCard }}" keyboardType="number" class="txt-f"/>
               </StackLayout>
-              <FlexboxLayout class="actions">
-                  <Button  tap="setUser" text="Edit" class="action"/>
-              </FlexboxLayout>
-          </FlexboxLayout>
-        </StackLayout> 
-        <!-- dlg -->
-
+              <StackLayout width="100%" orientation="horizontal" class="m-t-10">
+                <Label text="Name" class="txt-s"></Label>
+                <TextField hint="" class="txt-f" text="{{ userName }}"/>
+              </StackLayout>
+            </StackLayout>
+            <FlexboxLayout class="actions">
+                <Button  tap="setUser" text="Edit" class="action"/>
+            </FlexboxLayout>
+        </FlexboxLayout>
+      </StackLayout> 
+      <!-- dlg User-->
+      <!-- dlg Alert-->
+      <StackLayout class="lg-dialog" tap="hideDialog" id="user-alert">
+        <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
+            <FlexboxLayout orientation="horizontal" class="title">
+                <label text="Alert" class="text"/>
+                <!-- <Button  tap="hideDialog" text="&#xf00d;" class="close"/> -->
+            </FlexboxLayout>
+            <StackLayout class="content">
+              <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
+                <Label text="Out of the way" class="txt-s"></Label>
+              </StackLayout>
+            </StackLayout>
+            <FlexboxLayout class="actions">
+                <Button  tap="hideDialog" text="OK" class="action"/>
+            </FlexboxLayout>
+        </FlexboxLayout>
+      </StackLayout> 
+      <!-- dlg Alert-->
     </AbsoluteLayout>
     <!-- <StackLayout width="100%" height="10%"> -->
       <FlexboxLayout  width="100%" height="8%" class="map-menu">

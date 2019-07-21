@@ -1,0 +1,26 @@
+.txt-h{
+    font-size: 28;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.txt-s{
+    font-size: 18;
+    margin: 5%,0,0,8%;
+}
+
+.txt-f{
+    width:50%;
+}
+
+.m-t-10p{
+    margin-top: 10%;
+}
+
+.btn-scan{
+    width: 42%;
+}
+
+.btn-submit{
+    width: 42%;
+}

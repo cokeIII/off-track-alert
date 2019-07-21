@@ -12,13 +12,15 @@
 	"nativescript-camera": {
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-camera\\platforms\\android\\nativescript_camera.aar": "076643dd1be5b20235184a9c65703fa02a930b9b"
 	},
-	"nativescript-image-zoom": {
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-image-zoom\\platforms\\android\\include.gradle": "475ee403a5a4cd308fe2356d284261d6bdfa3acf"
-	},
 	"nativescript-ocr": {
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-ocr\\platforms\\android\\include.gradle": "17f0147837de89b4914f642c47ad879b19fcc34b"
 	},
 	"tns-core-modules-widgets": {
 		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\tns-core-modules-widgets\\platforms\\android\\widgets-release.aar": "85168be13bc1b546c0f1d53f46bb892118ba3d9f"
+	},
+	"nativescript-vibrate": {
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-vibrate\\platforms\\android\\include.gradle": "06e7e1be49eb6d614094596003280aa7eea789f3",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-vibrate\\platforms\\android\\nativescript_vibrate.aar": "31bc4bfd8ba4c2caa17b12b63f51bed004caa1d1",
+		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-vibrate\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
 	}
 }

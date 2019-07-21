@@ -1,27 +1,29 @@
 {
-  "_from": "nativescript-dom@^2.0.0",
+  "_from": "nativescript-dom",
   "_id": "nativescript-dom@2.0.2",
   "_inBundle": false,
   "_integrity": "sha512-VEY1X10QRZlJEeZUdrwrGoslKqeS03BloaL5OWaXeHmdtmgzaTo3yjIg4ZJOLFWpHme3xAmn+mEn5HLtUJH+NQ==",
   "_location": "/nativescript-dom",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "tag",
     "registry": true,
-    "raw": "nativescript-dom@^2.0.0",
+    "raw": "nativescript-dom",
     "name": "nativescript-dom",
     "escapedName": "nativescript-dom",
-    "rawSpec": "^2.0.0",
+    "rawSpec": "",
     "saveSpec": null,
-    "fetchSpec": "^2.0.0"
+    "fetchSpec": "latest"
   },
   "_requiredBy": [
+    "#USER",
+    "/",
     "/nativescript-orientation"
   ],
   "_resolved": "https://registry.npmjs.org/nativescript-dom/-/nativescript-dom-2.0.2.tgz",
   "_shasum": "846b9a419ab1a4c6809ff4ab52fab5e325c88545",
-  "_spec": "nativescript-dom@^2.0.0",
-  "_where": "D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-orientation",
+  "_spec": "nativescript-dom",
+  "_where": "D:\\project\\OFF-TRACK ALERT SYSTEM",
   "author": {
     "name": "Nathanael Anderson",
     "email": "nathan@master-technology.com"

@@ -15,6 +15,10 @@ D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-ocr\ocr.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-orientation\orientation.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-permissions\permissions.js
+D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-sound\sound-common.js
+D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-sound\sound.js
+D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-vibrate\vibrate.common.js
+D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\nativescript-vibrate\vibrate.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\application\application-common.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\application\application.js
 D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\application-settings\application-settings-common.js

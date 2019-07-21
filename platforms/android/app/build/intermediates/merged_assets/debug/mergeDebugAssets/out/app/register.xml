@@ -1,7 +1,17 @@
-<Page loaded="pageLoaded" id="Page">
+<Page loaded="pageLoaded" id="Page" >
   <ActionBar title="My App" class="action-bar"></ActionBar>
   <!-- Your UI components go here -->
-  <StackLayout width="100%" >
-
+  <StackLayout width="100%" class="fas">
+    <Label text="Register" class="txt-h"></Label>
+    <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
+      <Label text="id card" class="txt-s"></Label>
+      <TextField hint="" text="{{ idCard }}" keyboardType="number" class="txt-f"/>
+    </StackLayout>
+    <StackLayout width="100%" orientation="horizontal" class="m-t-10">
+      <Label text="Name" class="txt-s"></Label>
+      <TextField hint="" class="txt-f" text="{{ userName }}"/>
+    </StackLayout>
+    <button text="&#xf030; Scan Card" class="m-t-10p btn-scan" tap="takeCamera"></button>
+    <button text="Submit" class="m-t-10p btn-submit" tap="register"></button>
   </StackLayout>
 </Page>

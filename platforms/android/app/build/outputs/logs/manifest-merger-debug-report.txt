@@ -15,6 +15,7 @@ MERGED from [:digitaltown_nativescript_card_io:] C:\Users\Coca Cola\.gradle\cach
 MERGED from [:nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_card_io.aar\2d720a7aae80d17dae8c22954170c6a7\AndroidManifest.xml:2:1-9:12
 MERGED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:2:1-17:12
 MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:2:1-25:12
+MERGED from [:nativescript_vibrate:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\1f55d1bea8a9d8d8eafdb459632541d0\AndroidManifest.xml:2:1-11:12
 MERGED from [:widgets-release:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\8c48b8f91557465bbcbcdc19bb62daa6\AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\65d1e0adbfe2f3c3b7c9415635d55429\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\42dbbbc331dce56d643875fea8d95ae3\AndroidManifest.xml:17:1-22:12
@@ -166,6 +167,8 @@ MERGED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transfo
 MERGED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:7:5-47
 MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:8:5-47
 MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:8:5-47
+MERGED from [:nativescript_vibrate:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\1f55d1bea8a9d8d8eafdb459632541d0\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_vibrate:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\1f55d1bea8a9d8d8eafdb459632541d0\AndroidManifest.xml:7:5-47
 MERGED from [:widgets-release:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\8c48b8f91557465bbcbcdc19bb62daa6\AndroidManifest.xml:7:5-9:41
 MERGED from [:widgets-release:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\8c48b8f91557465bbcbcdc19bb62daa6\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\65d1e0adbfe2f3c3b7c9415635d55429\AndroidManifest.xml:20:5-44
@@ -239,6 +242,7 @@ INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\A
 		MERGED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
 		MERGED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
 		MERGED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.CAMERA
 ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:9:5-65
@@ -248,6 +252,8 @@ MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms
 		ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:9:22-62
 uses-permission#android.permission.VIBRATE
 ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:10:5-66
+MERGED from [:nativescript_vibrate:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\1f55d1bea8a9d8d8eafdb459632541d0\AndroidManifest.xml:9:5-66
+MERGED from [:nativescript_vibrate:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\1f55d1bea8a9d8d8eafdb459632541d0\AndroidManifest.xml:9:5-66
 	android:name
 		ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:10:22-63
 uses-feature#android.hardware.camera

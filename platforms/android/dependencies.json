@@ -12,6 +12,10 @@
         "directory": "..\\..\\node_modules\\nativescript-camera"
     },
     {
+        "name": "nativescript-dom",
+        "directory": "..\\..\\node_modules\\nativescript-dom"
+    },
+    {
         "name": "nativescript-ocr",
         "directory": "..\\..\\node_modules\\nativescript-ocr"
     },
@@ -20,8 +24,16 @@
         "directory": "..\\..\\node_modules\\nativescript-orientation"
     },
     {
+        "name": "nativescript-sound",
+        "directory": "..\\..\\node_modules\\nativescript-sound"
+    },
+    {
         "name": "nativescript-theme-core",
         "directory": "..\\..\\node_modules\\nativescript-theme-core"
+    },
+    {
+        "name": "nativescript-vibrate",
+        "directory": "..\\..\\node_modules\\nativescript-vibrate"
     },
     {
         "name": "tns-core-modules",
@@ -30,10 +42,6 @@
     {
         "name": "nativescript-permissions",
         "directory": "..\\..\\node_modules\\nativescript-permissions"
-    },
-    {
-        "name": "nativescript-dom",
-        "directory": "..\\..\\node_modules\\nativescript-dom"
     },
     {
         "name": "nativescript-globalevents",

@@ -3,12 +3,12 @@ var camera = require("nativescript-camera");
 var OCRPlugin = require("nativescript-ocr");
 const imageSourceModule = require("tns-core-modules/image-source");
 var Observable = require("data/observable");
-// import { CardIo } from 'nativescript-card-io';
-
-const vision = require('@google-cloud/vision');
-const API_URL = "https://vision.googleapis.com/v1/images:annotate"
+// const vision = require('@google-cloud/vision');
+const frameModule = require("ui/frame");
+const appSettings = require("application-settings");
 var pageData = new Observable.fromObject({
-    scanTxt: "TXT",
+    idCard: "",
+    userName: "",
 })
 
 exports.pageLoaded = function(args) {
@@ -24,32 +24,8 @@ exports.takeCamera =  function() {
                 var image = new imageModule.Image();
                 image.src = imageAsset;
                 console.log(image.src._android)
-                // const folder = fileSystemModule.knownFolders.currentApp();
-                // const path = fileSystemModule.path.join(folder.path, image.src._android);
                 const imageFromLocalFile = imageSourceModule.fromFile(image.src._android);
-                var ocr = new OCRPlugin.OCR();
-                quickstart(image.src._android)
-
-                // Creates a client
                 
-                /**
-                 * TODO(developer): Uncomment the following line before running the sample.
-                 */
-                // const fileName = 'Local image file, e.g. /path/to/image.png';
-                
-                // Performs text detection on the local file
-                //quickstart()
-                // ocr.retrieveText({
-                // image: imageFromLocalFile
-                // }).then(
-                //     function (result) {
-                //         console.log("Result: " + result.text)
-                //         pageData.scanTxt =  result.text
-                //     },
-                //     function (error) {
-                //         console.log("Error: " + error);
-                //     }
-                // );
             }).catch(function (err) {
                 console.log("Error -> " + err.message);
             });
@@ -60,7 +36,14 @@ exports.takeCamera =  function() {
         }
     );
 }
-
+exports.register =  function() {
+    var jsonData = {}
+    jsonData.idCard = pageData.idCard
+    jsonData.userName = pageData.userName
+    appSettings.setString("userData", JSON.stringify(jsonData))
+    console.log(jsonData)
+    frameModule.topmost().navigate("map");
+}
 async function quickstart(imgSrc) {
     console.log("quickstart")
     // Imports the Google Cloud client library

@@ -1,26 +1,26 @@
-var orientation = require('nativescript-orientation');
-var Observable = require("data/observable");
-var bluetooth = require("nativescript-bluetooth");
-const appSettings = require("application-settings");
-const labelModule = require("tns-core-modules/ui/label");
-
+var orientation = require('nativescript-orientation')
+var Observable = require("data/observable")
+var bluetooth = require("nativescript-bluetooth")
+const appSettings = require("application-settings")
+const labelModule = require("tns-core-modules/ui/label")
+require("nativescript-dom");
 const API_URL = "http://192.168.43.50:3001"
 var pageData = new Observable.fromObject({
     roadName: "testName",
     map:{},
-    userData:{},
+    idCard:"",
+    userName:"",
 })
 let urlMap = API_URL + '/maps'
 let dlg = null
 exports.hideDialog = () => {
-    dlg.style.visibility = 'collapse';
+    dlg.style.visibility = 'collapse'
 }
 exports.pageLoaded = function(args) {
     page = args.object
     page.bindingContext = pageData
     orientation.setOrientation("portrait")
     dlg = page.getViewById('user-data')
-    //dlg.style.visibility = 'collapse';
     if(appSettings.getString("maps")){
         pageData.map = JSON.parse(appSettings.getString("maps"))
         // console.log("Data seting"+pageData.map)
@@ -64,11 +64,15 @@ function BLE_scan(){
 }
 
 function genMap(UUID){
+    let i = 0
     if(pageData.map.maps){
+        let mapLayout = page.getViewById("mapLayout")
+        let viewMap = mapLayout.getElementsByClassName('point')
+        mapLayout.removeChild(viewMap[i])
         pageData.map.maps.forEach(element => {
-            console.log(element)
+            i++
             if(element.uuid == UUID) {
-                const myLabel = new labelModule.Label();
+                let myLabel = new labelModule.Label()
                 myLabel.className = "point"
                 myLabel.width = 28
                 myLabel.height = 28
@@ -76,28 +80,33 @@ function genMap(UUID){
                 myLabel.top = element.y
                 myLabel.style.zIndex="-1";
                 myLabel.backgroundColor = "red";
+
                 page.getViewById("mapLayout").addChild(myLabel)
-                console.log("+++genBeacon+++")
+                console.log("+++genBeacon+++"+element.x+","+element.y+","+i)
             }
+            console.log(i)
         });
     }
 } 
 
 exports.user = function() {
-    pageData.userData = JSON.parse(appSettings.getString("userData"))
+    if(appSettings.getString("userData")){
+        let jsonData = JSON.parse(appSettings.getString("userData"))
+        pageData.idCard = jsonData.idCard
+        pageData.userName = jsonData.userName
+    }
     dlg.style.visibility = 'visible'
-    console.log(pageData.userData)
 }
 
 exports.setUser = function() {
-    pageData.userData = JSON.parse(appSettings.getString("userData"))
-    dlg.style.visibility = 'visible'
-    console.log(pageData.userData)
+    let svaeData = {}
+    svaeData.idCard = pageData.idCard
+    svaeData.userName = pageData.userName
+    appSettings.setString("userData", JSON.stringify(svaeData))
+    dlgHide()
 }
-
-exports.hideDialog = () => {
-    dlg.style.visibility = 'collapse';
+function dlgHide() {
+    dlg.style.visibility = 'collapse'
 }
-
 exports.noop = () => {
 }

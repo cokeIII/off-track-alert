@@ -1,41 +1,50 @@
 D:\android-sdk/platforms/android-28/android.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\0\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\1\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\10\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\11\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\12\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\13\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\14\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\15\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\16\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\17\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\18\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\19\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\2\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\20\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\21\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\22\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\23\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\24\collections-28.0.0.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\25\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\26\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\27\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\28\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\29\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\3\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\30\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\31\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\32\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\33\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\34\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\35\common-1.1.1.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\36\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\37\common-1.1.1.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\38\support-annotations-28.0.0.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\4\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\5\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\6\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\7\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\8\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\exploded-dependencies\9\classes.jar
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\build\intermediates\javac\debug
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\0418c1cc64c103950efb24aa71226bed\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\08434a8a23f9ef2ff0ca31030e6bb0c2\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\1c33d5beb91599acbfa5c73d2f83a92c\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\243a1af1e0b6d21f24818696f7f947c1\okhttp-3.10.0.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\3ea8a05b9c3d6c34e6aa9fe1c6cb3a8f\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\4087f136c2c080ca71cb75d236354645\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\4c4a92f4994c55e7c3c92b78712841e2\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\58a95b622c3d287fd0435dc110fcc778\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\601db13a60a691fb7e46ac8a1472c1ca\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\6180957f9ee341beff78a3d0125bf9e4\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\77befa88ce06b6891ad6a31fa8dd5b6d\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\78b332eaadafbdd600e067f2e0e9b5ca\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\7c36ec6cfaffc59b9872d65993340c6a\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\82dcb6db551d47b016306188fc2d6ad0\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\86fc7c2cce8d5d444f4a81f19140853d\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\875267d7a5334313b48868a4e0c47222\support-annotations-28.0.0.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\88d5b4c32bc026a155aaf895b829af99\okio-1.14.0.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\8a500edc3b3bf32d367c8c6414aa1360\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\8e9520fc6e80df31734e83e52fa1bf7e\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\903bc4f5df97853dfdc72cd5833ed75b\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\97248fb20127e5a4534db0c1b8ceb745\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\972d79d25539c650b9b6cfad436341a4\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\975d273918094b777be3c80c8b5502f7\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\9d4b46395c490afaa68bd50ccea72f6e\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\a6c54a3bebaf3cb7068bfba89ad58b0c\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\aba07f5290b28b1857fefafde0fb9a44\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\ac2ada61dc7a7ac53bd0d9daec2a3e77\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\aeef314b602f68c2bb7479d54aafc0c7\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\b4cd018852dd7712f4fd155f28d263e6\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\b6338bc81ca0957f6c8e65d5c4c87556\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\bc4d89edeca043779f27bea61606dbe8\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\bf07126c20e2b3bbb55692dd0f80d786\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\c4a2ce9aa09927f482db3586a395b8f8\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\c61c05f470c7a6ac11f4e463e35f668e\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\c755d9b4f656caf8aaf6a10ba68c0cdd\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\cc446ebfecd51edf5e1ac94a0136d4f3\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\ced8d3bd7b31f76caea30d5230fe83f5\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\cf40faa112e9e0865b7af72a92d174c8\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\d22520fef01a7cacccacc53ff837acf0\collections-28.0.0.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\dbbce64892f943e05c69ab30421892bd\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\dc3d90753869445a7f114d4591fa511b\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\de9e7939b5be5afae944ab89371ab2f8\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\e56728657336c9c7f91fbc8231b3dda0\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\eaef1dfb6a0cdc038876d02fa900a2ff\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\ec2d43d8aef97f310cb470f4dbf71a12\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\ef652559e4236fe9b3834212f14f9d29\common-1.1.1.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\f2cb067b2f86f4969388e89e639431b5\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\f782460da529f7452f9bab70ff079880\classes.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\fa7f22ce045877d21377bcbb3a95a99f\common-1.1.1.jar

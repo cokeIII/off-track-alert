@@ -1,18 +1,18 @@
 {
-	"tns-core-modules-widgets": {
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\tns-core-modules-widgets\\platforms\\android\\widgets-release.aar": "85168be13bc1b546c0f1d53f46bb892118ba3d9f"
-	},
-	"nativescript-image-zoom": {
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-image-zoom\\platforms\\android\\include.gradle": "475ee403a5a4cd308fe2356d284261d6bdfa3acf"
-	},
 	"nativescript-bluetooth": {
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-bluetooth\\platforms\\android\\AndroidManifest.xml": "f59c6776083721a3c2da7f9ecc73a524ac07e41d",
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-bluetooth\\platforms\\android\\nativescript_bluetooth.aar": "fbc02a7ccc3ef83bae0bbdba12e5f7ee3d54b90a"
+		"D:\\PROJECT\\off-track-alert\\node_modules\\nativescript-bluetooth\\platforms\\android\\nativescript_bluetooth.aar": "fbc02a7ccc3ef83bae0bbdba12e5f7ee3d54b90a",
+		"D:\\PROJECT\\off-track-alert\\node_modules\\nativescript-bluetooth\\platforms\\android\\AndroidManifest.xml": "20f5d245b54d495f594559e02c5d63e3acd5d8a6"
 	},
 	"nativescript-camera": {
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-camera\\platforms\\android\\nativescript_camera.aar": "076643dd1be5b20235184a9c65703fa02a930b9b"
+		"D:\\PROJECT\\off-track-alert\\node_modules\\nativescript-camera\\platforms\\android\\nativescript_camera.aar": "076643dd1be5b20235184a9c65703fa02a930b9b"
+	},
+	"nativescript-image-zoom": {
+		"D:\\PROJECT\\off-track-alert\\node_modules\\nativescript-image-zoom\\platforms\\android\\include.gradle": "fe367fb49ac6e0790be503049cc0c61dad8a614a"
 	},
 	"nativescript-ocr": {
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-ocr\\platforms\\android\\include.gradle": "6b04cf9272db8c9ef66ab34a890045c02a8e8d85"
+		"D:\\PROJECT\\off-track-alert\\node_modules\\nativescript-ocr\\platforms\\android\\include.gradle": "8ab710bf7210ea8ad86395fa5cc96a64d395dbaa"
+	},
+	"tns-core-modules-widgets": {
+		"D:\\PROJECT\\off-track-alert\\node_modules\\tns-core-modules-widgets\\platforms\\android\\widgets-release.aar": "85168be13bc1b546c0f1d53f46bb892118ba3d9f"
 	}
 }

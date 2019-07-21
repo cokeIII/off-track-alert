@@ -1,5 +1,0 @@
-<Page loaded="pageLoaded" id="Page">
-  <ActionBar title="My App" class="action-bar"></ActionBar>
-  <!-- Your UI components go here -->
-  <button  text="Scan Text" tap="takeCamera"></button>
-</Page>

@@ -1,4 +1,4 @@
-#Thu Jul 11 15:45:06 ICT 2019
-base.0=D\:\\project\\OFF-TRACK ALERT SYSTEM\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Sun Jul 21 17:16:40 ICT 2019
+base.0=D\:\\PROJECT\\off-track-alert\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

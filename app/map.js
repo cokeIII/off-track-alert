@@ -156,7 +156,7 @@ function genMap(UUID,RSSI){
                     myLabel.width = 28
                     myLabel.height = 28
                     myLabel.left = element.x
-                    myLabel.top = element.y+"%"
+                    myLabel.top = element.y
                     myLabel.style.zIndex="-1";
                     myLabel.backgroundColor = "red";
                     myLabelText.text = element.name

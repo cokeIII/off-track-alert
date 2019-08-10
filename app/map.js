@@ -16,8 +16,8 @@ var pageData = new Observable.fromObject({
 let urlMap = API_URL + '/maps'
 let dlg = null
 let dlgAlert = null
-let mapLayout
-let viewMap
+let mapLayout = null
+let viewMap = null
 
 exports.pageLoaded = function(args) {
     page = args.object
@@ -26,11 +26,7 @@ exports.pageLoaded = function(args) {
     dlg = page.getViewById('user-data')
     dlgAlert = page.getViewById('user-alert')
 
-    mapLayout = page.getViewById("mapLayout")
-    viewMap = mapLayout.getElementsByClassName('point')
-    for(let i = 0;i<viewMap.length;i++){
-        mapLayout.removeChild(viewMap[i])
-    }
+    romoveMap()
 
     if(appSettings.getString("maps")){
         pageData.map = JSON.parse(appSettings.getString("maps"))
@@ -47,18 +43,40 @@ exports.pageLoaded = function(args) {
     
     bluetooth.enable().then(
         function(enabled) {
-            BLE_scan()
-
+            //BLE_scan()
+            check_route()
             setInterval(function(){ 
         
             // use Bluetooth features if enabled is true 
             // BLE_scan()
             
-            }, 11000)
+            }, 13000)
         }
-      )
-}
+    )
 
+}
+function romoveMap() {
+    mapLayout = page.getViewById("mapLayout")
+    viewMap = mapLayout.getElementsByClassName('point')
+    for(let i = 0;i<viewMap.length;i++){
+        mapLayout.removeChild(viewMap[i])
+    }
+}
+function check_route() {
+    bluetooth.startScanning({
+        serviceUUIDs: [],
+        seconds: 10,
+        onDiscovered: function (peripheral) {
+            console.log("Periperhal found with UUID: " + peripheral.UUID)
+            console.log(genMap(peripheral.UUID,peripheral.RSSI,))            
+        },
+        skipPermissionCheck: false,
+    }).then(function() {
+        console.log("scanning complete")
+    }, function (err) {
+        console.log("error while scanning: " + err)
+    })
+}
 function BLE_scan(){
     let genStatus = false
     let alert = false
@@ -67,7 +85,7 @@ function BLE_scan(){
         seconds: 10,
         onDiscovered: function (peripheral) {
             console.log("Periperhal found with UUID: " + peripheral.UUID)
-            genStatus = genMap(peripheral.UUID,peripheral.RSSI)
+            // genStatus = genMap(peripheral.UUID,peripheral.RSSI,)
             if(genStatus){
                 alert = true
             }
@@ -86,40 +104,75 @@ function BLE_scan(){
         console.log("error while scanning: " + err)
     })
 }
+
 function alertUser(){
     vibrator.vibrate(2000);
     dlgAlert.style.visibility = 'visible'
 }
+function countPoint(route) {
+    let count = 0
+    pageData.map.maps.forEach(element => {
+            
+        if(route){
+            if(element.route ==  route) {
+                count++
+            }
+        }
+    })
+    return count
+}
 function genMap(UUID,RSSI){
-    let i = 0
-    let genStatus = false
+    let route = 0
     if(pageData.map.maps){
         viewMap = mapLayout.getElementsByClassName('point')
         pageData.map.maps.forEach(element => {
             
             if(element.uuid == UUID) {
-                if(RSSI > -50)
-                    pageData.roadName = element.name
-                genStatus = true
-                console.log(viewMap)
-                if(viewMap[i] != undefined)
-                    mapLayout.removeChild(viewMap[i])
-                let myLabel = new labelModule.Label()
-                myLabel.className = "point"
-                myLabel.width = 28
-                myLabel.height = 28
-                myLabel.left = element.x
-                myLabel.top = element.y
-                myLabel.style.zIndex="-1";
-                myLabel.backgroundColor = "red";
-
-                mapLayout.addChild(myLabel)
-                console.log("+++genBeacon+++"+element.x+","+element.y+","+i) 
+                route = element.route
+                bluetooth.stopScanning().then(function() {
+                    console.log("scanning stopped");
+                });
             } 
-            i++
+        });
+        if(viewMap){
+            romoveMap()
+        }
+        
+        mapLayout.height = 600+(countPoint(route)*100)
+        console.log(mapLayout.height)
+        mapLayout.backgroundColor = "blue"
+
+        pageData.map.maps.forEach(element => {
+            
+            if(route){
+                if(element.route ==  route) {
+                    if(RSSI > -60)
+                        pageData.roadName = element.name
+
+                    let myLabel = new labelModule.Label()
+                    let myLabelText = new labelModule.Label()
+
+                    myLabel.className = "point"
+                    myLabel.width = 28
+                    myLabel.height = 28
+                    myLabel.left = element.x
+                    myLabel.top = element.y+"%"
+                    myLabel.style.zIndex="-1";
+                    myLabel.backgroundColor = "red";
+                    myLabelText.text = element.name
+                    myLabelText.left = element.x
+                    myLabelText.top = element.y+20
+
+
+                    mapLayout.addChild(myLabel)
+                    mapLayout.addChild(myLabelText)
+                    console.log("+++genBeacon+++"+element.x+","+element.y) 
+
+                }
+            }
         });
     }
-    return genStatus
+    return route
 } 
 
 exports.user = function() {

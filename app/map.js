@@ -18,14 +18,16 @@ let dlg = null
 let dlgAlert = null
 let mapLayout = null
 let viewMap = null
-
+let detailMap = null 
+let detailMapBtn = null
 exports.pageLoaded = function(args) {
     page = args.object
     page.bindingContext = pageData
     orientation.setOrientation("portrait")
     dlg = page.getViewById('user-data')
     dlgAlert = page.getViewById('user-alert')
-
+    detailMap = page.getViewById('detailMap')
+    detailMapBtn = page.getViewById('detailMapBtn')
     romoveMap()
 
     if(appSettings.getString("maps")){
@@ -138,7 +140,7 @@ function genMap(UUID,RSSI){
             romoveMap()
         }
         
-        mapLayout.height = 600+(countPoint(route)*100)
+        mapLayout.height = countPoint(route)>8?""+(((countPoint(route)-8)*10)+100)+"%":"100%"
         console.log(mapLayout.height)
         mapLayout.backgroundColor = "blue"
 
@@ -155,13 +157,13 @@ function genMap(UUID,RSSI){
                     myLabel.className = "point"
                     myLabel.width = 28
                     myLabel.height = 28
-                    myLabel.left = element.x
-                    myLabel.top = element.y
+                    myLabel.marginTop = ""+element.y+"%"
+                    myLabel.marginLeft = ""+element.x+"%"
                     myLabel.style.zIndex="-1";
                     myLabel.backgroundColor = "red";
                     myLabelText.text = element.name
-                    myLabelText.left = element.x
-                    myLabelText.top = element.y+20
+                    myLabelText.marginLeft = ""+element.x+"%"
+                    myLabelText.marginTop = ""+element.y+"%"
 
 
                     mapLayout.addChild(myLabel)
@@ -199,5 +201,14 @@ function dlgHide() {
     dlg.style.visibility = 'collapse'
     dlgAlert.style.visibility = 'collapse'
 }
+exports.hideDetailMap = function(){
+    detailMap.style.visibility = 'collapse'
+    detailMapBtn.style.visibility = 'visible'
+}
+exports.showDetailMap = function(){
+    detailMap.style.visibility = 'visible'
+    detailMapBtn.style.visibility = 'collapse'
+}
+
 exports.noop = () => {
 }

@@ -8,7 +8,8 @@
 
         </AbsoluteLayout>
     </ScrollView>
-      <StackLayout width="80%" height="20%" class="detail-map">
+      <StackLayout width="80%" height="22%" class="detail-map" id="detailMap">
+        <Label text="__" width="24" height="24" marginLeft="90%" tap="hideDetailMap"></Label>
         <StackLayout id="testView" width="100%" orientation="horizontal">
           <Label text="&#xf3c5;" class="map-mark"></Label>
           <Label text="{{ roadName }}" class="track-name"></Label>
@@ -20,6 +21,9 @@
           <Label class="user-road" text="&#xf018;"></Label>
           <Label class="road-total" text="3.0/6.0 km"></Label>
         </StackLayout>
+      </StackLayout>
+      <StackLayout width="24" height="24" marginTop="10%" marginLeft="80%" class="detailMapBtn" id="detailMapBtn" tap="showDetailMap">
+        <Label text="__"></Label>
       </StackLayout>
       <StackLayout width="40" height="40" class="location">
         <Label text="&#xf05b;"></Label>

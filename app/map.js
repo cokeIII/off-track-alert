@@ -45,17 +45,18 @@ exports.pageLoaded = function(args) {
     
     bluetooth.enable().then(
         function(enabled) {
-            //BLE_scan()
             check_route()
             setInterval(function(){ 
-        
             // use Bluetooth features if enabled is true 
-            // BLE_scan()
+            BLE_scan()
             
             }, 13000)
         }
     )
 
+}
+async function cooldown() {
+    await sleep(3000)
 }
 function romoveMap() {
     mapLayout = page.getViewById("mapLayout")
@@ -67,7 +68,7 @@ function romoveMap() {
 function check_route() {
     bluetooth.startScanning({
         serviceUUIDs: [],
-        seconds: 10,
+        seconds: 5,
         onDiscovered: function (peripheral) {
             console.log("Periperhal found with UUID: " + peripheral.UUID)
             console.log(genMap(peripheral.UUID,peripheral.RSSI,))            
@@ -87,7 +88,7 @@ function BLE_scan(){
         seconds: 10,
         onDiscovered: function (peripheral) {
             console.log("Periperhal found with UUID: " + peripheral.UUID)
-            // genStatus = genMap(peripheral.UUID,peripheral.RSSI,)
+            genStatus = walkMap(peripheral.UUID,peripheral.RSSI,)
             if(genStatus){
                 alert = true
             }
@@ -123,12 +124,31 @@ function countPoint(route) {
     })
     return count
 }
+function walkMap(UUID,RSSI) {
+    let status = false
+    if(pageData.map.maps){
+        pageData.map.maps.forEach(element => {
+    
+            if(element.uuid == UUID) {
+                if(RSSI > -70)
+                    pageData.roadName = element.name
+
+                point = page.getViewById(element.name)
+                if(point) {
+                    point.backgroundColor = "green"
+                }
+                status = true
+            } 
+        });
+    }
+    return status
+}
 function genMap(UUID,RSSI){
     let route = 0
     if(pageData.map.maps){
         viewMap = mapLayout.getElementsByClassName('point')
         pageData.map.maps.forEach(element => {
-            
+                
             if(element.uuid == UUID) {
                 route = element.route
                 bluetooth.stopScanning().then(function() {
@@ -136,6 +156,7 @@ function genMap(UUID,RSSI){
                 });
             } 
         });
+
         if(viewMap){
             romoveMap()
         }
@@ -148,7 +169,7 @@ function genMap(UUID,RSSI){
             
             if(route){
                 if(element.route ==  route) {
-                    if(RSSI > -60)
+                    if(RSSI > -70)
                         pageData.roadName = element.name
 
                     let myLabel = new labelModule.Label()
@@ -157,13 +178,14 @@ function genMap(UUID,RSSI){
                     myLabel.className = "point"
                     myLabel.width = 28
                     myLabel.height = 28
+                    myLabel.id = element.name
                     myLabel.marginTop = ""+element.y+"%"
                     myLabel.marginLeft = ""+element.x+"%"
                     myLabel.style.zIndex="-1";
                     myLabel.backgroundColor = "red";
                     myLabelText.text = element.name
                     myLabelText.marginLeft = ""+element.x+"%"
-                    myLabelText.marginTop = ""+element.y+"%"
+                    myLabelText.marginTop = ""+(element.y-4)+"%"
 
 
                     mapLayout.addChild(myLabel)

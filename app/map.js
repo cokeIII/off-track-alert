@@ -8,10 +8,11 @@ var Vibrate = require("nativescript-vibrate").Vibrate;
 var vibrator = new Vibrate();
 const API_URL = "http://192.168.43.50:3001"
 var pageData = new Observable.fromObject({
-    roadName: "testName",
+    roadName: "",
     map:{},
     idCard:"",
     userName:"",
+    RSSI:0,
 })
 let urlMap = API_URL + '/maps'
 let dlg = null
@@ -20,6 +21,8 @@ let mapLayout = null
 let viewMap = null
 let detailMap = null 
 let detailMapBtn = null
+let oldPoinName = null
+let pointWalkMap = null 
 exports.pageLoaded = function(args) {
     page = args.object
     page.bindingContext = pageData
@@ -45,12 +48,14 @@ exports.pageLoaded = function(args) {
     
     bluetooth.enable().then(
         function(enabled) {
-            check_route()
+            time_check_route = setInterval(function(){ 
+                check_route()
+            }, 6000)
             setInterval(function(){ 
             // use Bluetooth features if enabled is true 
             BLE_scan()
             
-            }, 13000)
+            }, 8000)
         }
     )
 
@@ -85,12 +90,30 @@ function BLE_scan(){
     let alert = false
     bluetooth.startScanning({
         serviceUUIDs: [],
-        seconds: 10,
+        seconds: 6,
         onDiscovered: function (peripheral) {
             console.log("Periperhal found with UUID: " + peripheral.UUID)
-            genStatus = walkMap(peripheral.UUID,peripheral.RSSI,)
+            genStatus = walkMap(peripheral.UUID,peripheral.RSSI)
             if(genStatus){
                 alert = true
+                mapLayout = page.getViewById("mapLayout")
+                viewMap = mapLayout.getElementsByClassName('point')
+                viewMap.backgroundColor = "red"
+            } else {
+                if(pageData.roadName !== oldPoinName){
+                    if(oldPoinName) {
+                        oldPoint = page.getViewById(oldPoinName)
+                        pointWalkMap.backgroundColor = "red"
+                    }
+                    
+                }
+
+                if(pageData.roadName) {
+                    oldPoinName = pageData.roadName
+                    pointWalkMap = page.getViewById(pageData.roadName)
+                    if(pointWalkMap)
+                        pointWalkMap.backgroundColor = "green"
+                }  
             }
             
         },
@@ -124,21 +147,24 @@ function countPoint(route) {
     })
     return count
 }
+
 function walkMap(UUID,RSSI) {
     let status = false
-    if(pageData.map.maps){
-        pageData.map.maps.forEach(element => {
     
+    if(pageData.map.maps){
+
+        pageData.map.maps.forEach(element => {
+            
             if(element.uuid == UUID) {
+                
                 if(RSSI > -70)
                     pageData.roadName = element.name
+                
+                status = true   
+                pageData.RSSI = RSSI
+                console.log("FIND  "+RSSI)
+            }
 
-                point = page.getViewById(element.name)
-                if(point) {
-                    point.backgroundColor = "green"
-                }
-                status = true
-            } 
         });
     }
     return status
@@ -147,6 +173,7 @@ function genMap(UUID,RSSI){
     let route = 0
     if(pageData.map.maps){
         viewMap = mapLayout.getElementsByClassName('point')
+        
         pageData.map.maps.forEach(element => {
                 
             if(element.uuid == UUID) {

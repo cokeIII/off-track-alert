@@ -1,22 +1,22 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
 MERGED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:2:1-26:12
 MERGED from [com.rmtheis:tess-two:5.4.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\tess-two-5.4.1.aar\fb5c6664f72602e40ac48a3ebd86482e\AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.support:multidex:1.0.2] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\84ee58fc70dfc0c80216410288609254\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\dddb3d183bc678c089387439469c7379\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\196e3ba5c9ff304a425be5d6026f5c6b\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\8b11b5365f021646e6477735d59f37d5\AndroidManifest.xml:17:1-22:12
-MERGED from [:nativescript-optimized-with-inspector:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\a7f04f67eaf806b79336adc1fed51914\AndroidManifest.xml:2:1-11:12
-MERGED from [:digitaltown_nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\digitaltown_nativescript_card_io.aar\eab234c0cf6845114206a9d32c94f830\AndroidManifest.xml:2:1-9:12
-MERGED from [:nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_card_io.aar\2d720a7aae80d17dae8c22954170c6a7\AndroidManifest.xml:2:1-9:12
-MERGED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:2:1-17:12
-MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:2:1-25:12
-MERGED from [:nativescript_vibrate:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\1f55d1bea8a9d8d8eafdb459632541d0\AndroidManifest.xml:2:1-11:12
-MERGED from [:widgets-release:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\8c48b8f91557465bbcbcdc19bb62daa6\AndroidManifest.xml:2:1-14:12
+MERGED from [:nativescript-optimized-with-inspector:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\b6168c3cff1fcf5a3a09a6c86cc9c035\AndroidManifest.xml:2:1-11:12
+MERGED from [:digitaltown_nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\digitaltown_nativescript_card_io.aar\fb20555d5151fd4ea8d3e96b24c34b41\AndroidManifest.xml:2:1-9:12
+MERGED from [:nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_card_io.aar\3345abef870522bb2eb524799b242f8c\AndroidManifest.xml:2:1-9:12
+MERGED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\c5c335df6f412f652915cc67355d2937\AndroidManifest.xml:2:1-17:12
+MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:2:1-25:12
+MERGED from [:nativescript_vibrate:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\052bdbbad8c922debd652db2b08202fb\AndroidManifest.xml:2:1-11:12
+MERGED from [:widgets-release:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\ddd1d592b0cd5ac1f8b0bea613018eb4\AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\65d1e0adbfe2f3c3b7c9415635d55429\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\42dbbbc331dce56d643875fea8d95ae3\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\7b98bb953ad3956c4e5cb3365ed24170\AndroidManifest.xml:17:1-22:12
@@ -46,55 +46,55 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Coca Cola\.gradle\
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\e2e137a370fd671f3ef93e396f182729\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\6dd52adc46cb998c58bf1d645fd9e295\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\e78c1c2fed3f636837da976ef0c8d5c3\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
 	package
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:3:2-39
-		INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:3:2-39
+		INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:5:2-27
-		INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:5:2-27
+		INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:4:2-25
-		INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:4:2-25
+		INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
 supports-screens
-ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:7:2-11:33
+ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:7:2-11:33
 	android:largeScreens
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:10:3-30
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:10:3-30
 	android:smallScreens
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:8:3-30
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:8:3-30
 	android:normalScreens
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:9:3-31
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:9:3-31
 	android:xlargeScreens
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:11:3-31
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:11:3-31
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:13:2-76
+ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:13:2-76
 	android:name
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:13:19-74
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:13:19-74
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:14:2-77
+ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:14:2-77
 	android:name
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:14:19-75
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:14:19-75
 uses-permission#android.permission.INTERNET
-ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:15:2-63
+ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:15:2-63
 	android:name
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:15:19-61
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:15:19-61
 application
-ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:17:2-39:16
+ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:17:2-39:16
 MERGED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:19:5-24:19
 MERGED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:19:5-24:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\196e3ba5c9ff304a425be5d6026f5c6b\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\196e3ba5c9ff304a425be5d6026f5c6b\AndroidManifest.xml:22:5-20
-MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:12:5-23:19
-MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:12:5-23:19
-MERGED from [:widgets-release:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\8c48b8f91557465bbcbcdc19bb62daa6\AndroidManifest.xml:11:5-12:19
-MERGED from [:widgets-release:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\8c48b8f91557465bbcbcdc19bb62daa6\AndroidManifest.xml:11:5-12:19
+MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:12:5-23:19
+MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:12:5-23:19
+MERGED from [:widgets-release:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\ddd1d592b0cd5ac1f8b0bea613018eb4\AndroidManifest.xml:11:5-12:19
+MERGED from [:widgets-release:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\ddd1d592b0cd5ac1f8b0bea613018eb4\AndroidManifest.xml:11:5-12:19
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\472d18c894f2575fa5697a3642803ea2\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\472d18c894f2575fa5697a3642803ea2\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\823422e2f3113d86c298ad71ec55cce3\AndroidManifest.xml:22:5-23:19
@@ -102,49 +102,49 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Coca Cola\
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\472d18c894f2575fa5697a3642803ea2\AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:21:3-35
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:21:3-35
 	android:icon
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:20:3-32
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:20:3-32
 	android:allowBackup
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:19:3-29
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:19:3-29
 	android:theme
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:22:3-34
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:22:3-34
 	android:name
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:18:3-49
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:18:3-49
 activity#com.tns.NativeScriptActivity
-ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:24:3-37:14
+ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:24:3-37:14
 	android:label
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:27:4-49
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:27:4-49
 	android:configChanges
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:28:4-120
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:28:4-120
 	android:theme
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:29:4-44
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:29:4-44
 	android:name
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:26:4-47
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:26:4-47
 meta-data#SET_THEME_ON_LAUNCH
-ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:31:4-87
+ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:31:4-87
 	android:resource
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:31:50-84
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:31:50-84
 	android:name
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:31:15-49
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:31:15-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:33:4-36:20
+ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:33:4-36:20
 action#android.intent.action.MAIN
-ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:34:5-57
+ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:34:5-57
 	android:name
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:34:13-54
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:34:13-54
 category#android.intent.category.LAUNCHER
-ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:35:5-65
+ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:35:5-65
 	android:name
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:35:15-62
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:35:15-62
 activity#com.tns.ErrorReportActivity
-ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:38:3-57
+ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:38:3-57
 	android:name
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml:38:13-55
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:38:13-55
 uses-sdk
-INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
-INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
 MERGED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:5:5-7:41
 MERGED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:5:5-7:41
 MERGED from [com.rmtheis:tess-two:5.4.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\tess-two-5.4.1.aar\fb5c6664f72602e40ac48a3ebd86482e\AndroidManifest.xml:22:5-24:41
@@ -157,20 +157,20 @@ MERGED from [com.android.support:design:28.0.0] C:\Users\Coca Cola\.gradle\cache
 MERGED from [com.android.support:design:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\196e3ba5c9ff304a425be5d6026f5c6b\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\8b11b5365f021646e6477735d59f37d5\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\8b11b5365f021646e6477735d59f37d5\AndroidManifest.xml:20:5-44
-MERGED from [:nativescript-optimized-with-inspector:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\a7f04f67eaf806b79336adc1fed51914\AndroidManifest.xml:7:5-9:41
-MERGED from [:nativescript-optimized-with-inspector:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\a7f04f67eaf806b79336adc1fed51914\AndroidManifest.xml:7:5-9:41
-MERGED from [:digitaltown_nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\digitaltown_nativescript_card_io.aar\eab234c0cf6845114206a9d32c94f830\AndroidManifest.xml:7:5-47
-MERGED from [:digitaltown_nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\digitaltown_nativescript_card_io.aar\eab234c0cf6845114206a9d32c94f830\AndroidManifest.xml:7:5-47
-MERGED from [:nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_card_io.aar\2d720a7aae80d17dae8c22954170c6a7\AndroidManifest.xml:7:5-47
-MERGED from [:nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_card_io.aar\2d720a7aae80d17dae8c22954170c6a7\AndroidManifest.xml:7:5-47
-MERGED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:7:5-47
-MERGED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:7:5-47
-MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:8:5-47
-MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:8:5-47
-MERGED from [:nativescript_vibrate:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\1f55d1bea8a9d8d8eafdb459632541d0\AndroidManifest.xml:7:5-47
-MERGED from [:nativescript_vibrate:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\1f55d1bea8a9d8d8eafdb459632541d0\AndroidManifest.xml:7:5-47
-MERGED from [:widgets-release:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\8c48b8f91557465bbcbcdc19bb62daa6\AndroidManifest.xml:7:5-9:41
-MERGED from [:widgets-release:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\8c48b8f91557465bbcbcdc19bb62daa6\AndroidManifest.xml:7:5-9:41
+MERGED from [:nativescript-optimized-with-inspector:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\b6168c3cff1fcf5a3a09a6c86cc9c035\AndroidManifest.xml:7:5-9:41
+MERGED from [:nativescript-optimized-with-inspector:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\b6168c3cff1fcf5a3a09a6c86cc9c035\AndroidManifest.xml:7:5-9:41
+MERGED from [:digitaltown_nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\digitaltown_nativescript_card_io.aar\fb20555d5151fd4ea8d3e96b24c34b41\AndroidManifest.xml:7:5-47
+MERGED from [:digitaltown_nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\digitaltown_nativescript_card_io.aar\fb20555d5151fd4ea8d3e96b24c34b41\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_card_io.aar\3345abef870522bb2eb524799b242f8c\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_card_io:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_card_io.aar\3345abef870522bb2eb524799b242f8c\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\c5c335df6f412f652915cc67355d2937\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\c5c335df6f412f652915cc67355d2937\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:8:5-47
+MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:8:5-47
+MERGED from [:nativescript_vibrate:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\052bdbbad8c922debd652db2b08202fb\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_vibrate:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\052bdbbad8c922debd652db2b08202fb\AndroidManifest.xml:7:5-47
+MERGED from [:widgets-release:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\ddd1d592b0cd5ac1f8b0bea613018eb4\AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\ddd1d592b0cd5ac1f8b0bea613018eb4\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\65d1e0adbfe2f3c3b7c9415635d55429\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\65d1e0adbfe2f3c3b7c9415635d55429\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\42dbbbc331dce56d643875fea8d95ae3\AndroidManifest.xml:20:5-44
@@ -229,31 +229,31 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Coca Cola\.gra
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\6dd52adc46cb998c58bf1d645fd9e295\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\e78c1c2fed3f636837da976ef0c8d5c3\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\e78c1c2fed3f636837da976ef0c8d5c3\AndroidManifest.xml:20:5-44
-INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
-INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
-		MERGED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
-		MERGED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
-		MERGED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
-		MERGED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
-		MERGED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.CAMERA
 ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:9:5-65
-MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:10:5-65
-MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:10:5-65
+MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:10:5-65
+MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:10:5-65
 	android:name
 		ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:9:22-62
 uses-permission#android.permission.VIBRATE
 ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:10:5-66
-MERGED from [:nativescript_vibrate:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\1f55d1bea8a9d8d8eafdb459632541d0\AndroidManifest.xml:9:5-66
-MERGED from [:nativescript_vibrate:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\1f55d1bea8a9d8d8eafdb459632541d0\AndroidManifest.xml:9:5-66
+MERGED from [:nativescript_vibrate:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\052bdbbad8c922debd652db2b08202fb\AndroidManifest.xml:9:5-66
+MERGED from [:nativescript_vibrate:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\052bdbbad8c922debd652db2b08202fb\AndroidManifest.xml:9:5-66
 	android:name
 		ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:10:22-63
 uses-feature#android.hardware.camera
@@ -279,38 +279,38 @@ ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transfo
 	android:name
 		ADDED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:23:19-67
 uses-permission#android.permission.BLUETOOTH
-ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:9:5-68
+ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\c5c335df6f412f652915cc67355d2937\AndroidManifest.xml:9:5-68
 	android:name
-		ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:9:22-65
+		ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\c5c335df6f412f652915cc67355d2937\AndroidManifest.xml:9:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:10:5-74
+ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\c5c335df6f412f652915cc67355d2937\AndroidManifest.xml:10:5-74
 	android:name
-		ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:10:22-71
+		ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\c5c335df6f412f652915cc67355d2937\AndroidManifest.xml:10:22-71
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:11:5-81
+ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\c5c335df6f412f652915cc67355d2937\AndroidManifest.xml:11:5-81
 	android:name
-		ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:11:22-78
+		ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\c5c335df6f412f652915cc67355d2937\AndroidManifest.xml:11:22-78
 uses-feature#android.hardware.bluetooth_le
-ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:13:5-15:36
+ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\c5c335df6f412f652915cc67355d2937\AndroidManifest.xml:13:5-15:36
 	android:required
-		ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:15:9-33
+		ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\c5c335df6f412f652915cc67355d2937\AndroidManifest.xml:15:9-33
 	android:name
-		ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\3219115d9f7c3863898aeff1c445ac8f\AndroidManifest.xml:14:9-53
+		ADDED from [:nativescript_bluetooth:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\c5c335df6f412f652915cc67355d2937\AndroidManifest.xml:14:9-53
 provider#android.support.v4.content.FileProvider
-ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:13:9-22:20
+ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:13:9-22:20
 	android:grantUriPermissions
-		ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:17:13-47
+		ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:17:13-47
 	android:authorities
-		ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:15:13-60
+		ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:15:13-60
 	android:exported
-		ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:16:13-37
+		ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:16:13-37
 	android:name
-		ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:14:13-67
+		ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:14:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:18:13-21:52
+ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:18:13-21:52
 	android:resource
-		ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:20:17-55
+		ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:20:17-55
 	tools:replace
-		ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:21:17-49
+		ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:21:17-49
 	android:name
-		ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\6c002fc139270b3b6cd08a77b66cf227\AndroidManifest.xml:19:17-67
+		ADDED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:19:17-67

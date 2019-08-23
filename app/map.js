@@ -3,6 +3,7 @@ var Observable = require("data/observable")
 var bluetooth = require("nativescript-bluetooth")
 const appSettings = require("application-settings")
 const labelModule = require("tns-core-modules/ui/label")
+const timerModule = require("tns-core-modules/timer");
 require("nativescript-dom");
 var Vibrate = require("nativescript-vibrate").Vibrate;
 var vibrator = new Vibrate();
@@ -48,12 +49,16 @@ exports.pageLoaded = function(args) {
     
     bluetooth.enable().then(
         function(enabled) {
-            time_check_route = setInterval(function(){ 
-                check_route()
-            }, 6000)
-            setInterval(function(){ 
+            
+            // let time_check_route = timerModule.setInterval(function(){ 
+                // if(check_route())
+                // timerModule.clearInterval(time_check_route);
+            // }, 6000)
+            check_route()
+            cooldown()
+            timerModule.setInterval(function(){ 
             // use Bluetooth features if enabled is true 
-            BLE_scan()
+                BLE_scan()
             
             }, 8000)
         }
@@ -71,16 +76,18 @@ function romoveMap() {
     }
 }
 function check_route() {
+    let check_status = null
     bluetooth.startScanning({
         serviceUUIDs: [],
         seconds: 5,
         onDiscovered: function (peripheral) {
             console.log("Periperhal found with UUID: " + peripheral.UUID)
-            console.log(genMap(peripheral.UUID,peripheral.RSSI,))            
+            console.log(check_status=genMap(peripheral.UUID,peripheral.RSSI))            
         },
         skipPermissionCheck: false,
     }).then(function() {
         console.log("scanning complete")
+        return check_status 
     }, function (err) {
         console.log("error while scanning: " + err)
     })
@@ -103,7 +110,8 @@ function BLE_scan(){
                 if(pageData.roadName !== oldPoinName){
                     if(oldPoinName) {
                         oldPoint = page.getViewById(oldPoinName)
-                        pointWalkMap.backgroundColor = "red"
+                        if(oldPoint)
+                            oldPoint.backgroundColor = "red"
                     }
                     
                 }
@@ -157,14 +165,13 @@ function walkMap(UUID,RSSI) {
             
             if(element.uuid == UUID) {
                 
-                if(RSSI > -70)
+                if(RSSI > -80)
                     pageData.roadName = element.name
                 
                 status = true   
                 pageData.RSSI = RSSI
                 console.log("FIND  "+RSSI)
             }
-
         });
     }
     return status
@@ -261,3 +268,19 @@ exports.showDetailMap = function(){
 
 exports.noop = () => {
 }
+function refreshList(args) {
+ 
+    // Get reference to the PullToRefresh component;
+    var pullRefresh = args.object;
+ 
+    // Do work here... and when done call set refreshing property to false to stop the refreshing
+    loadItems().then((resp) => {
+        // ONLY USING A TIMEOUT TO SIMULATE/SHOW OFF THE REFRESHING
+        setTimeout(() => {
+            pullRefresh.refreshing = false;
+        }, 1000);
+    }, (err) => {
+        pullRefresh.refreshing = false;
+    });
+}
+exports.refreshList = refreshList;

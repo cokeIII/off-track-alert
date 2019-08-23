@@ -1,1 +1,1 @@
-D:\project\OFF-TRACK ALERT SYSTEM\platforms\android\app/src/main/java
+D:\project\off-track-alert-master_R\platforms\android\app/src/main/java

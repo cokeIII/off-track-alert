@@ -1,26 +1,26 @@
 {
 	"digitaltown-nativescript-card-io": {
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\digitaltown-nativescript-card-io\\platforms\\android\\digitaltown_nativescript_card_io.aar": "e278086e8bd8bdbc5d935ee90a8096a2738e3ad3",
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\digitaltown-nativescript-card-io\\platforms\\android\\include.gradle": "65ecbb1e7fc2171612573cbab15a907dbf70f9b7",
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\digitaltown-nativescript-card-io\\platforms\\android\\nativescript_card_io.aar": "3575f6e987fffbc3a2687fd9a30a99eb59cfa4a7",
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\digitaltown-nativescript-card-io\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
+		"D:\\project\\off-track-alert-master_R\\node_modules\\digitaltown-nativescript-card-io\\platforms\\android\\digitaltown_nativescript_card_io.aar": "e278086e8bd8bdbc5d935ee90a8096a2738e3ad3",
+		"D:\\project\\off-track-alert-master_R\\node_modules\\digitaltown-nativescript-card-io\\platforms\\android\\include.gradle": "e7d143cd9e881cfec5fae1473e7cf076642af7f8",
+		"D:\\project\\off-track-alert-master_R\\node_modules\\digitaltown-nativescript-card-io\\platforms\\android\\nativescript_card_io.aar": "3575f6e987fffbc3a2687fd9a30a99eb59cfa4a7",
+		"D:\\project\\off-track-alert-master_R\\node_modules\\digitaltown-nativescript-card-io\\platforms\\android\\README.md": "0bc0739d397c2102751ff1350bd38db7128a03f2"
 	},
 	"nativescript-bluetooth": {
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-bluetooth\\platforms\\android\\AndroidManifest.xml": "f59c6776083721a3c2da7f9ecc73a524ac07e41d",
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-bluetooth\\platforms\\android\\nativescript_bluetooth.aar": "fbc02a7ccc3ef83bae0bbdba12e5f7ee3d54b90a"
+		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-bluetooth\\platforms\\android\\AndroidManifest.xml": "20f5d245b54d495f594559e02c5d63e3acd5d8a6",
+		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-bluetooth\\platforms\\android\\nativescript_bluetooth.aar": "fbc02a7ccc3ef83bae0bbdba12e5f7ee3d54b90a"
 	},
 	"nativescript-camera": {
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-camera\\platforms\\android\\nativescript_camera.aar": "076643dd1be5b20235184a9c65703fa02a930b9b"
+		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-camera\\platforms\\android\\nativescript_camera.aar": "076643dd1be5b20235184a9c65703fa02a930b9b"
 	},
 	"nativescript-ocr": {
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-ocr\\platforms\\android\\include.gradle": "17f0147837de89b4914f642c47ad879b19fcc34b"
+		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-ocr\\platforms\\android\\include.gradle": "8ab710bf7210ea8ad86395fa5cc96a64d395dbaa"
 	},
 	"tns-core-modules-widgets": {
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\tns-core-modules-widgets\\platforms\\android\\widgets-release.aar": "85168be13bc1b546c0f1d53f46bb892118ba3d9f"
+		"D:\\project\\off-track-alert-master_R\\node_modules\\tns-core-modules-widgets\\platforms\\android\\widgets-release.aar": "85168be13bc1b546c0f1d53f46bb892118ba3d9f"
 	},
 	"nativescript-vibrate": {
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-vibrate\\platforms\\android\\include.gradle": "06e7e1be49eb6d614094596003280aa7eea789f3",
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-vibrate\\platforms\\android\\nativescript_vibrate.aar": "31bc4bfd8ba4c2caa17b12b63f51bed004caa1d1",
-		"D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-vibrate\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
+		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-vibrate\\platforms\\android\\include.gradle": "e8488263397de505526ed9d14e684bf4fc6a5a63",
+		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-vibrate\\platforms\\android\\README.md": "0bc0739d397c2102751ff1350bd38db7128a03f2",
+		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-vibrate\\platforms\\android\\nativescript_vibrate.aar": "31bc4bfd8ba4c2caa17b12b63f51bed004caa1d1"
 	}
 }

@@ -6,6 +6,7 @@
     "nativescript-dom": true,
     "nativescript-ocr": true,
     "nativescript-orientation": true,
+    "nativescript-pulltorefresh": true,
     "nativescript-sound": true,
     "nativescript-theme-core": true,
     "nativescript-vibrate": true,

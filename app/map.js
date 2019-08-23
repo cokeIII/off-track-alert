@@ -7,13 +7,15 @@ const timerModule = require("tns-core-modules/timer");
 require("nativescript-dom");
 var Vibrate = require("nativescript-vibrate").Vibrate;
 var vibrator = new Vibrate();
+const frameModule = require("ui/frame");
+//192.168.43.50
 const API_URL = "http://192.168.43.50:3001"
 var pageData = new Observable.fromObject({
     roadName: "",
     map:{},
     idCard:"",
+    rssi:"",
     userName:"",
-    RSSI:0,
 })
 let urlMap = API_URL + '/maps'
 let dlg = null
@@ -24,49 +26,63 @@ let detailMap = null
 let detailMapBtn = null
 let oldPoinName = null
 let pointWalkMap = null 
+let time_loop  =  null
+let arrMaps = null
 exports.pageLoaded = function(args) {
     page = args.object
     page.bindingContext = pageData
     orientation.setOrientation("portrait")
     dlg = page.getViewById('user-data')
     dlgAlert = page.getViewById('user-alert')
+    dlgCheckdata = page.getViewById('checkdata')
     detailMap = page.getViewById('detailMap')
     detailMapBtn = page.getViewById('detailMapBtn')
     romoveMap()
-
+    const arrayToObject = (array) =>
+    array.reduce((obj, item) => {
+        obj[item.uuid] = item
+        return obj
+    }, {})
+    
     if(appSettings.getString("maps")){
-        pageData.map = JSON.parse(appSettings.getString("maps"))
-        // console.log("Data seting"+pageData.map)
+        arrMaps = JSON.parse(appSettings.getString("maps"))
+        pageData.map = arrayToObject(arrMaps.maps)
+    } else {
+        dlgCheckdata.style.visibility = 'visible'
     }
     fetch(urlMap).then(r => r.json())
     .then(jsonData => {
+      arrMaps = jsonData
       appSettings.setString("maps", JSON.stringify(jsonData))
-      console.log(jsonData)
+      jsonData = arrayToObject(jsonData.maps)
       pageData.map = jsonData
     }).catch(e => {
       console.log('***fetch error***')
     })
-    
     bluetooth.enable().then(
         function(enabled) {
             
-            // let time_check_route = timerModule.setInterval(function(){ 
-                // if(check_route())
-                // timerModule.clearInterval(time_check_route);
-            // }, 6000)
-            check_route()
-            cooldown()
-            timerModule.setInterval(function(){ 
-            // use Bluetooth features if enabled is true 
-                BLE_scan()
-            
-            }, 8000)
+            check_route(function(cb){
+                if(cb) {
+                    dlgCheckdata.style.visibility = 'collapse'
+                    time_loop = timerModule.setInterval(function(){ 
+                        console.log(time_loop)
+                    // use Bluetooth features if enabled is true 
+                    bluetooth.stopScanning().then(function() {
+                        BLE_scan()
+                    })
+                    }, 8000) 
+                } else {
+                    dlgCheckdata.style.visibility = 'visible'
+                }
+            })
         }
-    )
-
+    )    
 }
-async function cooldown() {
-    await sleep(3000)
+exports.pageUnloaded = () =>{
+    console.log("pageUnloaded")
+    if(time_loop)
+        timerModule.clearInterval(time_loop);
 }
 function romoveMap() {
     mapLayout = page.getViewById("mapLayout")
@@ -75,7 +91,7 @@ function romoveMap() {
         mapLayout.removeChild(viewMap[i])
     }
 }
-function check_route() {
+function check_route(cb) {
     let check_status = null
     bluetooth.startScanning({
         serviceUUIDs: [],
@@ -87,7 +103,7 @@ function check_route() {
         skipPermissionCheck: false,
     }).then(function() {
         console.log("scanning complete")
-        return check_status 
+        cb(check_status ) 
     }, function (err) {
         console.log("error while scanning: " + err)
     })
@@ -145,8 +161,7 @@ function alertUser(){
 }
 function countPoint(route) {
     let count = 0
-    pageData.map.maps.forEach(element => {
-            
+    arrMaps.maps.forEach(element => {   
         if(route){
             if(element.route ==  route) {
                 count++
@@ -158,38 +173,31 @@ function countPoint(route) {
 
 function walkMap(UUID,RSSI) {
     let status = false
-    
-    if(pageData.map.maps){
-
-        pageData.map.maps.forEach(element => {
-            
-            if(element.uuid == UUID) {
+    if(Object.keys(pageData.map).length !== 0){
+        if(pageData.map[UUID] !== undefined) {
+            pageData.rssi = RSSI
+            if(RSSI > -80)
+                pageData.roadName = pageData.map[UUID].name
                 
-                if(RSSI > -80)
-                    pageData.roadName = element.name
-                
-                status = true   
-                pageData.RSSI = RSSI
-                console.log("FIND  "+RSSI)
-            }
-        });
+            status = true  
+            console.log("FIND  "+RSSI)
+        }
     }
     return status
 }
 function genMap(UUID,RSSI){
     let route = 0
-    if(pageData.map.maps){
+    // console.log(pageData.map)
+    if(Object.keys(pageData.map).length !== 0){
+
         viewMap = mapLayout.getElementsByClassName('point')
-        
-        pageData.map.maps.forEach(element => {
-                
-            if(element.uuid == UUID) {
-                route = element.route
-                bluetooth.stopScanning().then(function() {
-                    console.log("scanning stopped");
-                });
-            } 
-        });
+        // console.log(pageData.map)
+        if(pageData.map[UUID] != undefined){
+            route=pageData.map[UUID].route
+            bluetooth.stopScanning().then(function() {
+                console.log("scanning stopped");
+            });
+        }
 
         if(viewMap){
             romoveMap()
@@ -198,8 +206,8 @@ function genMap(UUID,RSSI){
         mapLayout.height = countPoint(route)>8?""+(((countPoint(route)-8)*10)+100)+"%":"100%"
         console.log(mapLayout.height)
         mapLayout.backgroundColor = "blue"
-
-        pageData.map.maps.forEach(element => {
+        
+        arrMaps.maps.forEach(element => {
             
             if(route){
                 if(element.route ==  route) {
@@ -268,19 +276,7 @@ exports.showDetailMap = function(){
 
 exports.noop = () => {
 }
-function refreshList(args) {
- 
-    // Get reference to the PullToRefresh component;
-    var pullRefresh = args.object;
- 
-    // Do work here... and when done call set refreshing property to false to stop the refreshing
-    loadItems().then((resp) => {
-        // ONLY USING A TIMEOUT TO SIMULATE/SHOW OFF THE REFRESHING
-        setTimeout(() => {
-            pullRefresh.refreshing = false;
-        }, 1000);
-    }, (err) => {
-        pullRefresh.refreshing = false;
-    });
+exports.reMap=()=>{
+    console.log("reMap")
+    frameModule.topmost().navigate("map");
 }
-exports.refreshList = refreshList;

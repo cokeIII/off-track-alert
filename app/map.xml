@@ -1,12 +1,13 @@
-<Page loaded="pageLoaded" id="Page">
+<Page loaded="pageLoaded" unloaded="pageUnloaded" id="Page">
   <ActionBar title="My App" class="action-bar"></ActionBar>
   <!-- Your UI components go here -->
+  
   <DockLayout  width="100%" height="100%" class="fas">
     <AbsoluteLayout dock="top" width="100%" height="90%" class="map">
     <ScrollView width="100%"  height="100%">
-        <AbsoluteLayout  width="100%"  height="100%" id="mapLayout">
+          <AbsoluteLayout  width="100%"  height="100%" id="mapLayout">
 
-        </AbsoluteLayout>
+          </AbsoluteLayout>
     </ScrollView>
       <StackLayout width="80%" height="22%" class="detail-map" id="detailMap">
         <Label text="__" width="24" height="24" marginLeft="90%" tap="hideDetailMap"></Label>
@@ -17,7 +18,7 @@
         <StackLayout class="hr-light m-t-10" width="90%"></StackLayout>
         <StackLayout width="100%" orientation="horizontal">
           <Label class="user-RSSI" text="&#xf09e;"></Label>
-          <Label class="user-number" text="{{ RSSI }}"></Label>
+          <Label text="{{ rssi }}" class="rssis"></Label>
           <Label class="user-road" text="&#xf018;"></Label>
           <Label class="road-total" text="3.0/6.0 km"></Label>
         </StackLayout>
@@ -25,7 +26,7 @@
       <StackLayout width="24" height="24" marginTop="10%" marginLeft="80%" class="detailMapBtn" id="detailMapBtn" tap="showDetailMap">
         <Label text="__"></Label>
       </StackLayout>
-      <StackLayout width="40" height="40" class="location" tap="ReMap">
+      <StackLayout width="40" height="40" class="location" tap="noop">
         <Label text="&#xf05b;"></Label>
       </StackLayout>
 
@@ -70,6 +71,25 @@
         </FlexboxLayout>
       </StackLayout> 
       <!-- dlg Alert-->
+      <!-- dlg checkdata-->
+      <StackLayout class="lg-dialog" tap="noop" id="checkdata">
+        <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
+            <FlexboxLayout orientation="horizontal" class="title">
+                <label text="Alert" class="text"/>
+                <!-- <Button  tap="hideDialog" text="&#xf00d;" class="close"/> -->
+            </FlexboxLayout>
+            <StackLayout class="content">
+              <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
+                <Label text="wait data..." class="txt-s"></Label>
+              </StackLayout>
+            </StackLayout>
+            <FlexboxLayout class="actions">
+                <Button  tap="reMap" text="refresh " class="action"/>
+            </FlexboxLayout>
+        </FlexboxLayout>
+      </StackLayout> 
+      <!-- dlg checkdata-->
+
     </AbsoluteLayout>
     <!-- <StackLayout width="100%" height="10%"> -->
       <FlexboxLayout  width="100%" height="8%" class="map-menu">
@@ -81,5 +101,4 @@
 
   </DockLayout>
   <!--REMOVE_CARD-->
-
 </Page>

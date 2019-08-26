@@ -24,12 +24,12 @@
         "directory": "..\\..\\node_modules\\nativescript-orientation"
     },
     {
-        "name": "nativescript-pulltorefresh",
-        "directory": "..\\..\\node_modules\\nativescript-pulltorefresh"
-    },
-    {
         "name": "nativescript-sound",
         "directory": "..\\..\\node_modules\\nativescript-sound"
+    },
+    {
+        "name": "nativescript-telephony",
+        "directory": "..\\..\\node_modules\\nativescript-telephony"
     },
     {
         "name": "nativescript-theme-core",

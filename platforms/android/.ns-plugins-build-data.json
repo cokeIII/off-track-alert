@@ -22,5 +22,8 @@
 		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-vibrate\\platforms\\android\\include.gradle": "e8488263397de505526ed9d14e684bf4fc6a5a63",
 		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-vibrate\\platforms\\android\\README.md": "0bc0739d397c2102751ff1350bd38db7128a03f2",
 		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-vibrate\\platforms\\android\\nativescript_vibrate.aar": "31bc4bfd8ba4c2caa17b12b63f51bed004caa1d1"
+	},
+	"nativescript-telephony": {
+		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-telephony\\platforms\\android\\AndroidManifest.xml": "19bc7f757ef5ea28b0f7503973cd61b1a16cfbb5"
 	}
 }

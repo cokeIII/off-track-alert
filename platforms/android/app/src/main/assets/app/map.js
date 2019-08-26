@@ -3,12 +3,13 @@ var Observable = require("data/observable")
 var bluetooth = require("nativescript-bluetooth")
 const appSettings = require("application-settings")
 const labelModule = require("tns-core-modules/ui/label")
-const timerModule = require("tns-core-modules/timer");
-require("nativescript-dom");
-var Vibrate = require("nativescript-vibrate").Vibrate;
-var vibrator = new Vibrate();
-const frameModule = require("ui/frame");
+const timerModule = require("tns-core-modules/timer")
+require("nativescript-dom")
+var Vibrate = require("nativescript-vibrate").Vibrate
+var vibrator = new Vibrate()
+const frameModule = require("ui/frame")
 //192.168.43.50
+//10.60.4.217
 const API_URL = "http://192.168.43.50:3001"
 var pageData = new Observable.fromObject({
     roadName: "",
@@ -16,6 +17,7 @@ var pageData = new Observable.fromObject({
     idCard:"",
     rssi:"",
     userName:"",
+    phoneNumber:"",
 })
 let urlMap = API_URL + '/maps'
 let dlg = null
@@ -59,6 +61,7 @@ exports.pageLoaded = function(args) {
     }).catch(e => {
       console.log('***fetch error***')
     })
+
     bluetooth.enable().then(
         function(enabled) {
             
@@ -187,11 +190,9 @@ function walkMap(UUID,RSSI) {
 }
 function genMap(UUID,RSSI){
     let route = 0
-    // console.log(pageData.map)
     if(Object.keys(pageData.map).length !== 0){
 
         viewMap = mapLayout.getElementsByClassName('point')
-        // console.log(pageData.map)
         if(pageData.map[UUID] != undefined){
             route=pageData.map[UUID].route
             bluetooth.stopScanning().then(function() {
@@ -229,7 +230,6 @@ function genMap(UUID,RSSI){
                     myLabelText.marginLeft = ""+element.x+"%"
                     myLabelText.marginTop = ""+(element.y-4)+"%"
 
-
                     mapLayout.addChild(myLabel)
                     mapLayout.addChild(myLabelText)
                     console.log("+++genBeacon+++"+element.x+","+element.y) 
@@ -246,6 +246,7 @@ exports.user = function() {
         let jsonData = JSON.parse(appSettings.getString("userData"))
         pageData.idCard = jsonData.idCard
         pageData.userName = jsonData.userName
+        pageData.phoneNumber = jsonData.phoneNumber
     }
     dlg.style.visibility = 'visible'
 }
@@ -254,6 +255,7 @@ exports.setUser = function() {
     let svaeData = {}
     svaeData.idCard = pageData.idCard
     svaeData.userName = pageData.userName
+    svaeData.phoneNumber = pageData.phoneNumber
     appSettings.setString("userData", JSON.stringify(svaeData))
     dlgHide()
 }

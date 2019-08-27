@@ -11,6 +11,10 @@
       <Label text="Name" class="txt-s"></Label>
       <TextField hint="" class="txt-f" text="{{ userName }}"/>
     </StackLayout>
+    <StackLayout width="100%" orientation="horizontal" class="m-t-10">
+      <Label text="Tel" class="txt-s"></Label>
+      <TextField hint="" class="txt-f" text="{{ phoneNumber }}" keyboardType="number"/>
+    </StackLayout>
     <button text="&#xf030; Scan Card" class="m-t-10p btn-scan" tap="takeCamera"></button>
     <button text="Submit" class="m-t-10p btn-submit" tap="register"></button>
   </StackLayout>

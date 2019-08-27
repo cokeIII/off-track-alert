@@ -18,6 +18,9 @@ D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tn
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-sound\sound-common.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-sound\sound.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-telephony\telephony.js
+D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-toast\hooks\before-livesync\nativescript-angular-sync.js
+D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-toast\lib\postinstall.js
+D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-toast\toast.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-vibrate\vibrate.common.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-vibrate\vibrate.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\application\application-common.js

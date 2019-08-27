@@ -8,6 +8,8 @@ require("nativescript-dom")
 var Vibrate = require("nativescript-vibrate").Vibrate
 var vibrator = new Vibrate()
 const frameModule = require("ui/frame")
+var Toast = require('nativescript-toast')
+
 //192.168.43.50
 //10.60.4.217
 const API_URL = "http://192.168.43.50:3001"
@@ -33,6 +35,7 @@ let arrMaps = null
 exports.pageLoaded = function(args) {
     page = args.object
     page.bindingContext = pageData
+    
     orientation.setOrientation("portrait")
     dlg = page.getViewById('user-data')
     dlgAlert = page.getViewById('user-alert')

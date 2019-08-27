@@ -46,6 +46,10 @@
                 <Label text="Name" class="txt-s"></Label>
                 <TextField hint="" class="txt-f" text="{{ userName }}"/>
               </StackLayout>
+              <StackLayout width="100%" orientation="horizontal" class="m-t-10">
+                <Label text="Name" class="txt-s"></Label>
+                <TextField hint="" class="txt-f" text="{{ phoneNumber }}" keyboardType="number"/>
+              </StackLayout>
             </StackLayout>
             <FlexboxLayout class="actions">
                 <Button  tap="setUser" text="Edit" class="action"/>

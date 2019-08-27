@@ -9,6 +9,7 @@
     "nativescript-sound": true,
     "nativescript-telephony": true,
     "nativescript-theme-core": true,
+    "nativescript-toast": true,
     "nativescript-vibrate": true,
     "tns-core-modules": true,
     "@google-cloud/promisify": true,

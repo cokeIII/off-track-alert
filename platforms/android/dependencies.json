@@ -36,6 +36,10 @@
         "directory": "..\\..\\node_modules\\nativescript-theme-core"
     },
     {
+        "name": "nativescript-toast",
+        "directory": "..\\..\\node_modules\\nativescript-toast"
+    },
+    {
         "name": "nativescript-vibrate",
         "directory": "..\\..\\node_modules\\nativescript-vibrate"
     },

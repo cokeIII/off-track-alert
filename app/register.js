@@ -15,7 +15,7 @@ var pageData = new Observable.fromObject({
     deviceId:"",
     phoneNumber:"",
 })
-const API_URL = "http://192.168.43.50:3001"
+const API_URL = "http://10.60.6.42:3001"
 
 exports.pageLoaded = function(args) {
     if(appSettings.getString("userData")){
@@ -124,8 +124,7 @@ exports.register =  function() {
 async function quickstart(imgSrc) {
     console.log("quickstart")
     // Imports the Google Cloud client library
-    
-  
+
     // Creates a client
     const client = new vision.ImageAnnotatorClient();
   

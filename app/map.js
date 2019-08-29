@@ -12,7 +12,7 @@ var Toast = require('nativescript-toast')
 
 //192.168.43.50
 //10.60.4.217
-const API_URL = "http://192.168.43.50:3001"
+const API_URL = "http://10.60.6.42:3001"
 var pageData = new Observable.fromObject({
     roadName: "",
     map:{},
@@ -20,6 +20,7 @@ var pageData = new Observable.fromObject({
     rssi:"",
     userName:"",
     phoneNumber:"",
+    deviceId:"",
 })
 let urlMap = API_URL + '/maps'
 let dlg = null
@@ -64,6 +65,21 @@ exports.pageLoaded = function(args) {
     }).catch(e => {
       console.log('***fetch error***')
     })
+    let idCardLength = []
+    let userNameLength = []
+    let phoneNumberLength = []
+
+    let idCard = page.getViewById('idCard')
+    let userName = page.getViewById('userName')
+    let phoneNumber = page.getViewById('phoneNumber')
+
+    idCardLength[0] = new android.text.InputFilter.LengthFilter(13)
+    userNameLength[0] = new android.text.InputFilter.LengthFilter(30)
+    phoneNumberLength[0] = new android.text.InputFilter.LengthFilter(10)
+
+    idCard.android.setFilters(idCardLength)
+    userName.android.setFilters(userNameLength)
+    phoneNumber.android.setFilters(phoneNumberLength)
 
     bluetooth.enable().then(
         function(enabled) {
@@ -72,10 +88,9 @@ exports.pageLoaded = function(args) {
                 if(cb) {
                     dlgCheckdata.style.visibility = 'collapse'
                     time_loop = timerModule.setInterval(function(){ 
-                        console.log(time_loop)
                     // use Bluetooth features if enabled is true 
                     bluetooth.stopScanning().then(function() {
-                        BLE_scan()
+                        //BLE_scan()
                     })
                     }, 8000) 
                 } else {
@@ -183,8 +198,7 @@ function walkMap(UUID,RSSI) {
         if(pageData.map[UUID] !== undefined) {
             pageData.rssi = RSSI
             if(RSSI > -80)
-                pageData.roadName = pageData.map[UUID].name
-                
+                pageData.roadName = pageData.map[UUID].name     
             status = true  
             console.log("FIND  "+RSSI)
         }
@@ -250,16 +264,36 @@ exports.user = function() {
         pageData.idCard = jsonData.idCard
         pageData.userName = jsonData.userName
         pageData.phoneNumber = jsonData.phoneNumber
+        pageData.deviceId = jsonData.deviceId
+        oldIdcard = jsonData.deviceId
     }
     dlg.style.visibility = 'visible'
 }
 
 exports.setUser = function() {
-    let svaeData = {}
-    svaeData.idCard = pageData.idCard
-    svaeData.userName = pageData.userName
-    svaeData.phoneNumber = pageData.phoneNumber
-    appSettings.setString("userData", JSON.stringify(svaeData))
+    let saveData = {}
+    saveData.idCard = pageData.idCard
+    saveData.userName = pageData.userName
+    saveData.phoneNumber = pageData.phoneNumber
+    saveData.deviceId = pageData.deviceId
+    appSettings.setString("userData", JSON.stringify(saveData))
+    fetch(API_URL+"/updateUser", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(saveData)
+    }).then((r) => r.json())
+    .then((response) => {
+        if(response.status == "Success"){
+            console.log("Success")
+            Toast.makeText("update success","long").show()
+        }
+        else if(response.status == "Fail"){
+            Toast.makeText("update fail").show()
+        }
+    }).catch((e) => {
+        console.log('***fetch error***')
+    });
+
     dlgHide()
 }
 exports.hideDialog = function() {

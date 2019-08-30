@@ -20,8 +20,8 @@ const API_URL = "http://10.60.6.42:3001"
 exports.pageLoaded = function(args) {
     if(appSettings.getString("userData")){
         let userData = JSON.parse(appSettings.getString("userData"))
-        //if(userData.phoneNumber != "")
-         //frameModule.topmost().navigate("map");
+        if(userData.phoneNumber != "")
+         frameModule.topmost().navigate("map");
     }   
     page = args.object
     page.bindingContext = pageData

@@ -12,7 +12,7 @@ var Toast = require('nativescript-toast')
 let logData = {}
 //192.168.43.50
 //10.60.4.217
-const API_URL = "http://10.60.6.42:3001"
+const API_URL = "http://10.60.4.41:3001"
 var pageData = new Observable.fromObject({
     roadName: "",
     map:{},
@@ -23,6 +23,7 @@ var pageData = new Observable.fromObject({
     deviceId:"",
     status:"",
     uuid:"",
+    countUser:[],
 })
 let urlMap = API_URL + '/maps'
 let dlg = null
@@ -34,7 +35,9 @@ let detailMapBtn = null
 let oldPoinName = null
 let pointWalkMap = null 
 let time_loop  =  null
+let time_loop_log  =  null
 let arrMaps = null
+let dlgcountUser = null
 exports.pageLoaded = function(args) {
     page = args.object
     page.bindingContext = pageData
@@ -45,6 +48,8 @@ exports.pageLoaded = function(args) {
     dlgCheckdata = page.getViewById('checkdata')
     detailMap = page.getViewById('detailMap')
     detailMapBtn = page.getViewById('detailMapBtn')
+    dlgcountUser = page.getViewById('countUser')
+
     romoveMap()
     const arrayToObject = (array) =>
     array.reduce((obj, item) => {
@@ -58,6 +63,7 @@ exports.pageLoaded = function(args) {
         pageData.phoneNumber = jsonData.phoneNumber
         pageData.deviceId = jsonData.deviceId
     }
+    logData.deviceId = pageData.deviceId
 
     if(appSettings.getString("maps")){
         arrMaps = JSON.parse(appSettings.getString("maps"))
@@ -92,16 +98,19 @@ exports.pageLoaded = function(args) {
 
     bluetooth.enable().then(
         function(enabled) {
-            
             check_route(function(cb){
                 if(cb) {
                     dlgCheckdata.style.visibility = 'collapse'
                     time_loop = timerModule.setInterval(function(){ 
                     // use Bluetooth features if enabled is true 
                     bluetooth.stopScanning().then(function() {
-                        BLE_scan()
+                        //BLE_scan()
                     })
                     }, 8000) 
+                    updateLog(logData)
+                    time_loop_log = timerModule.setInterval(function(){ 
+                        //updateLog(logData)
+                    }, 60000) 
                 } else {
                     dlgCheckdata.style.visibility = 'visible'
                 }
@@ -113,6 +122,8 @@ exports.pageUnloaded = () =>{
     console.log("pageUnloaded")
     if(time_loop)
         timerModule.clearInterval(time_loop);
+    if(time_loop_log)
+        timerModule.clearInterval(time_loop_log);
 }
 function romoveMap() {
     mapLayout = page.getViewById("mapLayout")
@@ -170,9 +181,7 @@ function BLE_scan(){
                 }  
                 pageData.status = "traveling"
                 logData.uuid = pageData.uuid
-                logData.deviceId = pageData.deviceId
                 logData.status = pageData.status
-                 updateLog(logData)
             }
             
         },
@@ -346,9 +355,22 @@ exports.setUser = function() {
 
     dlgHide()
 }
+exports.userCount = () => {
+    console.log("userCount")
+    dlgcountUser.style.visibility = 'visible'
+    fetch(API_URL+"/getCountUser").then((r) => r.json())
+    .then((response) => {
+        pageData.countUser = response.userData
+        console.log(response)
+
+    }).catch((e) => {
+        console.log('***fetch error***')
+    });
+}
 exports.hideDialog = function() {
     dlg.style.visibility = 'collapse'
     dlgAlert.style.visibility = 'collapse'
+    dlgcountUser.style.visibility = 'collapse'
 }
 function dlgHide() {
     dlg.style.visibility = 'collapse'

@@ -11,6 +11,10 @@ D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tn
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-camera\camera.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-dom\dom.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-globalevents\globalevents.js
+D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-loading-indicator-new\loading-indicator.js
+D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-loading-indicator-new\src\android\progress-dialog.js
+D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-loading-indicator-new\src\interfaces.js
+D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-loading-indicator-new\src\ios\mbprogress-hud.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-ocr\ocr.common.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-ocr\ocr.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-orientation\orientation.js
@@ -176,3 +180,4 @@ D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tn
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\utils\utils.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\xhr\xhr.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\xml\xml.js
+D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\util.js

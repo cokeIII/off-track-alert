@@ -8,11 +8,13 @@ require("nativescript-dom")
 var Vibrate = require("nativescript-vibrate").Vibrate
 var vibrator = new Vibrate()
 const frameModule = require("ui/frame")
+
+const util = require('./util')
 var Toast = require('nativescript-toast')
 let logData = {}
 //192.168.43.50
 //10.60.4.217
-const API_URL = "http://10.60.4.41:3001"
+const API_URL = "http://192.168.43.50:3001"
 var pageData = new Observable.fromObject({
     roadName: "",
     map:{},
@@ -23,7 +25,8 @@ var pageData = new Observable.fromObject({
     deviceId:"",
     status:"",
     uuid:"",
-    countUser:[],
+    countUser:[{}],
+    route:0,
 })
 let urlMap = API_URL + '/maps'
 let dlg = null
@@ -39,6 +42,7 @@ let time_loop_log  =  null
 let arrMaps = null
 let dlgcountUser = null
 exports.pageLoaded = function(args) {
+
     page = args.object
     page.bindingContext = pageData
     
@@ -84,6 +88,9 @@ exports.pageLoaded = function(args) {
     let userNameLength = []
     let phoneNumberLength = []
 
+    // for(let i = 0;i<50;i++)
+    //     pageData.countUser.push({userName:"temp"})
+
     let idCard = page.getViewById('idCard')
     let userName = page.getViewById('userName')
     let phoneNumber = page.getViewById('phoneNumber')
@@ -95,16 +102,18 @@ exports.pageLoaded = function(args) {
     idCard.android.setFilters(idCardLength)
     userName.android.setFilters(userNameLength)
     phoneNumber.android.setFilters(phoneNumberLength)
-
+    
     bluetooth.enable().then(
         function(enabled) {
+            util.loadingHide()
             check_route(function(cb){
+                pageData.route = cb
                 if(cb) {
                     dlgCheckdata.style.visibility = 'collapse'
                     time_loop = timerModule.setInterval(function(){ 
                     // use Bluetooth features if enabled is true 
                     bluetooth.stopScanning().then(function() {
-                        //BLE_scan()
+                        BLE_scan()
                     })
                     }, 8000) 
                     updateLog(logData)
@@ -119,6 +128,7 @@ exports.pageLoaded = function(args) {
     )    
 }
 exports.pageUnloaded = () =>{
+    
     console.log("pageUnloaded")
     if(time_loop)
         timerModule.clearInterval(time_loop);
@@ -131,6 +141,11 @@ function romoveMap() {
     for(let i = 0;i<viewMap.length;i++){
         mapLayout.removeChild(viewMap[i])
     }
+    txtMap = mapLayout.getElementsByClassName('txt-map')
+    for(let i = 0;i<viewMap.length;i++){
+        mapLayout.removeChild(txtMap[i])
+    }
+
 }
 function check_route(cb) {
     let check_status = null
@@ -283,9 +298,11 @@ function genMap(UUID,RSSI){
                     myLabel.id = element.name
                     myLabel.marginTop = ""+element.y+"%"
                     myLabel.marginLeft = ""+element.x+"%"
-                    myLabel.style.zIndex="-1";
-                    myLabel.backgroundColor = "red";
+                    myLabel.style.zIndex="-1"
+                    myLabel.backgroundColor = "red"
                     myLabelText.text = element.name
+                    myLabelText.id = "txtMap"
+                    myLabelText.class = "txt-map"
                     myLabelText.marginLeft = ""+element.x+"%"
                     myLabelText.marginTop = ""+(element.y-4)+"%"
 
@@ -358,7 +375,11 @@ exports.setUser = function() {
 exports.userCount = () => {
     console.log("userCount")
     dlgcountUser.style.visibility = 'visible'
-    fetch(API_URL+"/getCountUser").then((r) => r.json())
+    fetch(API_URL+"/getCountUser", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({route:pageData.route})
+    }).then((r) => r.json())
     .then((response) => {
         pageData.countUser = response.userData
         console.log(response)

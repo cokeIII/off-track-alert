@@ -15,16 +15,16 @@
 	"nativescript-ocr": {
 		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-ocr\\platforms\\android\\include.gradle": "8ab710bf7210ea8ad86395fa5cc96a64d395dbaa"
 	},
-	"tns-core-modules-widgets": {
-		"D:\\project\\off-track-alert-master_R\\node_modules\\tns-core-modules-widgets\\platforms\\android\\widgets-release.aar": "85168be13bc1b546c0f1d53f46bb892118ba3d9f"
-	},
-	"nativescript-vibrate": {
-		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-vibrate\\platforms\\android\\include.gradle": "e8488263397de505526ed9d14e684bf4fc6a5a63",
-		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-vibrate\\platforms\\android\\README.md": "0bc0739d397c2102751ff1350bd38db7128a03f2",
-		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-vibrate\\platforms\\android\\nativescript_vibrate.aar": "31bc4bfd8ba4c2caa17b12b63f51bed004caa1d1"
-	},
 	"nativescript-telephony": {
 		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-telephony\\platforms\\android\\AndroidManifest.xml": "19bc7f757ef5ea28b0f7503973cd61b1a16cfbb5",
 		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-telephony\\platforms\\android\\nativescript_telephony.aar": "137d3699bf0669dc148de379effba4854c7b386d"
+	},
+	"nativescript-vibrate": {
+		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-vibrate\\platforms\\android\\include.gradle": "e8488263397de505526ed9d14e684bf4fc6a5a63",
+		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-vibrate\\platforms\\android\\nativescript_vibrate.aar": "31bc4bfd8ba4c2caa17b12b63f51bed004caa1d1",
+		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-vibrate\\platforms\\android\\README.md": "0bc0739d397c2102751ff1350bd38db7128a03f2"
+	},
+	"tns-core-modules-widgets": {
+		"D:\\project\\off-track-alert-master_R\\node_modules\\tns-core-modules-widgets\\platforms\\android\\widgets-release.aar": "85168be13bc1b546c0f1d53f46bb892118ba3d9f"
 	}
 }

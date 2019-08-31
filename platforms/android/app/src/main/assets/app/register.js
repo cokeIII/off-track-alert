@@ -7,7 +7,8 @@ var Observable = require("data/observable")
 const frameModule = require("ui/frame");
 const appSettings = require("application-settings")
 const Telephony = require("nativescript-telephony")
-const utilsModule = require("tns-core-modules/utils/utils");
+// const utilsModule = require("tns-core-modules/utils/utils")
+const util = require('./util')
 var Toast = require('nativescript-toast')
 var pageData = new Observable.fromObject({
     idCard: "",
@@ -15,14 +16,18 @@ var pageData = new Observable.fromObject({
     deviceId:"",
     phoneNumber:"",
 })
-const API_URL = "http://10.60.6.42:3001"
+const API_URL = "http://192.168.43.50:3001"
 
 exports.pageLoaded = function(args) {
+    util.loading()
     if(appSettings.getString("userData")){
         let userData = JSON.parse(appSettings.getString("userData"))
-        if(userData.phoneNumber != "")
-         frameModule.topmost().navigate("map");
-    }   
+        if(userData.phoneNumber != ""){
+            frameModule.topmost().navigate("map");
+        }
+    } else {
+        util.loadingHide()
+    }
     page = args.object
     page.bindingContext = pageData
     Telephony.Telephony().then(function(resolved) {

@@ -40,15 +40,15 @@
             <StackLayout class="content">
               <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
                 <Label text="id card" class="txt-s"></Label>
-                <TextField hint="" text="{{ idCard }}" keyboardType="number" class="txt-f"/>
+                <TextField hint="" text="{{ idCard }}" keyboardType="number" class="txt-f" id="idCard"/>
               </StackLayout>
               <StackLayout width="100%" orientation="horizontal" class="m-t-10">
                 <Label text="Name" class="txt-s"></Label>
-                <TextField hint="" class="txt-f" text="{{ userName }}"/>
+                <TextField hint="" class="txt-f" text="{{ userName }}" id="userName"/>
               </StackLayout>
               <StackLayout width="100%" orientation="horizontal" class="m-t-10">
                 <Label text="Name" class="txt-s"></Label>
-                <TextField hint="" class="txt-f" text="{{ phoneNumber }}" keyboardType="number"/>
+                <TextField hint="" class="txt-f" text="{{ phoneNumber }}" keyboardType="number" id="phoneNumber"/>
               </StackLayout>
             </StackLayout>
             <FlexboxLayout class="actions">
@@ -75,6 +75,7 @@
         </FlexboxLayout>
       </StackLayout> 
       <!-- dlg Alert-->
+
       <!-- dlg checkdata-->
       <StackLayout class="lg-dialog" tap="noop" id="checkdata">
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
@@ -94,11 +95,36 @@
       </StackLayout> 
       <!-- dlg checkdata-->
 
+      <!-- dlg countUser-->
+      <StackLayout class="lg-dialog" tap="noop" id="countUser">
+        <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
+            <FlexboxLayout orientation="horizontal" class="title">
+                <label text="Users" class="text"/>
+                <!-- <Button  tap="hideDialog" text="&#xf00d;" class="close"/> -->
+            </FlexboxLayout>
+            <StackLayout class="content">
+              <ListView items="{{ countUser }}" itemTap="removeCard" class="users-selector">
+                  <ListView.itemTemplate  let-country="item" let-i="index" let-odd="odd" let-even="even" class="list-item">
+                      <StackLayout class="item" orientation="horizontal">
+                          <Label text="&#xf21d;" class="txt-count-icon"></Label>
+                          <Label text="{{ userName }}" class="txt-count-name"></Label>
+                          <Label text="{{ name }}" class="txt-count-point"></Label>
+                      </StackLayout>
+                  </ListView.itemTemplate>
+              </ListView>
+            </StackLayout>
+            <FlexboxLayout class="actions">
+                <Button  tap="hideDialog" text="OK" class="action"/>
+            </FlexboxLayout>
+        </FlexboxLayout>
+      </StackLayout> 
+      <!-- dlg countUser-->
+
     </AbsoluteLayout>
     <!-- <StackLayout width="100%" height="10%"> -->
       <FlexboxLayout  width="100%" height="8%" class="map-menu">
         <Label text="&#xf2bb;" tap="user"></Label>
-        <Label text="&#xf554;"></Label>
+        <Label text="&#xf554;" tap="userCount"></Label>
         <Label text="&#xf059;"></Label>
       </FlexboxLayout>
     <!-- </StackLayout> -->

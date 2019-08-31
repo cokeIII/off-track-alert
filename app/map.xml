@@ -103,10 +103,12 @@
                 <!-- <Button  tap="hideDialog" text="&#xf00d;" class="close"/> -->
             </FlexboxLayout>
             <StackLayout class="content">
-              <ListView items="{{ countUser }}" itemTap="removeCard" class="card-selector">
-                  <ListView.itemTemplate  let-country="item" let-i="index" let-odd="odd" let-even="even">
-                      <StackLayout class="item">
-                          <Label text="{{ userName }}"></Label>
+              <ListView items="{{ countUser }}" itemTap="removeCard" class="users-selector">
+                  <ListView.itemTemplate  let-country="item" let-i="index" let-odd="odd" let-even="even" class="list-item">
+                      <StackLayout class="item" orientation="horizontal">
+                          <Label text="&#xf21d;" class="txt-count-icon"></Label>
+                          <Label text="{{ userName }}" class="txt-count-name"></Label>
+                          <Label text="{{ name }}" class="txt-count-point"></Label>
                       </StackLayout>
                   </ListView.itemTemplate>
               </ListView>

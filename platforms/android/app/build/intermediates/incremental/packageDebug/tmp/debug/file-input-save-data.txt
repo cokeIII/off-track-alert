@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Jul 21 17:16:41 ICT 2019
+#Sat Aug 31 12:35:40 ICT 2019
 20.base=D\:\\PROJECT\\off-track-alert\\platforms\\android\\app\\build\\intermediates\\merged_assets\\debug\\out
 143.base=D\:\\PROJECT\\off-track-alert\\platforms\\android\\app\\build\\intermediates\\merged_assets\\debug\\out
 237.path=app/tns_modules/tns-core-modules/ui/repeater/repeater.js

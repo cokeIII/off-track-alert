@@ -1,4 +1,38 @@
+/* -----------------------buttons2----------------------------------- */
+.btn-group .buttons2 {
+  background-color: #4CAF50; 
+  border: 1px solid green;
+  color:white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.buttons2 {
+  display: inline-block;
+  padding: 15px 35px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(19, 155, 64);
+  border: 1px;
+  border-radius: 20px;
+  box-shadow: 0 9px #999;
+}
+.buttons2:hover {background-color: #3e8e41}
+  
+.buttons2:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
+/* ---------------------------------------------------------------------------- */
 
 /* -----------------------buttons----------------------------------- */
 .btn-group .buttons {
@@ -11,46 +45,23 @@
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    
   }
   
-  .btn-group .buttons:not(:last-child) {
-    border-right: none; 
-  }
-  
-  .btn-group .buttons:hover {
-    background-color: #3e8e41;
-  }
-/* ---------------------------------------------------------------------------- */
   .buttons {
     display: inline-block;
-    padding: 15px 25px;
+    padding: 15px 35px;
     font-size: 24px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 30px;
+    background-color: rgb(92, 100, 104);
+    border: 1px;
+    border-radius: 20px;
     box-shadow: 0 9px #999;
   }
-  
-  .buttonfo {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: rgb(78, 74, 74);
-    border: none;
-    border-radius: 6px;
-    box-shadow: 0 9px #999;
-  }
+
   .buttons:hover {background-color: #3e8e41}
   
   .buttons:active {
@@ -77,4 +88,18 @@
   .herder{
     background-color:
     #FFFFFF; 
+}
+/*-----------------form textbox---------------------------------------------*/
+
+.selectbox{
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 15px;
 }

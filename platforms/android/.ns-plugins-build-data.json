@@ -1,7 +1,7 @@
 {
 	"nativescript-bluetooth": {
-		"D:\\PROJECT\\off-track-alert\\node_modules\\nativescript-bluetooth\\platforms\\android\\nativescript_bluetooth.aar": "fbc02a7ccc3ef83bae0bbdba12e5f7ee3d54b90a",
-		"D:\\PROJECT\\off-track-alert\\node_modules\\nativescript-bluetooth\\platforms\\android\\AndroidManifest.xml": "20f5d245b54d495f594559e02c5d63e3acd5d8a6"
+		"D:\\PROJECT\\off-track-alert\\node_modules\\nativescript-bluetooth\\platforms\\android\\AndroidManifest.xml": "20f5d245b54d495f594559e02c5d63e3acd5d8a6",
+		"D:\\PROJECT\\off-track-alert\\node_modules\\nativescript-bluetooth\\platforms\\android\\nativescript_bluetooth.aar": "0cc36cdd633597d71778e835e14a38b7dcd65424"
 	},
 	"nativescript-camera": {
 		"D:\\PROJECT\\off-track-alert\\node_modules\\nativescript-camera\\platforms\\android\\nativescript_camera.aar": "076643dd1be5b20235184a9c65703fa02a930b9b"

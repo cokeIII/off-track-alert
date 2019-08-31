@@ -48,3 +48,4 @@ D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\ef6
 D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\f2cb067b2f86f4969388e89e639431b5\classes.jar
 D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\f782460da529f7452f9bab70ff079880\classes.jar
 D:\PROJECT\off-track-alert\platforms\android\app\build\exploded-dependencies\fa7f22ce045877d21377bcbb3a95a99f\common-1.1.1.jar
+D:\PROJECT\off-track-alert\platforms\android\app\build\intermediates\javac\debug

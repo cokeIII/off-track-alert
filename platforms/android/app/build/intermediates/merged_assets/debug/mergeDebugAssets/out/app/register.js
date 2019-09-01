@@ -8,7 +8,7 @@ const frameModule = require("ui/frame");
 const appSettings = require("application-settings")
 const Telephony = require("nativescript-telephony")
 // const utilsModule = require("tns-core-modules/utils/utils")
-const util = require('util')
+// const util = require('./util')
 var Toast = require('nativescript-toast')
 var pageData = new Observable.fromObject({
     idCard: "",
@@ -16,21 +16,21 @@ var pageData = new Observable.fromObject({
     deviceId:"",
     phoneNumber:"",
 })
+let dlgLoad
 const API_URL = "http://192.168.43.50:3001"
 
 exports.pageLoaded = function(args) {
-    loading()
+    
     if(appSettings.getString("userData")){
         let userData = JSON.parse(appSettings.getString("userData"))
         if(userData.phoneNumber != ""){
-            frameModule.topmost().navigate("map");
-            
+            frameModule.topmost().navigate("map");            
         }
-    } else {
-        loadingHide()
-    }
+    } 
+
     page = args.object
     page.bindingContext = pageData
+    
     Telephony.Telephony().then(function(resolved) {
         console.log('resolved >', resolved)
         console.dir(resolved);
@@ -139,27 +139,7 @@ async function quickstart(imgSrc) {
     const labels = result.labelAnnotations;
     console.log('Labels:');
     labels.forEach(label => console.log(label.description));
-  }
-  async function coolDown() {
-    await sleep(2000);
-  }
-
-function loading(){
-    var options = {
-      message: 'Loading...',
-      progress: 0.65,
-      android: {
-        indeterminate: true,
-        cancelable: false,
-        max: 100,
-        progressNumberFormat: '%1d/%2d',
-        progressPercentFormat: 0.53,
-        progressStyle: 1,
-        secondaryProgress: 1,
-      },
-    }
-    loader.show(options)
-  }
-function loadingHide() {
-    loader.hide()
 }
+exports.noop = () => {
+}
+

@@ -16,6 +16,10 @@
         "directory": "..\\..\\node_modules\\nativescript-dom"
     },
     {
+        "name": "nativescript-insomnia",
+        "directory": "..\\..\\node_modules\\nativescript-insomnia"
+    },
+    {
         "name": "nativescript-loading-indicator-new",
         "directory": "..\\..\\node_modules\\nativescript-loading-indicator-new"
     },

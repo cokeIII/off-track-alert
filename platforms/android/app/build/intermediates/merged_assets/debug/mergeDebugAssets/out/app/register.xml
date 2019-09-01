@@ -1,4 +1,4 @@
-<Page loaded="pageLoaded" id="Page" >
+<Page loaded="pageLoaded" id="Page" class="bg">
   <ActionBar title="My App" class="action-bar"></ActionBar>
   <!-- Your UI components go here -->
   <StackLayout width="100%" class="fas">
@@ -18,4 +18,5 @@
     <button text="&#xf030; Scan Card" class="m-t-10p btn-scan" tap="takeCamera"></button>
     <button text="Submit" class="m-t-10p btn-submit" tap="register"></button>
   </StackLayout>
+
 </Page>

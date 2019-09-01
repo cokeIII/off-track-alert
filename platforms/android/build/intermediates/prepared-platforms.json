@@ -4,6 +4,7 @@
     "nativescript-bluetooth": true,
     "nativescript-camera": true,
     "nativescript-dom": true,
+    "nativescript-insomnia": true,
     "nativescript-loading-indicator-new": true,
     "nativescript-ocr": true,
     "nativescript-orientation": true,

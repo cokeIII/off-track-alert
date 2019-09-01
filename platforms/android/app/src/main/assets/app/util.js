@@ -15,8 +15,22 @@ exports.loading = () => {
       },
     }
     loader.show(options)
+    cooldown(function(cb){
+      console.log(cb)
+      console.log("coolDown")
+      if(cb){
+        loader.hide()
+      }
+    })
   }
   exports.loadingHide = () => {
     loader.hide()
   }
-  
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+  async function cooldown(cb){
+    await sleep(2000);
+    cb(true)
+  }
+

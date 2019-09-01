@@ -4,12 +4,13 @@ var bluetooth = require("nativescript-bluetooth")
 const appSettings = require("application-settings")
 const labelModule = require("tns-core-modules/ui/label")
 const timerModule = require("tns-core-modules/timer")
+var insomnia = require("nativescript-insomnia")
 require("nativescript-dom")
 var Vibrate = require("nativescript-vibrate").Vibrate
 var vibrator = new Vibrate()
 const frameModule = require("ui/frame")
 
-const util = require('./util')
+//const util = require('./util')
 var Toast = require('nativescript-toast')
 let logData = {}
 //192.168.43.50
@@ -25,8 +26,9 @@ var pageData = new Observable.fromObject({
     deviceId:"",
     status:"",
     uuid:"",
-    countUser:[{}],
+    countUser:[],
     route:0,
+    km:0,
 })
 let urlMap = API_URL + '/maps'
 let dlg = null
@@ -45,7 +47,9 @@ exports.pageLoaded = function(args) {
 
     page = args.object
     page.bindingContext = pageData
-    
+    insomnia.keepAwake().then(function() {
+        console.log("Insomnia is active");
+    })
     orientation.setOrientation("portrait")
     dlg = page.getViewById('user-data')
     dlgAlert = page.getViewById('user-alert')
@@ -105,7 +109,6 @@ exports.pageLoaded = function(args) {
     
     bluetooth.enable().then(
         function(enabled) {
-            util.loadingHide()
             check_route(function(cb){
                 pageData.route = cb
                 if(cb) {
@@ -118,17 +121,16 @@ exports.pageLoaded = function(args) {
                     }, 8000) 
                     updateLog(logData)
                     time_loop_log = timerModule.setInterval(function(){ 
-                        //updateLog(logData)
+                        updateLog(logData)
                     }, 60000) 
                 } else {
                     dlgCheckdata.style.visibility = 'visible'
                 }
             })
         }
-    )    
+    )       
 }
 exports.pageUnloaded = () =>{
-    
     console.log("pageUnloaded")
     if(time_loop)
         timerModule.clearInterval(time_loop);
@@ -182,8 +184,10 @@ function BLE_scan(){
                 if(pageData.roadName !== oldPoinName){
                     if(oldPoinName) {
                         oldPoint = page.getViewById(oldPoinName)
-                        if(oldPoint)
+                        if(oldPoint){
                             oldPoint.backgroundColor = "red"
+                            pageData.km +=5
+                        }
                     }
                     
                 }
@@ -203,9 +207,13 @@ function BLE_scan(){
         skipPermissionCheck: false,
     }).then(function() {
         console.log("scanning complete")
+        
         if(!alert){
             alertUser()
+            logData.status="detours"
+            updateLog(logData)
         } else {
+            logData.status="traveling"
             dlgAlert.style.visibility = 'collapse'
         }
 
@@ -218,6 +226,7 @@ function alertUser(){
     vibrator.vibrate(2000);
     dlgAlert.style.visibility = 'visible'
 }
+
 function countPoint(route) {
     let count = 0
     arrMaps.maps.forEach(element => {   
@@ -235,10 +244,11 @@ function walkMap(UUID,RSSI) {
     if(Object.keys(pageData.map).length !== 0){
         if(pageData.map[UUID] !== undefined) {
             pageData.rssi = RSSI
-            if(RSSI > -80)
+            if(RSSI > -80){
                 pageData.roadName = pageData.map[UUID].name  
                 pageData.uuid = UUID   
-            status = true  
+                status = true  
+            }
             console.log("FIND  "+RSSI)
         }
     }
@@ -381,7 +391,9 @@ exports.userCount = () => {
         body: JSON.stringify({route:pageData.route})
     }).then((r) => r.json())
     .then((response) => {
-        pageData.countUser = response.userData
+        if(Object.keys(response.userData).length !== 0){
+            pageData.countUser = response.userData
+        }
         console.log(response)
 
     }).catch((e) => {

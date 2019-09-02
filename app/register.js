@@ -16,7 +16,7 @@ var pageData = new Observable.fromObject({
     deviceId:"",
     phoneNumber:"",
 })
-const API_URL = "http://192.168.43.50:3001"
+const API_URL = "http://10.60.3.112:3001"
 
 exports.pageLoaded = function(args) {
     

@@ -120,6 +120,40 @@
       </StackLayout> 
       <!-- dlg countUser-->
 
+      <!-- dlg Start-->
+      <StackLayout class="lg-dialog" tap="noop" id="pointStart">
+        <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
+            <FlexboxLayout orientation="horizontal" class="title">
+                <label text="Point Start" class="text"/>
+                <!-- <Button  tap="hideDialog" text="&#xf00d;" class="close"/> -->
+            </FlexboxLayout>
+            <StackLayout class="content">
+              <Label text="Start..." class="txt-s"></Label>
+            </StackLayout>
+            <FlexboxLayout class="actions">
+                <Button  tap="hideDialog" text="OK" class="action"/>
+            </FlexboxLayout>
+        </FlexboxLayout>
+      </StackLayout> 
+      <!-- dlg Start-->
+
+      <!-- dlg End-->
+      <StackLayout class="lg-dialog" tap="noop" id="pointEnd">
+        <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
+            <FlexboxLayout orientation="horizontal" class="title">
+                <label text="Point End" class="text"/>
+                <!-- <Button  tap="hideDialog" text="&#xf00d;" class="close"/> -->
+            </FlexboxLayout>
+            <StackLayout class="content">
+              <Label text="End..." class="txt-s"></Label>
+            </StackLayout>
+            <FlexboxLayout class="actions">
+                <Button  tap="hideDialog" text="OK" class="action"/>
+            </FlexboxLayout>
+        </FlexboxLayout>
+      </StackLayout> 
+      <!-- dlg End-->
+
     </AbsoluteLayout>
     <!-- <StackLayout width="100%" height="10%"> -->
       <FlexboxLayout  width="100%" height="8%" class="map-menu">

@@ -12,6 +12,9 @@
 	"nativescript-camera": {
 		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-camera\\platforms\\android\\nativescript_camera.aar": "076643dd1be5b20235184a9c65703fa02a930b9b"
 	},
+	"nativescript-image-filters": {
+		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-image-filters\\platforms\\android\\include.gradle": "207d102d0b01665079f719959771cf593830b2bd"
+	},
 	"nativescript-ocr": {
 		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-ocr\\platforms\\android\\include.gradle": "8ab710bf7210ea8ad86395fa5cc96a64d395dbaa"
 	},

@@ -11,6 +11,7 @@ D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tn
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-camera\camera.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-dom\dom.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-globalevents\globalevents.js
+D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-image-filters\imagefilters.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-insomnia\insomnia.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-loading-indicator-new\loading-indicator.js
 D:\project\off-track-alert-master_R\platforms\android\app\src\main\assets\app\tns_modules\nativescript-loading-indicator-new\src\android\progress-dialog.js

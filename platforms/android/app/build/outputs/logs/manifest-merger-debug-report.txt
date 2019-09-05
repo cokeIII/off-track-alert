@@ -6,6 +6,8 @@ INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main
 INJECTED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
 MERGED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:2:1-26:12
 MERGED from [com.rmtheis:tess-two:5.4.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\tess-two-5.4.1.aar\fb5c6664f72602e40ac48a3ebd86482e\AndroidManifest.xml:17:1-26:12
+MERGED from [com.github.mukeshsolanki:photofilter:1.0.3] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\photofilter-1.0.3.aar\eaf72f14f516c9e2dcfce4e9478a5bbd\AndroidManifest.xml:2:1-17:12
+MERGED from [com.github.bradmartin:flexing:0.1.30] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\flexing-0.1.30.aar\35ce6c73b9fccb58f5ae966b5bc38ade\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:multidex:1.0.2] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\84ee58fc70dfc0c80216410288609254\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\dddb3d183bc678c089387439469c7379\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\196e3ba5c9ff304a425be5d6026f5c6b\AndroidManifest.xml:17:1-24:12
@@ -96,6 +98,8 @@ application
 ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:17:2-39:16
 MERGED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:19:5-24:19
 MERGED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:19:5-24:19
+MERGED from [com.github.mukeshsolanki:photofilter:1.0.3] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\photofilter-1.0.3.aar\eaf72f14f516c9e2dcfce4e9478a5bbd\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.mukeshsolanki:photofilter:1.0.3] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\photofilter-1.0.3.aar\eaf72f14f516c9e2dcfce4e9478a5bbd\AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\196e3ba5c9ff304a425be5d6026f5c6b\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\196e3ba5c9ff304a425be5d6026f5c6b\AndroidManifest.xml:22:5-20
 MERGED from [:nativescript_camera:] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\455452fe6edb15fc9b090567c179e4d0\AndroidManifest.xml:12:5-23:19
@@ -108,6 +112,8 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Coca Cola\
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\823422e2f3113d86c298ad71ec55cce3\AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\472d18c894f2575fa5697a3642803ea2\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from [com.github.mukeshsolanki:photofilter:1.0.3] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\photofilter-1.0.3.aar\eaf72f14f516c9e2dcfce4e9478a5bbd\AndroidManifest.xml:14:9-35
 	android:label
 		ADDED from D:\project\off-track-alert-master_R\platforms\android\app\src\main\AndroidManifest.xml:21:3-35
 	android:icon
@@ -156,6 +162,10 @@ MERGED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transf
 MERGED from [io.card:android-sdk:5.5.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\android-sdk-5.5.1.aar\4d3184733cc2966a2aec181b9869940c\AndroidManifest.xml:5:5-7:41
 MERGED from [com.rmtheis:tess-two:5.4.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\tess-two-5.4.1.aar\fb5c6664f72602e40ac48a3ebd86482e\AndroidManifest.xml:22:5-24:41
 MERGED from [com.rmtheis:tess-two:5.4.1] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\tess-two-5.4.1.aar\fb5c6664f72602e40ac48a3ebd86482e\AndroidManifest.xml:22:5-24:41
+MERGED from [com.github.mukeshsolanki:photofilter:1.0.3] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\photofilter-1.0.3.aar\eaf72f14f516c9e2dcfce4e9478a5bbd\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.mukeshsolanki:photofilter:1.0.3] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\photofilter-1.0.3.aar\eaf72f14f516c9e2dcfce4e9478a5bbd\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bradmartin:flexing:0.1.30] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\flexing-0.1.30.aar\35ce6c73b9fccb58f5ae966b5bc38ade\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bradmartin:flexing:0.1.30] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\flexing-0.1.30.aar\35ce6c73b9fccb58f5ae966b5bc38ade\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:multidex:1.0.2] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\84ee58fc70dfc0c80216410288609254\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:multidex:1.0.2] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\84ee58fc70dfc0c80216410288609254\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Coca Cola\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\dddb3d183bc678c089387439469c7379\AndroidManifest.xml:20:5-44

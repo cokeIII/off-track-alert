@@ -1,8 +1,8 @@
-<Page loaded="pageLoaded" id="Page" class="bg">
-  <ActionBar title="My App" class="action-bar"></ActionBar>
+<Page loaded="pageLoaded" id="Page" >
+  <ActionBar title="SOW" class="action-bar"></ActionBar>
   <!-- Your UI components go here -->
-  <StackLayout width="100%" class="fas">
-    <Label text="Register" class="txt-h"></Label>
+  <StackLayout width="100%" class="fas bg" >
+    <Label text="" class="txt-h"></Label>
     <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
       <Label text="id card" class="txt-s"></Label>
       <TextField hint="" text="{{ idCard }}" keyboardType="number" class="txt-f" id="idCard"/>

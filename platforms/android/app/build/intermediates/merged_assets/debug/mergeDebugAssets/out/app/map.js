@@ -4,6 +4,7 @@ var bluetooth = require("nativescript-bluetooth")
 const appSettings = require("application-settings")
 const labelModule = require("tns-core-modules/ui/label")
 const timerModule = require("tns-core-modules/timer")
+var insomnia = require("nativescript-insomnia")
 require("nativescript-dom")
 var Vibrate = require("nativescript-vibrate").Vibrate
 var vibrator = new Vibrate()
@@ -14,7 +15,7 @@ var Toast = require('nativescript-toast')
 let logData = {}
 //192.168.43.50
 //10.60.4.217
-const API_URL = "http://192.168.43.50:3001"
+const API_URL = "http://10.60.3.112:3001"
 var pageData = new Observable.fromObject({
     roadName: "",
     map:{},
@@ -27,6 +28,7 @@ var pageData = new Observable.fromObject({
     uuid:"",
     countUser:[],
     route:0,
+    km:0,
 })
 let urlMap = API_URL + '/maps'
 let dlg = null
@@ -36,16 +38,25 @@ let viewMap = null
 let detailMap = null 
 let detailMapBtn = null
 let oldPoinName = null
+let rssi = null
 let pointWalkMap = null 
 let time_loop  =  null
 let time_loop_log  =  null
 let arrMaps = null
 let dlgcountUser = null
+let pointStart = true
+let pointEnd = true
+let dlgStart = null
+let dlgEnd = null
+let roadName = null
+let pointChecked = {}
 exports.pageLoaded = function(args) {
 
     page = args.object
     page.bindingContext = pageData
-    
+    insomnia.keepAwake().then(function() {
+        console.log("Insomnia is active");
+    })
     orientation.setOrientation("portrait")
     dlg = page.getViewById('user-data')
     dlgAlert = page.getViewById('user-alert')
@@ -53,6 +64,8 @@ exports.pageLoaded = function(args) {
     detailMap = page.getViewById('detailMap')
     detailMapBtn = page.getViewById('detailMapBtn')
     dlgcountUser = page.getViewById('countUser')
+    dlgStart = page.getViewById('pointStart')
+    dlgEnd = page.getViewById('pointEnd')
 
     romoveMap()
     const arrayToObject = (array) =>
@@ -109,6 +122,7 @@ exports.pageLoaded = function(args) {
                 pageData.route = cb
                 if(cb) {
                     dlgCheckdata.style.visibility = 'collapse'
+                    BLE_scan()
                     time_loop = timerModule.setInterval(function(){ 
                     // use Bluetooth features if enabled is true 
                     bluetooth.stopScanning().then(function() {
@@ -167,7 +181,7 @@ function BLE_scan(){
     let alert = false
     bluetooth.startScanning({
         serviceUUIDs: [],
-        seconds: 6,
+        seconds: 7,
         onDiscovered: function (peripheral) {
             console.log("Periperhal found with UUID: " + peripheral.UUID)
             genStatus = walkMap(peripheral.UUID,peripheral.RSSI)
@@ -177,7 +191,8 @@ function BLE_scan(){
                 viewMap = mapLayout.getElementsByClassName('point')
                 viewMap.backgroundColor = "red"
             } else {
-                if(pageData.roadName !== oldPoinName){
+                console.log(pointChecked)
+                if(roadName !== oldPoinName){
                     if(oldPoinName) {
                         oldPoint = page.getViewById(oldPoinName)
                         if(oldPoint){
@@ -187,9 +202,11 @@ function BLE_scan(){
                     
                 }
 
-                if(pageData.roadName) {
-                    oldPoinName = pageData.roadName
-                    pointWalkMap = page.getViewById(pageData.roadName)
+                if(roadName) {
+                    oldPoinName = roadName
+                    pageData.roadName = roadName
+                    pageData.rssi = rssi
+                    pointWalkMap = page.getViewById(roadName)
                     if(pointWalkMap)
                         pointWalkMap.backgroundColor = "green"
                 }  
@@ -206,10 +223,12 @@ function BLE_scan(){
         if(!alert){
             alertUser()
             logData.status="detours"
+            updateLog(logData)
         } else {
             logData.status="traveling"
             dlgAlert.style.visibility = 'collapse'
         }
+        alert = false
 
     }, function (err) {
         console.log("error while scanning: " + err)
@@ -237,13 +256,33 @@ function walkMap(UUID,RSSI) {
     let status = false
     if(Object.keys(pageData.map).length !== 0){
         if(pageData.map[UUID] !== undefined) {
-            pageData.rssi = RSSI
-            if(RSSI > -80){
-                pageData.roadName = pageData.map[UUID].name  
-                pageData.uuid = UUID   
-                status = true  
-            }
-            console.log("FIND  "+RSSI)
+            console.log(pageData.map[UUID])
+            rssi = RSSI
+            
+            if(RSSI > -91){
+                
+                status = true
+                
+                roadName = pageData.map[UUID].name  
+                                   
+                if(!pointChecked[roadName]){
+                    pageData.km +=5
+                }    
+                pointChecked[roadName] = true
+                // appSettings.setString("pointChecked", JSON.stringify(pointChecked))
+                pageData.uuid = UUID
+
+                if(pageData.map[UUID].map_status == "S"){
+                    //appSettings.remove("pointChecked");
+                    dlgPiontStart()
+                    pointStart = false
+
+                }  else if(pageData.map[UUID].map_status == "E") {
+                    dlgPiontEnd()
+                    //appSettings.remove("pointChecked");
+                    pointEnd = false
+                } 
+            } 
         }
     }
     return status
@@ -290,9 +329,10 @@ function genMap(UUID,RSSI){
             
             if(route){
                 if(element.route ==  route) {
-                    if(RSSI > -70)
-                        pageData.roadName = element.name
-
+                    pointChecked[element.name] = false
+                    // if(appSettings.getString("pointChecked")){
+                    //     pointChecked = JSON.parse(appSettings.getString("pointChecked"))
+                    // }
                     let myLabel = new labelModule.Label()
                     let myLabelText = new labelModule.Label()
 
@@ -398,10 +438,14 @@ exports.hideDialog = function() {
     dlg.style.visibility = 'collapse'
     dlgAlert.style.visibility = 'collapse'
     dlgcountUser.style.visibility = 'collapse'
+    dlgEnd.style.visibility = 'collapse'
+    dlgStart.style.visibility = 'collapse'
 }
 function dlgHide() {
     dlg.style.visibility = 'collapse'
     dlgAlert.style.visibility = 'collapse'
+    dlgEnd.style.visibility = 'collapse'
+    dlgStart.style.visibility = 'collapse'
 }
 exports.hideDetailMap = function(){
     detailMap.style.visibility = 'collapse'
@@ -410,6 +454,20 @@ exports.hideDetailMap = function(){
 exports.showDetailMap = function(){
     detailMap.style.visibility = 'visible'
     detailMapBtn.style.visibility = 'collapse'
+}
+function dlgPiontStart() {
+    if(pointStart){
+        dlgStart.style.visibility = 'visible'
+    } else {
+        dlgStart.style.visibility = 'collapse'
+    }
+}
+function dlgPiontEnd() {
+    if(pointEnd){
+        dlgEnd.style.visibility = 'visible'
+    } else {
+        dlgEnd.style.visibility = 'collapse'
+    }
 }
 
 exports.noop = () => {

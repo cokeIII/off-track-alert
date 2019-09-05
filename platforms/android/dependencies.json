@@ -16,6 +16,10 @@
         "directory": "..\\..\\node_modules\\nativescript-dom"
     },
     {
+        "name": "nativescript-image-filters",
+        "directory": "..\\..\\node_modules\\nativescript-image-filters"
+    },
+    {
         "name": "nativescript-insomnia",
         "directory": "..\\..\\node_modules\\nativescript-insomnia"
     },

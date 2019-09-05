@@ -3,12 +3,15 @@ var camera = require("nativescript-camera")
 var OCRPlugin = require("nativescript-ocr")
 const imageSourceModule = require("tns-core-modules/image-source")
 var Observable = require("data/observable")
-// const vision = require('@google-cloud/vision')
 const frameModule = require("ui/frame");
+// const vision = require('@google-cloud/vision')
 const appSettings = require("application-settings")
 const Telephony = require("nativescript-telephony")
 // const utilsModule = require("tns-core-modules/utils/utils")
 // const util = require('./util')
+// import { ImageFilters } from 'nativescript-image-filters';
+// const ImageFilters = require('nativescript-image-filters')
+// const filters = new ImageFilters();
 var Toast = require('nativescript-toast')
 var pageData = new Observable.fromObject({
     idCard: "",
@@ -23,7 +26,7 @@ exports.pageLoaded = function(args) {
     if(appSettings.getString("userData")){
         let userData = JSON.parse(appSettings.getString("userData"))
         if(userData.phoneNumber != ""){
-            frameModule.topmost().navigate("map");            
+            // frameModule.topmost().navigate("map");            
         }
     } 
 
@@ -65,10 +68,34 @@ exports.takeCamera =  function() {
                 image.src = imageAsset;
                 console.log(image.src._android)
                 const imageFromLocalFile = imageSourceModule.fromFile(image.src._android);
-                
-            }).catch(function (err) {
-                console.log("Error -> " + err.message);
-            });
+                // filters.blackAndWhite(imageFromLocalFile).then((result) => {
+                    var ocr = new OCRPlugin.OCR();
+                    // set the pic imageSource equal to the new imageSource
+                    // imageFromLocalFile = result;
+                    ocr.retrieveText({
+                        image: imageFromLocalFile,
+                        whitelist: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",     // you can include only certain characters in the result
+                        blacklist: "", // .. or you can exclude certain characters from the result
+                        // onProgress: () => {
+                        //     console.log(`Decoding progress: ${percentage}%`);
+                        // }
+                        }).then(
+                            function (result) {
+                                pageData.userName = result.text
+                                console.log("Result: " + result.text);
+                            },
+                            function (error) {
+                                console.log("Error: " + error);
+                            }
+                        );
+                    }).catch(function (err) {
+                        console.log("Error -> " + err.message);
+                    });
+        
+                //   }).catch((err) => {
+                //     console.log('applyFilter ERROR: ' + err);
+                //   });
+
         }, 
         function failure() {
         // permission request rejected
@@ -125,18 +152,6 @@ exports.register =  function() {
         console.log('***fetch error***')
     });
 
-}
-async function quickstart(imgSrc) {
-    console.log("quickstart")
-    // Imports the Google Cloud client library
-    // Creates a client
-    const client = new vision.ImageAnnotatorClient();
-  
-    // Performs label detection on the image file
-    const [result] = await client.labelDetection(imgSrc);
-    const labels = result.labelAnnotations;
-    console.log('Labels:');
-    labels.forEach(label => console.log(label.description));
 }
 exports.noop = () => {
 }

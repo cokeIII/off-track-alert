@@ -1,0 +1,81 @@
+{
+  "_from": "tns-core-modules@androidx",
+  "_id": "tns-core-modules@5.4.0-androidx-2019-03-22-160602-06",
+  "_inBundle": false,
+  "_integrity": "sha512-BCa0aJa7kjDE0uI1YGLobq73Enn24JY4Pr+CmmBWLSpyP/6T7LHkQ1sO/rxnhmNjRghzXS9Zlo8mgxkos4SomQ==",
+  "_location": "/tns-core-modules",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "tns-core-modules@androidx",
+    "name": "tns-core-modules",
+    "escapedName": "tns-core-modules",
+    "rawSpec": "androidx",
+    "saveSpec": null,
+    "fetchSpec": "androidx"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/tns-core-modules/-/tns-core-modules-5.4.0-androidx-2019-03-22-160602-06.tgz",
+  "_shasum": "3de848c2277de1339ef84207508436cac0aa447c",
+  "_spec": "tns-core-modules@androidx",
+  "_where": "D:\\project\\AOT",
+  "bundleDependencies": false,
+  "dependencies": {
+    "tns-core-modules-widgets": "5.4.0-androidx-2019-03-22-160602-06",
+    "tslib": "^1.9.3"
+  },
+  "deprecated": false,
+  "description": "Telerik NativeScript Core Modules",
+  "devDependencies": {
+    "@types/node": "~7.0.5",
+    "tns-platform-declarations": "androidx"
+  },
+  "files": [
+    "**/*.d.ts",
+    "**/*.js",
+    "**/platforms/ios/**",
+    "**/package.json",
+    "!android17.d.ts",
+    "!ios.d.ts",
+    "!bin/",
+    "!apps/",
+    "!build/",
+    "!node-tests/",
+    "!declarations.android.d.ts",
+    "!declarations.ios.d.ts",
+    "!gruntfile.js",
+    "!org.nativescript.widgets.d.ts"
+  ],
+  "homepage": "https://www.nativescript.org",
+  "license": "Apache-2.0",
+  "name": "tns-core-modules",
+  "nativescript": {
+    "platforms": {
+      "ios": "4.0.0",
+      "android": "4.0.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NativeScript/NativeScript/commit/a88aa1e8310804e14a0782b09f4f4f275e3117d2"
+  },
+  "scripts": {
+    "version": "conventional-changelog -p angular -i ../CHANGELOG.md -s && git add ../CHANGELOG.md"
+  },
+  "snapshot": {
+    "android": {
+      "tns-java-classes": {
+        "modules": [
+          "ui/frame/activity",
+          "ui/frame/fragment"
+        ]
+      }
+    }
+  },
+  "typings": "tns-core-modules.d.ts",
+  "version": "5.4.0-androidx-2019-03-22-160602-06"
+}

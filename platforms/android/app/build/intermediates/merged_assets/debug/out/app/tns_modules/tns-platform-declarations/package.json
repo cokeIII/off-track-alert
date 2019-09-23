@@ -1,0 +1,63 @@
+{
+  "_from": "tns-platform-declarations@androidx",
+  "_id": "tns-platform-declarations@5.4.0-androidx-2019-03-22-160602-06",
+  "_inBundle": false,
+  "_integrity": "sha512-4PzxAGqI2nJkT6uCiPuxzbqLebTsEeqbXZ0It5S4V1V48nUz3F+L6j6gdKBq3xMHoU2DZYqYVPIHPLABY2XlMQ==",
+  "_location": "/tns-platform-declarations",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "tns-platform-declarations@androidx",
+    "name": "tns-platform-declarations",
+    "escapedName": "tns-platform-declarations",
+    "rawSpec": "androidx",
+    "saveSpec": null,
+    "fetchSpec": "androidx"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/tns-platform-declarations/-/tns-platform-declarations-5.4.0-androidx-2019-03-22-160602-06.tgz",
+  "_shasum": "c2aa0f82a6afcfe6406ba55718a3d8a801387c98",
+  "_spec": "tns-platform-declarations@androidx",
+  "_where": "D:\\project\\AOT",
+  "author": {
+    "name": "Telerik",
+    "email": "support@telerik.com",
+    "url": "http://www.telerik.com"
+  },
+  "bugs": {
+    "url": "https://github.com/NativeScript/NativeScript/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Platform-specific TypeScript declarations for NativeScript for accessing native objects",
+  "devDependencies": {
+    "typescript": "^3.1.6"
+  },
+  "homepage": "https://github.com/NativeScript/NativeScript#readme",
+  "keywords": [
+    "NativeScript",
+    "TypeScript",
+    "declarations",
+    "native",
+    "platform-specific",
+    "tns",
+    "ts",
+    "ns"
+  ],
+  "license": "Apache-2.0",
+  "main": "",
+  "name": "tns-platform-declarations",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/NativeScript/NativeScript.git"
+  },
+  "scripts": {
+    "package-tag": "npm version $npm_package_version-$PACKAGE_VERSION --no-git-tag-version",
+    "test": "tsc"
+  },
+  "version": "5.4.0-androidx-2019-03-22-160602-06"
+}

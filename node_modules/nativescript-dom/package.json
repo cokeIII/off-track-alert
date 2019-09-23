@@ -1,0 +1,83 @@
+{
+  "_from": "nativescript-dom",
+  "_id": "nativescript-dom@2.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-VEY1X10QRZlJEeZUdrwrGoslKqeS03BloaL5OWaXeHmdtmgzaTo3yjIg4ZJOLFWpHme3xAmn+mEn5HLtUJH+NQ==",
+  "_location": "/nativescript-dom",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-dom",
+    "name": "nativescript-dom",
+    "escapedName": "nativescript-dom",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/",
+    "/nativescript-orientation"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-dom/-/nativescript-dom-2.0.2.tgz",
+  "_shasum": "846b9a419ab1a4c6809ff4ab52fab5e325c88545",
+  "_spec": "nativescript-dom",
+  "_where": "D:\\project\\OFF-TRACK ALERT SYSTEM",
+  "author": {
+    "name": "Nathanael Anderson",
+    "email": "nathan@master-technology.com"
+  },
+  "bugs": {
+    "url": "https://github.com/nathanaela/nativescript-dom/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Brad Martin",
+      "email": "bradwaynemartin@gmail.com",
+      "url": "https://github.com/bradmartin"
+    },
+    {
+      "name": "Ludwik Trammer",
+      "email": "ludwik@gmail.com",
+      "url": "https://github.com/ludwiktrammer"
+    }
+  ],
+  "deprecated": false,
+  "description": "A NativeScript module for DOM Emulation",
+  "homepage": "https://github.com/nathanaela/nativescript-dom",
+  "keywords": [
+    "NativeScript",
+    "dom",
+    "development",
+    "classList",
+    "getElementById",
+    "getElementsByTagName",
+    "getElementsByClassName"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/nathanaela/nativescript-dom/blob/master/LICENSE"
+  },
+  "main": "dom",
+  "name": "nativescript-dom",
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.0",
+      "ios": "3.0.0"
+    },
+    "plugin": {
+      "nan": "false",
+      "pan": "true",
+      "core3": "true",
+      "category": "Processing"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanaela/nativescript-dom.git"
+  },
+  "typings": "index.d.ts",
+  "version": "2.0.2"
+}

@@ -1,0 +1,80 @@
+{
+  "_from": "nativescript-bluetooth@2.0.0-beta.1",
+  "_id": "nativescript-bluetooth@2.0.0-beta.1",
+  "_inBundle": false,
+  "_integrity": "sha512-g+Ui9xM2jFisOrYqRhSjQIXFd0bGwQltTBK4rQvsNFMVENR1fe8UcF2M1viEcSenEemrfyyyCEhV0cCM0RrJWQ==",
+  "_location": "/nativescript-bluetooth",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "nativescript-bluetooth@2.0.0-beta.1",
+    "name": "nativescript-bluetooth",
+    "escapedName": "nativescript-bluetooth",
+    "rawSpec": "2.0.0-beta.1",
+    "saveSpec": null,
+    "fetchSpec": "2.0.0-beta.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-bluetooth/-/nativescript-bluetooth-2.0.0-beta.1.tgz",
+  "_shasum": "e70cfd070a676d0b6705b7012ddad19083599732",
+  "_spec": "nativescript-bluetooth@2.0.0-beta.1",
+  "_where": "E:\\Project\\AOT",
+  "author": {
+    "name": "Eddy Verbruggen",
+    "email": "eddyverbruggen@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/EddyVerbruggen/nativescript-bluetooth/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Brad Martin",
+      "email": "bmartin@nstudio.io",
+      "url": "https://github.com/bradmartin"
+    },
+    {
+      "name": "Martin Guillon",
+      "email": "martin.guillon@akyasl.fr"
+    },
+    {
+      "name": "Ryan Pendergast",
+      "email": "ryan.pendergast@gmail.com",
+      "url": "https://rynop.com"
+    }
+  ],
+  "dependencies": {
+    "p-queue": "^3.0.0"
+  },
+  "deprecated": false,
+  "description": "Connect to and interact with Bluetooth LE peripherals",
+  "homepage": "https://github.com/EddyVerbruggen/nativescript-bluetooth",
+  "keywords": [
+    "ecosystem:NativeScript",
+    "NativeScript",
+    "BLE",
+    "Bluetooth",
+    "Bluetooth LE",
+    "Bluetooth Smart",
+    "Bluetooth Low Energy"
+  ],
+  "license": "MIT",
+  "main": "./bluetooth",
+  "name": "nativescript-bluetooth",
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.0",
+      "ios": "3.0.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddyVerbruggen/nativescript-bluetooth.git"
+  },
+  "typings": "./bluetooth.d.ts",
+  "version": "2.0.0-beta.1"
+}

@@ -1,0 +1,40 @@
+{
+	"nativescript-background-http": {
+		"E:\\Project\\AOT\\node_modules\\nativescript-background-http\\platforms\\android\\include.gradle": "06d4d7e83809f7770ade4cefe0967e3c42d4a778",
+		"E:\\Project\\AOT\\node_modules\\nativescript-background-http\\platforms\\android\\nativescript_background_http.aar": "46183a8894ae73b66293bfc0f5112ba00c77cf71"
+	},
+	"nativescript-bluetooth": {
+		"E:\\Project\\AOT\\node_modules\\nativescript-bluetooth\\platforms\\android\\AndroidManifest.xml": "80d60b91c7748f18e630a167a28c27f175810ee7",
+		"E:\\Project\\AOT\\node_modules\\nativescript-bluetooth\\platforms\\android\\nativescript_bluetooth.aar": "6d72f1f80994eb41b8c7dd11e390b34286626028"
+	},
+	"nativescript-camera": {
+		"E:\\Project\\AOT\\node_modules\\nativescript-camera\\platforms\\android\\nativescript_camera.aar": "076643dd1be5b20235184a9c65703fa02a930b9b"
+	},
+	"nativescript-image-filters": {
+		"E:\\Project\\AOT\\node_modules\\nativescript-image-filters\\platforms\\android\\include.gradle": "207d102d0b01665079f719959771cf593830b2bd"
+	},
+	"nativescript-ocr": {
+		"E:\\Project\\AOT\\node_modules\\nativescript-ocr\\platforms\\android\\include.gradle": "17f0147837de89b4914f642c47ad879b19fcc34b"
+	},
+	"nativescript-telephony": {
+		"D:\\project\\AOT\\node_modules\\nativescript-telephony\\platforms\\android\\AndroidManifest.xml": "19bc7f757ef5ea28b0f7503973cd61b1a16cfbb5",
+		"D:\\project\\AOT\\node_modules\\nativescript-telephony\\platforms\\android\\nativescript_telephony.aar": "137d3699bf0669dc148de379effba4854c7b386d"
+	},
+	"nativescript-vibrate": {
+		"E:\\Project\\AOT\\node_modules\\nativescript-vibrate\\platforms\\android\\include.gradle": "06e7e1be49eb6d614094596003280aa7eea789f3",
+		"E:\\Project\\AOT\\node_modules\\nativescript-vibrate\\platforms\\android\\nativescript_vibrate.aar": "31bc4bfd8ba4c2caa17b12b63f51bed004caa1d1",
+		"E:\\Project\\AOT\\node_modules\\nativescript-vibrate\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
+	},
+	"tns-core-modules-widgets": {
+		"E:\\Project\\AOT\\node_modules\\tns-core-modules-widgets\\platforms\\android\\widgets-release.aar": "ec3c2eca4877b3a462dc74b1e2378585f8ff6c5b"
+	},
+	"nativescript-dna-deviceinfo": {
+		"E:\\Project\\AOT\\node_modules\\nativescript-dna-deviceinfo\\platforms\\android\\include.gradle": "535e986878538af4793601ba01ed2c7c6c07f42e",
+		"E:\\Project\\AOT\\node_modules\\nativescript-dna-deviceinfo\\platforms\\android\\nativescript_dna_deviceinfo.aar": "ad0d9fb24212eb864caceb0f78b1d08f4f8cd78c",
+		"E:\\Project\\AOT\\node_modules\\nativescript-dna-deviceinfo\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
+	},
+	"nativescript-akylas-bluetooth": {
+		"D:\\project\\AOT\\node_modules\\nativescript-akylas-bluetooth\\platforms\\android\\AndroidManifest.xml": "80d60b91c7748f18e630a167a28c27f175810ee7",
+		"D:\\project\\AOT\\node_modules\\nativescript-akylas-bluetooth\\platforms\\android\\nativescript_akylas_bluetooth.aar": "940ec9f14efd8c6de02d584641fff351e15d88fc"
+	}
+}

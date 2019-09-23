@@ -1,0 +1,54 @@
+{
+  "_from": "nativescript-observable@^1.0.1",
+  "_id": "nativescript-observable@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-heSLScQbEJUaGlN3vEz+Ex4fS1r+oAUqoBnmed3Qm9LWbj+YFO3ljrVtZwAOqWnZ/Un7kvNigtzUZApNlB/k9Q==",
+  "_location": "/nativescript-observable",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "nativescript-observable@^1.0.1",
+    "name": "nativescript-observable",
+    "escapedName": "nativescript-observable",
+    "rawSpec": "^1.0.1",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.1"
+  },
+  "_requiredBy": [
+    "/nativescript-bluetooth"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-observable/-/nativescript-observable-1.0.1.tgz",
+  "_shasum": "d7846bf16163b7fe971117245b6addbde3057667",
+  "_spec": "nativescript-observable@^1.0.1",
+  "_where": "D:\\project\\AOT\\node_modules\\nativescript-bluetooth",
+  "author": {
+    "name": "Martin Guillon",
+    "email": "martin@akylas.fr"
+  },
+  "bugs": {
+    "url": "https://github.com/Akylas/nativescript-observable/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Nativescript Observable class extension.",
+  "gitHead": "ccdb5202a782a2df916b1393ffdb9ddb8b9a1e04",
+  "homepage": "https://github.com/Akylas/nativescript-observable",
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "Android",
+    "iOS"
+  ],
+  "license": "Apache-2.0",
+  "main": "./observable",
+  "name": "nativescript-observable",
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.0",
+      "ios": "3.0.0"
+    }
+  },
+  "typings": "./observable.d.ts",
+  "version": "1.0.1"
+}

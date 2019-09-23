@@ -1,0 +1,37 @@
+{
+	"digitaltown-nativescript-card-io": {
+		"D:\\project\\off-track-alert-master_R\\node_modules\\digitaltown-nativescript-card-io\\platforms\\android\\digitaltown_nativescript_card_io.aar": "e278086e8bd8bdbc5d935ee90a8096a2738e3ad3",
+		"D:\\project\\off-track-alert-master_R\\node_modules\\digitaltown-nativescript-card-io\\platforms\\android\\include.gradle": "e7d143cd9e881cfec5fae1473e7cf076642af7f8",
+		"D:\\project\\off-track-alert-master_R\\node_modules\\digitaltown-nativescript-card-io\\platforms\\android\\nativescript_card_io.aar": "3575f6e987fffbc3a2687fd9a30a99eb59cfa4a7",
+		"D:\\project\\off-track-alert-master_R\\node_modules\\digitaltown-nativescript-card-io\\platforms\\android\\README.md": "0bc0739d397c2102751ff1350bd38db7128a03f2"
+	},
+	"nativescript-bluetooth": {
+		"E:\\Project\\AOT\\node_modules\\nativescript-bluetooth\\platforms\\android\\AndroidManifest.xml": "f59c6776083721a3c2da7f9ecc73a524ac07e41d",
+		"E:\\Project\\AOT\\node_modules\\nativescript-bluetooth\\platforms\\android\\nativescript_bluetooth.aar": "fbc02a7ccc3ef83bae0bbdba12e5f7ee3d54b90a"
+	},
+	"nativescript-camera": {
+		"E:\\Project\\AOT\\node_modules\\nativescript-camera\\platforms\\android\\nativescript_camera.aar": "076643dd1be5b20235184a9c65703fa02a930b9b"
+	},
+	"nativescript-image-filters": {
+		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-image-filters\\platforms\\android\\include.gradle": "207d102d0b01665079f719959771cf593830b2bd"
+	},
+	"nativescript-ocr": {
+		"D:\\project\\off-track-alert-master_R\\node_modules\\nativescript-ocr\\platforms\\android\\include.gradle": "8ab710bf7210ea8ad86395fa5cc96a64d395dbaa"
+	},
+	"nativescript-telephony": {
+		"E:\\Project\\AOT\\node_modules\\nativescript-telephony\\platforms\\android\\AndroidManifest.xml": "19bc7f757ef5ea28b0f7503973cd61b1a16cfbb5",
+		"E:\\Project\\AOT\\node_modules\\nativescript-telephony\\platforms\\android\\nativescript_telephony.aar": "137d3699bf0669dc148de379effba4854c7b386d"
+	},
+	"nativescript-vibrate": {
+		"E:\\Project\\AOT\\node_modules\\nativescript-vibrate\\platforms\\android\\include.gradle": "06e7e1be49eb6d614094596003280aa7eea789f3",
+		"E:\\Project\\AOT\\node_modules\\nativescript-vibrate\\platforms\\android\\nativescript_vibrate.aar": "31bc4bfd8ba4c2caa17b12b63f51bed004caa1d1",
+		"E:\\Project\\AOT\\node_modules\\nativescript-vibrate\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
+	},
+	"tns-core-modules-widgets": {
+		"E:\\Project\\AOT\\node_modules\\tns-core-modules-widgets\\platforms\\android\\widgets-release.aar": "85168be13bc1b546c0f1d53f46bb892118ba3d9f"
+	},
+	"nativescript-background-http": {
+		"E:\\Project\\AOT\\node_modules\\nativescript-background-http\\platforms\\android\\include.gradle": "4fc0f9ce06df5336df8da8c7b7a2ce2c43356a93",
+		"E:\\Project\\AOT\\node_modules\\nativescript-background-http\\platforms\\android\\nativescript_background_http.aar": "e0648afae01c1d8a82bbe927b6017710e103bbf9"
+	}
+}

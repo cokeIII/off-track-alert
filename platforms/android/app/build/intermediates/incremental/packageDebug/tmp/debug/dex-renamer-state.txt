@@ -1,0 +1,4 @@
+#Mon Sep 23 23:09:37 ICT 2019
+base.0=E\:\\Project\\AOT\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

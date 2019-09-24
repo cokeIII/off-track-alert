@@ -15,7 +15,7 @@ var Toast = require('nativescript-toast')
 let logData = {}
 //192.168.43.50
 //10.60.4.217
-const API_URL = "http://10.60.3.112:3001"
+const API_URL = "http://192.168.43.50:3001"
 var pageData = new Observable.fromObject({
     roadName: "",
     map:{},
@@ -29,6 +29,7 @@ var pageData = new Observable.fromObject({
     countUser:[],
     route:0,
     km:0,
+    picCard:'',
 })
 let urlMap = API_URL + '/maps'
 let dlg = null
@@ -49,6 +50,8 @@ let pointEnd = true
 let dlgStart = null
 let dlgEnd = null
 let roadName = null
+let txtData = null
+let picData = null
 let pointChecked = {}
 exports.pageLoaded = function(args) {
 
@@ -66,6 +69,8 @@ exports.pageLoaded = function(args) {
     dlgcountUser = page.getViewById('countUser')
     dlgStart = page.getViewById('pointStart')
     dlgEnd = page.getViewById('pointEnd')
+    picData = page.getViewById('picData')
+    txtData = page.getViewById('txtData')
 
     romoveMap()
     const arrayToObject = (array) =>
@@ -79,7 +84,9 @@ exports.pageLoaded = function(args) {
         pageData.userName = jsonData.userName
         pageData.phoneNumber = jsonData.phoneNumber
         pageData.deviceId = jsonData.deviceId
+        pageData.picCard = jsonData.pic
     }
+
     logData.deviceId = pageData.deviceId
 
     if(appSettings.getString("maps")){
@@ -264,22 +271,15 @@ function walkMap(UUID,RSSI) {
                 status = true
                 
                 roadName = pageData.map[UUID].name  
-                                   
-                if(!pointChecked[roadName]){
-                    pageData.km +=5
-                }    
-                pointChecked[roadName] = true
-                // appSettings.setString("pointChecked", JSON.stringify(pointChecked))
+                                     
                 pageData.uuid = UUID
 
                 if(pageData.map[UUID].map_status == "S"){
-                    //appSettings.remove("pointChecked");
                     dlgPiontStart()
                     pointStart = false
 
                 }  else if(pageData.map[UUID].map_status == "E") {
                     dlgPiontEnd()
-                    //appSettings.remove("pointChecked");
                     pointEnd = false
                 } 
             } 
@@ -287,6 +287,7 @@ function walkMap(UUID,RSSI) {
     }
     return status
 }
+
 function updateLog(data) {
     console.log(data)
     fetch(API_URL+"/updateUserLog", {
@@ -305,6 +306,7 @@ function updateLog(data) {
         console.log('***fetch error***')
     });
 }
+
 function genMap(UUID,RSSI){
     let route = 0
     if(Object.keys(pageData.map).length !== 0){
@@ -329,10 +331,6 @@ function genMap(UUID,RSSI){
             
             if(route){
                 if(element.route ==  route) {
-                    pointChecked[element.name] = false
-                    // if(appSettings.getString("pointChecked")){
-                    //     pointChecked = JSON.parse(appSettings.getString("pointChecked"))
-                    // }
                     let myLabel = new labelModule.Label()
                     let myLabelText = new labelModule.Label()
 
@@ -368,8 +366,16 @@ exports.user = function() {
         pageData.userName = jsonData.userName
         pageData.phoneNumber = jsonData.phoneNumber
         pageData.deviceId = jsonData.deviceId
+        pageData.picCard = jsonData.pic
     }
     dlg.style.visibility = 'visible'
+    if(pageData.picCard != ''){
+        picData.style.visibility = 'visible'
+        txtData.style.visibility = 'collapse'
+    } else {
+        picData.style.visibility = 'collapse'
+        txtData.style.visibility = 'visible'
+    }
 }
 
 exports.setUser = function() {
@@ -381,19 +387,19 @@ exports.setUser = function() {
     let text = null
     var tester = /^[a-zA-Z0-9ก-๙ ]*$/
     if (saveData.userName.length === 0) {
-      text = 'Please enter name'
+    text = 'Please enter name'
     } else if (saveData.phoneNumber.length < 10) {
-      text = 'Please enter your mobile phone number to complete 10 digits.'
+    text = 'Please enter your mobile phone number to complete 10 digits.'
     } else if (saveData.deviceId.length < 0) {
-      text = 'NO Device ID.'
+    text = 'NO Device ID.'
     } else if (saveData.idCard.length < 7) {
-      text = 'ID Card incorrect.'
+    text = 'ID Card incorrect.'
     }else if (!tester.test(pageData.userName)) {
         text = 'Please enter the first and last name in the alphabet. a-z, A-Z, 0-9, A-9'
     }
     if (text != null) {
-      Toast.makeText(text).show()
-      return
+        Toast.makeText(text).show()
+        return
     }
 
     appSettings.setString("userData", JSON.stringify(saveData))

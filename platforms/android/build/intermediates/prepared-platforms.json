@@ -3,6 +3,7 @@
     "nativescript-bluetooth": true,
     "nativescript-camera": true,
     "nativescript-dom": true,
+    "nativescript-imagepicker": true,
     "nativescript-insomnia": true,
     "nativescript-loading-indicator-new": true,
     "nativescript-orientation": true,

@@ -11,6 +11,8 @@ E:\Project\AOT\platforms\android\app\src\main\assets\app\tns_modules\nativescrip
 E:\Project\AOT\platforms\android\app\src\main\assets\app\tns_modules\nativescript-camera\camera.js
 E:\Project\AOT\platforms\android\app\src\main\assets\app\tns_modules\nativescript-dom\dom.js
 E:\Project\AOT\platforms\android\app\src\main\assets\app\tns_modules\nativescript-globalevents\globalevents.js
+E:\Project\AOT\platforms\android\app\src\main\assets\app\tns_modules\nativescript-imagepicker\imagepicker.common.js
+E:\Project\AOT\platforms\android\app\src\main\assets\app\tns_modules\nativescript-imagepicker\imagepicker.js
 E:\Project\AOT\platforms\android\app\src\main\assets\app\tns_modules\nativescript-insomnia\insomnia.js
 E:\Project\AOT\platforms\android\app\src\main\assets\app\tns_modules\nativescript-loading-indicator-new\loading-indicator.js
 E:\Project\AOT\platforms\android\app\src\main\assets\app\tns_modules\nativescript-loading-indicator-new\src\android\progress-dialog.js

@@ -33,5 +33,9 @@
 	"nativescript-background-http": {
 		"E:\\Project\\AOT\\node_modules\\nativescript-background-http\\platforms\\android\\include.gradle": "4fc0f9ce06df5336df8da8c7b7a2ce2c43356a93",
 		"E:\\Project\\AOT\\node_modules\\nativescript-background-http\\platforms\\android\\nativescript_background_http.aar": "e0648afae01c1d8a82bbe927b6017710e103bbf9"
+	},
+	"nativescript-imagepicker": {
+		"E:\\Project\\AOT\\node_modules\\nativescript-imagepicker\\platforms\\android\\nativescript_imagepicker.aar": "90efff56ef584bda767622569467189cf5c1f236",
+		"E:\\Project\\AOT\\node_modules\\nativescript-imagepicker\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
 	}
 }

@@ -15,6 +15,8 @@ var bghttp = require("nativescript-background-http")
 var session = bghttp.session("image-upload")
 var Toast = require('nativescript-toast')
 var imageSourceModule = require("image-source")
+var imagepicker = require("nativescript-imagepicker")
+var context = imagepicker.create({ mode: "single" })
 let logData = {}
 //192.168.43.50
 const API_URL = "http://192.168.43.50:3001"
@@ -60,7 +62,9 @@ let imageAssetChang = {_android: null}
 insomnia.keepAwake().then(function() {
     console.log("Insomnia is active");
 })
-
+let documents = fs.knownFolders.documents()
+let picPath = null
+let tempPath = null
 exports.pageLoaded = function(args) {
     page = args.object
     page.bindingContext = pageData
@@ -127,7 +131,7 @@ exports.pageLoaded = function(args) {
     idCard.android.setFilters(idCardLength)
     userName.android.setFilters(userNameLength)
     phoneNumber.android.setFilters(phoneNumberLength)
-    
+    picPath = fs.path.join(documents.path, pageData.picCard);
     bluetooth.enable().then(
         function(enabled) {
             check_route(function(cb){
@@ -271,7 +275,7 @@ function walkMap(UUID,RSSI) {
             console.log(pageData.map[UUID])
             rssi = RSSI
             
-            if(RSSI > -91){
+            // if(RSSI > -91){
                 
                 status = true
                 
@@ -287,7 +291,7 @@ function walkMap(UUID,RSSI) {
                     dlgPiontEnd()
                     pointEnd = false
                 } 
-            } 
+            // } 
         }
     }
     return status
@@ -376,10 +380,8 @@ exports.user = function() {
     }
     dlg.style.visibility = 'visible'
     if(pageData.picCard != undefined){
-        let documents = fs.knownFolders.documents()
-        let path = fs.path.join(documents.path, pageData.picCard);
-        console.log(path)
-        userCard.style.backgroundImage  = path
+
+        userCard.style.backgroundImage  = picPath
         picData.style.visibility = 'visible'
         txtData.style.visibility = 'collapse'
     } else {
@@ -388,23 +390,23 @@ exports.user = function() {
     }
 }
 exports.changPic = function() {
-    camera.requestPermissions().then(
-        function success() {
-            var options = {keepAspectRatio: false, saveToGallery: false };
-            camera.takePicture(options)   
-            .then(function (imageAsset) {
-                imageAssetChang = imageAsset
-                userCard.style.backgroundImage  = imageAssetChang._android
-            }).catch((err) => {
-            console.log('applyFilter ERROR: ' + err);
-            });
+    context
+    .authorize()
+    .then(function() {
+        return context.present();
+    })
+    .then(function(selection) {
+        selection.forEach(function(selected) {
+            console.log(selected)
+            // process the selected image
+            imageAssetChang = selected
+            userCard.style.backgroundImage  = selected._android
 
-        }, 
-        function failure() {
-        // permission request rejected
-        // ... tell the user ...
-        }
-    );
+        });
+        list.items = selection;
+    }).catch(function (e) {
+        // process error
+    });
 }   
 exports.setUser = function() {
     let saveData = {}
@@ -456,7 +458,7 @@ exports.setUser = function() {
             let path = fs.path.join(documents.path, pageData.picCard);
             imageAssetChang._android =path
         }
-
+        tempPath = imageAssetChang._android
         var file =  imageAssetChang._android;
         var url = API_URL+"/updateUser";
         var request = {
@@ -574,7 +576,7 @@ function respondedHandler(e) {
        jsonData.deviceId = pageData.deviceId
        jsonData.phoneNumber = pageData.phoneNumber
        jsonData.pic = pageData.phoneNumber+'.jpg'
-   
+       picPath = tempPath
        appSettings.setString("userData", JSON.stringify(jsonData))
        toast = Toast.makeText("Update success","long")
        toast.show()

@@ -26,9 +26,6 @@
       <StackLayout width="24" height="24" marginTop="10%" marginLeft="80%" class="detailMapBtn" id="detailMapBtn" tap="showDetailMap">
         <Label text="__"></Label>
       </StackLayout>
-      <!-- <StackLayout width="40" height="40" class="location" tap="noop">
-        <Label text="&#xf05b;"></Label>
-      </StackLayout> -->
 
       <!-- dlg User-->
       <StackLayout class="lg-dialog" tap="hideDialog" id="user-data">
@@ -37,7 +34,7 @@
                 <label text="Profile" class="text"/>
                 <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
             </FlexboxLayout>
-            <StackLayout class="content">
+            <StackLayout class="content" id="txtData" visibility="collapse">
               <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
                 <Label text="id card" class="txt-s"></Label>
                 <TextField hint="" text="{{ idCard }}" keyboardType="number" class="txt-f" id="idCard"/>
@@ -47,7 +44,23 @@
                 <TextField hint="" class="txt-f" text="{{ userName }}" id="userName"/>
               </StackLayout>
               <StackLayout width="100%" orientation="horizontal" class="m-t-10">
-                <Label text="Name" class="txt-s"></Label>
+                <Label text="Tel" class="txt-s"></Label>
+                <TextField hint="" class="txt-f" text="{{ phoneNumber }}" keyboardType="number" id="phoneNumber"/>
+              </StackLayout>
+            </StackLayout>
+            <!-- PIC DATA -->
+            <StackLayout class="content" id="picData" visibility="collapse">
+              <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
+                <StackLayout>
+                  <Label text="Card" class="txt-s"></Label>
+                  <AbsoluteLayout>
+                    <Image id="userCard"  class="user-pic" width="250" height="150"></Image>
+                    <Label  width="24" height="24" class="camera" text="&#xf030;" tap="changPic"></Label>
+                  </AbsoluteLayout>
+                </StackLayout>
+              </StackLayout>
+              <StackLayout width="100%" orientation="horizontal" class="">
+                <Label text="Tel" class="txt-s"></Label>
                 <TextField hint="" class="txt-f" text="{{ phoneNumber }}" keyboardType="number" id="phoneNumber"/>
               </StackLayout>
             </StackLayout>
@@ -57,6 +70,7 @@
         </FlexboxLayout>
       </StackLayout> 
       <!-- dlg User-->
+
       <!-- dlg Alert-->
       <StackLayout class="lg-dialog" tap="hideDialog" id="user-alert">
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
@@ -148,7 +162,7 @@
               <Label text="End..." class="txt-s"></Label>
             </StackLayout>
             <FlexboxLayout class="actions">
-                <Button  tap="hideDialog" text="OK" class="action"/>
+                <Button tap="hideDialog" text="OK" class="action"/>
             </FlexboxLayout>
         </FlexboxLayout>
       </StackLayout> 

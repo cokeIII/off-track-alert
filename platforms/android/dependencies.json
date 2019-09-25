@@ -16,6 +16,10 @@
         "directory": "..\\..\\node_modules\\nativescript-dom"
     },
     {
+        "name": "nativescript-imagepicker",
+        "directory": "..\\..\\node_modules\\nativescript-imagepicker"
+    },
+    {
         "name": "nativescript-insomnia",
         "directory": "..\\..\\node_modules\\nativescript-insomnia"
     },

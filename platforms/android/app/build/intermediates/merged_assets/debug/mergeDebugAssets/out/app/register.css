@@ -26,7 +26,7 @@
 }
 
 .bg{
-    background-image: url("~/images/pexels-photo-1282262.jpg");
+    /* background-image: url("~/images/pexels-photo-1282262.jpg"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%,80%;

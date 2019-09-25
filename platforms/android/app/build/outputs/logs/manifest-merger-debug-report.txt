@@ -13,6 +13,7 @@ MERGED from [:nativescript-optimized-with-inspector:] C:\Users\COCACOLA\.gradle\
 MERGED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\b020f4b78489639996813d399d2e1782\AndroidManifest.xml:2:1-25:12
 MERGED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\e53c28460d52cb1d8b4dc87ea6a444f0\AndroidManifest.xml:2:1-17:12
 MERGED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\b36cd148c7d8e577bf9fba347d110421\AndroidManifest.xml:2:1-25:12
+MERGED from [:nativescript_imagepicker:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_imagepicker.aar\fa6951da6b24ba0b9e483bd27c4422a1\AndroidManifest.xml:2:1-11:12
 MERGED from [:nativescript_telephony:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_telephony.aar\8fa0b01879db3787a35a8cd43cd6a909\AndroidManifest.xml:2:1-11:12
 MERGED from [:nativescript_vibrate:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\e94966fedbf39fa9720ed0b21a90ddd3\AndroidManifest.xml:2:1-11:12
 MERGED from [:widgets-release:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\f9b090741a21e540fe0789724676f29a\AndroidManifest.xml:2:1-14:12
@@ -82,6 +83,8 @@ uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from E:\Project\AOT\platforms\android\app\src\main\AndroidManifest.xml:13:2-76
 MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:12:5-80
 MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:12:5-80
+MERGED from [:nativescript_imagepicker:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_imagepicker.aar\fa6951da6b24ba0b9e483bd27c4422a1\AndroidManifest.xml:9:5-80
+MERGED from [:nativescript_imagepicker:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_imagepicker.aar\fa6951da6b24ba0b9e483bd27c4422a1\AndroidManifest.xml:9:5-80
 	android:name
 		ADDED from E:\Project\AOT\platforms\android\app\src\main\AndroidManifest.xml:13:19-74
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
@@ -180,6 +183,8 @@ MERGED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transfor
 MERGED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\e53c28460d52cb1d8b4dc87ea6a444f0\AndroidManifest.xml:7:5-47
 MERGED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\b36cd148c7d8e577bf9fba347d110421\AndroidManifest.xml:8:5-47
 MERGED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\b36cd148c7d8e577bf9fba347d110421\AndroidManifest.xml:8:5-47
+MERGED from [:nativescript_imagepicker:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_imagepicker.aar\fa6951da6b24ba0b9e483bd27c4422a1\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_imagepicker:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_imagepicker.aar\fa6951da6b24ba0b9e483bd27c4422a1\AndroidManifest.xml:7:5-47
 MERGED from [:nativescript_telephony:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_telephony.aar\8fa0b01879db3787a35a8cd43cd6a909\AndroidManifest.xml:7:5-47
 MERGED from [:nativescript_telephony:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_telephony.aar\8fa0b01879db3787a35a8cd43cd6a909\AndroidManifest.xml:7:5-47
 MERGED from [:nativescript_vibrate:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\e94966fedbf39fa9720ed0b21a90ddd3\AndroidManifest.xml:7:5-47
@@ -253,6 +258,7 @@ INJECTED from E:\Project\AOT\platforms\android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from E:\Project\AOT\platforms\android\app\src\main\AndroidManifest.xml
 		ADDED from E:\Project\AOT\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from E:\Project\AOT\platforms\android\app\src\main\AndroidManifest.xml
 		MERGED from E:\Project\AOT\platforms\android\app\src\main\AndroidManifest.xml
 		MERGED from E:\Project\AOT\platforms\android\app\src\main\AndroidManifest.xml
 		MERGED from E:\Project\AOT\platforms\android\app\src\main\AndroidManifest.xml

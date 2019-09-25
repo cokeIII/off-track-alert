@@ -44,42 +44,23 @@
                 <TextField hint="" class="txt-f" text="{{ userName }}" id="userName"/>
               </StackLayout>
               <StackLayout width="100%" orientation="horizontal" class="m-t-10">
-                <Label text="Name" class="txt-s"></Label>
+                <Label text="Tel" class="txt-s"></Label>
                 <TextField hint="" class="txt-f" text="{{ phoneNumber }}" keyboardType="number" id="phoneNumber"/>
               </StackLayout>
             </StackLayout>
             <!-- PIC DATA -->
             <StackLayout class="content" id="picData" visibility="collapse">
               <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
-                <Label text="Card" class="txt-s"></Label>
+                <StackLayout>
+                  <Label text="Card" class="txt-s"></Label>
+                  <AbsoluteLayout>
+                    <Image id="userCard"  class="user-pic" width="250" height="150"></Image>
+                    <Label  width="24" height="24" class="camera" text="&#xf030;" tap="changPic"></Label>
+                  </AbsoluteLayout>
+                </StackLayout>
               </StackLayout>
-              <StackLayout width="100%" orientation="horizontal" class="m-t-10">
-                <Label text="Name" class="txt-s"></Label>
-                <TextField hint="" class="txt-f" text="{{ phoneNumber }}" keyboardType="number" id="phoneNumber"/>
-              </StackLayout>
-            </StackLayout>
-
-            <FlexboxLayout class="actions">
-                <Button  tap="setUser" text="Edit" class="action"/>
-            </FlexboxLayout>
-        </FlexboxLayout>
-
-        <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop" id="picData" visibility="collapse">
-            <FlexboxLayout orientation="horizontal" class="title">
-                <label text="Profile" class="text"/>
-                <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
-            </FlexboxLayout>
-            <StackLayout class="content">
-              <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
-                <Label text="id card" class="txt-s"></Label>
-                <TextField hint="" text="{{ idCard }}" keyboardType="number" class="txt-f" id="idCard"/>
-              </StackLayout>
-              <StackLayout width="100%" orientation="horizontal" class="m-t-10">
-                <Label text="Name" class="txt-s"></Label>
-                <TextField hint="" class="txt-f" text="{{ userName }}" id="userName"/>
-              </StackLayout>
-              <StackLayout width="100%" orientation="horizontal" class="m-t-10">
-                <Label text="Name" class="txt-s"></Label>
+              <StackLayout width="100%" orientation="horizontal" class="">
+                <Label text="Tel" class="txt-s"></Label>
                 <TextField hint="" class="txt-f" text="{{ phoneNumber }}" keyboardType="number" id="phoneNumber"/>
               </StackLayout>
             </StackLayout>
@@ -181,7 +162,7 @@
               <Label text="End..." class="txt-s"></Label>
             </StackLayout>
             <FlexboxLayout class="actions">
-                <Button  tap="hideDialog" text="OK" class="action"/>
+                <Button tap="hideDialog" text="OK" class="action"/>
             </FlexboxLayout>
         </FlexboxLayout>
       </StackLayout> 

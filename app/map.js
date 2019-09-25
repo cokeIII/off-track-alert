@@ -9,12 +9,14 @@ require("nativescript-dom")
 var Vibrate = require("nativescript-vibrate").Vibrate
 var vibrator = new Vibrate()
 const frameModule = require("ui/frame")
-
-//const util = require('./util')
+var fs = require("tns-core-modules/file-system")
+var camera = require("nativescript-camera")
+var bghttp = require("nativescript-background-http")
+var session = bghttp.session("image-upload")
 var Toast = require('nativescript-toast')
+var imageSourceModule = require("image-source")
 let logData = {}
 //192.168.43.50
-//10.60.4.217
 const API_URL = "http://192.168.43.50:3001"
 var pageData = new Observable.fromObject({
     roadName: "",
@@ -53,13 +55,15 @@ let roadName = null
 let txtData = null
 let picData = null
 let pointChecked = {}
-exports.pageLoaded = function(args) {
+let userCard = null
+let imageAssetChang = {_android: null}
+insomnia.keepAwake().then(function() {
+    console.log("Insomnia is active");
+})
 
+exports.pageLoaded = function(args) {
     page = args.object
     page.bindingContext = pageData
-    insomnia.keepAwake().then(function() {
-        console.log("Insomnia is active");
-    })
     orientation.setOrientation("portrait")
     dlg = page.getViewById('user-data')
     dlgAlert = page.getViewById('user-alert')
@@ -114,6 +118,7 @@ exports.pageLoaded = function(args) {
     let idCard = page.getViewById('idCard')
     let userName = page.getViewById('userName')
     let phoneNumber = page.getViewById('phoneNumber')
+    userCard = page.getViewById('userCard')
 
     idCardLength[0] = new android.text.InputFilter.LengthFilter(13)
     userNameLength[0] = new android.text.InputFilter.LengthFilter(30)
@@ -360,6 +365,7 @@ function genMap(UUID,RSSI){
 } 
 
 exports.user = function() {
+    
     if(appSettings.getString("userData")){
         let jsonData = JSON.parse(appSettings.getString("userData"))
         pageData.idCard = jsonData.idCard
@@ -369,7 +375,11 @@ exports.user = function() {
         pageData.picCard = jsonData.pic
     }
     dlg.style.visibility = 'visible'
-    if(pageData.picCard != ''){
+    if(pageData.picCard != undefined){
+        let documents = fs.knownFolders.documents()
+        let path = fs.path.join(documents.path, pageData.picCard);
+        console.log(path)
+        userCard.style.backgroundImage  = path
         picData.style.visibility = 'visible'
         txtData.style.visibility = 'collapse'
     } else {
@@ -377,24 +387,43 @@ exports.user = function() {
         txtData.style.visibility = 'visible'
     }
 }
+exports.changPic = function() {
+    camera.requestPermissions().then(
+        function success() {
+            var options = {keepAspectRatio: false, saveToGallery: false };
+            camera.takePicture(options)   
+            .then(function (imageAsset) {
+                imageAssetChang = imageAsset
+                userCard.style.backgroundImage  = imageAssetChang._android
+            }).catch((err) => {
+            console.log('applyFilter ERROR: ' + err);
+            });
 
+        }, 
+        function failure() {
+        // permission request rejected
+        // ... tell the user ...
+        }
+    );
+}   
 exports.setUser = function() {
     let saveData = {}
     saveData.idCard = pageData.idCard
     saveData.userName = pageData.userName
     saveData.phoneNumber = pageData.phoneNumber
     saveData.deviceId = pageData.deviceId
+    saveData.picCard = pageData.picCard
     let text = null
     var tester = /^[a-zA-Z0-9ก-๙ ]*$/
-    if (saveData.userName.length === 0) {
+    if (saveData.userName.length === 0 && saveData.picCard == "") {
     text = 'Please enter name'
     } else if (saveData.phoneNumber.length < 10) {
     text = 'Please enter your mobile phone number to complete 10 digits.'
     } else if (saveData.deviceId.length < 0) {
     text = 'NO Device ID.'
-    } else if (saveData.idCard.length < 7) {
+    } else if (saveData.idCard.length < 7 && saveData.picCard == "") {
     text = 'ID Card incorrect.'
-    }else if (!tester.test(pageData.userName)) {
+    }else if (!tester.test(pageData.userName) && saveData.picCard == "") {
         text = 'Please enter the first and last name in the alphabet. a-z, A-Z, 0-9, A-9'
     }
     if (text != null) {
@@ -402,24 +431,61 @@ exports.setUser = function() {
         return
     }
 
-    appSettings.setString("userData", JSON.stringify(saveData))
-    fetch(API_URL+"/updateUser", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(saveData)
-    }).then((r) => r.json())
-    .then((response) => {
-        if(response.status == "Success"){
-            console.log("Success")
-            Toast.makeText("update success","long").show()
-        }
-        else if(response.status == "Fail"){
-            Toast.makeText("update fail").show()
-        }
-    }).catch((e) => {
-        console.log('***fetch error***')
-    });
 
+    if(pageData.picCard == ''){
+        fetch(API_URL+"/updateUser", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(saveData)
+        }).then((r) => r.json())
+        .then((response) => {
+            if(response.status == "Success"){
+                console.log("Success")
+                appSettings.setString("userData", JSON.stringify(saveData))
+                Toast.makeText("update success","long").show()
+            }
+            else if(response.status == "Fail"){
+                Toast.makeText("update fail").show()
+            }
+        }).catch((e) => {
+            console.log('***fetch error***')
+        });
+    } else {
+        if(imageAssetChang._android == null){
+            let documents = fs.knownFolders.documents()
+            let path = fs.path.join(documents.path, pageData.picCard);
+            imageAssetChang._android =path
+        }
+
+        var file =  imageAssetChang._android;
+        var url = API_URL+"/updateUser";
+        var request = {
+            url: url,
+            method: "POST",
+            headers: {
+                "Content-Type": "application/octet-stream",
+                "File-Name": "photo"
+            },
+            description: "Uploading"
+        };
+        let params = [
+            { name: "idCard", value: pageData.phoneNumber },
+            { name: "deviceId", value: pageData.deviceId },
+            { "name": 'photo', "filename": file, "mimeType": "image/jpg" }
+        ];
+        let task = session.multipartUpload(params, request);
+        task.on("progress", progressHandler);
+        task.on("error", errorHandler);
+        task.on("responded", respondedHandler);
+        // task.on("complete", completeHandler);
+        let documents = fs.knownFolders.documents();
+        let path = fs.path.join(documents.path, pageData.phoneNumber+".jpg");
+        console.log(path)
+        imageSourceModule.fromAsset(imageAssetChang)
+        .then(imageSource => {
+            imageSource.saveToFile(path, "jpg");
+        });
+    }
     dlgHide()
 }
 exports.userCount = () => {
@@ -441,6 +507,7 @@ exports.userCount = () => {
     });
 }
 exports.hideDialog = function() {
+    imageAssetChang._android = null
     dlg.style.visibility = 'collapse'
     dlgAlert.style.visibility = 'collapse'
     dlgcountUser.style.visibility = 'collapse'
@@ -448,6 +515,7 @@ exports.hideDialog = function() {
     dlgStart.style.visibility = 'collapse'
 }
 function dlgHide() {
+    imageAssetChang._android = null
     dlg.style.visibility = 'collapse'
     dlgAlert.style.visibility = 'collapse'
     dlgEnd.style.visibility = 'collapse'
@@ -481,4 +549,46 @@ exports.noop = () => {
 exports.reMap=()=>{
     console.log("reMap")
     frameModule.topmost().navigate("map");
+}
+function errorHandler(e) {
+    console.log("received " + e.responseCode + " code.");
+    toast = Toast.makeText("regiser fail")
+    toast.show()
+
+   var serverResponse = e.response;
+}
+
+
+// event arguments:
+// task: Task
+// responseCode: number
+// data: string
+function respondedHandler(e) {
+    console.log("received " + e.responseCode + " code. Server sent: " + e.data);
+    e.data = JSON.parse(e.data)
+    if(e.data["status"] == "Success"){
+       console.log("Success")
+       let jsonData = {}
+       jsonData.idCard = pageData.idCard
+       jsonData.userName = pageData.userName
+       jsonData.deviceId = pageData.deviceId
+       jsonData.phoneNumber = pageData.phoneNumber
+       jsonData.pic = pageData.phoneNumber+'.jpg'
+   
+       appSettings.setString("userData", JSON.stringify(jsonData))
+       toast = Toast.makeText("Update success","long")
+       toast.show()
+   }
+   else if(e.data["status"]== "Fail"){
+       toast = Toast.makeText("Update fail")
+       toast.show()
+   }
+   else if(e.data["status"]== "DuplicateUser"){
+       console.log("DuplicateUser")
+   }
+
+}
+
+function progressHandler(e) {
+    console.log("uploaded " + e.currentBytes + " / " + e.totalBytes);
 }

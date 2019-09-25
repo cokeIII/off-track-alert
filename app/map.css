@@ -160,5 +160,21 @@
 .txt-count-point {
     /* margin-left: 60px; */
     width: 40%;
+}
 
+.user-pic{
+    margin: 5%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: rotate(90);
+}
+
+.camera{
+    background-color: white;
+    margin-top: 50%;
+    margin-left: 70%;
+    font-size: 24;
+    color: black;
+    border-radius: 10;
 }

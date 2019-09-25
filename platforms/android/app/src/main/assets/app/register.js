@@ -15,13 +15,14 @@ var pageData = new Observable.fromObject({
     deviceId:"",
     phoneNumber:"",
 })
+// 192.168.43.50
 const API_URL = "http://192.168.43.50:3001"
 let mRegis = null
 let btnCamera =null
 let mRegisBtn =null
 exports.pageLoaded = function(args) {
     // Removes all values.
-    // appSettings.clear();
+    //appSettings.clear();
     if(appSettings.getString("userData")){
         let userData = JSON.parse(appSettings.getString("userData"))
         if(userData.phoneNumber != ""){
@@ -50,8 +51,7 @@ exports.pageLoaded = function(args) {
     btnCamera = page.getViewById('btnCamera')
     mRegis = page.getViewById('mRegis')
     mRegisBtn = page.getViewById('mRegisBtn')
-
-
+    
     idCardLength[0] = new android.text.InputFilter.LengthFilter(13)
     userNameLength[0] = new android.text.InputFilter.LengthFilter(30)
     phoneNumberLength[0] = new android.text.InputFilter.LengthFilter(10)
@@ -72,9 +72,7 @@ exports.takeCamera =  function() {
             .then(function (imageAsset) {
                 console.log("Result is an image asset instance");
                 var image = new imageModule.Image();
-                
                 image.src = imageAsset;
-                console.log(image.src._android)
                 var file =  image.src._android;
                 var url = API_URL+"/cards";
                 var request = {
@@ -195,7 +193,7 @@ function progressHandler(e) {
 // response: net.gotev.uploadservice.ServerResponse (Android) / NSHTTPURLResponse (iOS)
 function errorHandler(e) {
      console.log("received " + e.responseCode + " code.");
-     toast = Toast.makeText(e.response)
+     toast = Toast.makeText("regiser fail")
      toast.show()
 
     var serverResponse = e.response;

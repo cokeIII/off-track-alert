@@ -1,5 +1,5 @@
 .map{
-    background-color: aquamarine; 
+    background-color:#fff; 
     /* background-image: url("~/images/map1.jpg");
     background-position: center; 
     background-repeat: no-repeat;
@@ -177,4 +177,16 @@
     font-size: 24;
     color: black;
     border-radius: 10;
+}
+.point{
+    width:28;
+    height: 28;
+    background-color: rgb(233, 99, 10);
+    border-width: 1;
+    border-color: black;
+    border-radius: 10px;
+}
+.txt-map{
+    font-size: 14;
+    color: black;
 }

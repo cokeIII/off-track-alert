@@ -1,5 +1,5 @@
 <Page loaded="pageLoaded" id="Page" >
-  <ActionBar title="SOW" class="action-bar"></ActionBar>
+  <ActionBar title="AOT" class="action-bar"></ActionBar>
   <!-- Your UI components go here -->
   <StackLayout width="100%" class="fas bg" >
     <StackLayout id="mRegis" visibility="collapse">

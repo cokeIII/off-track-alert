@@ -76,6 +76,7 @@ exports.pageLoaded = function(args) {
     detailMapBtn = page.getViewById('detailMapBtn')
     dlgcountUser = page.getViewById('countUser')
     dlgStart = page.getViewById('pointStart')
+    dlgAboute = page.getViewById('aboute')
     dlgEnd = page.getViewById('pointEnd')
     picData = page.getViewById('picData')
     txtData = page.getViewById('txtData')
@@ -274,9 +275,8 @@ function walkMap(UUID,RSSI) {
         if(pageData.map[UUID] !== undefined) {
             console.log(pageData.map[UUID])
             rssi = RSSI
-            
+            pageData.km = calculateDistance(rssi).toFixed(2)
             // if(RSSI > -91){
-                
                 status = true
                 
                 roadName = pageData.map[UUID].name  
@@ -334,7 +334,7 @@ function genMap(UUID,RSSI){
         
         mapLayout.height = countPoint(route)>8?""+(((countPoint(route)-8)*10)+100)+"%":"100%"
         console.log(mapLayout.height)
-        mapLayout.backgroundColor = "blue"
+        mapLayout.backgroundColor = "gray"
         
         arrMaps.maps.forEach(element => {
             
@@ -344,13 +344,10 @@ function genMap(UUID,RSSI){
                     let myLabelText = new labelModule.Label()
 
                     myLabel.className = "point"
-                    myLabel.width = 28
-                    myLabel.height = 28
                     myLabel.id = element.name
                     myLabel.marginTop = ""+element.y+"%"
                     myLabel.marginLeft = ""+element.x+"%"
                     myLabel.style.zIndex="-1"
-                    myLabel.backgroundColor = "red"
                     myLabelText.text = element.name
                     myLabelText.id = "txtMap"
                     myLabelText.class = "txt-map"
@@ -515,22 +512,28 @@ exports.hideDialog = function() {
     dlgcountUser.style.visibility = 'collapse'
     dlgEnd.style.visibility = 'collapse'
     dlgStart.style.visibility = 'collapse'
+    dlgAboute.style.visibility = 'collapse'
 }
+
 function dlgHide() {
     imageAssetChang._android = null
     dlg.style.visibility = 'collapse'
     dlgAlert.style.visibility = 'collapse'
     dlgEnd.style.visibility = 'collapse'
     dlgStart.style.visibility = 'collapse'
+    dlgAboute.style.visibility = 'collapse'
 }
+
 exports.hideDetailMap = function(){
     detailMap.style.visibility = 'collapse'
     detailMapBtn.style.visibility = 'visible'
 }
+
 exports.showDetailMap = function(){
     detailMap.style.visibility = 'visible'
     detailMapBtn.style.visibility = 'collapse'
 }
+
 function dlgPiontStart() {
     if(pointStart){
         dlgStart.style.visibility = 'visible'
@@ -538,6 +541,7 @@ function dlgPiontStart() {
         dlgStart.style.visibility = 'collapse'
     }
 }
+
 function dlgPiontEnd() {
     if(pointEnd){
         dlgEnd.style.visibility = 'visible'
@@ -548,8 +552,11 @@ function dlgPiontEnd() {
 
 exports.noop = () => {
 }
+exports.aboute = () => {
+    dlgAboute.style.visibility = 'visible'
+}
+
 exports.reMap=()=>{
-    console.log("reMap")
     frameModule.topmost().navigate("map");
 }
 function errorHandler(e) {
@@ -560,11 +567,6 @@ function errorHandler(e) {
    var serverResponse = e.response;
 }
 
-
-// event arguments:
-// task: Task
-// responseCode: number
-// data: string
 function respondedHandler(e) {
     console.log("received " + e.responseCode + " code. Server sent: " + e.data);
     e.data = JSON.parse(e.data)
@@ -594,3 +596,21 @@ function respondedHandler(e) {
 function progressHandler(e) {
     console.log("uploaded " + e.currentBytes + " / " + e.totalBytes);
 }
+
+function calculateDistance(rssi) {
+  
+    var txPower = -59 //hard coded power value. Usually ranges between -59 to -65
+    
+    if (rssi == 0) {
+      return -1.0; 
+    }
+  
+    var ratio = rssi*1.0/txPower;
+    if (ratio < 1.0) {
+      return Math.pow(ratio,10);
+    }
+    else {
+      var distance =  (0.89976)*Math.pow(ratio,7.7095) + 0.111;    
+      return distance;
+    }
+  } 

@@ -1,5 +1,5 @@
 <Page loaded="pageLoaded" unloaded="pageUnloaded" id="Page">
-  <ActionBar title="SOW" class="action-bar"></ActionBar>
+  <ActionBar title="AOT" class="action-bar"></ActionBar>
   <!-- Your UI components go here -->
   
   <DockLayout  width="100%" height="100%" class="fas">
@@ -76,7 +76,7 @@
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
             <FlexboxLayout orientation="horizontal" class="title">
                 <label text="Alert" class="text"/>
-                <!-- <Button  tap="hideDialog" text="&#xf00d;" class="close"/> -->
+                <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
             </FlexboxLayout>
             <StackLayout class="content">
               <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
@@ -95,7 +95,6 @@
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
             <FlexboxLayout orientation="horizontal" class="title">
                 <label text="wait data" class="text"/>
-                <!-- <Button  tap="hideDialog" text="&#xf00d;" class="close"/> -->
             </FlexboxLayout>
             <StackLayout class="content">
               <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
@@ -114,7 +113,7 @@
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
             <FlexboxLayout orientation="horizontal" class="title">
                 <label text="Users" class="text"/>
-                <!-- <Button  tap="hideDialog" text="&#xf00d;" class="close"/> -->
+                <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
             </FlexboxLayout>
             <StackLayout class="content">
               <ListView items="{{ countUser }}" itemTap="removeCard" class="users-selector">
@@ -139,7 +138,7 @@
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
             <FlexboxLayout orientation="horizontal" class="title">
                 <label text="Point Start" class="text"/>
-                <!-- <Button  tap="hideDialog" text="&#xf00d;" class="close"/> -->
+                <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
             </FlexboxLayout>
             <StackLayout class="content">
               <Label text="Start..." class="txt-s"></Label>
@@ -156,7 +155,7 @@
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
             <FlexboxLayout orientation="horizontal" class="title">
                 <label text="Point End" class="text"/>
-                <!-- <Button  tap="hideDialog" text="&#xf00d;" class="close"/> -->
+                <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
             </FlexboxLayout>
             <StackLayout class="content">
               <Label text="End..." class="txt-s"></Label>
@@ -168,12 +167,30 @@
       </StackLayout> 
       <!-- dlg End-->
 
+      <!-- dlg aboute-->
+      <StackLayout class="lg-dialog" tap="noop" id="aboute">
+        <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
+            <FlexboxLayout orientation="horizontal" class="title">
+                <label text="Aboute" class="text"/>
+                <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
+            </FlexboxLayout>
+            <StackLayout class="content">
+              <Label text="Content" class="txt-s"></Label>
+            </StackLayout>
+            <FlexboxLayout class="actions">
+                <Button tap="hideDialog" text="OK" class="action"/>
+            </FlexboxLayout>
+        </FlexboxLayout>
+      </StackLayout> 
+      <!-- dlg aboute-->
+
+
     </AbsoluteLayout>
     <!-- <StackLayout width="100%" height="10%"> -->
       <FlexboxLayout  width="100%" height="8%" class="map-menu">
         <Label text="&#xf2bb;" tap="user"></Label>
         <Label text="&#xf554;" tap="userCount"></Label>
-        <Label text="&#xf059;"></Label>
+        <Label text="&#xf059;" tap="aboute"></Label>
       </FlexboxLayout>
     <!-- </StackLayout> -->
 

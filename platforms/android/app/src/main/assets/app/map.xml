@@ -30,7 +30,8 @@
       <!-- dlg User-->
       <StackLayout class="lg-dialog" tap="hideDialog" id="user-data">
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
-            <FlexboxLayout orientation="horizontal" class="title">
+
+            <FlexboxLayout orientation="horizontal" class="title bgtest">
                 <label text="Profile" class="text"/>
                 <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
             </FlexboxLayout>

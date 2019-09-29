@@ -10,7 +10,6 @@ var Vibrate = require("nativescript-vibrate").Vibrate
 var vibrator = new Vibrate()
 const frameModule = require("ui/frame")
 var fs = require("tns-core-modules/file-system")
-var camera = require("nativescript-camera")
 var bghttp = require("nativescript-background-http")
 var session = bghttp.session("image-upload")
 var Toast = require('nativescript-toast')
@@ -376,8 +375,7 @@ exports.user = function() {
         pageData.picCard = jsonData.pic
     }
     dlg.style.visibility = 'visible'
-    if(pageData.picCard != undefined){
-
+    if(pageData.picCard != ""){
         userCard.style.backgroundImage  = picPath
         picData.style.visibility = 'visible'
         txtData.style.visibility = 'collapse'

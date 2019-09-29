@@ -65,6 +65,11 @@ let documents = fs.knownFolders.documents()
 let picPath = null
 let tempPath = null
 exports.pageLoaded = function(args) {
+    if(time_loop)
+    timerModule.clearInterval(time_loop);
+    if(time_loop_log)
+        timerModule.clearInterval(time_loop_log);
+
     page = args.object
     page.bindingContext = pageData
     orientation.setOrientation("portrait")
@@ -131,7 +136,11 @@ exports.pageLoaded = function(args) {
     idCard.android.setFilters(idCardLength)
     userName.android.setFilters(userNameLength)
     phoneNumber.android.setFilters(phoneNumberLength)
-    picPath = fs.path.join(documents.path, pageData.picCard);
+    if(tempPath){
+        picPath = tempPath
+    } else {
+        picPath = fs.path.join(documents.path, pageData.picCard)
+    }
     bluetooth.enable().then(
         function(enabled) {
             check_route(function(cb){
@@ -226,7 +235,6 @@ function BLE_scan(){
                     if(pointWalkMap)
                         pointWalkMap.backgroundColor = "green"
                 }  
-                pageData.status = "traveling"
                 logData.uuid = pageData.uuid
                 logData.status = pageData.status
             }
@@ -284,10 +292,12 @@ function walkMap(UUID,RSSI) {
 
                 if(pageData.map[UUID].map_status == "S"){
                     dlgPiontStart()
+                    pageData.status = "traveling"
                     pointStart = false
 
                 }  else if(pageData.map[UUID].map_status == "E") {
                     dlgPiontEnd()
+                    pageData.status = "finish"
                     pointEnd = false
                 } 
             // } 
@@ -454,7 +464,7 @@ exports.setUser = function() {
             imageAssetChang._android =path
         }
         tempPath = imageAssetChang._android
-        var file =  imageAssetChang._android;
+        var file =  imageAssetChang._android
         var url = API_URL+"/updateUser";
         var request = {
             url: url,
@@ -577,6 +587,7 @@ function respondedHandler(e) {
        jsonData.phoneNumber = pageData.phoneNumber
        jsonData.pic = pageData.phoneNumber+'.jpg'
        picPath = tempPath
+       
        appSettings.setString("userData", JSON.stringify(jsonData))
        toast = Toast.makeText("Update success","long")
        toast.show()

@@ -9,6 +9,7 @@ var session = bghttp.session("image-upload");
 var Toast = require('nativescript-toast')
 var imageSourceModule = require("image-source");
 var fs = require("tns-core-modules/file-system");
+
 var pageData = new Observable.fromObject({
     idCard: "",
     userName: "",
@@ -20,9 +21,10 @@ const API_URL = "http://192.168.43.50:3001"
 let mRegis = null
 let btnCamera =null
 let mRegisBtn =null
+
 exports.pageLoaded = function(args) {
     // Removes all values.
-    //appSettings.clear();
+    // appSettings.clear();
     if(appSettings.getString("userData")){
         let userData = JSON.parse(appSettings.getString("userData"))
         if(userData.phoneNumber != ""){

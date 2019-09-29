@@ -1,0 +1,27 @@
+<Page loaded="pageLoaded" id="Page" >
+  <ActionBar title="AOT" class="action-bar"></ActionBar>
+  <!-- Your UI components go here -->
+  <StackLayout width="100%" class="fas bg" >
+    <StackLayout id="mRegis" visibility="collapse">
+      <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
+        <Label text="id card" class="txt-s"></Label>
+        <TextField hint="" text="{{ idCard }}" keyboardType="number" class="txt-f" id="idCard"/>
+      </StackLayout>
+      <StackLayout width="100%" orientation="horizontal" class="m-t-10">
+        <Label text="Name" class="txt-s"></Label>
+        <TextField hint="" class="txt-f" text="{{ userName }}" id="userName"/>
+      </StackLayout>
+    </StackLayout>
+
+    <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
+      <Label text="Tel" class="txt-s"></Label>
+      <TextField hint="" class="txt-f" text="{{ phoneNumber }}" keyboardType="number" id="phoneNumber"/>
+    </StackLayout>
+
+    <button text="Submit" class="m-t-10p btn-submit" tap="register" id="mRegisBtn" visibility="collapse"></button>
+    <button text="Manule Register" class="m-t-10p btn-scan" tap="showInput" tap="showMRegis"></button>
+    <button text="&#xf030; Scan Card" class="m-t-10p btn-scan" tap="takeCamera" id="btnCamera"></button>
+    
+  </StackLayout>
+
+</Page>

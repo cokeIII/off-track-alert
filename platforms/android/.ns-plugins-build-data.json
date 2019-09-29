@@ -1,0 +1,27 @@
+{
+	"nativescript-background-http": {
+		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-background-http\\platforms\\android\\include.gradle": "4fc0f9ce06df5336df8da8c7b7a2ce2c43356a93",
+		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-background-http\\platforms\\android\\nativescript_background_http.aar": "e0648afae01c1d8a82bbe927b6017710e103bbf9"
+	},
+	"nativescript-bluetooth": {
+		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-bluetooth\\platforms\\android\\AndroidManifest.xml": "f59c6776083721a3c2da7f9ecc73a524ac07e41d"
+	},
+	"nativescript-camera": {
+		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-camera\\platforms\\android\\nativescript_camera.aar": "076643dd1be5b20235184a9c65703fa02a930b9b"
+	},
+	"nativescript-imagepicker": {
+		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-imagepicker\\platforms\\android\\nativescript_imagepicker.aar": "90efff56ef584bda767622569467189cf5c1f236",
+		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-imagepicker\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
+	},
+	"nativescript-telephony": {
+		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-telephony\\platforms\\android\\AndroidManifest.xml": "19bc7f757ef5ea28b0f7503973cd61b1a16cfbb5"
+	},
+	"nativescript-vibrate": {
+		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-vibrate\\platforms\\android\\include.gradle": "06e7e1be49eb6d614094596003280aa7eea789f3",
+		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-vibrate\\platforms\\android\\nativescript_vibrate.aar": "31bc4bfd8ba4c2caa17b12b63f51bed004caa1d1",
+		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-vibrate\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
+	},
+	"tns-core-modules-widgets": {
+		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\tns-core-modules-widgets\\platforms\\android\\widgets-release.aar": "85168be13bc1b546c0f1d53f46bb892118ba3d9f"
+	}
+}

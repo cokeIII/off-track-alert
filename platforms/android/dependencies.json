@@ -1,0 +1,70 @@
+[
+    {
+        "name": "nativescript-background-http",
+        "directory": "..\\..\\node_modules\\nativescript-background-http"
+    },
+    {
+        "name": "nativescript-bluetooth",
+        "directory": "..\\..\\node_modules\\nativescript-bluetooth"
+    },
+    {
+        "name": "nativescript-camera",
+        "directory": "..\\..\\node_modules\\nativescript-camera"
+    },
+    {
+        "name": "nativescript-dom",
+        "directory": "..\\..\\node_modules\\nativescript-dom"
+    },
+    {
+        "name": "nativescript-imagepicker",
+        "directory": "..\\..\\node_modules\\nativescript-imagepicker"
+    },
+    {
+        "name": "nativescript-insomnia",
+        "directory": "..\\..\\node_modules\\nativescript-insomnia"
+    },
+    {
+        "name": "nativescript-loading-indicator-new",
+        "directory": "..\\..\\node_modules\\nativescript-loading-indicator-new"
+    },
+    {
+        "name": "nativescript-orientation",
+        "directory": "..\\..\\node_modules\\nativescript-orientation"
+    },
+    {
+        "name": "nativescript-sound",
+        "directory": "..\\..\\node_modules\\nativescript-sound"
+    },
+    {
+        "name": "nativescript-telephony",
+        "directory": "..\\..\\node_modules\\nativescript-telephony"
+    },
+    {
+        "name": "nativescript-theme-core",
+        "directory": "..\\..\\node_modules\\nativescript-theme-core"
+    },
+    {
+        "name": "nativescript-toast",
+        "directory": "..\\..\\node_modules\\nativescript-toast"
+    },
+    {
+        "name": "nativescript-vibrate",
+        "directory": "..\\..\\node_modules\\nativescript-vibrate"
+    },
+    {
+        "name": "tns-core-modules",
+        "directory": "..\\..\\node_modules\\tns-core-modules"
+    },
+    {
+        "name": "nativescript-permissions",
+        "directory": "..\\..\\node_modules\\nativescript-permissions"
+    },
+    {
+        "name": "nativescript-globalevents",
+        "directory": "..\\..\\node_modules\\nativescript-globalevents"
+    },
+    {
+        "name": "tns-core-modules-widgets",
+        "directory": "..\\..\\node_modules\\tns-core-modules-widgets"
+    }
+]

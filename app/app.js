@@ -1,2 +1,2 @@
 var applicationModule = require("application");
-applicationModule.start({ moduleName: "register" });
+applicationModule.start({ moduleName: "map" });

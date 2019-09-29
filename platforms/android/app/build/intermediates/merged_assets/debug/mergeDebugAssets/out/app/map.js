@@ -18,7 +18,7 @@ var imagepicker = require("nativescript-imagepicker")
 var context = imagepicker.create({ mode: "single" })
 let logData = {}
 //192.168.43.50
-const API_URL = "http://192.168.43.50:3001"
+const API_URL = "http://192.168.1.8:3001"
 var pageData = new Observable.fromObject({
     roadName: "",
     map:{},

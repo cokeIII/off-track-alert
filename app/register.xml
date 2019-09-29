@@ -1,26 +1,35 @@
 <Page loaded="pageLoaded" id="Page" >
-  <ActionBar title="AOT" class="action-bar"></ActionBar>
+  <!-- <ActionBar title="AOT" class="action-bar"></ActionBar> -->
+  <ActionBar  title="off-track alert system"  class="header actions " ></ActionBar>
   <!-- Your UI components go here -->
-  <StackLayout width="100%" class="fas bg" >
-    <StackLayout id="mRegis" visibility="collapse">
-      <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
-        <Label text="id card" class="txt-s"></Label>
-        <TextField hint="" text="{{ idCard }}" keyboardType="number" class="txt-f" id="idCard"/>
-      </StackLayout>
-      <StackLayout width="100%" orientation="horizontal" class="m-t-10">
-        <Label text="Name" class="txt-s"></Label>
-        <TextField hint="" class="txt-f" text="{{ userName }}" id="userName"/>
-      </StackLayout>
+  <StackLayout width="100%" class="fas bg  " >
+
+    <StackLayout id="mRegis" visibility="collapse" class=" m-t-30p">
+      <GridLayout columns="auto, *, auto" rows="auto,0" verticalAlignment="top" >
+          <Image src="~/images/baseline_vpn_key_black_24dp.png" stretch="none" class="iconID  "></Image>
+          <TextField  height="11%" hint="ID Card" class="selectbox "   text="{{ idCard }}" keyboardType="number"  id="idCard"/>
+      </GridLayout>
+      <GridLayout columns="auto, *, auto" rows="auto,0" verticalAlignment="top" >
+          <Image src="~/images/baseline_person_black_18dp.png" stretch="none" class="iconID"></Image>
+          <TextField  height="11%" hint="UserName" class="selectbox " text="{{ userName }}" id="userName"/>
+      </GridLayout>
+        <GridLayout columns="auto, *, auto" rows="auto,0"  class="">
+          <Image src="~/images/baseline_local_phone_black_18dp.png" stretch="none" class="iconID"></Image>
+          <TextField text="&#xf030;" abItem="title: 'Tab 1', iconSource: 'res://icon'"  height="13%" hint="telephone number" class="selectbox " keyboardType="number" text="{{ phoneNumber }}" id="phoneNumber"/>
+      </GridLayout>
+      <button text="Submit" class="m-t-10p btn-submit buttons" tap="register" id="mRegisBtn" ></button>
+      <button text="Back" class="m-t-4p buttons2" tap="showInput" tap="showMRegis"></button>
     </StackLayout>
 
-    <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
-      <Label text="Tel" class="txt-s"></Label>
-      <TextField hint="" class="txt-f" text="{{ phoneNumber }}" keyboardType="number" id="phoneNumber"/>
+    <StackLayout id="mRegis" visibility="" class=" m-t-36p">
+      <GridLayout columns="auto, *, auto" rows="auto,0" verticalAlignment="top"  class="" >
+          <Image src="~/images/baseline_local_phone_black_18dp.png" stretch="none" class="iconID"></Image>
+          <TextField text="&#xf030;" abItem="title: 'Tab 1', iconSource: 'res://icon'"  height="12%" hint="telephone number" class="selectbox " keyboardType="number" text="{{ phoneNumber }}" id="phoneNumber"/>
+      </GridLayout>
     </StackLayout>
-
-    <button text="Submit" class="m-t-10p btn-submit" tap="register" id="mRegisBtn" visibility="collapse"></button>
-    <button text="Manule Register" class="m-t-10p btn-scan" tap="showInput" tap="showMRegis"></button>
-    <button text="&#xf030; Scan Card" class="m-t-10p btn-scan" tap="takeCamera" id="btnCamera"></button>
+      <button text="Submit" class="m-t-10p btn-submit buttons" tap="register" id="mRegisBtn" visibility="collapse"></button>
+      <button text="Manule Register" class="m-t-5p buttons" tap="showInput" tap="showMRegis"></button>
+      <button text="&#xf030; Scan Card Register" class="m-t-10 buttons" tap="takeCamera" id="btnCamera"></button>
     
   </StackLayout>
 

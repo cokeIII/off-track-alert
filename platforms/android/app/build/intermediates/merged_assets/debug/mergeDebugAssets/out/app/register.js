@@ -17,7 +17,7 @@ var pageData = new Observable.fromObject({
     phoneNumber:"",
 })
 // 192.168.43.50
-const API_URL = "http://192.168.43.50:3001"
+const API_URL = "http://192.168.1.8:3001"
 let mRegis = null
 let btnCamera =null
 let mRegisBtn =null

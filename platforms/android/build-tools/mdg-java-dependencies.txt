@@ -45,3 +45,4 @@ D:\PROJECT\off-track-alert-AOT_MASTER\platforms\android\app\build\exploded-depen
 D:\PROJECT\off-track-alert-AOT_MASTER\platforms\android\app\build\exploded-dependencies\7\classes.jar
 D:\PROJECT\off-track-alert-AOT_MASTER\platforms\android\app\build\exploded-dependencies\8\classes.jar
 D:\PROJECT\off-track-alert-AOT_MASTER\platforms\android\app\build\exploded-dependencies\9\classes.jar
+D:\PROJECT\off-track-alert-AOT_MASTER\platforms\android\app\build\intermediates\javac\debug

@@ -4,7 +4,8 @@
 		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-background-http\\platforms\\android\\nativescript_background_http.aar": "e0648afae01c1d8a82bbe927b6017710e103bbf9"
 	},
 	"nativescript-bluetooth": {
-		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-bluetooth\\platforms\\android\\AndroidManifest.xml": "f59c6776083721a3c2da7f9ecc73a524ac07e41d"
+		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-bluetooth\\platforms\\android\\AndroidManifest.xml": "f59c6776083721a3c2da7f9ecc73a524ac07e41d",
+		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-bluetooth\\platforms\\android\\nativescript_bluetooth.aar": "fbc02a7ccc3ef83bae0bbdba12e5f7ee3d54b90a"
 	},
 	"nativescript-camera": {
 		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-camera\\platforms\\android\\nativescript_camera.aar": "076643dd1be5b20235184a9c65703fa02a930b9b"
@@ -14,7 +15,8 @@
 		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-imagepicker\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
 	},
 	"nativescript-telephony": {
-		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-telephony\\platforms\\android\\AndroidManifest.xml": "19bc7f757ef5ea28b0f7503973cd61b1a16cfbb5"
+		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-telephony\\platforms\\android\\AndroidManifest.xml": "19bc7f757ef5ea28b0f7503973cd61b1a16cfbb5",
+		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-telephony\\platforms\\android\\nativescript_telephony.aar": "137d3699bf0669dc148de379effba4854c7b386d"
 	},
 	"nativescript-vibrate": {
 		"D:\\PROJECT\\off-track-alert-AOT_MASTER\\node_modules\\nativescript-vibrate\\platforms\\android\\include.gradle": "06e7e1be49eb6d614094596003280aa7eea789f3",

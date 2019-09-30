@@ -1,5 +1,6 @@
 <Page loaded="pageLoaded" unloaded="pageUnloaded" id="Page">
-  <ActionBar title="AOT" class="action-bar"></ActionBar>
+  <!-- <ActionBar title="AOT" class="action-bar"></ActionBar> -->
+  <ActionBar android.iconVisibility="always"  title="off-track alert system"  class="header actions " ></ActionBar>
   <!-- Your UI components go here -->
   
   <DockLayout  width="100%" height="100%" class="fas">
@@ -18,6 +19,7 @@
         <StackLayout class="hr-light m-t-10" width="90%"></StackLayout>
         <StackLayout width="100%" orientation="horizontal">
           <Label class="user-RSSI" text="&#xf09e;"></Label>
+          
           <Label text="{{ rssi }}" class="rssis"></Label>
           <Label class="user-road" text="&#xf018;"></Label>
           <Label class="road-total" text=" {{ km +'m'}}"></Label>
@@ -30,7 +32,8 @@
       <!-- dlg User-->
       <StackLayout class="lg-dialog" tap="hideDialog" id="user-data">
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
-            <FlexboxLayout orientation="horizontal" class="title">
+
+            <FlexboxLayout orientation="horizontal" class="title bgtest">
                 <label text="Profile" class="text"/>
                 <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
             </FlexboxLayout>

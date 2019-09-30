@@ -19,6 +19,7 @@
         <StackLayout class="hr-light m-t-10" width="90%"></StackLayout>
         <StackLayout width="100%" orientation="horizontal">
           <Label class="user-RSSI" text="&#xf09e;"></Label>
+          
           <Label text="{{ rssi }}" class="rssis"></Label>
           <Label class="user-road" text="&#xf018;"></Label>
           <Label class="road-total" text=" {{ km +'m'}}"></Label>

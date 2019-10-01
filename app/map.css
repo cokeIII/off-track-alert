@@ -136,6 +136,12 @@
 .m-t-10p{
     margin-top: 10%;
 }
+.m-t-15p{
+    margin-top: 15%;
+}
+.m-t-25p{
+    margin-top: 25%;
+}
 .center{
     
     font-size: 25px;
@@ -145,7 +151,7 @@
     margin-top: 35%;
 }
 .m-t-5p{
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .txt-s{
@@ -186,10 +192,12 @@
 
 .user-pic{
     margin: 5%;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-position: center;
     background-size: contain;
     transform: rotate(90);
+    padding: 12px 20px;
+   
 }
 
 .camera{
@@ -288,7 +296,7 @@
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: rgb(136, 136, 127);
+    background-color: rgb(167, 167, 155);
     border: 1px;
     border-radius: 50px;
     box-shadow: 0 9px #999;

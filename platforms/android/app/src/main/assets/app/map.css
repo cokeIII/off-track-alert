@@ -205,8 +205,8 @@
 
 .camera{
     background-color: white;
-    margin-top: 50%;
-    margin-left: 70%;
+    margin-top: 40%;
+    margin-left: 60%;
     font-size: 24;
     color: black;
     border-radius: 10;
@@ -304,7 +304,31 @@
     border-radius: 50px;
     box-shadow: 0 9px #999;
   }
+  .buttonsedit2 {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 80%;
+    /* height: 10%; */
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(167, 167, 155);
+    border: 1px;
+    border-radius: 50px;
+    box-shadow: 0 9px #999;
+  }
   /*-----------end btn edit-------------------*/
+  /* ----------------------------------- */
+  .lable_left{
+    margin-left: 30%;
+  }
+ 
+  /* -------------------------------- */
   /*-------------------font size menu----------------------*/
   .size_icon_menu{
    width: 20%;

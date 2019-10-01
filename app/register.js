@@ -24,7 +24,7 @@ let mRegisBtn =null
 
 exports.pageLoaded = function(args) {
     // Removes all values.
-    // appSettings.clear();
+    appSettings.clear();
     if(appSettings.getString("userData")){
         let userData = JSON.parse(appSettings.getString("userData"))
         if(userData.phoneNumber != ""){

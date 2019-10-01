@@ -72,13 +72,13 @@
                   </AbsoluteLayout>
               </StackLayout>
 
-              <StackLayout width="100%" orientation="horizontal" class="">
-                <Label text="Tel" class="txt-s"></Label>
+              <StackLayout width="100%" orientation="horizontal" class="lable_left">
+                <Label text="Tel" class="txt-s "></Label>
                 <TextField hint="" class="txt-f" text="{{ phoneNumber }}" keyboardType="number" id="phoneNumber"/>
               </StackLayout>
               
               <FlexboxLayout class="">
-                   <Button  tap="setUser" text="Edit"  class="action buttonsedit m-t-5p"/>
+                   <Button  tap="setUser" text="Edit"  class="action buttonsedit2 "/>
               </FlexboxLayout>
 
           </StackLayout>

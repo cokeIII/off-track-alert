@@ -191,12 +191,15 @@
 }
 
 .user-pic{
-    margin: 5%;
-    /* background-repeat: no-repeat; */
+    /* margin: 5%; */
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    transform: rotate(90);
-    padding: 12px 20px;
+    /* background-size: contain; */
+    margin-top: 0%;
+    margin-left: 23%;
+    transform: rotate(0);
+    /* padding: 100px 20px; */
+    border-radius: 80%;
    
 }
 
@@ -324,6 +327,23 @@
     background-image: url('~/images/testmap.png');   
 }
 /*----------end bgmap-------------------*/
+/* --------------------------------------- */
+
+.textAlignVer{
+    display:block;
+    filter: flipv fliph;
+    /* background-image : url('../images/close-icon.png'); */
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg); 
+    transform: rotate(-360deg); 
+    position:relative;
+    width:20px;
+    white-space:nowrap;
+    font-size:12px;
+    margin-bottom:10px;
+}
+/* --------------------------------------- */
+
 .bgtest{
         background-color: #4CAF50; 
       }

@@ -67,7 +67,7 @@
               <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
                   <!-- <Label text="Card" class="txt-s"></Label> -->
                   <AbsoluteLayout>
-                    <Image id="userCard"  class="user-pic" width="250" height="150"></Image>
+                    <Image id="userCard"  class="user-pic " width="150" height="150"></Image>
                     <Label  width="24" height="24" class="camera" text="&#xf030;" tap="changPic"></Label>
                   </AbsoluteLayout>
               </StackLayout>

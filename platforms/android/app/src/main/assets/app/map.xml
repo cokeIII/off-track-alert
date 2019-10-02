@@ -13,7 +13,7 @@
       <StackLayout width="80%" height="26%" class="detail-map" id="detailMap">
         <Label text="&#xf057;" width="30" height="20"  marginTop="5%" marginLeft="88%" tap="hideDetailMap" class="close"></Label>
         <StackLayout id="testView" width="100%" orientation="horizontal">
-          <Label text="&#xf3c5;" class="map-mark"></Label>
+          <Label text="&#xf3c5;" color="#C70039" class="map-mark"></Label>
           <Label text="{{ roadName }}" class="track-name"></Label>
         </StackLayout>
         

@@ -13,7 +13,7 @@
       <StackLayout width="80%" height="26%" class="detail-map" id="detailMap">
         <Label text="&#xf057;" width="30" height="20"  marginTop="5%" marginLeft="88%" tap="hideDetailMap" class="close"></Label>
         <StackLayout id="testView" width="100%" orientation="horizontal">
-          <Label text="&#xf3c5;" class="map-mark"></Label>
+          <!-- <Label text="&#xf3c5;" class="map-mark"></Label> -->
           <Label text="{{ roadName }}" class="track-name"></Label>
         </StackLayout>
         
@@ -33,13 +33,16 @@
       <StackLayout class="lg-dialog" tap="hideDialog" id="user-data">
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
 
-            <FlexboxLayout orientation="horizontal" class="title " height="11%">
-                <!-- <label text="Profile" class="text"/> -->
+            <!-- <FlexboxLayout orientation="horizontal" class="title " height="11%">
                      <Image src="~/images/icons8-resume-96.png" text="User information" stretch="none"  width="16%" height="15%" class="" horizontalAlignment="center"></Image>
                    <Label text="Profile" class=" text "></Label>
                    <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left "/>
+            </FlexboxLayout> -->
+            <FlexboxLayout  orientation="horizontal" class="title headermenu" height="11%">
+             <Image src="~/images/icons8-resume-96.png" text="User information" stretch="none"  width="15%" height="12%" class="" horizontalAlignment="center"></Image>
+                   <Label text="Profile" class="text "></Label>
+                   <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
             </FlexboxLayout>
-            
        
             <StackLayout class="content bg_dlg_User " id="txtData" visibility="collapse">
 
@@ -67,21 +70,23 @@
               <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
                   <!-- <Label text="Card" class="txt-s"></Label> -->
                   <AbsoluteLayout>
-                    <Image id="userCard"  class="user-pic" width="250" height="150"></Image>
+                    <Image id="userCard"  class="user-pic " width="150" height="150"></Image>
                     <Label  width="24" height="24" class="camera" text="&#xf030;" tap="changPic"></Label>
                   </AbsoluteLayout>
               </StackLayout>
 
-              <StackLayout width="100%" orientation="horizontal" class="">
-                <Label text="Tel" class="txt-s"></Label>
+              <StackLayout width="100%" orientation="horizontal" class="lable_left">
+                <Label text="Tel" class="txt-s "></Label>
                 <TextField hint="" class="txt-f" text="{{ phoneNumber }}" keyboardType="number" id="phoneNumber"/>
               </StackLayout>
+              
+              <FlexboxLayout class="">
+                   <Button  tap="setUser" text="Edit"  class="action buttonsedit2 "/>
+              </FlexboxLayout>
 
           </StackLayout>
 <!-- ************************************************************************************************************************************************ -->
-            <!-- <FlexboxLayout class="">
-                <Button  tap="setUser" text="Edit" visibility="collapse" class="action buttonsedit m-t-5p"/>
-            </FlexboxLayout> -->
+          
 <!-- ************************************************************************************************************************************************ -->
         </FlexboxLayout>
       </StackLayout> 
@@ -127,9 +132,11 @@
       <!-- dlg countUser-->
       <StackLayout class="lg-dialog" tap="noop" id="countUser">
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
-            <FlexboxLayout orientation="horizontal" class="title">
-                <label text="Users" class="text"/>
-                <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
+           <FlexboxLayout  orientation="horizontal" class="title headermenu" height="11%">
+                <!-- <label text="Profile" class="text"/> -->
+                     <!-- <Image src="~/images/icons8-resume-96.png" text="User information" stretch="none"  width="16%" height="15%" class="" horizontalAlignment="center"></Image> -->
+                    <label text="Users" class="text"/>
+                   <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
             </FlexboxLayout>
             <StackLayout class="content">
               <ListView items="{{ countUser }}" itemTap="removeCard" class="users-selector">
@@ -142,9 +149,7 @@
                   </ListView.itemTemplate>
               </ListView>
             </StackLayout>
-            <FlexboxLayout class="actions">
-                <Button  tap="hideDialog" text="OK" class="action"/>
-            </FlexboxLayout>
+
         </FlexboxLayout>
       </StackLayout> 
       <!-- dlg countUser-->
@@ -185,18 +190,24 @@
 
       <!-- dlg aboute-->
       <StackLayout class="lg-dialog" tap="noop" id="aboute">
-        <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
-            <FlexboxLayout orientation="horizontal" class="title">
-                <label text="Aboute" class="text"/>
-                <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
+      <FlexboxLayout   stretchLastChild="true" class="dialog  " tap="noop">
+            
+            <FlexboxLayout  orientation="horizontal" class="title headermenu" height="11%">
+                <!-- <label text="Profile" class="text"/> -->
+                     <!-- <Image src="~/images/icons8-resume-96.png" text="User information" stretch="none"  width="16%" height="15%" class="" horizontalAlignment="center"></Image> -->
+                   <label text="Aboute" class="text"/>
+                   <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
             </FlexboxLayout>
-            <StackLayout class="content">
-              <Label text="Content" class="txt-s"></Label>
-            </StackLayout>
-            <FlexboxLayout class="actions">
-                <Button tap="hideDialog" text="OK" class="action"/>
-            </FlexboxLayout>
-        </FlexboxLayout>
+              <StackLayout width="10%" height="100%"  class="bodymenu">
+                <Label class="h5 p-2 m-2 " text="[1] Andy Boxall. (2560)" ></Label>
+                <Label class="h5 p-2 m-2 " text="แหล่งที่มา https://1th.me/L7vx ”วันที่สืบค้น : 22 ส.ค 2562” "  ></Label>
+                <Label class="h5 p-2 m-2 " text="[2] Blind Buddy แอพฯ พาคนตาบอดขึ้นรถเมล์.(2559) " ></Label>
+                <Label class="h5 p-2 m-2 " text="แหล่งที่มา https://1th.me/ej89 “วันที่สืบค้น : 22 ส.ค 2562” "></Label>
+                <Label class="h5 p-2 m-2 " text="[3] งานวิจัยของ นายเติมศักดิ์ ตันติวิวัฒน์,นายพุฒินาท อาชีวะวานิช " ></Label>
+                <Label class="h5 p-2 m-2 " text="แหล่งที่มา https://1th.me/WudX “วันที่สืบค้น: 22 ส.ค 2562”"></Label>
+              </StackLayout>
+          </FlexboxLayout>
+
       </StackLayout> 
       <!-- dlg aboute-->
 

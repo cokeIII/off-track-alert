@@ -17,14 +17,14 @@ var pageData = new Observable.fromObject({
     phoneNumber:"",
 })
 // 192.168.43.50
-const API_URL = "http://192.168.1.8:3001"
+const API_URL = "http://202.129.16.68:7777"
 let mRegis = null
 let btnCamera =null
 let mRegisBtn =null
 
 exports.pageLoaded = function(args) {
     // Removes all values.
-    appSettings.clear();
+    // appSettings.clear();
     if(appSettings.getString("userData")){
         let userData = JSON.parse(appSettings.getString("userData"))
         if(userData.phoneNumber != ""){

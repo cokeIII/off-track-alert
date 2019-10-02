@@ -33,13 +33,16 @@
       <StackLayout class="lg-dialog" tap="hideDialog" id="user-data">
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
 
-            <FlexboxLayout orientation="horizontal" class="title " height="11%">
-                <!-- <label text="Profile" class="text"/> -->
+            <!-- <FlexboxLayout orientation="horizontal" class="title " height="11%">
                      <Image src="~/images/icons8-resume-96.png" text="User information" stretch="none"  width="16%" height="15%" class="" horizontalAlignment="center"></Image>
                    <Label text="Profile" class=" text "></Label>
                    <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left "/>
+            </FlexboxLayout> -->
+            <FlexboxLayout  orientation="horizontal" class="title headermenu" height="11%">
+             <Image src="~/images/icons8-resume-96.png" text="User information" stretch="none"  width="15%" height="12%" class="" horizontalAlignment="center"></Image>
+                   <Label text="Profile" class="text "></Label>
+                   <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
             </FlexboxLayout>
-            
        
             <StackLayout class="content bg_dlg_User " id="txtData" visibility="collapse">
 

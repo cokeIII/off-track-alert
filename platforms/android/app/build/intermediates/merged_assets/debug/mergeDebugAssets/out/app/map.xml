@@ -13,7 +13,7 @@
       <StackLayout width="80%" height="26%" class="detail-map" id="detailMap">
         <Label text="&#xf057;" width="30" height="20"  marginTop="5%" marginLeft="88%" tap="hideDetailMap" class="close"></Label>
         <StackLayout id="testView" width="100%" orientation="horizontal">
-          <!-- <Label text="&#xf3c5;" class="map-mark"></Label> -->
+          <Label text="&#xf3c5;" color="#C70039" class="map-mark"></Label>
           <Label text="{{ roadName }}" class="track-name"></Label>
         </StackLayout>
         
@@ -117,10 +117,18 @@
             <FlexboxLayout orientation="horizontal" class="title">
                 <label text="wait data" class="text"/>
             </FlexboxLayout>
+            
             <StackLayout class="content">
+             
               <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
-                <Label text="wait data..." class="txt-s"></Label>
+                <Label text="wait data..." class="txt-s "></Label>  
+                <ActivityIndicator busy="true" class="m-t-30p"/><!-- londing-->
               </StackLayout>
+                  <StackLayout class="content">
+                     <Label text="annotation/หมายเหตุ:" class="m-t-50p set_thai1"></Label>
+                      <Label text="*กด REFRESH เพื่อค้นหาอุปกรณ์" class="set_thai1"></Label>  
+                      <Label text="*Press REFRESH to search for devices " class="set_thai1"></Label>
+                   </StackLayout>
             </StackLayout>
             <FlexboxLayout class="actions">
                 <Button  tap="reMap" text="refresh " class="action"/>
@@ -142,7 +150,7 @@
               <ListView items="{{ countUser }}" itemTap="removeCard" class="users-selector">
                   <ListView.itemTemplate  let-country="item" let-i="index" let-odd="odd" let-even="even" class="list-item">
                       <StackLayout class="item" orientation="horizontal">
-                          <Label text="&#xf21d;" class="txt-count-icon"></Label>
+                          <Label text="&#xf21d;" color="#3898E7" class="txt-count-icon"></Label>
                           <Label text="{{ userName }}" class="txt-count-name"></Label>
                           <Label text="{{ name }}" class="txt-count-point"></Label>
                       </StackLayout>

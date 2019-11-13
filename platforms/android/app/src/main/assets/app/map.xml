@@ -35,8 +35,8 @@
 
             <FlexboxLayout  orientation="horizontal" class="title headermenu" height="11%">
              <Image src="~/images/icons8-resume-96.png" text="User information" stretch="none"  width="15%" height="12%" class="" horizontalAlignment="center"></Image>
-                   <Label text="Profile" class="text "></Label>
-                   <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
+                <Label text="Profile" class="text "></Label>
+                <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
             </FlexboxLayout>
        
             <StackLayout class="content bg_dlg_User " id="txtData" visibility="collapse">
@@ -62,13 +62,13 @@
             <!-- PIC DATA -->
            <StackLayout class="content bg_dlg_User" id="picData" visibility="collapse">
             
-              <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
-                  <AbsoluteLayout>
-                    <Image id="userCard"  class="user-pic " width="150" height="150"></Image>
-                    <Label  width="24" height="24" class="camera" text="&#xf030;" tap="changPic"></Label>
-                  </AbsoluteLayout>
+              <StackLayout>
+                <Label text="Card" class="txt-s"></Label>
+                <AbsoluteLayout>
+                  <Image id="userCard"  class="user-pic" width="250" height="150"></Image>
+                  <Label  width="24" height="24" class="camera" text="&#xf030;" tap="changPic"></Label>
+                </AbsoluteLayout>
               </StackLayout>
-
               <StackLayout width="100%" orientation="horizontal" class="lable_left">
                 <Label text="Tel" class="txt-s "></Label>
                 <TextField hint="" class="txt-f" text="{{ phoneNumber }}" keyboardType="number" id="phoneNumber"/>
@@ -135,10 +135,8 @@
       <StackLayout class="lg-dialog" tap="noop" id="countUser">
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
            <FlexboxLayout  orientation="horizontal" class="title headermenu" height="11%">
-                <!-- <label text="Profile" class="text"/> -->
-                     <!-- <Image src="~/images/icons8-resume-96.png" text="User information" stretch="none"  width="16%" height="15%" class="" horizontalAlignment="center"></Image> -->
-                    <label text="Users" class="text"/>
-                   <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
+              <label text="Users" class="text"/>
+              <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
             </FlexboxLayout>
             <StackLayout class="content">
               <ListView items="{{ countUser }}" itemTap="removeCard" class="users-selector">
@@ -194,8 +192,8 @@
       <StackLayout class="lg-dialog" tap="noop" id="aboute">
         <FlexboxLayout   stretchLastChild="true" class="dialog  " tap="noop">
           <FlexboxLayout  orientation="horizontal" class="title headermenu" height="11%">
-                  <label text="Aboute" class="text"/>
-                  <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
+              <label text="Aboute" class="text"/>
+              <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
           </FlexboxLayout>
           <StackLayout class="content">
             <ScrollView width="100%"  height="100%">

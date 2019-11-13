@@ -219,16 +219,11 @@
 }
 
 .user-pic{
-    /* margin: 5%; */
+    margin: 5%;
     background-repeat: no-repeat;
     background-position: center;
-    /* background-size: contain; */
-    margin-top: 0%;
-    margin-left: 23%;
-    transform: rotate(0);
-    /* padding: 100px 20px; */
-    border-radius: 80%;
-   
+    background-size: contain;
+    transform: rotate(90);
 }
 
 .camera{

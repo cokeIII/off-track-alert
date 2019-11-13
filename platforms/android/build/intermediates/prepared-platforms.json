@@ -1,13 +1,20 @@
 {
+    "nativescript-background-http": true,
     "nativescript-bluetooth": true,
     "nativescript-camera": true,
-    "nativescript-image-zoom": true,
-    "nativescript-ocr": true,
+    "nativescript-dom": true,
+    "nativescript-downloader": true,
+    "nativescript-imagepicker": true,
+    "nativescript-insomnia": true,
+    "nativescript-loading-indicator-new": true,
     "nativescript-orientation": true,
+    "nativescript-sound": true,
+    "nativescript-telephony": true,
     "nativescript-theme-core": true,
+    "nativescript-toast": true,
+    "nativescript-vibrate": true,
     "tns-core-modules": true,
     "nativescript-permissions": true,
-    "nativescript-dom": true,
     "nativescript-globalevents": true,
     "tns-core-modules-widgets": true
 }

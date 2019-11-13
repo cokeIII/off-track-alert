@@ -1,1 +1,1 @@
-D:\PROJECT\off-track-alert\platforms\android\app/src/main/assets/app
+E:\Project\off-track-alert\platforms\android\app/src/main/assets/app

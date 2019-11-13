@@ -1,5 +1,7 @@
 package com.tns;
 
+import java.io.File;
+
 import android.app.Application;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -11,7 +13,6 @@ import android.os.Build;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -27,13 +28,13 @@ public final class RuntimeHelper {
 
     // hasErrorIntent tells you if there was an event (with an uncaught
     // exception) raised from ErrorReport
-    private static boolean hasErrorIntent(Context context) {
+    private static boolean hasErrorIntent(Application app) {
         boolean hasErrorIntent = false;
 
         try {
             // empty file just to check if there was a raised uncaught error by
             // ErrorReport
-            if (Util.isDebuggableApp(context)) {
+            if (Util.isDebuggableApp(app)) {
                 String fileName = "";
 
                 try {
@@ -44,7 +45,7 @@ public final class RuntimeHelper {
                     return false;
                 }
 
-                File errFile = new File(context.getFilesDir(), fileName);
+                File errFile = new File(app.getFilesDir(), fileName);
 
                 if (errFile.exists()) {
                     errFile.delete();
@@ -58,7 +59,7 @@ public final class RuntimeHelper {
         return hasErrorIntent;
     }
 
-    public static Runtime initRuntime(Context context) {
+    public static Runtime initRuntime(Application app) {
         if (Runtime.isInitialized()) {
             return Runtime.getCurrentRuntime();
         }
@@ -72,21 +73,21 @@ public final class RuntimeHelper {
                 loadLibraryFrame.close();
             }
 
-            Logger logger = new LogcatLogger(context);
+            Logger logger = new LogcatLogger(app);
 
             Runtime runtime = null;
-            boolean showErrorIntent = hasErrorIntent(context);
+            boolean showErrorIntent = hasErrorIntent(app);
             if (!showErrorIntent) {
-                NativeScriptUncaughtExceptionHandler exHandler = new NativeScriptUncaughtExceptionHandler(logger, context);
+                NativeScriptUncaughtExceptionHandler exHandler = new NativeScriptUncaughtExceptionHandler(logger, app);
 
                 Thread.setDefaultUncaughtExceptionHandler(exHandler);
 
                 DefaultExtractPolicy extractPolicy = new DefaultExtractPolicy(logger);
-                boolean skipAssetExtraction = Util.runPlugin(logger, context);
+                boolean skipAssetExtraction = Util.runPlugin(logger, app);
 
-                String appName = context.getPackageName();
-                File rootDir = new File(context.getApplicationInfo().dataDir);
-                File appDir = context.getFilesDir();
+                String appName = app.getPackageName();
+                File rootDir = new File(app.getApplicationInfo().dataDir);
+                File appDir = app.getFilesDir();
 
                 try {
                     appDir = appDir.getCanonicalFile();
@@ -102,14 +103,14 @@ public final class RuntimeHelper {
 
                         AssetExtractor aE = new AssetExtractor(null, logger);
 
-                        String outputDir = context.getFilesDir().getPath() + File.separator;
+                        String outputDir = app.getFilesDir().getPath() + File.separator;
 
                         // will force deletion of previously extracted files in app/files directories
                         // see https://github.com/NativeScript/NativeScript/issues/4137 for reference
                         boolean removePreviouslyInstalledAssets = true;
-                        aE.extractAssets(context, "app", outputDir, extractPolicy, removePreviouslyInstalledAssets);
-                        aE.extractAssets(context, "internal", outputDir, extractPolicy, removePreviouslyInstalledAssets);
-                        aE.extractAssets(context, "metadata", outputDir, extractPolicy, false);
+                        aE.extractAssets(app, "app", outputDir, extractPolicy, removePreviouslyInstalledAssets);
+                        aE.extractAssets(app, "internal", outputDir, extractPolicy, removePreviouslyInstalledAssets);
+                        aE.extractAssets(app, "metadata", outputDir, extractPolicy, false);
 
                         boolean shouldExtractSnapshots = true;
 
@@ -121,10 +122,10 @@ public final class RuntimeHelper {
 
                             @SuppressWarnings("deprecation")
                             String cpu_abi = Build.CPU_ABI;
-                            aE.extractAssets(context, "snapshots/" + cpu_abi, outputDir, extractPolicy, removePreviouslyInstalledAssets);
+                            aE.extractAssets(app, "snapshots/" + cpu_abi, outputDir, extractPolicy, removePreviouslyInstalledAssets);
                         }
 
-                        extractPolicy.setAssetsThumb(context);
+                        extractPolicy.setAssetsThumb(app);
                     } finally {
                         extractionFrame.close();
                     }
@@ -133,11 +134,11 @@ public final class RuntimeHelper {
                 AppConfig appConfig = new AppConfig(appDir);
                 ManualInstrumentation.setMode(appConfig.getProfilingMode());
 
-                ClassLoader classLoader = context.getClassLoader();
+                ClassLoader classLoader = app.getClassLoader();
                 File dexDir = new File(rootDir, "code_cache/secondary-dexes");
                 String dexThumb = null;
                 try {
-                    dexThumb = Util.getDexThumb(context);
+                    dexThumb = Util.getDexThumb(app);
                 } catch (NameNotFoundException e) {
                     if (logger.isEnabled()) {
                         logger.write("Error while getting current proxy thumb");
@@ -147,24 +148,24 @@ public final class RuntimeHelper {
 
                 String nativeLibDir = null;
                 try {
-                    nativeLibDir = context.getPackageManager().getApplicationInfo(appName, 0).nativeLibraryDir;
+                    nativeLibDir = app.getPackageManager().getApplicationInfo(appName, 0).nativeLibraryDir;
                 } catch (NameNotFoundException e) {
                     e.printStackTrace();
                 }
 
-                boolean isDebuggable = Util.isDebuggableApp(context);
+                boolean isDebuggable = Util.isDebuggableApp(app);
                 StaticConfiguration config = new StaticConfiguration(logger, appName, nativeLibDir, rootDir,
                         appDir, classLoader, dexDir, dexThumb, appConfig, isDebuggable);
 
                 runtime = Runtime.initializeRuntimeWithConfiguration(config);
                 if (isDebuggable) {
                     try {
-                        v8Inspector = new AndroidJsV8Inspector(context.getFilesDir().getAbsolutePath(), context.getPackageName());
+                        v8Inspector = new AndroidJsV8Inspector(app.getFilesDir().getAbsolutePath(), app.getPackageName());
                         v8Inspector.start();
 
                         // the following snippet is used as means to notify the VSCode extension
                         // debugger that the debugger agent has started
-                        File debuggerStartedFile = new File("/data/local/tmp", context.getPackageName() + "-debugger-started");
+                        File debuggerStartedFile = new File("/data/local/tmp", app.getPackageName() + "-debugger-started");
                         if (debuggerStartedFile.exists() && !debuggerStartedFile.isDirectory() && debuggerStartedFile.length() == 0) {
                             java.io.FileWriter fileWriter = new java.io.FileWriter(debuggerStartedFile);
                             fileWriter.write("started");
@@ -174,7 +175,7 @@ public final class RuntimeHelper {
                         // check if --debug-brk flag has been set. If positive:
                         // write to the file to invalidate the flag
                         // inform the v8Inspector to pause the main thread
-                        File debugBreakFile = new File("/data/local/tmp", context.getPackageName() + "-debugbreak");
+                        File debugBreakFile = new File("/data/local/tmp", app.getPackageName() + "-debugbreak");
                         boolean shouldBreak = false;
                         if (debugBreakFile.exists() && !debugBreakFile.isDirectory() && debugBreakFile.length() == 0) {
                             java.io.FileWriter fileWriter = new java.io.FileWriter(debugBreakFile);
@@ -191,9 +192,9 @@ public final class RuntimeHelper {
 
                     // if app is in debuggable mode run livesync service
                     // runtime needs to be initialized before the NativeScriptSyncService is enabled because it uses runtime.runScript(...)
-                    initLiveSync(runtime, logger, context);
+                    initLiveSync(runtime, logger, app);
 
-                    waitForLiveSync(context);
+                    waitForLiveSync(app);
                 }
 
                 runtime.runScript(new File(appDir, "internal/ts_helpers.js"));
@@ -205,9 +206,9 @@ public final class RuntimeHelper {
 
                 try {
                     // put this call in a try/catch block because with the latest changes in the modules it is not granted that NativeScriptApplication is extended through JavaScript.
-                    JavaScriptImplementation jsImpl = context.getClass().getAnnotation(JavaScriptImplementation.class);
-                    if (jsImpl != null && !(context instanceof android.app.Service)) {
-                        Runtime.initInstance(context);
+                    JavaScriptImplementation jsImpl = app.getClass().getAnnotation(JavaScriptImplementation.class);
+                    if (jsImpl != null) {
+                        Runtime.initInstance(app);
                     }
                 } catch (Exception e) {
                     if (logger.isEnabled()) {
@@ -220,7 +221,7 @@ public final class RuntimeHelper {
                     // If the user sets this flag, we will register a broadcast receiver
                     // that will listen for the TIMEZONE_CHANGED event and update V8's cache
                     // so that subsequent calls to "new Date()" return the new timezone
-                    registerTimezoneChangedListener(context, runtime);
+                    registerTimezoneChangedListener(app, runtime);
                 }
             }
             return runtime;
@@ -229,16 +230,16 @@ public final class RuntimeHelper {
         }
     }
 
-    private static void waitForLiveSync(Context context) {
+    private static void waitForLiveSync(Application app) {
         boolean needToWait = false;
 
         // CLI will create this file when initial sync is needed and then will remove it after syncing the fails and restarting the app
-        File liveSyncFile = new File("/data/local/tmp/" + context.getPackageName() + "-livesync-in-progress");
-        if (liveSyncFile.exists()) {
+        File liveSyncFile = new File("/data/local/tmp/" + app.getPackageName() + "-livesync-in-progress");
+        if(liveSyncFile.exists()) {
             needToWait = true;
             Long lastModified = liveSyncFile.lastModified();
             // we check for lastModified == 0 as this might happen if we cannot get the actual modified date
-            if (lastModified > 0) {
+            if(lastModified > 0) {
                 Long fileCreatedBeforeMillis = System.currentTimeMillis() - lastModified;
                 // if last modified date is more than a minute before the current time discard the file as most probably this is a leftover
                 if (fileCreatedBeforeMillis > 60000) {
@@ -247,12 +248,11 @@ public final class RuntimeHelper {
             }
         }
 
-        if (needToWait) {
+        if(needToWait) {
             try {
                 // wait for the livesync to complete and it should restart the app after deleting the livesync-in-progress file
                 Thread.sleep(30000);
-            } catch (Exception ex) {
-            }
+            } catch (Exception ex) { }
         }
     }
 
@@ -299,10 +299,10 @@ public final class RuntimeHelper {
 
     }
 
-    public static void initLiveSync(Runtime runtime, Logger logger, Context context) {
-        boolean isDebuggable = Util.isDebuggableApp(context);
+    public static void initLiveSync(Runtime runtime, Logger logger, Application app){
+        boolean isDebuggable = Util.isDebuggableApp(app);
 
-        if (!isDebuggable) {
+        if(!isDebuggable){
             return;
         }
 
@@ -313,8 +313,8 @@ public final class RuntimeHelper {
             Class NativeScriptSyncService = Class.forName("com.tns.NativeScriptSyncServiceSocketImpl");
 
             @SuppressWarnings("unchecked")
-            Constructor cons = NativeScriptSyncService.getConstructor(new Class[]{Runtime.class, Logger.class, Context.class});
-            Object syncService = cons.newInstance(runtime, logger, context);
+            Constructor cons = NativeScriptSyncService.getConstructor(new Class[] {Runtime.class, Logger.class, Context.class});
+            Object syncService = cons.newInstance(runtime, logger, app);
 
             @SuppressWarnings("unchecked")
             Method startServerMethod = NativeScriptSyncService.getMethod("startServer");

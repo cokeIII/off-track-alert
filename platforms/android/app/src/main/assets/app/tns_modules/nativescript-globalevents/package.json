@@ -1,27 +1,32 @@
 {
-  "_from": "nativescript-globalevents@^1.2.1",
+  "_args": [
+    [
+      "nativescript-globalevents@1.2.2",
+      "E:\\Project\\off-track-alert-democss"
+    ]
+  ],
+  "_from": "nativescript-globalevents@1.2.2",
   "_id": "nativescript-globalevents@1.2.2",
   "_inBundle": false,
   "_integrity": "sha512-fX1QEe5qnhDnfHPToDisY64sIqi3A5YQc7mW6TNs1iOTSBS0oMRiq2rRLy3DnPrkEVxRYAaL9yCKDkbD12W7UQ==",
   "_location": "/nativescript-globalevents",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "nativescript-globalevents@^1.2.1",
+    "raw": "nativescript-globalevents@1.2.2",
     "name": "nativescript-globalevents",
     "escapedName": "nativescript-globalevents",
-    "rawSpec": "^1.2.1",
+    "rawSpec": "1.2.2",
     "saveSpec": null,
-    "fetchSpec": "^1.2.1"
+    "fetchSpec": "1.2.2"
   },
   "_requiredBy": [
     "/nativescript-orientation"
   ],
   "_resolved": "https://registry.npmjs.org/nativescript-globalevents/-/nativescript-globalevents-1.2.2.tgz",
-  "_shasum": "d3c7bb375795f82198354b212515d5c76d8ebdf2",
-  "_spec": "nativescript-globalevents@^1.2.1",
-  "_where": "D:\\project\\OFF-TRACK ALERT SYSTEM\\node_modules\\nativescript-orientation",
+  "_spec": "1.2.2",
+  "_where": "E:\\Project\\off-track-alert-democss",
   "author": {
     "name": "Nathanael Anderson",
     "email": "nathan@master-technology.com"
@@ -29,8 +34,6 @@
   "bugs": {
     "url": "https://github.com/nathanaela/nativescript-globalevents/issues"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
   "description": "A NativeScript plugin to deal with global page events",
   "homepage": "https://github.com/nathanaela/nativescript-globalevents",
   "keywords": [

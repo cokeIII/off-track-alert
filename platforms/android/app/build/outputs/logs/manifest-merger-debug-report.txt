@@ -1,294 +1,370 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
-MERGED from [com.github.chrisbanes:PhotoView:2.1.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\db1bf556672183893075d57f52cbc64b\AndroidManifest.xml:2:1-12:12
-MERGED from [com.squareup.picasso:picasso-provider:3.0.0-SNAPSHOT] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9c9d9a0ccb8d97d23df74b7779f61fc6\AndroidManifest.xml:2:1-14:12
-MERGED from [jp.wasabeef:picasso-transformations:2.1.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\18aee3c86f00703623aedf3d2aed889e\AndroidManifest.xml:2:1-12:12
-MERGED from [com.squareup.picasso:picasso:3.0.0-SNAPSHOT] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\97b90f22d3c489aa841745a8db844687\AndroidManifest.xml:2:1-8:12
-MERGED from [com.rmtheis:tess-two:5.4.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\b5d0b9bc723c98ea8d1b1e5aa541cb86\AndroidManifest.xml:17:1-26:12
-MERGED from [com.android.support:multidex:1.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0239e87952c090469d1b977d41e5cf95\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\57a8d5b56e7bdf1deccf9944976f5770\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:design:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\ef714b43a14ee23ca42760603ed26227\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9379c0872ce6753fcd07fd52868b661f\AndroidManifest.xml:17:1-22:12
-MERGED from [:nativescript-optimized-with-inspector:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\960e1a94ba353a4c386e429211b77cd9\AndroidManifest.xml:2:1-11:12
-MERGED from [:nativescript_bluetooth:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\837ca1223ae65c786f4705ded1aee620\AndroidManifest.xml:2:1-17:12
-MERGED from [:nativescript_camera:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d72304abce1308a852fc4ed7b90afeb8\AndroidManifest.xml:2:1-25:12
-MERGED from [:widgets-release:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1b1abe2a35b5b0f6cba0c13e331533a8\AndroidManifest.xml:2:1-14:12
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\47d83af4e182a4fd1168b13ed7f3fa99\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\8b3fa19ce3b6590eeef241118fc24231\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9f6fa9fc435d82dd62fb080d042a86b4\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\87ec05dc3ec20995b23e2ded87761e06\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d258c6d34a1951fa7f2fbd9c91b34afd\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\06daf27b00695cc9e15d9cfe8513b995\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\2b6e260432ff1336e44946ec489f725a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f72e615cbf338242be1907a229320d2e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f7f34268b260e4251d00e5004f9c3405\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\2b6d4ed71df89c68840835c91e65e3a4\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20919cb88a09c7f67b111048da9cf943\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\ef89c9156187bb2765e53a088bc4206b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\310215b49eefd01110f5e7ec5dbab73e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\22518b2f1c58dfc347749c28f4644061\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\67b7a9ff40454dfee8fbdaf738676aea\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\859f41dbaa6d173f57c2a0d8210e8923\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\04bfea61eb14fd07c5c5212bd421932f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\e40c7cc56f704984c07063c36343f139\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\e21558cb53f7ce607508ed568fabf770\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\b294371055359b6b153e2f8e6b8f4102\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f8e173ac77dd26921dfdff01d536e974\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\aed172594d3b84fce97649d0f6ade72d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9bc282d6948a70d3a68a73fc926bf89e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20ec92f6832f1fd99020f389833e53cd\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\5ddeddaaacaac8a3f448da559b7992d8\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\2d49613b242233f2d31988e8eabd2e04\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0e091cf4394f031ba8f218704db94adb\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\206a195ab228a9d284bd6ec8a2e1c95a\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\3759178860d91815e7d6aeb5eba32a42\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\084d2f57bac00e2787230831c38bf6c6\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:2:1-24:12
+MERGED from [co.fitcom:fancydownloader:0.6.3] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\fancydownloader-0.6.3.aar\b86d2ca355a8ab793e92956a414f48a2\AndroidManifest.xml:2:1-21:12
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\56fe1dce90fc185bfdd7b0853853c013\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\c28ce2f136f7e61aacbb41ecf92acc45\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\8203475271638ee0aa2622867960a31e\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\011dcc1311f501293ee61def49bed010\AndroidManifest.xml:17:1-22:12
+MERGED from [:nativescript-optimized-with-inspector:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\9c354e2755b81b52a66cd5aecd18014b\AndroidManifest.xml:2:1-11:12
+MERGED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:2:1-25:12
+MERGED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:2:1-17:12
+MERGED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\1e6cd527c1e7a2a4e931dda8e21e12a4\AndroidManifest.xml:2:1-25:12
+MERGED from [:nativescript_downloader:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_downloader.aar\5c3063df32cb8b686f5aabd2da38bf86\AndroidManifest.xml:2:1-13:12
+MERGED from [:nativescript_imagepicker:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_imagepicker.aar\f7b8f58295faf03e27fc9ecc85b2d940\AndroidManifest.xml:2:1-11:12
+MERGED from [:nativescript_telephony:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_telephony.aar\c10ce4511621f972d39fe594ee0b11d1\AndroidManifest.xml:2:1-11:12
+MERGED from [:nativescript_vibrate:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\8f81823d71e4b021f0c75f9678e8c5be\AndroidManifest.xml:2:1-11:12
+MERGED from [:widgets-release:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\92bad675da4813f610a1d02c1e679084\AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\8d3fecffed9dd2458bf2395e10d177fc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\255f221db0d988e28eab77966c716782\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\f9a27092e62b6007136d552679fab436\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\6f9a8e880f19813403b1ce75ae14387c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\48a4c607df854847d8b44dd6c0ea2c02\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\4965313791bb416ee166d14c3557e34d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\a604b4d34703d5ce14efdc8d77052b15\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\adce545dca2dae7d9da81aca8dd969e5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\58ac0d9cc2eb83a18013ef09cc3e4d8d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\d2df0cf2aec0894fae1466389094e965\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\695a6d7ea162273a6a06e92d1422a0d3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\d1096d71d24d599935db9bf6f15617c7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\4018fa825d816b96a1c5ba45eb3eb3e1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\184b14cd66a25e01e0c90b298d78a50b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\5ccbef93354bcbab645dba89c52dd829\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\c9e310afecb9d26755b3b69ae71fa272\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\1b764a86a16be30428acfcb7b3945bfc\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\852c7f8573e8c2b0e07c23cc29fd8285\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\25e1ec6cddd94319c7b54af7ce0fb7ff\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\b49d54edd38e33d06ac950e08a93398f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\57c1d818e8a5db824cc2aff89ffa678e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\f93ffeb6c6f0c90473ebac5220475c95\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\83de2daa6e33b16b1b67c8eac84a0bbc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\0b596bfa6f6d28a2abf01d3a33e836b4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\013553cabf3e7574fbe81ec452fb283a\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\d0470fde3c28f4285e1e16500d0ce7af\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\b46f612848418ea0fc53d75b15575a7f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\0fefbbe2ad4198ef2996e092d9363001\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a48c7a32a7a8f45de6cbb3bfb40c1a3f\AndroidManifest.xml:17:1-22:12
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
 	package
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:3:2-39
-		INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:3:2-39
+		INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:5:2-27
-		INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:5:2-27
+		INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:4:2-25
-		INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:4:2-25
+		INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
 supports-screens
-ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:7:2-11:33
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:7:2-11:33
 	android:largeScreens
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:10:3-30
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:10:3-30
 	android:smallScreens
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:8:3-30
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:8:3-30
 	android:normalScreens
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:9:3-31
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:9:3-31
 	android:xlargeScreens
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:11:3-31
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:11:3-31
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:12:2-71
+MERGED from [:nativescript_telephony:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_telephony.aar\c10ce4511621f972d39fe594ee0b11d1\AndroidManifest.xml:9:5-75
+MERGED from [:nativescript_telephony:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_telephony.aar\c10ce4511621f972d39fe594ee0b11d1\AndroidManifest.xml:9:5-75
+	android:name
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:12:19-69
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:13:2-76
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:13:2-76
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:12:5-80
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:12:5-80
+MERGED from [co.fitcom:fancydownloader:0.6.3] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\fancydownloader-0.6.3.aar\b86d2ca355a8ab793e92956a414f48a2\AndroidManifest.xml:11:5-80
+MERGED from [co.fitcom:fancydownloader:0.6.3] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\fancydownloader-0.6.3.aar\b86d2ca355a8ab793e92956a414f48a2\AndroidManifest.xml:11:5-80
+MERGED from [:nativescript_downloader:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_downloader.aar\5c3063df32cb8b686f5aabd2da38bf86\AndroidManifest.xml:9:5-80
+MERGED from [:nativescript_downloader:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_downloader.aar\5c3063df32cb8b686f5aabd2da38bf86\AndroidManifest.xml:9:5-80
+MERGED from [:nativescript_imagepicker:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_imagepicker.aar\f7b8f58295faf03e27fc9ecc85b2d940\AndroidManifest.xml:9:5-80
+MERGED from [:nativescript_imagepicker:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_imagepicker.aar\f7b8f58295faf03e27fc9ecc85b2d940\AndroidManifest.xml:9:5-80
 	android:name
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:13:19-74
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:13:19-74
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:14:2-77
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:14:2-77
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:13:5-81
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:13:5-81
+MERGED from [co.fitcom:fancydownloader:0.6.3] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\fancydownloader-0.6.3.aar\b86d2ca355a8ab793e92956a414f48a2\AndroidManifest.xml:12:5-81
+MERGED from [co.fitcom:fancydownloader:0.6.3] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\fancydownloader-0.6.3.aar\b86d2ca355a8ab793e92956a414f48a2\AndroidManifest.xml:12:5-81
+MERGED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:11:5-81
+MERGED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:11:5-81
+MERGED from [:nativescript_downloader:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_downloader.aar\5c3063df32cb8b686f5aabd2da38bf86\AndroidManifest.xml:10:5-81
+MERGED from [:nativescript_downloader:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_downloader.aar\5c3063df32cb8b686f5aabd2da38bf86\AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:14:19-75
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:14:19-75
 uses-permission#android.permission.INTERNET
-ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:15:2-63
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:15:2-63
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:11:5-67
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:11:5-67
+MERGED from [co.fitcom:fancydownloader:0.6.3] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\fancydownloader-0.6.3.aar\b86d2ca355a8ab793e92956a414f48a2\AndroidManifest.xml:13:5-67
+MERGED from [co.fitcom:fancydownloader:0.6.3] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\fancydownloader-0.6.3.aar\b86d2ca355a8ab793e92956a414f48a2\AndroidManifest.xml:13:5-67
+MERGED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:10:5-67
+MERGED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:10:5-67
+MERGED from [:nativescript_downloader:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_downloader.aar\5c3063df32cb8b686f5aabd2da38bf86\AndroidManifest.xml:11:5-67
+MERGED from [:nativescript_downloader:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_downloader.aar\5c3063df32cb8b686f5aabd2da38bf86\AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:15:19-61
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:15:19-61
 application
-ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:17:2-39:16
-MERGED from [com.squareup.picasso:picasso-provider:3.0.0-SNAPSHOT] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9c9d9a0ccb8d97d23df74b7779f61fc6\AndroidManifest.xml:7:5-12:19
-MERGED from [com.squareup.picasso:picasso-provider:3.0.0-SNAPSHOT] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9c9d9a0ccb8d97d23df74b7779f61fc6\AndroidManifest.xml:7:5-12:19
-MERGED from [com.android.support:design:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\ef714b43a14ee23ca42760603ed26227\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\ef714b43a14ee23ca42760603ed26227\AndroidManifest.xml:22:5-20
-MERGED from [:nativescript_camera:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d72304abce1308a852fc4ed7b90afeb8\AndroidManifest.xml:12:5-23:19
-MERGED from [:nativescript_camera:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d72304abce1308a852fc4ed7b90afeb8\AndroidManifest.xml:12:5-23:19
-MERGED from [:widgets-release:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1b1abe2a35b5b0f6cba0c13e331533a8\AndroidManifest.xml:11:5-12:19
-MERGED from [:widgets-release:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1b1abe2a35b5b0f6cba0c13e331533a8\AndroidManifest.xml:11:5-12:19
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\e40c7cc56f704984c07063c36343f139\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\e40c7cc56f704984c07063c36343f139\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\e21558cb53f7ce607508ed568fabf770\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\e21558cb53f7ce607508ed568fabf770\AndroidManifest.xml:22:5-23:19
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:17:2-39:16
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:16:5-22:19
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:16:5-22:19
+MERGED from [co.fitcom:fancydownloader:0.6.3] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\fancydownloader-0.6.3.aar\b86d2ca355a8ab793e92956a414f48a2\AndroidManifest.xml:15:5-19:19
+MERGED from [co.fitcom:fancydownloader:0.6.3] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\fancydownloader-0.6.3.aar\b86d2ca355a8ab793e92956a414f48a2\AndroidManifest.xml:15:5-19:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\8203475271638ee0aa2622867960a31e\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\8203475271638ee0aa2622867960a31e\AndroidManifest.xml:22:5-20
+MERGED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:14:5-23:19
+MERGED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:14:5-23:19
+MERGED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\1e6cd527c1e7a2a4e931dda8e21e12a4\AndroidManifest.xml:12:5-23:19
+MERGED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\1e6cd527c1e7a2a4e931dda8e21e12a4\AndroidManifest.xml:12:5-23:19
+MERGED from [:widgets-release:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\92bad675da4813f610a1d02c1e679084\AndroidManifest.xml:11:5-12:19
+MERGED from [:widgets-release:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\92bad675da4813f610a1d02c1e679084\AndroidManifest.xml:11:5-12:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\1b764a86a16be30428acfcb7b3945bfc\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\1b764a86a16be30428acfcb7b3945bfc\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\852c7f8573e8c2b0e07c23cc29fd8285\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\852c7f8573e8c2b0e07c23cc29fd8285\AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\e40c7cc56f704984c07063c36343f139\AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\1b764a86a16be30428acfcb7b3945bfc\AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:21:3-35
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:21:3-35
 	android:icon
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:20:3-32
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:20:3-32
 	android:allowBackup
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:19:3-29
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:19:3-29
 	android:theme
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:22:3-34
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:22:3-34
 	android:name
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:18:3-49
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:18:3-49
 activity#com.tns.NativeScriptActivity
-ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:24:3-37:14
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:24:3-37:14
 	android:label
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:27:4-49
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:27:4-49
 	android:configChanges
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:28:4-120
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:28:4-120
 	android:theme
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:29:4-44
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:29:4-44
 	android:name
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:26:4-47
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:26:4-47
 meta-data#SET_THEME_ON_LAUNCH
-ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:31:4-87
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:31:4-87
 	android:resource
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:31:50-84
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:31:50-84
 	android:name
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:31:15-49
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:31:15-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:33:4-36:20
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:33:4-36:20
 action#android.intent.action.MAIN
-ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:34:5-57
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:34:5-57
 	android:name
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:34:13-54
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:34:13-54
 category#android.intent.category.LAUNCHER
-ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:35:5-65
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:35:5-65
 	android:name
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:35:15-62
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:35:15-62
 activity#com.tns.ErrorReportActivity
-ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:38:3-57
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:38:3-57
 	android:name
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:38:13-55
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:38:13-55
 uses-sdk
-INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
-INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
-MERGED from [com.github.chrisbanes:PhotoView:2.1.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\db1bf556672183893075d57f52cbc64b\AndroidManifest.xml:8:5-10:41
-MERGED from [com.github.chrisbanes:PhotoView:2.1.3] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\db1bf556672183893075d57f52cbc64b\AndroidManifest.xml:8:5-10:41
-MERGED from [com.squareup.picasso:picasso-provider:3.0.0-SNAPSHOT] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9c9d9a0ccb8d97d23df74b7779f61fc6\AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.picasso:picasso-provider:3.0.0-SNAPSHOT] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9c9d9a0ccb8d97d23df74b7779f61fc6\AndroidManifest.xml:5:5-44
-MERGED from [jp.wasabeef:picasso-transformations:2.1.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\18aee3c86f00703623aedf3d2aed889e\AndroidManifest.xml:8:5-10:41
-MERGED from [jp.wasabeef:picasso-transformations:2.1.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\18aee3c86f00703623aedf3d2aed889e\AndroidManifest.xml:8:5-10:41
-MERGED from [com.squareup.picasso:picasso:3.0.0-SNAPSHOT] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\97b90f22d3c489aa841745a8db844687\AndroidManifest.xml:6:5-44
-MERGED from [com.squareup.picasso:picasso:3.0.0-SNAPSHOT] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\97b90f22d3c489aa841745a8db844687\AndroidManifest.xml:6:5-44
-MERGED from [com.rmtheis:tess-two:5.4.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\b5d0b9bc723c98ea8d1b1e5aa541cb86\AndroidManifest.xml:22:5-24:41
-MERGED from [com.rmtheis:tess-two:5.4.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\b5d0b9bc723c98ea8d1b1e5aa541cb86\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:multidex:1.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0239e87952c090469d1b977d41e5cf95\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:multidex:1.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0239e87952c090469d1b977d41e5cf95\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\57a8d5b56e7bdf1deccf9944976f5770\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\57a8d5b56e7bdf1deccf9944976f5770\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\ef714b43a14ee23ca42760603ed26227\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\ef714b43a14ee23ca42760603ed26227\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9379c0872ce6753fcd07fd52868b661f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9379c0872ce6753fcd07fd52868b661f\AndroidManifest.xml:20:5-44
-MERGED from [:nativescript-optimized-with-inspector:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\960e1a94ba353a4c386e429211b77cd9\AndroidManifest.xml:7:5-9:41
-MERGED from [:nativescript-optimized-with-inspector:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\960e1a94ba353a4c386e429211b77cd9\AndroidManifest.xml:7:5-9:41
-MERGED from [:nativescript_bluetooth:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\837ca1223ae65c786f4705ded1aee620\AndroidManifest.xml:7:5-47
-MERGED from [:nativescript_bluetooth:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\837ca1223ae65c786f4705ded1aee620\AndroidManifest.xml:7:5-47
-MERGED from [:nativescript_camera:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d72304abce1308a852fc4ed7b90afeb8\AndroidManifest.xml:8:5-47
-MERGED from [:nativescript_camera:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d72304abce1308a852fc4ed7b90afeb8\AndroidManifest.xml:8:5-47
-MERGED from [:widgets-release:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1b1abe2a35b5b0f6cba0c13e331533a8\AndroidManifest.xml:7:5-9:41
-MERGED from [:widgets-release:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1b1abe2a35b5b0f6cba0c13e331533a8\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\47d83af4e182a4fd1168b13ed7f3fa99\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\47d83af4e182a4fd1168b13ed7f3fa99\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\8b3fa19ce3b6590eeef241118fc24231\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\8b3fa19ce3b6590eeef241118fc24231\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9f6fa9fc435d82dd62fb080d042a86b4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9f6fa9fc435d82dd62fb080d042a86b4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\87ec05dc3ec20995b23e2ded87761e06\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\87ec05dc3ec20995b23e2ded87761e06\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d258c6d34a1951fa7f2fbd9c91b34afd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d258c6d34a1951fa7f2fbd9c91b34afd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\06daf27b00695cc9e15d9cfe8513b995\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\06daf27b00695cc9e15d9cfe8513b995\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\2b6e260432ff1336e44946ec489f725a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\2b6e260432ff1336e44946ec489f725a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f72e615cbf338242be1907a229320d2e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f72e615cbf338242be1907a229320d2e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f7f34268b260e4251d00e5004f9c3405\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f7f34268b260e4251d00e5004f9c3405\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\2b6d4ed71df89c68840835c91e65e3a4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\2b6d4ed71df89c68840835c91e65e3a4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20919cb88a09c7f67b111048da9cf943\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20919cb88a09c7f67b111048da9cf943\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\ef89c9156187bb2765e53a088bc4206b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\ef89c9156187bb2765e53a088bc4206b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\310215b49eefd01110f5e7ec5dbab73e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\310215b49eefd01110f5e7ec5dbab73e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\22518b2f1c58dfc347749c28f4644061\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\22518b2f1c58dfc347749c28f4644061\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\67b7a9ff40454dfee8fbdaf738676aea\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\67b7a9ff40454dfee8fbdaf738676aea\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\859f41dbaa6d173f57c2a0d8210e8923\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\859f41dbaa6d173f57c2a0d8210e8923\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\04bfea61eb14fd07c5c5212bd421932f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\04bfea61eb14fd07c5c5212bd421932f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\e40c7cc56f704984c07063c36343f139\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\e40c7cc56f704984c07063c36343f139\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\e21558cb53f7ce607508ed568fabf770\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\e21558cb53f7ce607508ed568fabf770\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\b294371055359b6b153e2f8e6b8f4102\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\b294371055359b6b153e2f8e6b8f4102\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f8e173ac77dd26921dfdff01d536e974\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f8e173ac77dd26921dfdff01d536e974\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\aed172594d3b84fce97649d0f6ade72d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\aed172594d3b84fce97649d0f6ade72d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9bc282d6948a70d3a68a73fc926bf89e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9bc282d6948a70d3a68a73fc926bf89e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20ec92f6832f1fd99020f389833e53cd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\20ec92f6832f1fd99020f389833e53cd\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\5ddeddaaacaac8a3f448da559b7992d8\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\5ddeddaaacaac8a3f448da559b7992d8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\2d49613b242233f2d31988e8eabd2e04\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\2d49613b242233f2d31988e8eabd2e04\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0e091cf4394f031ba8f218704db94adb\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0e091cf4394f031ba8f218704db94adb\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\206a195ab228a9d284bd6ec8a2e1c95a\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\206a195ab228a9d284bd6ec8a2e1c95a\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\3759178860d91815e7d6aeb5eba32a42\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\3759178860d91815e7d6aeb5eba32a42\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\084d2f57bac00e2787230831c38bf6c6\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\084d2f57bac00e2787230831c38bf6c6\AndroidManifest.xml:20:5-44
-INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
-INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:7:5-9:41
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:7:5-9:41
+MERGED from [co.fitcom:fancydownloader:0.6.3] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\fancydownloader-0.6.3.aar\b86d2ca355a8ab793e92956a414f48a2\AndroidManifest.xml:7:5-9:41
+MERGED from [co.fitcom:fancydownloader:0.6.3] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\fancydownloader-0.6.3.aar\b86d2ca355a8ab793e92956a414f48a2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\56fe1dce90fc185bfdd7b0853853c013\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\56fe1dce90fc185bfdd7b0853853c013\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\c28ce2f136f7e61aacbb41ecf92acc45\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\c28ce2f136f7e61aacbb41ecf92acc45\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\8203475271638ee0aa2622867960a31e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\8203475271638ee0aa2622867960a31e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\011dcc1311f501293ee61def49bed010\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\011dcc1311f501293ee61def49bed010\AndroidManifest.xml:20:5-44
+MERGED from [:nativescript-optimized-with-inspector:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\9c354e2755b81b52a66cd5aecd18014b\AndroidManifest.xml:7:5-9:41
+MERGED from [:nativescript-optimized-with-inspector:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\9c354e2755b81b52a66cd5aecd18014b\AndroidManifest.xml:7:5-9:41
+MERGED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\1e6cd527c1e7a2a4e931dda8e21e12a4\AndroidManifest.xml:8:5-47
+MERGED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\1e6cd527c1e7a2a4e931dda8e21e12a4\AndroidManifest.xml:8:5-47
+MERGED from [:nativescript_downloader:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_downloader.aar\5c3063df32cb8b686f5aabd2da38bf86\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_downloader:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_downloader.aar\5c3063df32cb8b686f5aabd2da38bf86\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_imagepicker:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_imagepicker.aar\f7b8f58295faf03e27fc9ecc85b2d940\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_imagepicker:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_imagepicker.aar\f7b8f58295faf03e27fc9ecc85b2d940\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_telephony:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_telephony.aar\c10ce4511621f972d39fe594ee0b11d1\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_telephony:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_telephony.aar\c10ce4511621f972d39fe594ee0b11d1\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_vibrate:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\8f81823d71e4b021f0c75f9678e8c5be\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_vibrate:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\8f81823d71e4b021f0c75f9678e8c5be\AndroidManifest.xml:7:5-47
+MERGED from [:widgets-release:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\92bad675da4813f610a1d02c1e679084\AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\92bad675da4813f610a1d02c1e679084\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\8d3fecffed9dd2458bf2395e10d177fc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\8d3fecffed9dd2458bf2395e10d177fc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\255f221db0d988e28eab77966c716782\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\255f221db0d988e28eab77966c716782\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\f9a27092e62b6007136d552679fab436\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\f9a27092e62b6007136d552679fab436\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\6f9a8e880f19813403b1ce75ae14387c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\6f9a8e880f19813403b1ce75ae14387c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\48a4c607df854847d8b44dd6c0ea2c02\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\48a4c607df854847d8b44dd6c0ea2c02\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\4965313791bb416ee166d14c3557e34d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\4965313791bb416ee166d14c3557e34d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\a604b4d34703d5ce14efdc8d77052b15\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\a604b4d34703d5ce14efdc8d77052b15\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\adce545dca2dae7d9da81aca8dd969e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\adce545dca2dae7d9da81aca8dd969e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\58ac0d9cc2eb83a18013ef09cc3e4d8d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\58ac0d9cc2eb83a18013ef09cc3e4d8d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\d2df0cf2aec0894fae1466389094e965\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\d2df0cf2aec0894fae1466389094e965\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\695a6d7ea162273a6a06e92d1422a0d3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\695a6d7ea162273a6a06e92d1422a0d3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\d1096d71d24d599935db9bf6f15617c7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\d1096d71d24d599935db9bf6f15617c7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\4018fa825d816b96a1c5ba45eb3eb3e1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\4018fa825d816b96a1c5ba45eb3eb3e1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\184b14cd66a25e01e0c90b298d78a50b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\184b14cd66a25e01e0c90b298d78a50b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\5ccbef93354bcbab645dba89c52dd829\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\5ccbef93354bcbab645dba89c52dd829\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\c9e310afecb9d26755b3b69ae71fa272\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\c9e310afecb9d26755b3b69ae71fa272\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\1b764a86a16be30428acfcb7b3945bfc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\1b764a86a16be30428acfcb7b3945bfc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\852c7f8573e8c2b0e07c23cc29fd8285\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\852c7f8573e8c2b0e07c23cc29fd8285\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\25e1ec6cddd94319c7b54af7ce0fb7ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\25e1ec6cddd94319c7b54af7ce0fb7ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\b49d54edd38e33d06ac950e08a93398f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\b49d54edd38e33d06ac950e08a93398f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\57c1d818e8a5db824cc2aff89ffa678e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\57c1d818e8a5db824cc2aff89ffa678e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\f93ffeb6c6f0c90473ebac5220475c95\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\f93ffeb6c6f0c90473ebac5220475c95\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\83de2daa6e33b16b1b67c8eac84a0bbc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\83de2daa6e33b16b1b67c8eac84a0bbc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\0b596bfa6f6d28a2abf01d3a33e836b4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\0b596bfa6f6d28a2abf01d3a33e836b4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\013553cabf3e7574fbe81ec452fb283a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\013553cabf3e7574fbe81ec452fb283a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\d0470fde3c28f4285e1e16500d0ce7af\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\d0470fde3c28f4285e1e16500d0ce7af\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\b46f612848418ea0fc53d75b15575a7f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\b46f612848418ea0fc53d75b15575a7f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\0fefbbe2ad4198ef2996e092d9363001\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\0fefbbe2ad4198ef2996e092d9363001\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a48c7a32a7a8f45de6cbb3bfb40c1a3f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a48c7a32a7a8f45de6cbb3bfb40c1a3f\AndroidManifest.xml:20:5-44
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
-		MERGED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
-		MERGED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\PROJECT\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
-provider#com.squareup.picasso.provider.PicassoContentProvider
-ADDED from [com.squareup.picasso:picasso-provider:3.0.0-SNAPSHOT] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9c9d9a0ccb8d97d23df74b7779f61fc6\AndroidManifest.xml:8:9-11:40
-	android:authorities
-		ADDED from [com.squareup.picasso:picasso-provider:3.0.0-SNAPSHOT] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9c9d9a0ccb8d97d23df74b7779f61fc6\AndroidManifest.xml:10:13-72
-	android:exported
-		ADDED from [com.squareup.picasso:picasso-provider:3.0.0-SNAPSHOT] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9c9d9a0ccb8d97d23df74b7779f61fc6\AndroidManifest.xml:11:13-37
+		INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:14:5-68
+MERGED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:12:5-68
+MERGED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:12:5-68
 	android:name
-		ADDED from [com.squareup.picasso:picasso-provider:3.0.0-SNAPSHOT] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\9c9d9a0ccb8d97d23df74b7779f61fc6\AndroidManifest.xml:9:13-80
+		ADDED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:14:22-65
+service#net.gotev.uploadservice.UploadService
+ADDED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:17:9-21:19
+	android:enabled
+		ADDED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:19:13-35
+	android:exported
+		ADDED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:20:13-37
+	android:name
+		ADDED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:18:13-65
+service#co.fitcom.fancydownloader.ManagerService
+ADDED from [co.fitcom:fancydownloader:0.6.3] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\fancydownloader-0.6.3.aar\b86d2ca355a8ab793e92956a414f48a2\AndroidManifest.xml:16:9-18:48
+	android:label
+		ADDED from [co.fitcom:fancydownloader:0.6.3] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\fancydownloader-0.6.3.aar\b86d2ca355a8ab793e92956a414f48a2\AndroidManifest.xml:18:13-45
+	android:name
+		ADDED from [co.fitcom:fancydownloader:0.6.3] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\fancydownloader-0.6.3.aar\b86d2ca355a8ab793e92956a414f48a2\AndroidManifest.xml:17:13-68
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:9:5-77
+	android:name
+		ADDED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:9:22-74
+service#com.alexbbb.uploadservice.UploadService
+ADDED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:15:9-22:19
+	android:enabled
+		ADDED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:17:13-35
+	android:exported
+		ADDED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:16:13-67
+intent-filter#action:name:org.nativescript.imagepicker.uploadservice.action.upload
+ADDED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:19:13-21:29
+action#org.nativescript.imagepicker.uploadservice.action.upload
+ADDED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:20:17-99
+	android:name
+		ADDED from [:nativescript_background_http:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_background_http.aar\470e03915ee59188336faf9123b29ae9\AndroidManifest.xml:20:25-96
 uses-permission#android.permission.BLUETOOTH
-ADDED from [:nativescript_bluetooth:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\837ca1223ae65c786f4705ded1aee620\AndroidManifest.xml:9:5-68
+ADDED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:9:5-68
 	android:name
-		ADDED from [:nativescript_bluetooth:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\837ca1223ae65c786f4705ded1aee620\AndroidManifest.xml:9:22-65
+		ADDED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:9:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from [:nativescript_bluetooth:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\837ca1223ae65c786f4705ded1aee620\AndroidManifest.xml:10:5-74
+ADDED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:10:5-74
 	android:name
-		ADDED from [:nativescript_bluetooth:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\837ca1223ae65c786f4705ded1aee620\AndroidManifest.xml:10:22-71
+		ADDED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:10:22-71
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from [:nativescript_bluetooth:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\837ca1223ae65c786f4705ded1aee620\AndroidManifest.xml:11:5-81
+ADDED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:11:5-81
 	android:name
-		ADDED from [:nativescript_bluetooth:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\837ca1223ae65c786f4705ded1aee620\AndroidManifest.xml:11:22-78
+		ADDED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:11:22-78
 uses-feature#android.hardware.bluetooth_le
-ADDED from [:nativescript_bluetooth:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\837ca1223ae65c786f4705ded1aee620\AndroidManifest.xml:13:5-15:36
+ADDED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:13:5-15:36
 	android:required
-		ADDED from [:nativescript_bluetooth:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\837ca1223ae65c786f4705ded1aee620\AndroidManifest.xml:15:9-33
+		ADDED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:15:9-33
 	android:name
-		ADDED from [:nativescript_bluetooth:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\837ca1223ae65c786f4705ded1aee620\AndroidManifest.xml:14:9-53
+		ADDED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:14:9-53
 uses-permission#android.permission.CAMERA
-ADDED from [:nativescript_camera:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d72304abce1308a852fc4ed7b90afeb8\AndroidManifest.xml:10:5-65
+ADDED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\1e6cd527c1e7a2a4e931dda8e21e12a4\AndroidManifest.xml:10:5-65
 	android:name
-		ADDED from [:nativescript_camera:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d72304abce1308a852fc4ed7b90afeb8\AndroidManifest.xml:10:22-62
+		ADDED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\1e6cd527c1e7a2a4e931dda8e21e12a4\AndroidManifest.xml:10:22-62
 provider#android.support.v4.content.FileProvider
-ADDED from [:nativescript_camera:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d72304abce1308a852fc4ed7b90afeb8\AndroidManifest.xml:13:9-22:20
+ADDED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\1e6cd527c1e7a2a4e931dda8e21e12a4\AndroidManifest.xml:13:9-22:20
 	android:grantUriPermissions
-		ADDED from [:nativescript_camera:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d72304abce1308a852fc4ed7b90afeb8\AndroidManifest.xml:17:13-47
+		ADDED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\1e6cd527c1e7a2a4e931dda8e21e12a4\AndroidManifest.xml:17:13-47
 	android:authorities
-		ADDED from [:nativescript_camera:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d72304abce1308a852fc4ed7b90afeb8\AndroidManifest.xml:15:13-60
+		ADDED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\1e6cd527c1e7a2a4e931dda8e21e12a4\AndroidManifest.xml:15:13-60
 	android:exported
-		ADDED from [:nativescript_camera:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d72304abce1308a852fc4ed7b90afeb8\AndroidManifest.xml:16:13-37
+		ADDED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\1e6cd527c1e7a2a4e931dda8e21e12a4\AndroidManifest.xml:16:13-37
 	android:name
-		ADDED from [:nativescript_camera:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d72304abce1308a852fc4ed7b90afeb8\AndroidManifest.xml:14:13-67
+		ADDED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\1e6cd527c1e7a2a4e931dda8e21e12a4\AndroidManifest.xml:14:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:nativescript_camera:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d72304abce1308a852fc4ed7b90afeb8\AndroidManifest.xml:18:13-21:52
+ADDED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\1e6cd527c1e7a2a4e931dda8e21e12a4\AndroidManifest.xml:18:13-21:52
 	android:resource
-		ADDED from [:nativescript_camera:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d72304abce1308a852fc4ed7b90afeb8\AndroidManifest.xml:20:17-55
+		ADDED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\1e6cd527c1e7a2a4e931dda8e21e12a4\AndroidManifest.xml:20:17-55
 	tools:replace
-		ADDED from [:nativescript_camera:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d72304abce1308a852fc4ed7b90afeb8\AndroidManifest.xml:21:17-49
+		ADDED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\1e6cd527c1e7a2a4e931dda8e21e12a4\AndroidManifest.xml:21:17-49
 	android:name
-		ADDED from [:nativescript_camera:] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d72304abce1308a852fc4ed7b90afeb8\AndroidManifest.xml:19:17-67
+		ADDED from [:nativescript_camera:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\1e6cd527c1e7a2a4e931dda8e21e12a4\AndroidManifest.xml:19:17-67
+uses-permission#android.permission.VIBRATE
+ADDED from [:nativescript_vibrate:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\8f81823d71e4b021f0c75f9678e8c5be\AndroidManifest.xml:9:5-66
+	android:name
+		ADDED from [:nativescript_vibrate:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_vibrate.aar\8f81823d71e4b021f0c75f9678e8c5be\AndroidManifest.xml:9:22-63

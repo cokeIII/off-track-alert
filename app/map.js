@@ -178,6 +178,9 @@ exports.pageUnloaded = () =>{
         timerModule.clearInterval(time_loop);
     if(time_loop_log)
         timerModule.clearInterval(time_loop_log);
+
+    logData.status = "appNotWorking"
+    updateLog(logData)
 }
 function romoveMap() {
     mapLayout = page.getViewById("mapLayout")
@@ -348,7 +351,6 @@ function genMap(UUID,RSSI){
             romoveMap()
         }
         mapLayout.height = countPoint(route)>8?""+(((countPoint(route)-8)*10)+100)+"%":"100%"
-        console.log(mapLayout.height)
         let bgMaps = ""
         let img 
 

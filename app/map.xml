@@ -139,11 +139,15 @@
               <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
             </FlexboxLayout>
             <StackLayout class="content">
+                <StackLayout orientation="horizontal" class="total-users">
+                  <Label text="Total : " width="80%"></Label>
+                  <Label text="{{countUser[0].countUser}}"  width="20%"></Label>
+                </StackLayout>
               <ListView items="{{ countUser }}" itemTap="removeCard" class="users-selector">
                   <ListView.itemTemplate  let-country="item" let-i="index" let-odd="odd" let-even="even" class="list-item">
                       <StackLayout class="item" orientation="horizontal">
                           <Label text="&#xf21d;" color="#3898E7" class="txt-count-icon"></Label>
-                          <Label text="{{ userName }}" class="txt-count-name"></Label>
+                          <Label text="{{ phone_number }}" class="txt-count-name"></Label>
                           <Label text="{{ name }}" class="txt-count-point"></Label>
                       </StackLayout>
                   </ListView.itemTemplate>

@@ -1,0 +1,54 @@
+{
+  "_from": "nativescript-uuid",
+  "_id": "nativescript-uuid@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-Q+7jI9DEk+boi7lWhwy+Gd1ut6o=",
+  "_location": "/nativescript-uuid",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-uuid",
+    "name": "nativescript-uuid",
+    "escapedName": "nativescript-uuid",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-uuid/-/nativescript-uuid-0.0.1.tgz",
+  "_shasum": "43eee323d0c493e6e88bb956870cbe19dd6eb7aa",
+  "_spec": "nativescript-uuid",
+  "_where": "E:\\Project\\off-track-alert",
+  "bugs": {
+    "url": "https://github.com/gdtdpt/nativescript-uuid/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A NativeScript plugin that allows you to get a UUID (Universal Unique Identifier) for a device.",
+  "homepage": "https://github.com/gdtdpt/nativescript-uuid#readme",
+  "keywords": [
+    "NativeScript",
+    "UUID",
+    "Device"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "nativescript-uuid",
+  "nativescript": {
+    "id": "org.nativescript.uuid",
+    "platforms": {
+      "ios": "1.3.0",
+      "android": "1.3.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdtdpt/nativescript-uuid.git"
+  },
+  "type": "index.d.ts",
+  "version": "0.0.1"
+}

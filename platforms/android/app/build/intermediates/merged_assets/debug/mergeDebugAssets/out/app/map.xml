@@ -35,8 +35,8 @@
 
             <FlexboxLayout  orientation="horizontal" class="title headermenu" height="11%">
              <Image src="~/images/icons8-resume-96.png" text="User information" stretch="none"  width="15%" height="12%" class="" horizontalAlignment="center"></Image>
-                   <Label text="Profile" class="text "></Label>
-                   <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
+                <Label text="Profile" class="text "></Label>
+                <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
             </FlexboxLayout>
        
             <StackLayout class="content bg_dlg_User " id="txtData" visibility="collapse">
@@ -62,13 +62,13 @@
             <!-- PIC DATA -->
            <StackLayout class="content bg_dlg_User" id="picData" visibility="collapse">
             
-              <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
-                  <AbsoluteLayout>
-                    <Image id="userCard"  class="user-pic " width="150" height="150"></Image>
-                    <Label  width="24" height="24" class="camera" text="&#xf030;" tap="changPic"></Label>
-                  </AbsoluteLayout>
+              <StackLayout>
+                <Label text="Card" class="txt-s"></Label>
+                <AbsoluteLayout>
+                  <Image id="userCard"  class="user-pic" width="250" height="150"></Image>
+                  <Label  width="24" height="24" class="camera" text="&#xf030;" tap="changPic"></Label>
+                </AbsoluteLayout>
               </StackLayout>
-
               <StackLayout width="100%" orientation="horizontal" class="lable_left">
                 <Label text="Tel" class="txt-s "></Label>
                 <TextField hint="" class="txt-f" text="{{ phoneNumber }}" keyboardType="number" id="phoneNumber"/>
@@ -135,17 +135,19 @@
       <StackLayout class="lg-dialog" tap="noop" id="countUser">
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
            <FlexboxLayout  orientation="horizontal" class="title headermenu" height="11%">
-                <!-- <label text="Profile" class="text"/> -->
-                     <!-- <Image src="~/images/icons8-resume-96.png" text="User information" stretch="none"  width="16%" height="15%" class="" horizontalAlignment="center"></Image> -->
-                    <label text="Users" class="text"/>
-                   <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
+              <label text="Users" class="text"/>
+              <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
             </FlexboxLayout>
             <StackLayout class="content">
+                <StackLayout orientation="horizontal" class="total-users">
+                  <Label text="Total : " width="80%"></Label>
+                  <Label text="{{countUser[0].countUser}}"  width="20%"></Label>
+                </StackLayout>
               <ListView items="{{ countUser }}" itemTap="removeCard" class="users-selector">
                   <ListView.itemTemplate  let-country="item" let-i="index" let-odd="odd" let-even="even" class="list-item">
                       <StackLayout class="item" orientation="horizontal">
                           <Label text="&#xf21d;" color="#3898E7" class="txt-count-icon"></Label>
-                          <Label text="{{ userName }}" class="txt-count-name"></Label>
+                          <Label text="{{ phone_number }}" class="txt-count-name"></Label>
                           <Label text="{{ name }}" class="txt-count-point"></Label>
                       </StackLayout>
                   </ListView.itemTemplate>
@@ -194,18 +196,26 @@
       <StackLayout class="lg-dialog" tap="noop" id="aboute">
         <FlexboxLayout   stretchLastChild="true" class="dialog  " tap="noop">
           <FlexboxLayout  orientation="horizontal" class="title headermenu" height="11%">
-                  <label text="Aboute" class="text"/>
-                  <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
+              <label text="Aboute" class="text"/>
+              <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
           </FlexboxLayout>
           <StackLayout class="content">
             <ScrollView width="100%"  height="100%">
-              <StackLayout  orientation="horizontal">
-                <Label text="&#xf2bb;" class="aboute-txt"></Label><Label class="aboute-txt-detail" width="100%" height="auto" text="personal Information"></Label>
-              </StackLayout>
-              <StackLayout orientation="horizontal">
-                <Label text="&#xf554;" class="aboute-txt"></Label><Label class="aboute-txt-detail"  height="auto" text="Total number of people on the route" textWrap="true"></Label>
-              </StackLayout>
-              <Image src="~/images/FITMlogo.png" class="fas t-28 aboute-logo"></Image>
+             <GridLayout class="m-10" rows="auto auto auto auto auto">
+                <StackLayout  row="0" orientation="horizontal">
+                  <Label text="&#xf2bb;" class="aboute-txt"></Label><Label class="aboute-txt-detail" width="100%" height="auto" text="personal Information"></Label>
+                </StackLayout>
+                <StackLayout class="m-10" row="1" orientation="horizontal">
+                  <Label text="&#xf554;" class="aboute-txt"></Label><Label class="aboute-txt-detail"  height="auto" text="Total number of people on the route" textWrap="true"></Label>
+                </StackLayout>
+                <StackLayout class="m-10" row="2" orientation="horizontal">
+                  <Label text="&#xf09e;" class="aboute-txt"></Label><Label class="aboute-txt-detail"  height="auto" text="Signal strength bluetooth (RSSI)" textWrap="true"></Label>
+                </StackLayout>
+                <StackLayout class="m-10" row="3" orientation="horizontal">
+                  <Label text="&#xf018;" class="aboute-txt"></Label><Label class="aboute-txt-detail"  height="auto" text="The distance from the current point" textWrap="true"></Label>
+                </StackLayout>
+                <Image row="4" src="~/images/FITMlogo.png" class="fas t-28 m-10 aboute-logo"></Image>
+              </GridLayout>
             </ScrollView>
           </StackLayout>
         </FlexboxLayout>

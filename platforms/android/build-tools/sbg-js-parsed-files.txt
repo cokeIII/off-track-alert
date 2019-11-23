@@ -29,6 +29,7 @@ E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules
 E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\nativescript-toast\hooks\before-livesync\nativescript-angular-sync.js
 E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\nativescript-toast\lib\postinstall.js
 E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\nativescript-toast\toast.js
+E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\nativescript-uuid\index.js
 E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\nativescript-vibrate\vibrate.common.js
 E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\nativescript-vibrate\vibrate.js
 E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\application\application-common.js

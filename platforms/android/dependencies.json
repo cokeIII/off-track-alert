@@ -52,6 +52,10 @@
         "directory": "..\\..\\node_modules\\nativescript-toast"
     },
     {
+        "name": "nativescript-uuid",
+        "directory": "..\\..\\node_modules\\nativescript-uuid"
+    },
+    {
         "name": "nativescript-vibrate",
         "directory": "..\\..\\node_modules\\nativescript-vibrate"
     },

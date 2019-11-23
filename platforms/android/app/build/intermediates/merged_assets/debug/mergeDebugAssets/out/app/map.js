@@ -15,7 +15,10 @@ var session = bghttp.session("image-upload")
 var Toast = require('nativescript-toast')
 var imageSourceModule = require("image-source")
 var imagepicker = require("nativescript-imagepicker")
-const httpModule = require("tns-core-modules/http");
+const httpModule = require("tns-core-modules/http")
+var plugin = require("nativescript-uuid")
+var base64 = require('base-64');
+var utf8 = require('utf8');
 var context = imagepicker.create({ mode: "single" })
 let logData = {}
 
@@ -68,10 +71,16 @@ let picPath = null
 let tempPath = null
 exports.pageLoaded = function(args) {
     if(time_loop)
-    timerModule.clearInterval(time_loop);
+    timerModule.clearInterval(time_loop)
     if(time_loop_log)
-        timerModule.clearInterval(time_loop_log);
+        timerModule.clearInterval(time_loop_log)
 
+    var uuid = plugin.getUUID();
+    console.log("The device UUID is " + uuid)
+    var str = uuid;
+    var bytes = utf8.encode(str);
+    var encodedStr = base64.encode(bytes);
+    console.log(encodedStr);
     page = args.object
     page.bindingContext = pageData
     orientation.setOrientation("portrait")
@@ -118,7 +127,6 @@ exports.pageLoaded = function(args) {
     }
 
     if(appSettings.getString("maps")){
-        // getMaps()
         arrMaps = JSON.parse(appSettings.getString("maps"))
         pageData.map = arrayToObject(arrMaps.maps)
     } else {
@@ -127,9 +135,6 @@ exports.pageLoaded = function(args) {
     let idCardLength = []
     let userNameLength = []
     let phoneNumberLength = []
-
-    // for(let i = 0;i<50;i++)
-    //     pageData.countUser.push({userName:"temp"})
 
     let idCard = page.getViewById('idCard')
     let userName = page.getViewById('userName')
@@ -178,6 +183,9 @@ exports.pageUnloaded = () =>{
         timerModule.clearInterval(time_loop);
     if(time_loop_log)
         timerModule.clearInterval(time_loop_log);
+
+    logData.status = "appNotWorking"
+    updateLog(logData)
 }
 function romoveMap() {
     mapLayout = page.getViewById("mapLayout")
@@ -197,13 +205,13 @@ function check_route(cb) {
         serviceUUIDs: [],
         seconds: 5,
         onDiscovered: function (peripheral) {
-            console.log("Periperhal found with UUID: " + peripheral.UUID)
-            console.log(check_status=genMap(peripheral.UUID,peripheral.RSSI))            
+            // console.log("Periperhal found with UUID: " + peripheral.UUID)
+            check_status=genMap(peripheral.UUID,peripheral.RSSI)
         },
         skipPermissionCheck: false,
     }).then(function() {
         console.log("scanning complete")
-        cb(check_status ) 
+        cb(check_status) 
     }, function (err) {
         console.log("error while scanning: " + err)
     })
@@ -348,7 +356,6 @@ function genMap(UUID,RSSI){
             romoveMap()
         }
         mapLayout.height = countPoint(route)>8?""+(((countPoint(route)-8)*10)+100)+"%":"100%"
-        console.log(mapLayout.height)
         let bgMaps = ""
         let img 
 
@@ -357,9 +364,10 @@ function genMap(UUID,RSSI){
             img = r
             var folder = fs.knownFolders.documents();
             var path = fs.path.join(folder.path, "r"+route+".jpg");
-            console.log(path);
             appSettings.setString("bgMaps", path)
-            img.saveToFile(path);   
+            mapLayout.backgroundImage = path
+
+            img.saveToFile(path)
         }, (e) => {
             console.log(e)
         });    
@@ -367,6 +375,7 @@ function genMap(UUID,RSSI){
         bgMaps = appSettings.getString("bgMaps")
         mapLayout.className = "map-layout"
         mapLayout.backgroundImage = bgMaps
+
         arrMaps.maps.forEach(element => {
             
             if(route){

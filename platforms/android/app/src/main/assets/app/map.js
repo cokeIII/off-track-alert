@@ -118,7 +118,6 @@ exports.pageLoaded = function(args) {
     }
 
     if(appSettings.getString("maps")){
-        // getMaps()
         arrMaps = JSON.parse(appSettings.getString("maps"))
         pageData.map = arrayToObject(arrMaps.maps)
     } else {
@@ -127,9 +126,6 @@ exports.pageLoaded = function(args) {
     let idCardLength = []
     let userNameLength = []
     let phoneNumberLength = []
-
-    // for(let i = 0;i<50;i++)
-    //     pageData.countUser.push({userName:"temp"})
 
     let idCard = page.getViewById('idCard')
     let userName = page.getViewById('userName')
@@ -200,13 +196,13 @@ function check_route(cb) {
         serviceUUIDs: [],
         seconds: 5,
         onDiscovered: function (peripheral) {
-            console.log("Periperhal found with UUID: " + peripheral.UUID)
-            console.log(check_status=genMap(peripheral.UUID,peripheral.RSSI))            
+            // console.log("Periperhal found with UUID: " + peripheral.UUID)
+            check_status=genMap(peripheral.UUID,peripheral.RSSI)
         },
         skipPermissionCheck: false,
     }).then(function() {
         console.log("scanning complete")
-        cb(check_status ) 
+        cb(check_status) 
     }, function (err) {
         console.log("error while scanning: " + err)
     })
@@ -359,9 +355,9 @@ function genMap(UUID,RSSI){
             img = r
             var folder = fs.knownFolders.documents();
             var path = fs.path.join(folder.path, "r"+route+".jpg");
-            console.log(path);
             appSettings.setString("bgMaps", path)
-            img.saveToFile(path);   
+            img.saveToFile(path)
+            mapLayout.backgroundImage = path
         }, (e) => {
             console.log(e)
         });    
@@ -369,6 +365,7 @@ function genMap(UUID,RSSI){
         bgMaps = appSettings.getString("bgMaps")
         mapLayout.className = "map-layout"
         mapLayout.backgroundImage = bgMaps
+
         arrMaps.maps.forEach(element => {
             
             if(route){

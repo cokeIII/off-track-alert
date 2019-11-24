@@ -30,5 +30,14 @@
 		"E:\\Project\\off-track-alert\\node_modules\\nativescript-downloader\\platforms\\android\\AndroidManifest.xml": "e90ad50426ab67680488898daaaa98d1b1bd7cce",
 		"E:\\Project\\off-track-alert\\node_modules\\nativescript-downloader\\platforms\\android\\include.gradle": "c2271b34550e7a0b5d4e9b93bfe39afb57351e55",
 		"E:\\Project\\off-track-alert\\node_modules\\nativescript-downloader\\platforms\\android\\nativescript_downloader.aar": "3f9f85f0ecd90933b4f823f7487ac9a8c5493b8b"
+	},
+	"nativescript-dna-deviceinfo": {
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-dna-deviceinfo\\platforms\\android\\include.gradle": "06e7e1be49eb6d614094596003280aa7eea789f3",
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-dna-deviceinfo\\platforms\\android\\nativescript_dna_deviceinfo.aar": "03374dab4395151cbb9f1c8553ca9cc0728fd9ed",
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-dna-deviceinfo\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
+	},
+	"nativescript-wifi-info": {
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-wifi-info\\platforms\\android\\nativescript_wifi_info.aar": "439d986641335e7f97b6a5fd784e3e8b7be0e73e",
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-wifi-info\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
 	}
 }

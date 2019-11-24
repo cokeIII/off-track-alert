@@ -15,6 +15,7 @@ var pageData = new Observable.fromObject({
     userName: "",
     deviceId:"",
     phoneNumber:"",
+    bleId:"",
 })
 // 192.168.43.50
 //http://202.129.16.68:7777
@@ -23,9 +24,36 @@ let mRegis = null
 let btnCamera =null
 let mRegisBtn =null
 
+
 exports.pageLoaded = function(args) {
+
     // Removes all values.
     // appSettings.clear();
+    var en = java.net.NetworkInterface.getNetworkInterfaces();
+    for(var obj in en){
+        var intf = en.nextElement();
+        var enumIpAddr = intf.getName();
+        if(intf.getHardwareAddress()){
+            console.log(enumIpAddr)
+            console.log(toHexString(intf.getHardwareAddress()))
+        }
+        if(enumIpAddr == "wlan0"){
+            let macAddress = intf.getHardwareAddress()
+            if (macAddress == null) {
+                return "";
+            }
+            console.log(toHexString(macAddress))
+            pageData.bleId = toHexString(macAddress)
+        }
+    }
+    function toHexString(byteArray) {
+        let i = 0
+        return Array.from(byteArray, function(byte) {
+            i++
+            if(i == 6 )byte = byte-1
+          return ('0' + (byte & 0xFF).toString(16)).slice(-2);
+        }).join('')
+    }
     if(appSettings.getString("userData")){
         let userData = JSON.parse(appSettings.getString("userData"))
         if(userData.phoneNumber != ""){
@@ -37,8 +65,6 @@ exports.pageLoaded = function(args) {
     page.bindingContext = pageData
     
     Telephony.Telephony().then(function(resolved) {
-        // console.log('resolved >', resolved)
-        // console.dir(resolved);
         pageData.deviceId = resolved.deviceId
     }).catch(function(error) {
         console.error('error >', error)
@@ -90,6 +116,7 @@ exports.takeCamera =  function() {
                 let params = [
                     { name: "idCard", value: pageData.phoneNumber },
                     { name: "deviceId", value: pageData.deviceId },
+                    { name: "bleId", value: pageData.bleId },
                     { "name": 'photo', "filename": file, "mimeType": "image/jpg" }
                 ];
                 let task = session.multipartUpload(params, request);
@@ -123,6 +150,7 @@ exports.register =  function() {
     jsonData.userName = pageData.userName
     jsonData.deviceId = pageData.deviceId
     jsonData.phoneNumber = pageData.phoneNumber
+    jsonData.bleId = pageData.bleId
     jsonData.pic = ''
     appSettings.setString("userData", JSON.stringify(jsonData))
     console.log(jsonData)
@@ -216,6 +244,7 @@ function respondedHandler(e) {
         jsonData.idCard = pageData.idCard
         jsonData.userName = pageData.userName
         jsonData.deviceId = pageData.deviceId
+        jsonData.bleId = pageData.bleId
         jsonData.phoneNumber = pageData.phoneNumber
         jsonData.pic = pageData.phoneNumber+'.jpg'
     

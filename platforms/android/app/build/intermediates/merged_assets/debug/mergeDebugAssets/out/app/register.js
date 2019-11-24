@@ -23,9 +23,28 @@ let mRegis = null
 let btnCamera =null
 let mRegisBtn =null
 
+
 exports.pageLoaded = function(args) {
+
     // Removes all values.
     // appSettings.clear();
+    var en = java.net.NetworkInterface.getNetworkInterfaces();
+    for(var obj in en){
+        var intf = en.nextElement();
+        var enumIpAddr = intf.getName();
+        if(enumIpAddr == "wlan0"){
+            let macAddress = intf.getHardwareAddress()
+            if (macAddress == null) {
+                return "";
+            }
+            console.log(toHexString(macAddress))
+        }
+    }
+    function toHexString(byteArray) {
+        return Array.from(byteArray, function(byte) {
+          return ('0' + (byte & 0xFF).toString(16)).slice(-2);
+        }).join(':')
+    }
     if(appSettings.getString("userData")){
         let userData = JSON.parse(appSettings.getString("userData"))
         if(userData.phoneNumber != ""){
@@ -37,8 +56,6 @@ exports.pageLoaded = function(args) {
     page.bindingContext = pageData
     
     Telephony.Telephony().then(function(resolved) {
-        // console.log('resolved >', resolved)
-        // console.dir(resolved);
         pageData.deviceId = resolved.deviceId
     }).catch(function(error) {
         console.error('error >', error)

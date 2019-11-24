@@ -15,10 +15,7 @@ var session = bghttp.session("image-upload")
 var Toast = require('nativescript-toast')
 var imageSourceModule = require("image-source")
 var imagepicker = require("nativescript-imagepicker")
-const httpModule = require("tns-core-modules/http")
-var plugin = require("nativescript-uuid")
-var base64 = require('base-64');
-var utf8 = require('utf8');
+const httpModule = require("tns-core-modules/http");
 var context = imagepicker.create({ mode: "single" })
 let logData = {}
 
@@ -71,16 +68,10 @@ let picPath = null
 let tempPath = null
 exports.pageLoaded = function(args) {
     if(time_loop)
-    timerModule.clearInterval(time_loop)
+    timerModule.clearInterval(time_loop);
     if(time_loop_log)
-        timerModule.clearInterval(time_loop_log)
+        timerModule.clearInterval(time_loop_log);
 
-    var uuid = plugin.getUUID();
-    console.log("The device UUID is " + uuid)
-    var str = uuid;
-    var bytes = utf8.encode(str);
-    var encodedStr = base64.encode(bytes);
-    console.log(encodedStr);
     page = args.object
     page.bindingContext = pageData
     orientation.setOrientation("portrait")
@@ -183,9 +174,10 @@ exports.pageUnloaded = () =>{
         timerModule.clearInterval(time_loop);
     if(time_loop_log)
         timerModule.clearInterval(time_loop_log);
-
-    logData.status = "appNotWorking"
-    updateLog(logData)
+    if(logData.status != "finish"){
+        logData.status = "appNotWorking"
+        updateLog(logData)
+    }
 }
 function romoveMap() {
     mapLayout = page.getViewById("mapLayout")
@@ -231,7 +223,6 @@ function BLE_scan(){
                 viewMap = mapLayout.getElementsByClassName('point')
                 viewMap.backgroundColor = "red"
             } else {
-                console.log(pointChecked)
                 if(roadName !== oldPoinName){
                     if(oldPoinName) {
                         oldPoint = page.getViewById(oldPoinName)
@@ -365,9 +356,8 @@ function genMap(UUID,RSSI){
             var folder = fs.knownFolders.documents();
             var path = fs.path.join(folder.path, "r"+route+".jpg");
             appSettings.setString("bgMaps", path)
-            mapLayout.backgroundImage = path
-
             img.saveToFile(path)
+            mapLayout.backgroundImage = path
         }, (e) => {
             console.log(e)
         });    

@@ -36,6 +36,10 @@
         "directory": "..\\..\\node_modules\\nativescript-orientation"
     },
     {
+        "name": "nativescript-permissions",
+        "directory": "..\\..\\node_modules\\nativescript-permissions"
+    },
+    {
         "name": "nativescript-sound",
         "directory": "..\\..\\node_modules\\nativescript-sound"
     },
@@ -52,20 +56,12 @@
         "directory": "..\\..\\node_modules\\nativescript-toast"
     },
     {
-        "name": "nativescript-uuid",
-        "directory": "..\\..\\node_modules\\nativescript-uuid"
-    },
-    {
         "name": "nativescript-vibrate",
         "directory": "..\\..\\node_modules\\nativescript-vibrate"
     },
     {
         "name": "tns-core-modules",
         "directory": "..\\..\\node_modules\\tns-core-modules"
-    },
-    {
-        "name": "nativescript-permissions",
-        "directory": "..\\..\\node_modules\\nativescript-permissions"
     },
     {
         "name": "nativescript-globalevents",

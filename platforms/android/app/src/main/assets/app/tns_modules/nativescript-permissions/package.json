@@ -1,33 +1,30 @@
 {
-  "_args": [
-    [
-      "nativescript-permissions@1.3.6",
-      "E:\\Project\\off-track-alert-democss"
-    ]
-  ],
-  "_from": "nativescript-permissions@1.3.6",
-  "_id": "nativescript-permissions@1.3.6",
+  "_from": "nativescript-permissions",
+  "_id": "nativescript-permissions@1.3.8",
   "_inBundle": false,
-  "_integrity": "sha512-fkuoboLNdnc3SKdpbffR0Pd84G6iY7GKPirgQLrOFNMP6gLEO8fqJGY1+iFr562sPvlRhCMBjpmauMZuLMwHoQ==",
+  "_integrity": "sha512-jB5U/WbCRPZ2N4ho8WC7OsEi+UtbbpIBZ9OyLzNIUixr/ODdTeTgxXzGT3CUHyKBqYm9MrIADdNzCGbFaUo+KA==",
   "_location": "/nativescript-permissions",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "tag",
     "registry": true,
-    "raw": "nativescript-permissions@1.3.6",
+    "raw": "nativescript-permissions",
     "name": "nativescript-permissions",
     "escapedName": "nativescript-permissions",
-    "rawSpec": "1.3.6",
+    "rawSpec": "",
     "saveSpec": null,
-    "fetchSpec": "1.3.6"
+    "fetchSpec": "latest"
   },
   "_requiredBy": [
+    "#USER",
+    "/",
     "/nativescript-camera",
     "/nativescript-imagepicker"
   ],
-  "_resolved": "https://registry.npmjs.org/nativescript-permissions/-/nativescript-permissions-1.3.6.tgz",
-  "_spec": "1.3.6",
-  "_where": "E:\\Project\\off-track-alert-democss",
+  "_resolved": "https://registry.npmjs.org/nativescript-permissions/-/nativescript-permissions-1.3.8.tgz",
+  "_shasum": "d0da4a0112213a3df3e384341052244815a46ff1",
+  "_spec": "nativescript-permissions",
+  "_where": "E:\\Project\\off-track-alert",
   "author": {
     "name": "Nathanael Anderson",
     "email": "nathan@master-technology.com"
@@ -35,6 +32,8 @@
   "bugs": {
     "url": "https://github.com/nathanaela/nativescript-permissions/issues"
   },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "A NativeScript plugin to deal with Android permissions",
   "homepage": "https://github.com/nathanaela/nativescript-permissions",
   "keywords": [
@@ -69,5 +68,5 @@
     "url": "git+https://github.com/nathanaela/nativescript-permissions.git"
   },
   "typings": "index.d.ts",
-  "version": "1.3.6"
+  "version": "1.3.8"
 }

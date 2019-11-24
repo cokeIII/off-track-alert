@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-45:12
 MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:2:1-24:12
 MERGED from [co.fitcom:fancydownloader:0.6.3] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\fancydownloader-0.6.3.aar\b86d2ca355a8ab793e92956a414f48a2\AndroidManifest.xml:2:1-21:12
 MERGED from [com.android.support:multidex:1.0.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\56fe1dce90fc185bfdd7b0853853c013\AndroidManifest.xml:17:1-22:12
@@ -48,9 +48,9 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\COCACOLA\.gradle\c
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\b46f612848418ea0fc53d75b15575a7f\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\0fefbbe2ad4198ef2996e092d9363001\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a48c7a32a7a8f45de6cbb3bfb40c1a3f\AndroidManifest.xml:17:1-22:12
-INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:2:1-45:12
 	package
 		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:3:2-39
 		INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
@@ -117,8 +117,30 @@ MERGED from [:nativescript_downloader:] C:\Users\COCACOLA\.gradle\caches\transfo
 MERGED from [:nativescript_downloader:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_downloader.aar\5c3063df32cb8b686f5aabd2da38bf86\AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:15:19-61
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:16:2-76
+	android:name
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:16:19-73
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:17:2-78
+MERGED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:11:5-81
+MERGED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:17:19-75
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:18:2-89
+	android:name
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:18:19-70
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:19:2-76
+	android:name
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:19:19-73
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:20:2-86
+	android:name
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:20:19-83
 application
-ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:17:2-39:16
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:22:2-44:16
 MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:16:5-22:19
 MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\af160da7c4d7c5437558fa467284552d\AndroidManifest.xml:16:5-22:19
 MERGED from [co.fitcom:fancydownloader:0.6.3] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\fancydownloader-0.6.3.aar\b86d2ca355a8ab793e92956a414f48a2\AndroidManifest.xml:15:5-19:19
@@ -138,45 +160,45 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\COCACOLA\.
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\1b764a86a16be30428acfcb7b3945bfc\AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:21:3-35
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:26:3-35
 	android:icon
-		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:20:3-32
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:25:3-32
 	android:allowBackup
-		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:19:3-29
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:24:3-29
 	android:theme
-		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:22:3-34
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:27:3-34
 	android:name
-		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:18:3-49
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:23:3-49
 activity#com.tns.NativeScriptActivity
-ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:24:3-37:14
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:29:3-42:14
 	android:label
-		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:27:4-49
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:32:4-49
 	android:configChanges
-		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:28:4-120
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:33:4-120
 	android:theme
-		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:29:4-44
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:34:4-44
 	android:name
-		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:26:4-47
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:31:4-47
 meta-data#SET_THEME_ON_LAUNCH
-ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:31:4-87
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:36:4-87
 	android:resource
-		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:31:50-84
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:36:50-84
 	android:name
-		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:31:15-49
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:36:15-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:33:4-36:20
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:38:4-41:20
 action#android.intent.action.MAIN
-ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:34:5-57
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:39:5-57
 	android:name
-		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:34:13-54
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:39:13-54
 category#android.intent.category.LAUNCHER
-ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:35:5-65
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:40:5-65
 	android:name
-		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:35:15-62
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:40:15-62
 activity#com.tns.ErrorReportActivity
-ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:38:3-57
+ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:43:3-57
 	android:name
-		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:38:13-55
+		ADDED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml:43:13-55
 uses-sdk
 INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\Project\off-track-alert\platforms\android\app\src\main\AndroidManifest.xml
@@ -332,10 +354,6 @@ uses-permission#android.permission.BLUETOOTH_ADMIN
 ADDED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:10:5-74
 	android:name
 		ADDED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:10:22-71
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:11:5-81
-	android:name
-		ADDED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:11:22-78
 uses-feature#android.hardware.bluetooth_le
 ADDED from [:nativescript_bluetooth:] C:\Users\COCACOLA\.gradle\caches\transforms-1\files-1.1\nativescript_bluetooth.aar\9d2430f61652f76da52be75bdeb973ee\AndroidManifest.xml:13:5-15:36
 	android:required

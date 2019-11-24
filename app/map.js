@@ -174,9 +174,10 @@ exports.pageUnloaded = () =>{
         timerModule.clearInterval(time_loop);
     if(time_loop_log)
         timerModule.clearInterval(time_loop_log);
-
-    logData.status = "appNotWorking"
-    updateLog(logData)
+    if(logData.status != "finish"){
+        logData.status = "appNotWorking"
+        updateLog(logData)
+    }
 }
 function romoveMap() {
     mapLayout = page.getViewById("mapLayout")
@@ -222,7 +223,6 @@ function BLE_scan(){
                 viewMap = mapLayout.getElementsByClassName('point')
                 viewMap.backgroundColor = "red"
             } else {
-                console.log(pointChecked)
                 if(roadName !== oldPoinName){
                     if(oldPoinName) {
                         oldPoint = page.getViewById(oldPoinName)

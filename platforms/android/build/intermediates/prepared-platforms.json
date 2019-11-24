@@ -9,15 +9,14 @@
     "nativescript-insomnia": true,
     "nativescript-loading-indicator-new": true,
     "nativescript-orientation": true,
+    "nativescript-permissions": true,
     "nativescript-sound": true,
     "nativescript-telephony": true,
     "nativescript-theme-core": true,
     "nativescript-toast": true,
-    "nativescript-uuid": true,
     "nativescript-vibrate": true,
     "tns-core-modules": true,
     "utf8": true,
-    "nativescript-permissions": true,
     "nativescript-globalevents": true,
     "tns-core-modules-widgets": true
 }

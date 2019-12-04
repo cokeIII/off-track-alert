@@ -9,6 +9,7 @@ var session = bghttp.session("image-upload");
 var Toast = require('nativescript-toast')
 var imageSourceModule = require("image-source");
 var fs = require("tns-core-modules/file-system");
+var orientation = require('nativescript-orientation')
 
 var pageData = new Observable.fromObject({
     idCard: "",
@@ -29,6 +30,7 @@ exports.pageLoaded = function(args) {
 
     // Removes all values.
     // appSettings.clear();
+    orientation.setOrientation("portrait")
     var en = java.net.NetworkInterface.getNetworkInterfaces();
     for(var obj in en){
         var intf = en.nextElement();

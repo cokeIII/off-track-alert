@@ -518,7 +518,6 @@ exports.setUser = function() {
 }
 exports.userCount = () => {
     console.log("userCount")
-    dlgcountUser.style.visibility = 'visible'
     fetch(API_URL+"/getCountUser", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -526,13 +525,15 @@ exports.userCount = () => {
     }).then((r) => r.json())
     .then((response) => {
         if(Object.keys(response.userData).length !== 0){
+            response.userData[0].countUser = Object.keys(response.userData).length
             pageData.countUser = response.userData
         }
-        console.log(response)
-
+        console.log(pageData.countUser)
     }).catch((e) => {
         console.log('***fetch error***')
     });
+    dlgcountUser.style.visibility = 'visible'
+    
 }
 exports.hideDialog = function() {
     imageAssetChang._android = null

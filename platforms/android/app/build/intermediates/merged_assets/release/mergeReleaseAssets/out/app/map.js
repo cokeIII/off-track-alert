@@ -160,7 +160,7 @@ exports.pageLoaded = function(args) {
                     updateLog(logData)
                     time_loop_log = timerModule.setInterval(function(){ 
                         updateLog(logData)
-                    }, 60000) 
+                    }, 30000) 
                 } else {
                     dlgCheckdata.style.visibility = 'visible'
                 }

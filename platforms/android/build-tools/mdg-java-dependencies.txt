@@ -49,4 +49,4 @@ E:\Project\off-track-alert\platforms\android\app\build\exploded-dependencies\6\c
 E:\Project\off-track-alert\platforms\android\app\build\exploded-dependencies\7\classes.jar
 E:\Project\off-track-alert\platforms\android\app\build\exploded-dependencies\8\classes.jar
 E:\Project\off-track-alert\platforms\android\app\build\exploded-dependencies\9\classes.jar
-E:\Project\off-track-alert\platforms\android\app\build\intermediates\javac\debug
+E:\Project\off-track-alert\platforms\android\app\build\intermediates\javac\release

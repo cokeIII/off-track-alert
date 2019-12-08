@@ -160,7 +160,7 @@ exports.pageLoaded = function(args) {
                     updateLog(logData)
                     time_loop_log = timerModule.setInterval(function(){ 
                         updateLog(logData)
-                    }, 60000) 
+                    }, 30000) 
                 } else {
                     dlgCheckdata.style.visibility = 'visible'
                 }
@@ -210,10 +210,10 @@ function check_route(cb) {
 }
 function BLE_scan(){
     let genStatus = false
-    let alert = false
+    let alert = true
     bluetooth.startScanning({
         serviceUUIDs: [],
-        seconds: 7,
+        seconds: 5,
         onDiscovered: function (peripheral) {
             console.log("Periperhal found with UUID: " + peripheral.UUID)
             genStatus = walkMap(peripheral.UUID,peripheral.RSSI)
@@ -223,6 +223,7 @@ function BLE_scan(){
                 viewMap = mapLayout.getElementsByClassName('point')
                 viewMap.backgroundColor = "red"
             } else {
+                alert = false
                 if(roadName !== oldPoinName){
                     if(oldPoinName) {
                         oldPoint = page.getViewById(oldPoinName)
@@ -258,7 +259,7 @@ function BLE_scan(){
             logData.status="traveling"
             dlgAlert.style.visibility = 'collapse'
         }
-        alert = false
+        alert = true
 
     }, function (err) {
         console.log("error while scanning: " + err)

@@ -1,0 +1,37 @@
+{
+	"nativescript-bluetooth": {
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-bluetooth/platforms/ios/Info.plist": "55e74d1862d33a462aa154edb810ce9c3bd63a04"
+	},
+	"nativescript-camera": {
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-camera/platforms/ios/Info.plist": "7ac0e3ce185cd23c52d97becfdfdee212d2290c0"
+	},
+	"nativescript-downloader": {
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-downloader/platforms/ios/Podfile": "49f6f1a84fe0e0774bc9611526185fdc6b50746e"
+	},
+	"nativescript-imagepicker": {
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-imagepicker/platforms/ios/build.xcconfig": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-imagepicker/platforms/ios/Info.plist": "8d5268f96afa3d4965124696e29dedd76af9650a",
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-imagepicker/platforms/ios/Podfile": "275e69a6ff58553c11220811c2b8d19b5bd513fb",
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-imagepicker/platforms/ios/README.md": "8470908bf23f29387842616622c39ef2bcc2af65"
+	},
+	"nativescript-loading-indicator-new": {
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-loading-indicator-new/platforms/ios/Podfile": "23359c769d74123dd96bb547f60c5d04f3ebb598"
+	},
+	"nativescript-toast": {
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-toast/platforms/ios/Podfile": "9d6607bbfec081681444aece9228da75ab5f8bcc"
+	},
+	"nativescript-vibrate": {
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-vibrate/platforms/ios/build.xcconfig": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-vibrate/platforms/ios/Info.plist": "8ccb0698816a9a3e64d6d82fa65349b9866b78ff",
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-vibrate/platforms/ios/README.md": "8470908bf23f29387842616622c39ef2bcc2af65"
+	},
+	"tns-core-modules-widgets": {
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework/Headers/TNSLabel.h": "c7c5788d3ea834d96cf8a137cbf0c4ea28fd7829",
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework/Headers/TNSProcess.h": "787f09c57ede174d6323990e6d6e9eaf134da6f0",
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework/Headers/TNSWidgets.h": "9b1b8c8e2701901f1ddeebe67c2ca3b0f95b0281",
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework/Headers/UIImage+TNSBlocks.h": "3b31a5be818e25c142e99f98479c538632d350ae",
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework/Info.plist": "864e17746640968d5f009d42aa6ea08daf16e662",
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework/Modules/module.modulemap": "00d2220e76eb098f1808eb4e9b5c43ad4cadf1da",
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework/TNSWidgets": "6675deab937d42fa5ead11c9a26753158c7af612"
+	}
+}

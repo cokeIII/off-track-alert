@@ -1,0 +1,1 @@
+/Users/Multimedia/Library/Developer/Xcode/DerivedData/offtrackalert-cykukugajjxwgmasdjyxrijyybof/Build/Intermediates.noindex/ArchiveIntermediates/offtrackalert/InstallationBuildProductsLocation/Applications/offtrackalert.app

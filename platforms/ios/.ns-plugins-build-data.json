@@ -18,7 +18,7 @@
 		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-loading-indicator-new/platforms/ios/Podfile": "23359c769d74123dd96bb547f60c5d04f3ebb598"
 	},
 	"nativescript-toast": {
-		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-toast/platforms/ios/Podfile": "9d6607bbfec081681444aece9228da75ab5f8bcc"
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-toast/platforms/ios/Podfile": "e4edcba0e34b8c4d0dfefeafc16f43a43b7af8d8"
 	},
 	"nativescript-vibrate": {
 		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-vibrate/platforms/ios/build.xcconfig": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
@@ -33,5 +33,8 @@
 		"/Users/Multimedia/Documents/off-track-alert/node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework/Info.plist": "864e17746640968d5f009d42aa6ea08daf16e662",
 		"/Users/Multimedia/Documents/off-track-alert/node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework/Modules/module.modulemap": "00d2220e76eb098f1808eb4e9b5c43ad4cadf1da",
 		"/Users/Multimedia/Documents/off-track-alert/node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework/TNSWidgets": "6675deab937d42fa5ead11c9a26753158c7af612"
+	},
+	"nativescript-toasty": {
+		"/Users/Multimedia/Documents/off-track-alert/node_modules/nativescript-toasty/platforms/ios/Podfile": "940f7f4bf1ee6292423a9ebd89a242e1344200b2"
 	}
 }

@@ -10,6 +10,7 @@ var Toast = require('nativescript-toast')
 var imageSourceModule = require("image-source");
 var fs = require("tns-core-modules/file-system");
 var orientation = require('nativescript-orientation')
+var myPlatform = require( "nativescript-platform" )
 
 var pageData = new Observable.fromObject({
     idCard: "",
@@ -27,10 +28,11 @@ let mRegisBtn =null
 
 
 exports.pageLoaded = function(args) {
-
+    toast = Toast.makeText("register success")
+    toast.show()
     // Removes all values.
-    // appSettings.clear();
-    orientation.setOrientation("portrait")
+    appSettings.clear();
+    // orientation.setOrientation("portrait")
     if (myPlatform.android) {
         var en = java.net.NetworkInterface.getNetworkInterfaces();
         for(var obj in en){

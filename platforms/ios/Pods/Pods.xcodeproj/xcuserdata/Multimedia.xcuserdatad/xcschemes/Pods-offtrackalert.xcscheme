@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A6EB6DB0C4FFBDA00DFEFAF082D215E1"
+               BlueprintIdentifier = "79B9C048F98EB45DD54FC67E62FFDB09"
                BuildableName = "Pods-offtrackalert.framework"
                BlueprintName = "Pods-offtrackalert"
                ReferencedContainer = "container:Pods.xcodeproj">

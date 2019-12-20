@@ -12,12 +12,12 @@ const frameModule = require("ui/frame")
 var fs = require("tns-core-modules/file-system")
 var bghttp = require("nativescript-background-http")
 var session = bghttp.session("image-upload")
-var Toast = require('nativescript-toast')
+var toasty = require('nativescript-toasty').Toasty;
 var imageSourceModule = require("image-source")
-var imagepicker = require("nativescript-imagepicker")
+// var imagepicker = require("nativescript-imagepicker")
 const httpModule = require("tns-core-modules/http")
 var myPlatform = require( "nativescript-platform" )
-var context = imagepicker.create({ mode: "single" })
+// var context = imagepicker.create({ mode: "single" })
 let logData = {}
 
 //192.168.43.50:3001
@@ -75,7 +75,9 @@ exports.pageLoaded = function(args) {
 
     page = args.object
     page.bindingContext = pageData
-    orientation.setOrientation("portrait")
+    if(myPlatform.android){
+        orientation.setOrientation("portrait")
+    }
     dlg = page.getViewById('user-data')
     dlgAlert = page.getViewById('user-alert')
     dlgCheckdata = page.getViewById('checkdata')
@@ -132,14 +134,15 @@ exports.pageLoaded = function(args) {
     let userName = page.getViewById('userName')
     let phoneNumber = page.getViewById('phoneNumber')
     userCard = page.getViewById('userCard')
+    if (myPlatform.android) {
+        idCardLength[0] = new android.text.InputFilter.LengthFilter(13)
+        userNameLength[0] = new android.text.InputFilter.LengthFilter(30)
+        phoneNumberLength[0] = new android.text.InputFilter.LengthFilter(10)
 
-    idCardLength[0] = new android.text.InputFilter.LengthFilter(13)
-    userNameLength[0] = new android.text.InputFilter.LengthFilter(30)
-    phoneNumberLength[0] = new android.text.InputFilter.LengthFilter(10)
-
-    idCard.android.setFilters(idCardLength)
-    userName.android.setFilters(userNameLength)
-    phoneNumber.android.setFilters(phoneNumberLength)
+        idCard.android.setFilters(idCardLength)
+        userName.android.setFilters(userNameLength)
+        phoneNumber.android.setFilters(phoneNumberLength)
+    }
     if(tempPath){
         picPath = tempPath
     } else {
@@ -418,23 +421,23 @@ exports.user = function() {
     }
 }
 exports.changPic = function() {
-    context
-    .authorize()
-    .then(function() {
-        return context.present();
-    })
-    .then(function(selection) {
-        selection.forEach(function(selected) {
-            console.log(selected)
-            // process the selected image
-            imageAssetChang = selected
-            userCard.style.backgroundImage  = selected._android
+    // context
+    // .authorize()
+    // .then(function() {
+    //     return context.present();
+    // })
+    // .then(function(selection) {
+    //     selection.forEach(function(selected) {
+    //         console.log(selected)
+    //         // process the selected image
+    //         imageAssetChang = selected
+    //         userCard.style.backgroundImage  = selected._android
 
-        });
-        list.items = selection;
-    }).catch(function (e) {
-        // process error
-    });
+    //     });
+    //     list.items = selection;
+    // }).catch(function (e) {
+    //     // process error
+    // });
 }   
 exports.setUser = function() {
     let saveData = {}
@@ -457,8 +460,9 @@ exports.setUser = function() {
         text = 'Please enter the first and last name in the alphabet. a-z, A-Z, 0-9, A-9'
     }
     if (text != null) {
-        Toast.makeText(text).show()
-        return
+        var toast = new toasty({ text: text });
+        toast.show()
+          return
     }
 
 
@@ -472,22 +476,31 @@ exports.setUser = function() {
             if(response.status == "Success"){
                 console.log("Success")
                 appSettings.setString("userData", JSON.stringify(saveData))
-                Toast.makeText("update success","long").show()
+                var toast = new toasty({ text: 'update success' })
+                toast.show()
             }
             else if(response.status == "Fail"){
-                Toast.makeText("update fail").show()
+                var toast = new toasty({ text: 'update fail' })
+                toast.show()
+        
             }
         }).catch((e) => {
             console.log('***fetch error***')
         });
     } else {
-        if(imageAssetChang._android == null){
+        let imgAsetChang = null
+        if (myPlatform.android) {
+            imgAsetChang = imageAssetChang._android
+        } else if(myPlatform.ios){
+            imgAsetChang = imageAssetChang._ios
+        }
+        if(imgAsetChang == null){
             let documents = fs.knownFolders.documents()
             let path = fs.path.join(documents.path, pageData.picCard);
-            imageAssetChang._android =path
+            imgAsetChang =path
         }
-        tempPath = imageAssetChang._android
-        var file =  imageAssetChang._android
+        tempPath = imgAsetChang
+        var file =  imgAsetChang
         var url = API_URL+"/updateUser";
         var request = {
             url: url,
@@ -592,8 +605,8 @@ exports.reMap=()=>{
     frameModule.topmost().navigate("map");
 }
 function errorHandler(e) {
-    console.log("received " + e.responseCode + " code.");
-    toast = Toast.makeText("regiser fail")
+    console.log("received " + e.responseCode + " code.")
+    var toast = new toasty({ text: 'fail' })
     toast.show()
 
    var serverResponse = e.response;
@@ -613,12 +626,14 @@ function respondedHandler(e) {
        picPath = tempPath
        
        appSettings.setString("userData", JSON.stringify(jsonData))
-       toast = Toast.makeText("Update success","long")
+       var toast = new toasty({ text: 'Update success' })
        toast.show()
+
    }
    else if(e.data["status"]== "Fail"){
-       toast = Toast.makeText("Update fail")
+       var toast = new toasty({ text: 'Update fail' })
        toast.show()
+
    }
    else if(e.data["status"]== "DuplicateUser"){
        console.log("DuplicateUser")

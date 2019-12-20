@@ -6,7 +6,7 @@ const appSettings = require("application-settings")
 const Telephony = require("nativescript-telephony")
 var bghttp = require("nativescript-background-http");
 var session = bghttp.session("image-upload");
-var Toast = require('nativescript-toast')
+var toasty = require('nativescript-toasty').Toasty;
 var imageSourceModule = require("image-source");
 var fs = require("tns-core-modules/file-system");
 var orientation = require('nativescript-orientation')
@@ -28,7 +28,6 @@ let mRegisBtn =null
 
 
 exports.pageLoaded = function(args) {
-
     // Removes all values.
     // appSettings.clear();
     // orientation.setOrientation("portrait")
@@ -68,6 +67,12 @@ exports.pageLoaded = function(args) {
 
     page = args.object
     page.bindingContext = pageData
+    let idCard = page.getViewById('idCard')
+    let userName = page.getViewById('userName')
+    let phoneNumber = page.getViewById('phoneNumber')
+    btnCamera = page.getViewById('btnCamera')
+    mRegis = page.getViewById('mRegis')
+    mRegisBtn = page.getViewById('mRegisBtn')
 
     if (myPlatform.android) {
         Telephony.Telephony().then(function(resolved) {
@@ -80,12 +85,6 @@ exports.pageLoaded = function(args) {
         let userNameLength = []
         let phoneNumberLength = []
 
-        let idCard = page.getViewById('idCard')
-        let userName = page.getViewById('userName')
-        let phoneNumber = page.getViewById('phoneNumber')
-        btnCamera = page.getViewById('btnCamera')
-        mRegis = page.getViewById('mRegis')
-        mRegisBtn = page.getViewById('mRegisBtn')
         
         idCardLength[0] = new android.text.InputFilter.LengthFilter(13)
         userNameLength[0] = new android.text.InputFilter.LengthFilter(30)
@@ -99,7 +98,9 @@ exports.pageLoaded = function(args) {
 }
 exports.takeCamera =  function() {
     if (pageData.phoneNumber.length < 10) {
-        return Toast.makeText('Please enter your mobile phone number to complete 10 digits.').show()
+        var toast = new toasty({ text: 'Please enter your mobile phone number to complete 10 digits.' })
+        toast.show()
+        return 
     } 
     camera.requestPermissions().then(
         function success() {
@@ -175,7 +176,8 @@ exports.register =  function() {
         text = 'Please enter the first and last name in the alphabet. a-z, A-Z, 0-9, A-9'
     }
     if (text != null) {
-      Toast.makeText(text).show()
+      var toast = new toasty({ text: text });
+      toast.show()
       return
     }
     fetch(API_URL+"/insertUser", {
@@ -186,14 +188,14 @@ exports.register =  function() {
     .then((response) => {
         if(response.status == "Success"){
             console.log("Success")
-            toast = Toast.makeText("register success","long")
-            toast.show()
+            var toast = new toasty({ text: 'register success' });
+            toast.show();    
             frameModule.topmost().navigate("map");
         }
         else if(response.status == "Fail"){
-            toast = Toast.makeText("register fail")
-            toast.show()
-        }
+            var toast = new toasty({ text: 'register fail' });
+            toast.show();    
+            }
         else if(response.status == "DuplicateUser"){
             console.log("DuplicateUser")
         }
@@ -231,8 +233,8 @@ function progressHandler(e) {
 // response: net.gotev.uploadservice.ServerResponse (Android) / NSHTTPURLResponse (iOS)
 function errorHandler(e) {
      console.log("received " + e.responseCode + " code.");
-     toast = Toast.makeText("regiser fail")
-     toast.show()
+     var toast = new toasty({ text: 'register fail' });
+     toast.show();    
 
     var serverResponse = e.response;
 }
@@ -256,13 +258,13 @@ function respondedHandler(e) {
         jsonData.pic = pageData.phoneNumber+'.jpg'
     
         appSettings.setString("userData", JSON.stringify(jsonData))
-        toast = Toast.makeText("register success","long")
-        toast.show()
+        var toast = new toasty({ text: 'register success' });
+        toast.show();    
         frameModule.topmost().navigate("map");
     }
     else if(e.data["status"]== "Fail"){
-        toast = Toast.makeText("register fail")
-        toast.show()
+        var toast = new toasty({ text: 'register fail' });
+        toast.show();    
     }
     else if(e.data["status"]== "DuplicateUser"){
         console.log("DuplicateUser")

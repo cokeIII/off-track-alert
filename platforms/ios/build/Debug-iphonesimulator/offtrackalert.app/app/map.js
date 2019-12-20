@@ -14,10 +14,10 @@ var bghttp = require("nativescript-background-http")
 var session = bghttp.session("image-upload")
 var Toast = require('nativescript-toast')
 var imageSourceModule = require("image-source")
-var imagepicker = require("nativescript-imagepicker")
+// var imagepicker = require("nativescript-imagepicker")
 const httpModule = require("tns-core-modules/http")
 var myPlatform = require( "nativescript-platform" )
-var context = imagepicker.create({ mode: "single" })
+// var context = imagepicker.create({ mode: "single" })
 let logData = {}
 
 //192.168.43.50:3001
@@ -418,23 +418,23 @@ exports.user = function() {
     }
 }
 exports.changPic = function() {
-    context
-    .authorize()
-    .then(function() {
-        return context.present();
-    })
-    .then(function(selection) {
-        selection.forEach(function(selected) {
-            console.log(selected)
-            // process the selected image
-            imageAssetChang = selected
-            userCard.style.backgroundImage  = selected._android
+    // context
+    // .authorize()
+    // .then(function() {
+    //     return context.present();
+    // })
+    // .then(function(selection) {
+    //     selection.forEach(function(selected) {
+    //         console.log(selected)
+    //         // process the selected image
+    //         imageAssetChang = selected
+    //         userCard.style.backgroundImage  = selected._android
 
-        });
-        list.items = selection;
-    }).catch(function (e) {
-        // process error
-    });
+    //     });
+    //     list.items = selection;
+    // }).catch(function (e) {
+    //     // process error
+    // });
 }   
 exports.setUser = function() {
     let saveData = {}

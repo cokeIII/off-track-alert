@@ -37,6 +37,56 @@
 						<string>Apple Development</string>
 					</dict>
 					<key>name</key>
+					<string>AFNetworking.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>7S3CSA33C8</string>
+						<key>name</key>
+						<string>natthapon naramat</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>D7423AA6BE0B9C8A6E4C5130C239E873AA968082</string>
+						<key>dateExpires</key>
+						<string>28/11/2563 BE</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>MBProgressHUD.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>7S3CSA33C8</string>
+						<key>name</key>
+						<string>natthapon naramat</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>D7423AA6BE0B9C8A6E4C5130C239E873AA968082</string>
+						<key>dateExpires</key>
+						<string>28/11/2563 BE</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
 					<string>NativeScript.framework</string>
 					<key>team</key>
 					<dict>
@@ -62,7 +112,57 @@
 						<string>Apple Development</string>
 					</dict>
 					<key>name</key>
+					<string>QBImagePickerController.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>7S3CSA33C8</string>
+						<key>name</key>
+						<string>natthapon naramat</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>D7423AA6BE0B9C8A6E4C5130C239E873AA968082</string>
+						<key>dateExpires</key>
+						<string>28/11/2563 BE</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
 					<string>TNSWidgets.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>7S3CSA33C8</string>
+						<key>name</key>
+						<string>natthapon naramat</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>D7423AA6BE0B9C8A6E4C5130C239E873AA968082</string>
+						<key>dateExpires</key>
+						<string>28/11/2563 BE</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>Toast_Swift.framework</string>
 					<key>team</key>
 					<dict>
 						<key>id</key>

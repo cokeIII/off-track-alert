@@ -78,7 +78,31 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		mWxERji9lMxE63VX8sEPnm0yerg=
+		ht2RoqoRw7n+1nC2SH91enzABRI=
+		</data>
+		<key>Frameworks/AFNetworking.framework/AFNetworking</key>
+		<data>
+		WLzrfTjwCaLWTWK4lvwb0sNeA3E=
+		</data>
+		<key>Frameworks/AFNetworking.framework/Info.plist</key>
+		<data>
+		FZ/geTxctxXTqQc9ManuBuiHlls=
+		</data>
+		<key>Frameworks/AFNetworking.framework/_CodeSignature/CodeResources</key>
+		<data>
+		3R8vXE+db8hSwCwVbroxMWZbyYk=
+		</data>
+		<key>Frameworks/MBProgressHUD.framework/Info.plist</key>
+		<data>
+		Z/aPhBzFdYt8dq27pqgTO5cdL+A=
+		</data>
+		<key>Frameworks/MBProgressHUD.framework/MBProgressHUD</key>
+		<data>
+		p2fAT6sHDNUVeZXmKZm6/Tu97/w=
+		</data>
+		<key>Frameworks/MBProgressHUD.framework/_CodeSignature/CodeResources</key>
+		<data>
+		pF2FvbI4KasHR6bt3uqd24ykYe0=
 		</data>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
 		<data>
@@ -92,6 +116,143 @@
 		<data>
 		bWK2XFcbqXlwmg/MGHV9mBIY83M=
 		</data>
+		<key>Frameworks/QBImagePickerController.framework/Info.plist</key>
+		<data>
+		f8/gHvrww7HPX6ZS1CPlGwg38EE=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/Info.plist</key>
+		<data>
+		wuDHYLMUuX8c+k1IBT78Stja30E=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/Info.plist</key>
+		<data>
+		5wcEZYT7+ACvonC08RybLNd7QaY=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsNavigationController.nib/objects-12.3+.nib</key>
+		<data>
+		pwd3nrYe2r5hqY3jRpi7WeuduiM=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsNavigationController.nib/objects-13.0+.nib</key>
+		<data>
+		VIGqDPuUnmONoN/xaw2K1RtPicc=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsNavigationController.nib/runtime.nib</key>
+		<data>
+		ju60A5gSSlajVh+sgdh/TgFGcLM=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsViewController.nib/objects-12.3+.nib</key>
+		<data>
+		tRyyC++U2TAWkADkfh2YodfuJ8I=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsViewController.nib/objects-13.0+.nib</key>
+		<data>
+		if1aDxbESL581kY6tDddOmGEL6c=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsViewController.nib/runtime.nib</key>
+		<data>
+		RZdzhiLTrokhDt4ziC8ce2mHpeI=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAssetsViewController.nib/objects-12.3+.nib</key>
+		<data>
+		Q9XKF6zWFI01EMmQe4aK15l6hJw=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAssetsViewController.nib/objects-13.0+.nib</key>
+		<data>
+		f9lBfzwIxH8DDeoWlHX/Z5qA3n8=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAssetsViewController.nib/runtime.nib</key>
+		<data>
+		EaI9dNh/2yJ58VV8RBZarAQuo8c=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QL5-wR-LYt-view-66K-TS-Yoc.nib/objects-12.3+.nib</key>
+		<data>
+		SH5+Om5c0ReJf2xNmDVn9BmXlLY=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QL5-wR-LYt-view-66K-TS-Yoc.nib/objects-13.0+.nib</key>
+		<data>
+		6hLKpttnDtU2AhEwl4wdOomkkIE=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QL5-wR-LYt-view-66K-TS-Yoc.nib/runtime.nib</key>
+		<data>
+		ATYAmV1ZcL9btMImfHuFbcBbT/4=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QiH-NZ-ZGN-view-sD2-zK-ryo.nib/objects-12.3+.nib</key>
+		<data>
+		caWcXv6KfPKkgNKGwHrw2b56bis=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QiH-NZ-ZGN-view-sD2-zK-ryo.nib/objects-13.0+.nib</key>
+		<data>
+		CYBF8FtBQGaWaFwcEXKbFvwVLSQ=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QiH-NZ-ZGN-view-sD2-zK-ryo.nib/runtime.nib</key>
+		<data>
+		X2NeqHNNk2otaWpYw1PJ71Sh4XU=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/de.lproj/QBImagePicker.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7HDuza8xkjZDApMKPU3CNxfNNCw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/en.lproj/QBImagePicker.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7OtwM5Ua+EXFugnaS+j7046GcFI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/es.lproj/QBImagePicker.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LxLOJOitkFKgoKItGEHzPapVu4Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/ja.lproj/QBImagePicker.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iUIb9vJ/4hPGASleG+P9qVqI5p4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/zh-Hans.lproj/QBImagePicker.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fhCYv2p3lwwcrwV/UjnYDh4xz9Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePickerController</key>
+		<data>
+		up2d0bQ+ZcEQ5RLBZNnVURDnqjc=
+		</data>
+		<key>Frameworks/QBImagePickerController.framework/_CodeSignature/CodeResources</key>
+		<data>
+		ge1HhzM+HLGVLbTo4215QBgBc6U=
+		</data>
+		<key>Frameworks/SBToaster.framework/Info.plist</key>
+		<data>
+		xm0OgivssOmm/1S/IAnGCJNXKVQ=
+		</data>
+		<key>Frameworks/SBToaster.framework/SBToaster</key>
+		<data>
+		rvMoHpH52G1B3CI36uYHd0f+BAE=
+		</data>
+		<key>Frameworks/SBToaster.framework/_CodeSignature/CodeResources</key>
+		<data>
+		KKjPuVBmrcDZdIF8TUuuN5mGYLU=
+		</data>
 		<key>Frameworks/TNSWidgets.framework/Info.plist</key>
 		<data>
 		hk4XdGZAlo1fAJ1Cqm6gja8W5mI=
@@ -103,6 +264,46 @@
 		<key>Frameworks/TNSWidgets.framework/_CodeSignature/CodeResources</key>
 		<data>
 		EC0oKNw3by0dysMF8EAyyy/pzXo=
+		</data>
+		<key>Frameworks/Toast_Swift.framework/Info.plist</key>
+		<data>
+		VMnClksNnCMtOrc/TLZiwVuWoDY=
+		</data>
+		<key>Frameworks/Toast_Swift.framework/Toast_Swift</key>
+		<data>
+		2HF/8xz/eNOeEJcafIHlvuYMew4=
+		</data>
+		<key>Frameworks/Toast_Swift.framework/_CodeSignature/CodeResources</key>
+		<data>
+		wksjC6tugkPHipM9OUi3RvmymVk=
+		</data>
+		<key>Frameworks/libswiftCore.dylib</key>
+		<data>
+		rrAp64iPhUL40XQR7JlGMDIZaMA=
+		</data>
+		<key>Frameworks/libswiftCoreFoundation.dylib</key>
+		<data>
+		P4IT9OqWCWZ8FyecMxQHhM6h4G8=
+		</data>
+		<key>Frameworks/libswiftCoreGraphics.dylib</key>
+		<data>
+		l7cOuKnVMm1hG9tuAE36M0hgwY4=
+		</data>
+		<key>Frameworks/libswiftDarwin.dylib</key>
+		<data>
+		XJGVexKAsC220QzBQHwL6VS/whc=
+		</data>
+		<key>Frameworks/libswiftDispatch.dylib</key>
+		<data>
+		xYRhwsR1eeXatGDr8WNyVj93krw=
+		</data>
+		<key>Frameworks/libswiftFoundation.dylib</key>
+		<data>
+		WclOTQyDfPDOGEjZboBz+yfxGVQ=
+		</data>
+		<key>Frameworks/libswiftObjectiveC.dylib</key>
+		<data>
+		W4v+YlroD8+v27M4zKa/3r9eqdA=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -198,11 +399,11 @@
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib</key>
 		<data>
-		DpWF0Yg3+YO3oxobua5EiQhLl18=
+		6JONwBIHU+h5SbWtR+mF21Nk8IA=
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib</key>
 		<data>
-		+xIIZutbfq+VMLTclTjuV0NAvWw=
+		VfI6i5VV/F/4x6OAIfJusIjSWyM=
 		</data>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -210,11 +411,11 @@
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-13.0+.nib</key>
 		<data>
-		bKy1WgpQhZ87Hcx7US1MCDzAPhc=
+		8Q2emtny700URgiBLhvGTN0USro=
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib</key>
 		<data>
-		pe0NwoFjYR87GFZ/jCWlQrjtvzo=
+		7KzpJM3ZD+nsHmVtKTOVJb47jno=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -382,7 +583,7 @@
 		</data>
 		<key>app/map.js</key>
 		<data>
-		8Ooauv9AJ9lnwp6yYbCzZIR02FM=
+		2w9yQ3W3DQ30nFdgJh0zqzNvQ10=
 		</data>
 		<key>app/map.xml</key>
 		<data>
@@ -398,7 +599,7 @@
 		</data>
 		<key>app/register.js</key>
 		<data>
-		zUzKwGBlxGau4QzNWA87RJUq6BA=
+		ARxsHjtCJYtSq3VysA8zblgZBoE=
 		</data>
 		<key>app/register.xml</key>
 		<data>
@@ -1168,29 +1369,25 @@
 		<data>
 		MV+ZX8kzvmw6pQYOINLgnG3jAZs=
 		</data>
-		<key>app/tns_modules/nativescript-toast/LICENSE</key>
+		<key>app/tns_modules/nativescript-toasty/LICENSE</key>
 		<data>
-		Us9FUUukgCp+FxZryARt5XqFvx0=
+		hJeTqvfO+3dEmdu0YpOjbYjAKxc=
 		</data>
-		<key>app/tns_modules/nativescript-toast/README.md</key>
+		<key>app/tns_modules/nativescript-toasty/README.md</key>
 		<data>
-		RHDXboAxZRaQ8hTYwDgYpCUytrU=
+		1s9eyV4eEos7SJcwRokFX61PoiY=
 		</data>
-		<key>app/tns_modules/nativescript-toast/hooks/before-livesync/nativescript-angular-sync.js</key>
+		<key>app/tns_modules/nativescript-toasty/package.json</key>
 		<data>
-		GrgIyuF5e4r+bh/HeLZLiTKRkv8=
+		rKECleyD5laSlWQdiE5YPcNNCyI=
 		</data>
-		<key>app/tns_modules/nativescript-toast/lib/postinstall.js</key>
+		<key>app/tns_modules/nativescript-toasty/toast.common.js</key>
 		<data>
-		dLqdF8kq5/WiwzwE1Ftw1B9AYX8=
+		bJbk1iGfb4if/s49HnE/K5aCwFU=
 		</data>
-		<key>app/tns_modules/nativescript-toast/package.json</key>
+		<key>app/tns_modules/nativescript-toasty/toasty.js</key>
 		<data>
-		KHt9nP4YyNGwLvaQiWQu649uFvk=
-		</data>
-		<key>app/tns_modules/nativescript-toast/toast.js</key>
-		<data>
-		oK6fVknvTL3kyTdJ3X+o2K2kb9s=
+		tdybedQulvSuqLGYA2FVtuYjFW8=
 		</data>
 		<key>app/tns_modules/nativescript-vibrate/CHANGELOG.md</key>
 		<data>
@@ -2490,11 +2687,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mWxERji9lMxE63VX8sEPnm0yerg=
+			ht2RoqoRw7n+1nC2SH91enzABRI=
 			</data>
 			<key>hash2</key>
 			<data>
-			yrMRlPXGsPViGFQmryt8JqLJqEMXEYoBDZbi2U4lH0g=
+			gHbRY8hj81MXc7VdyPTgFMxSNZYe0oEIC9MYynWEjcE=
+			</data>
+		</dict>
+		<key>Frameworks/AFNetworking.framework/AFNetworking</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WLzrfTjwCaLWTWK4lvwb0sNeA3E=
+			</data>
+			<key>hash2</key>
+			<data>
+			8SFWtPA92+xqATbCjP4s3mYlhG2aUf70urpcM+ZOMCM=
+			</data>
+		</dict>
+		<key>Frameworks/AFNetworking.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FZ/geTxctxXTqQc9ManuBuiHlls=
+			</data>
+			<key>hash2</key>
+			<data>
+			V4Q+SENNSGpDbfP7AbXoOl7nheEBAHtQ68O0oW7pRzc=
+			</data>
+		</dict>
+		<key>Frameworks/AFNetworking.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3R8vXE+db8hSwCwVbroxMWZbyYk=
+			</data>
+			<key>hash2</key>
+			<data>
+			zeHjnJviqnk15GDLXIyKqT539d60rF8wLypIuEGGmAg=
+			</data>
+		</dict>
+		<key>Frameworks/MBProgressHUD.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Z/aPhBzFdYt8dq27pqgTO5cdL+A=
+			</data>
+			<key>hash2</key>
+			<data>
+			0aQhy9pL1hGzCOFLf8qEWPADXb8BybQGl0ZEU7MDYCk=
+			</data>
+		</dict>
+		<key>Frameworks/MBProgressHUD.framework/MBProgressHUD</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p2fAT6sHDNUVeZXmKZm6/Tu97/w=
+			</data>
+			<key>hash2</key>
+			<data>
+			BypRc7uV5s05hSPM3Ov3PaOsag2xToAR2CpWH982CH0=
+			</data>
+		</dict>
+		<key>Frameworks/MBProgressHUD.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pF2FvbI4KasHR6bt3uqd24ykYe0=
+			</data>
+			<key>hash2</key>
+			<data>
+			fX0yxWwE3v9g6UAByUOFlr5ro/OgOjPqY5uM+FPsuAk=
 			</data>
 		</dict>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
@@ -2530,6 +2793,324 @@
 			fA3I3DcPvldAVjKIqayh6cnmPhQP9St/Ny/oQZcCuIc=
 			</data>
 		</dict>
+		<key>Frameworks/QBImagePickerController.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f8/gHvrww7HPX6ZS1CPlGwg38EE=
+			</data>
+			<key>hash2</key>
+			<data>
+			xbiqjbdIjLVVJlwe0yE9kwafWwaDegF95M4q6gO4rOs=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wuDHYLMUuX8c+k1IBT78Stja30E=
+			</data>
+			<key>hash2</key>
+			<data>
+			vbYb8T3ao0yjPCdZTQngwQ8Uw6C3NoxrmmVjrUMXJz8=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5wcEZYT7+ACvonC08RybLNd7QaY=
+			</data>
+			<key>hash2</key>
+			<data>
+			4J3EmbW/nwg5CoBPo+Ot03+q0RhSlicMf6yAqSbtjgc=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsNavigationController.nib/objects-12.3+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pwd3nrYe2r5hqY3jRpi7WeuduiM=
+			</data>
+			<key>hash2</key>
+			<data>
+			B8Iv5HuQ5ZTxu8GT+1sRUgWmMq0iHeXdtBwIwMIyn3Q=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsNavigationController.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VIGqDPuUnmONoN/xaw2K1RtPicc=
+			</data>
+			<key>hash2</key>
+			<data>
+			/GlDiQj4Q89JGw+3zaV9QT1nbK32tfCo25CTGat6G0c=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsNavigationController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ju60A5gSSlajVh+sgdh/TgFGcLM=
+			</data>
+			<key>hash2</key>
+			<data>
+			jvjokTHgRBrZOgUDHmGucyLFzhtrtNd2OHZFALLgXmQ=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsViewController.nib/objects-12.3+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tRyyC++U2TAWkADkfh2YodfuJ8I=
+			</data>
+			<key>hash2</key>
+			<data>
+			AzQxtXRmKRlLRqCj5+OAGd3a4C8VrEnL28efjWIniLE=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsViewController.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			if1aDxbESL581kY6tDddOmGEL6c=
+			</data>
+			<key>hash2</key>
+			<data>
+			RaSPxpCONpn42Fc/L4bbKHejZ8pV9YjH2SZvTsy0nVM=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RZdzhiLTrokhDt4ziC8ce2mHpeI=
+			</data>
+			<key>hash2</key>
+			<data>
+			xDcEOquq8BWBFamYH3nLpnAOw7MT5t9MJhfyuKTVhhY=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAssetsViewController.nib/objects-12.3+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q9XKF6zWFI01EMmQe4aK15l6hJw=
+			</data>
+			<key>hash2</key>
+			<data>
+			mliLra77SG1Bz1dYoBZEcDMzu0n1Yrq2fzO19m6MgJI=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAssetsViewController.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f9lBfzwIxH8DDeoWlHX/Z5qA3n8=
+			</data>
+			<key>hash2</key>
+			<data>
+			V+xACAqhzYIZoKTvkDGcCW9SrDgUinn0MdGYGHD8+gc=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAssetsViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EaI9dNh/2yJ58VV8RBZarAQuo8c=
+			</data>
+			<key>hash2</key>
+			<data>
+			3cxWtphJY4H6FasOzdIBOUvsYXXQyBjgU9Vdt38HXNE=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QL5-wR-LYt-view-66K-TS-Yoc.nib/objects-12.3+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SH5+Om5c0ReJf2xNmDVn9BmXlLY=
+			</data>
+			<key>hash2</key>
+			<data>
+			ldwMJV65VUaLsZ6mYCsmd1bKB2b5DyOa6mgoVv2y7LU=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QL5-wR-LYt-view-66K-TS-Yoc.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6hLKpttnDtU2AhEwl4wdOomkkIE=
+			</data>
+			<key>hash2</key>
+			<data>
+			g1ofXtDuN0uExt3fNEdVukWuJFxfo2vGs74CkP128W0=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QL5-wR-LYt-view-66K-TS-Yoc.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ATYAmV1ZcL9btMImfHuFbcBbT/4=
+			</data>
+			<key>hash2</key>
+			<data>
+			bjk3oVY5Daaqi4TTzhF2Ola0O9E7l9pj1ptVQHzeaiA=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QiH-NZ-ZGN-view-sD2-zK-ryo.nib/objects-12.3+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			caWcXv6KfPKkgNKGwHrw2b56bis=
+			</data>
+			<key>hash2</key>
+			<data>
+			uW+ZeOuDOjRNCtyfE3v8VX2cdtbAnNW1a3TP+QlDjM4=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QiH-NZ-ZGN-view-sD2-zK-ryo.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CYBF8FtBQGaWaFwcEXKbFvwVLSQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			YxDt4bx0jxRDm59u8UBkwpgNHlJizHyNlcv6xiChrm4=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/QBImagePicker.storyboardc/QiH-NZ-ZGN-view-sD2-zK-ryo.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			X2NeqHNNk2otaWpYw1PJ71Sh4XU=
+			</data>
+			<key>hash2</key>
+			<data>
+			CAAC6Mq98m4JjRucbwrXEjc09+TJ6ihLTjmJGJyd/Sk=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/de.lproj/QBImagePicker.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7HDuza8xkjZDApMKPU3CNxfNNCw=
+			</data>
+			<key>hash2</key>
+			<data>
+			ssdaBlc1Qw0bnIetgGQqoOUmzoepzAqsnqlR8/J9WZY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/en.lproj/QBImagePicker.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7OtwM5Ua+EXFugnaS+j7046GcFI=
+			</data>
+			<key>hash2</key>
+			<data>
+			oltfpatIZeopgOiLHnwhcTq1MlxewB0R1df5vIMG5bY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/es.lproj/QBImagePicker.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LxLOJOitkFKgoKItGEHzPapVu4Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			EikPmOpnIv6eLIEviKysHIu8din7NOJJMftXOS5EiKE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/ja.lproj/QBImagePicker.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iUIb9vJ/4hPGASleG+P9qVqI5p4=
+			</data>
+			<key>hash2</key>
+			<data>
+			8poVDtyETUOSfA2YvAWRAJoHVh7bJsBfnYm9cc/2OR8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePicker.bundle/zh-Hans.lproj/QBImagePicker.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fhCYv2p3lwwcrwV/UjnYDh4xz9Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			mEhnRhyw3R6fnvC0YR4G9DST/05azyOyoWSkOjFK8Eg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/QBImagePickerController</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			up2d0bQ+ZcEQ5RLBZNnVURDnqjc=
+			</data>
+			<key>hash2</key>
+			<data>
+			GTGfN4M21OQPprXBu+fpqTsR0LerVaK13W40+7DNU6g=
+			</data>
+		</dict>
+		<key>Frameworks/QBImagePickerController.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ge1HhzM+HLGVLbTo4215QBgBc6U=
+			</data>
+			<key>hash2</key>
+			<data>
+			2E0W81ZD1tFM1hvfZirJGFg5JZ3nu2Mlrf/jDOYdJTM=
+			</data>
+		</dict>
+		<key>Frameworks/SBToaster.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xm0OgivssOmm/1S/IAnGCJNXKVQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZcGZ61LyhiodsaRhKvyM1ToEIpMiBrxGEBBQnJt39uk=
+			</data>
+		</dict>
+		<key>Frameworks/SBToaster.framework/SBToaster</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rvMoHpH52G1B3CI36uYHd0f+BAE=
+			</data>
+			<key>hash2</key>
+			<data>
+			vz/mqg0KjUy3acxrb39tVBv69rs8/NB17GcMfNP8k0k=
+			</data>
+		</dict>
+		<key>Frameworks/SBToaster.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KKjPuVBmrcDZdIF8TUuuN5mGYLU=
+			</data>
+			<key>hash2</key>
+			<data>
+			m9qqair0H3KfpUB3bEAFG5lL866SgeUWy9qL5tOHetM=
+			</data>
+		</dict>
 		<key>Frameworks/TNSWidgets.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
@@ -2561,6 +3142,116 @@
 			<key>hash2</key>
 			<data>
 			3d/kLN3GE5zXxbT4njrAs7jNn8Na5yWjESTwj6WcG7M=
+			</data>
+		</dict>
+		<key>Frameworks/Toast_Swift.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VMnClksNnCMtOrc/TLZiwVuWoDY=
+			</data>
+			<key>hash2</key>
+			<data>
+			eHYipGZvAv1C/hFSrmjnFldqbNC1XgoW5bs2azSEFVg=
+			</data>
+		</dict>
+		<key>Frameworks/Toast_Swift.framework/Toast_Swift</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2HF/8xz/eNOeEJcafIHlvuYMew4=
+			</data>
+			<key>hash2</key>
+			<data>
+			QaLa/f+QVnhPuJeQPuesAG9XFPhdlAwVRdDvO/+QsqM=
+			</data>
+		</dict>
+		<key>Frameworks/Toast_Swift.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wksjC6tugkPHipM9OUi3RvmymVk=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZVx2t8APLpo6ZpdzvDQjnLjXP+y50+tL2u4izH80ayM=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCore.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rrAp64iPhUL40XQR7JlGMDIZaMA=
+			</data>
+			<key>hash2</key>
+			<data>
+			SVCZK2UG9ihtWggcfIn/i94g//jyC4cI73gURFdHavA=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreFoundation.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P4IT9OqWCWZ8FyecMxQHhM6h4G8=
+			</data>
+			<key>hash2</key>
+			<data>
+			/wz85l+DKAaQ7/BS+77vK5X998iA4Lwz+DGJ95g4kZw=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreGraphics.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l7cOuKnVMm1hG9tuAE36M0hgwY4=
+			</data>
+			<key>hash2</key>
+			<data>
+			2g2ULh1dF2q53hPG3PIdHtRNobjaoh8CmjkUk9GLjTs=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftDarwin.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XJGVexKAsC220QzBQHwL6VS/whc=
+			</data>
+			<key>hash2</key>
+			<data>
+			Fy3X7nPk7IgG+lCSWKHuMHgGz6Yi56UOKe6XajzinhU=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftDispatch.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xYRhwsR1eeXatGDr8WNyVj93krw=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZSH1H7EN5E4TGGB63N2+7rR7N+rDR1LBmkhABOf9RVQ=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftFoundation.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WclOTQyDfPDOGEjZboBz+yfxGVQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			6SyHvvl3dAOzLH6bFEeF41TPcUHS3iYOdFK7I0FEU6M=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftObjectiveC.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			W4v+YlroD8+v27M4zKa/3r9eqdA=
+			</data>
+			<key>hash2</key>
+			<data>
+			zLWBGbdbTQk6chVChX0c8CFwhq8ogd9K00QEU5AufEY=
 			</data>
 		</dict>
 		<key>LaunchImage-1100-Landscape-2436h@3x.png</key>
@@ -2809,22 +3500,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DpWF0Yg3+YO3oxobua5EiQhLl18=
+			6JONwBIHU+h5SbWtR+mF21Nk8IA=
 			</data>
 			<key>hash2</key>
 			<data>
-			JD5T8Z6xHTywXQfDqaZYy7dxM/XHpksqheSI/sE9pIc=
+			JTBJ+meV87pxegozLQE8THzHJHQa5nElD+//CAEcwCc=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+xIIZutbfq+VMLTclTjuV0NAvWw=
+			VfI6i5VV/F/4x6OAIfJusIjSWyM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Fxjn/ZlVkDmcxR451dCoC7KsLv+fhw1Td5qkbcousDc=
+			DEXnyuC3lZ502OFbBTmlfjS295xo1HEGHUiTIK4mnis=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
@@ -2842,22 +3533,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bKy1WgpQhZ87Hcx7US1MCDzAPhc=
+			8Q2emtny700URgiBLhvGTN0USro=
 			</data>
 			<key>hash2</key>
 			<data>
-			a0jGaFXJpcEy3kp/F2YqFNArHurs6NurajmYMnY5NmA=
+			uyg/Ce8qz3C/Z8a5+37E/F2XJq5wlzfp2bcCv+a7QFI=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pe0NwoFjYR87GFZ/jCWlQrjtvzo=
+			7KzpJM3ZD+nsHmVtKTOVJb47jno=
 			</data>
 			<key>hash2</key>
 			<data>
-			FFYJEXuWI530Afa+3v0AbFMMES/6TOQ4VoanvkNCq/c=
+			vtyLSZK2LEzRyOknsb8g9d+VGz6nwk7p77UTh690jCE=
 			</data>
 		</dict>
 		<key>app/CODE_OF_CONDUCT.md</key>
@@ -3304,11 +3995,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8Ooauv9AJ9lnwp6yYbCzZIR02FM=
+			2w9yQ3W3DQ30nFdgJh0zqzNvQ10=
 			</data>
 			<key>hash2</key>
 			<data>
-			xnj6yX1AK3inDptqEPPizr1bpTNyectzSDbKf7NHsO8=
+			YQljy21EbFSmRlUxV2EfJ2jV5oNrddZZH7Uu4M5soD8=
 			</data>
 		</dict>
 		<key>app/map.xml</key>
@@ -3348,11 +4039,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zUzKwGBlxGau4QzNWA87RJUq6BA=
+			ARxsHjtCJYtSq3VysA8zblgZBoE=
 			</data>
 			<key>hash2</key>
 			<data>
-			IE0Td/lNUvwgYj/ygOHPVWHR/4zO611IQGAwtyYo+aY=
+			WzNfVYFWttWgM7Z09vZok5tG3vU0bmk3EWoWGFjyXW0=
 			</data>
 		</dict>
 		<key>app/register.xml</key>
@@ -5467,70 +6158,59 @@
 			+yVjy4T6c/PeYoiHHyWW6o3Xv/zSCouyEDBLL/UM3hI=
 			</data>
 		</dict>
-		<key>app/tns_modules/nativescript-toast/LICENSE</key>
+		<key>app/tns_modules/nativescript-toasty/LICENSE</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Us9FUUukgCp+FxZryARt5XqFvx0=
+			hJeTqvfO+3dEmdu0YpOjbYjAKxc=
 			</data>
 			<key>hash2</key>
 			<data>
-			sLMapu5FIVakwNqjb9iSDwIlz2Kjcygqr2//i1a3XuY=
+			UIRfUsSCeK+LrzpaD0F59PkQ8HfQuMhJXjbDu8CKK8Y=
 			</data>
 		</dict>
-		<key>app/tns_modules/nativescript-toast/README.md</key>
+		<key>app/tns_modules/nativescript-toasty/README.md</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RHDXboAxZRaQ8hTYwDgYpCUytrU=
+			1s9eyV4eEos7SJcwRokFX61PoiY=
 			</data>
 			<key>hash2</key>
 			<data>
-			vsDRBJrkBfzW6Dg8tJNaepyhNB45SQGZUXd8rCm6awM=
+			N1zarBI+cQv4LWfb78+MNgk2Hi+x9gUNR3hxt4nxvVs=
 			</data>
 		</dict>
-		<key>app/tns_modules/nativescript-toast/hooks/before-livesync/nativescript-angular-sync.js</key>
+		<key>app/tns_modules/nativescript-toasty/package.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GrgIyuF5e4r+bh/HeLZLiTKRkv8=
+			rKECleyD5laSlWQdiE5YPcNNCyI=
 			</data>
 			<key>hash2</key>
 			<data>
-			VFkMpiAi5iWUeoGAwfWTwD6RtZMODtiIMznxAskfi54=
+			u+vLlPu9DpjNfyL7OUgBAwn/EinY/dhJaDPMVdHei1c=
 			</data>
 		</dict>
-		<key>app/tns_modules/nativescript-toast/lib/postinstall.js</key>
+		<key>app/tns_modules/nativescript-toasty/toast.common.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dLqdF8kq5/WiwzwE1Ftw1B9AYX8=
+			bJbk1iGfb4if/s49HnE/K5aCwFU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Bk1zyAtJhpoxSoPYYwFuqQF/lVhX8FFORU77ek36oa4=
+			YjyINq/vHICHzXtGaUrvVSoqvpkHsmg9pI8aQ2uhbUY=
 			</data>
 		</dict>
-		<key>app/tns_modules/nativescript-toast/package.json</key>
+		<key>app/tns_modules/nativescript-toasty/toasty.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KHt9nP4YyNGwLvaQiWQu649uFvk=
+			tdybedQulvSuqLGYA2FVtuYjFW8=
 			</data>
 			<key>hash2</key>
 			<data>
-			3cgMluJn3IcBerkeqxLoBwzKmOGA0jU09udVCalbAZU=
-			</data>
-		</dict>
-		<key>app/tns_modules/nativescript-toast/toast.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oK6fVknvTL3kyTdJ3X+o2K2kb9s=
-			</data>
-			<key>hash2</key>
-			<data>
-			Bru83NFAvAW1sx+OuECv8CfoqM06XehLdV1yXPV+HL0=
+			Ozeoh4Qnxp+sLGUQ+18hiRJdSZ96bVOecXcKc8HS3yc=
 			</data>
 		</dict>
 		<key>app/tns_modules/nativescript-vibrate/CHANGELOG.md</key>

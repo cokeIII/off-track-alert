@@ -14,7 +14,7 @@
     "nativescript-sound": true,
     "nativescript-telephony": true,
     "nativescript-theme-core": true,
-    "nativescript-toast": true,
+    "nativescript-toasty": true,
     "nativescript-vibrate": true,
     "tns-core-modules": true,
     "utf8": true,

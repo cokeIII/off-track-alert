@@ -2,7 +2,7 @@
   <!-- <ActionBar title="AOT" class="action-bar"></ActionBar> -->
   <ActionBar  title="off-track alert system"  class="header actions " ></ActionBar>
   <!-- Your UI components go here -->
-  <StackLayout width="100%" class="fas bg  " >
+  <StackLayout width="100%" class="bg" >
 
     <StackLayout id="mRegis" visibility="collapse" class=" m-t-30p">
       <GridLayout columns="auto, *, auto" rows="auto,0" verticalAlignment="top" >

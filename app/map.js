@@ -148,29 +148,49 @@ exports.pageLoaded = function(args) {
     } else {
         picPath = fs.path.join(documents.path, pageData.picCard)
     }
-    bluetooth.enable().then(
-        function(enabled) {
-            check_route(function(cb){
-                pageData.route = cb
-                if(cb) {
-                    dlgCheckdata.style.visibility = 'collapse'
-                    BLE_scan()
-                    time_loop = timerModule.setInterval(function(){ 
-                    // use Bluetooth features if enabled is true 
-                    bluetooth.stopScanning().then(function() {
-                        BLE_scan()
-                    })
-                    }, 8000) 
-                    updateLog(logData)
-                    time_loop_log = timerModule.setInterval(function(){ 
-                        updateLog(logData)
-                    }, 30000) 
-                } else {
-                    dlgCheckdata.style.visibility = 'visible'
-                }
-            })
+    bluetooth.hasCoarseLocationPermission().then(
+        function(granted) {
+          // if this is 'false' you probably want to call 'requestCoarseLocationPermission' now
+          console.log("Has Location Permission? " + granted);
         }
-    )       
+    );
+    bluetooth.requestCoarseLocationPermission().then(
+        function(granted) {
+          console.log("Location permission requested, user granted? " + granted);
+        }
+    );
+    bluetooth.isBluetoothEnabled().then(
+        function(enabled) {
+          console.log("Enabled? " + enabled)
+          console.log("BLE ENABLE")
+          check_route(function(cb){
+              pageData.route = cb
+              if(cb) {
+                  dlgCheckdata.style.visibility = 'collapse'
+                  BLE_scan()
+                  time_loop = timerModule.setInterval(function(){ 
+                  // use Bluetooth features if enabled is true 
+                  bluetooth.stopScanning().then(function() {
+                      BLE_scan()
+                  })
+                  }, 8000) 
+                  updateLog(logData)
+                  time_loop_log = timerModule.setInterval(function(){ 
+                      updateLog(logData)
+                  }, 30000) 
+              } else {
+                  dlgCheckdata.style.visibility = 'visible'
+              }
+          })
+
+        }
+    );
+    if (myPlatform.android) {
+        bluetooth.enable().then(
+            function(enabled) {
+            }
+        )
+    }     
 }
 exports.pageUnloaded = () =>{
     console.log("pageUnloaded")

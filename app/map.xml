@@ -35,7 +35,7 @@
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
 
             <FlexboxLayout  orientation="horizontal" class="title headermenu" height="11%">
-             <Image src="~/images/icons8-resume-96.png" text="User information" stretch="none"  width="15%" height="12%" class="" horizontalAlignment="center"></Image>
+             <Image src="~/images/icons8-resume-96.png" text="User information" stretch="none"  width="18" height="18" class="" horizontalAlignment="center"></Image>
                 <Label text="Profile" class="text "></Label>
                 <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
             </FlexboxLayout>

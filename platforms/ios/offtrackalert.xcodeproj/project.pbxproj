@@ -5,16 +5,17 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
+		051519256EC448C485E2817A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BEB41859FD3744949FB6AD0C /* build.xcconfig */; };
+		2394C177D56844FC9AEB5FB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7FD057C28841C68F872810 /* LaunchScreen.storyboard */; };
+		2FE74915193AEC768F8649EA /* Pods_offtrackalert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FF553632C4580D3B21C6B9 /* Pods_offtrackalert.framework */; };
+		4A3E6FBDC9FA4394830E300C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC35DA36F92465D8C821295 /* Assets.xcassets */; };
+		52E7D934E8B44105A9019CA2 /* TNSWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4E293C8DF00428A8C558434 /* TNSWidgets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 858B833A18CA111C00AB12DE /* InfoPlist.strings */; };
-		87186CD7C0A54730BD9C3668 /* TNSWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97B3D111A6504CFF8E54E88F /* TNSWidgets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		99D895F478DC22C48FD6C47D /* Pods_offtrackalert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6EF23216C5198F791DAC801 /* Pods_offtrackalert.framework */; };
-		CD2A90A4506B421B953FA13E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B73239958B44243B3400AC7 /* LaunchScreen.storyboard */; };
+		BC2DA3F0AD9A4F288434F1FD /* TNSWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E293C8DF00428A8C558434 /* TNSWidgets.framework */; };
 		CD45EE7C18DC2D5800FB50C0 /* app in Resources */ = {isa = PBXBuildFile; fileRef = CD45EE7A18DC2D5800FB50C0 /* app */; };
 		CD62955D1BB2678900AE3A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62955C1BB2678900AE3A93 /* main.m */; };
-		EE337F88AE6A444894242E99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96B9B212C4EA498F94691457 /* Assets.xcassets */; };
-		F0BD6DD7C8A1479AB864EB07 /* TNSWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B3D111A6504CFF8E54E88F /* TNSWidgets.framework */; };
-		FDB0CB35F16E4F8392B15A14 /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DEE967CE98944A64A3548B8F /* build.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				87186CD7C0A54730BD9C3668 /* TNSWidgets.framework in Embed Frameworks */,
+				52E7D934E8B44105A9019CA2 /* TNSWidgets.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,26 +33,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		17FF553632C4580D3B21C6B9 /* Pods_offtrackalert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_offtrackalert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CC35DA36F92465D8C821295 /* Assets.xcassets */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = Assets.xcassets; path = offtrackalert/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		391174B321F1CBD300BA2583 /* TNSDebugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TNSDebugging.h; path = internal/TNSDebugging.h; sourceTree = SOURCE_ROOT; };
 		391174B421F1CBD300BA2583 /* TNSExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TNSExceptionHandler.h; path = internal/TNSExceptionHandler.h; sourceTree = SOURCE_ROOT; };
 		391174B521F1D7BF00BA2583 /* nativescript-build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "nativescript-build.xcconfig"; path = "internal/nativescript-build.xcconfig"; sourceTree = SOURCE_ROOT; };
 		391174B721F1D99900BA2583 /* plugins-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "plugins-release.xcconfig"; path = "plugins-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		391174B821F1D99900BA2583 /* plugins-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "plugins-debug.xcconfig"; path = "plugins-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
-		3B73239958B44243B3400AC7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = LaunchScreen.storyboard; path = offtrackalert/Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		858B832E18CA111C00AB12DE /* offtrackalert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = offtrackalert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		858B833918CA111C00AB12DE /* offtrackalert-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "offtrackalert-Info.plist"; sourceTree = "<group>"; };
 		858B833B18CA111C00AB12DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		858B833F18CA111C00AB12DE /* offtrackalert-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "offtrackalert-Prefix.pch"; sourceTree = "<group>"; };
 		858B843318CA22B800AB12DE /* offtrackalert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = offtrackalert.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		96B9B212C4EA498F94691457 /* Assets.xcassets */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = Assets.xcassets; path = offtrackalert/Resources/Assets.xcassets; sourceTree = "<group>"; };
-		97B3D111A6504CFF8E54E88F /* TNSWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSWidgets.framework; path = "$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework"; sourceTree = "<group>"; };
-		C6EF23216C5198F791DAC801 /* Pods_offtrackalert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_offtrackalert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E293C8DF00428A8C558434 /* TNSWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSWidgets.framework; path = "$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework"; sourceTree = "<group>"; };
+		BEB41859FD3744949FB6AD0C /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = build.xcconfig; path = offtrackalert/Resources/build.xcconfig; sourceTree = "<group>"; };
 		CD45EE7A18DC2D5800FB50C0 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = "<group>"; };
 		CD62955C1BB2678900AE3A93 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = internal/main.m; sourceTree = SOURCE_ROOT; };
 		CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-debug.xcconfig"; sourceTree = "<group>"; };
 		CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-release.xcconfig"; sourceTree = "<group>"; };
 		CDF4743E1BA4855C0087EA85 /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
-		DEE967CE98944A64A3548B8F /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = build.xcconfig; path = offtrackalert/Resources/build.xcconfig; sourceTree = "<group>"; };
+		DD7FD057C28841C68F872810 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = LaunchScreen.storyboard; path = offtrackalert/Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,19 +60,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0BD6DD7C8A1479AB864EB07 /* TNSWidgets.framework in Frameworks */,
-				99D895F478DC22C48FD6C47D /* Pods_offtrackalert.framework in Frameworks */,
+				BC2DA3F0AD9A4F288434F1FD /* TNSWidgets.framework in Frameworks */,
+				2FE74915193AEC768F8649EA /* Pods_offtrackalert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2EACC33E91CDD87075954056 /* Pods */ = {
+		0A5538AB606C420C9AE0C632 /* TNSNativeSource */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Pods;
+			name = TNSNativeSource;
 			sourceTree = "<group>";
 		};
 		858B832518CA111C00AB12DE = {
@@ -81,8 +82,8 @@
 				858B833718CA111C00AB12DE /* offtrackalert */,
 				858B833018CA111C00AB12DE /* Frameworks */,
 				858B832F18CA111C00AB12DE /* Products */,
-				2EACC33E91CDD87075954056 /* Pods */,
-				E728E479059546858835448D /* TNSNativeSource */,
+				0A5538AB606C420C9AE0C632 /* TNSNativeSource */,
+				F42FC4727791991E73A4AD7C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +99,8 @@
 		858B833018CA111C00AB12DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				97B3D111A6504CFF8E54E88F /* TNSWidgets.framework */,
-				C6EF23216C5198F791DAC801 /* Pods_offtrackalert.framework */,
+				A4E293C8DF00428A8C558434 /* TNSWidgets.framework */,
+				17FF553632C4580D3B21C6B9 /* Pods_offtrackalert.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,18 +136,18 @@
 		E070579D1B39A9D000214BF1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				96B9B212C4EA498F94691457 /* Assets.xcassets */,
-				3B73239958B44243B3400AC7 /* LaunchScreen.storyboard */,
-				DEE967CE98944A64A3548B8F /* build.xcconfig */,
+				2CC35DA36F92465D8C821295 /* Assets.xcassets */,
+				DD7FD057C28841C68F872810 /* LaunchScreen.storyboard */,
+				BEB41859FD3744949FB6AD0C /* build.xcconfig */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		E728E479059546858835448D /* TNSNativeSource */ = {
+		F42FC4727791991E73A4AD7C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = TNSNativeSource;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +157,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 858B843018CA22B800AB12DE /* Build configuration list for PBXNativeTarget "offtrackalert" */;
 			buildPhases = (
-				9428F3AC07600BF3C485ACD6 /* [CP] Check Pods Manifest.lock */,
+				C95C903172F5EB9D31D08B93 /* [CP] Check Pods Manifest.lock */,
 				C97FD7AC1ADE5369004DB2A4 /* NativeScript PreBuild */,
 				858B83F218CA22B800AB12DE /* Sources */,
 				CD62955B1BB2651D00AE3A93 /* NativeScript PreLink */,
@@ -164,7 +165,7 @@
 				858B842C18CA22B800AB12DE /* Resources */,
 				85F5BDFC1A9363BE006B9701 /* Embed Frameworks */,
 				CD3EAD351B05FF060042DBFC /* NativeScript PostBuild */,
-				996ADCF38457D1709E955026 /* [CP] Embed Pods Frameworks */,
+				39A2851E174511CB930B6E5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,38 +216,16 @@
 			files = (
 				CD45EE7C18DC2D5800FB50C0 /* app in Resources */,
 				858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */,
-				EE337F88AE6A444894242E99 /* Assets.xcassets in Resources */,
-				CD2A90A4506B421B953FA13E /* LaunchScreen.storyboard in Resources */,
-				FDB0CB35F16E4F8392B15A14 /* build.xcconfig in Resources */,
+				4A3E6FBDC9FA4394830E300C /* Assets.xcassets in Resources */,
+				2394C177D56844FC9AEB5FB7 /* LaunchScreen.storyboard in Resources */,
+				051519256EC448C485E2817A /* build.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9428F3AC07600BF3C485ACD6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-offtrackalert-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		996ADCF38457D1709E955026 /* [CP] Embed Pods Frameworks */ = {
+		39A2851E174511CB930B6E5B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,6 +251,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-offtrackalert/Pods-offtrackalert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C95C903172F5EB9D31D08B93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-offtrackalert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C97FD7AC1ADE5369004DB2A4 /* NativeScript PreBuild */ = {
@@ -435,7 +436,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
-					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/offtrackalert/offtrackalert-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -460,7 +460,6 @@
 				GCC_PREFIX_HEADER = "offtrackalert/offtrackalert-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
 					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/offtrackalert/offtrackalert-Info.plist";

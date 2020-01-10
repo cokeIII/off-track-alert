@@ -53,7 +53,11 @@
     background-image: url("~/images/pexels-photo-1282264.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%,80%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
@@ -220,13 +224,12 @@
   /*-----------------------end---ActionBar------------------------------------*/
   /*---------------------------icon id-------------------------------------*/
   .iconID {
-    height: 40spx;
-    margin: 10px;
+    height: 10%;
+    margin: 2% 0% 0% -10%;
     width: 500px;
     position: relative;
     resize: vertical;
     overflow: auto;
-
 }
  /*----------------------------------------------------------------*/
   .bgtest{

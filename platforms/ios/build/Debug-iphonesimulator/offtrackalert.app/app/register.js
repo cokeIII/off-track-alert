@@ -160,7 +160,6 @@ exports.register =  function() {
     jsonData.phoneNumber = pageData.phoneNumber
     jsonData.bleId = pageData.bleId
     jsonData.pic = ''
-    appSettings.setString("userData", JSON.stringify(jsonData))
     console.log(jsonData)
     let text = null
     var tester = /^[a-zA-Z0-9ก-๙ ]*$/
@@ -188,6 +187,7 @@ exports.register =  function() {
     .then((response) => {
         if(response.status == "Success"){
             console.log("Success")
+            appSettings.setString("userData", JSON.stringify(jsonData))
             var toast = new toasty({ text: 'register success' });
             toast.show();    
             frameModule.topmost().navigate("map");

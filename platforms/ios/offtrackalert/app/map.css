@@ -221,9 +221,13 @@
 .user-pic{
     margin: 5%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom center;
     background-size: contain;
-    transform: rotate(90);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .total-users{
     text-align: right;

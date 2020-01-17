@@ -6,6 +6,9 @@
     background-size: cover;  */
     /* transform: scale(1);  */
 }
+.text-color{
+    color: black;
+}
 .map-layout{
     background-repeat: no-repeat;
     background-position: center;
@@ -221,9 +224,13 @@
 .user-pic{
     margin: 5%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom center;
     background-size: contain;
-    transform: rotate(90);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .total-users{
     text-align: right;
@@ -232,8 +239,8 @@
 }
 .camera{
     background-color: white;
-    margin-top: 40%;
-    margin-left: 60%;
+    margin-top: 50%;
+    margin-left: 85%;
     font-size: 24;
     color: black;
     border-radius: 10;

@@ -36,6 +36,7 @@ var pageData = new Observable.fromObject({
     route:0,
     km:0,
     picCard:'',
+    debug:'',
 })
 let urlMap = API_URL + '/maps'
 let dlg = null
@@ -151,11 +152,33 @@ exports.pageLoaded = function(args) {
     bluetooth.hasCoarseLocationPermission().then(
         function(granted) {
           // if this is 'false' you probably want to call 'requestCoarseLocationPermission' now
+        //   pageData.debug = "Has Location Permission? " + granted+"/ "
           console.log("Has Location Permission? " + granted);
+          check_route(function(cb){
+            pageData.route = cb
+            BLE_scan()
+            if(cb) {
+                dlgCheckdata.style.visibility = 'collapse'
+                BLE_scan()
+                time_loop = timerModule.setInterval(function(){ 
+                // use Bluetooth features if enabled is true 
+                bluetooth.stopScanning().then(function() {
+                    BLE_scan()
+                })
+                }, 8000) 
+                updateLog(logData)
+                time_loop_log = timerModule.setInterval(function(){ 
+                    updateLog(logData)
+                }, 30000) 
+                } else {
+                    dlgCheckdata.style.visibility = 'visible'
+                }
+            })
         }
     );
     bluetooth.requestCoarseLocationPermission().then(
         function(granted) {
+        //    pageData.debug = pageData.debug+"Location permission requested, user granted? " + granted+"/ "
           console.log("Location permission requested, user granted? " + granted);
         }
     );
@@ -163,28 +186,10 @@ exports.pageLoaded = function(args) {
         function(enabled) {
           console.log("Enabled? " + enabled)
           console.log("BLE ENABLE")
-          check_route(function(cb){
-              pageData.route = cb
-              if(cb) {
-                  dlgCheckdata.style.visibility = 'collapse'
-                  BLE_scan()
-                  time_loop = timerModule.setInterval(function(){ 
-                  // use Bluetooth features if enabled is true 
-                  bluetooth.stopScanning().then(function() {
-                      BLE_scan()
-                  })
-                  }, 8000) 
-                  updateLog(logData)
-                  time_loop_log = timerModule.setInterval(function(){ 
-                      updateLog(logData)
-                  }, 30000) 
-              } else {
-                  dlgCheckdata.style.visibility = 'visible'
-              }
-          })
 
         }
     );
+
     if (myPlatform.android) {
         bluetooth.enable().then(
             function(enabled) {
@@ -223,12 +228,14 @@ function check_route(cb) {
         onDiscovered: function (peripheral) {
             // console.log("Periperhal found with UUID: " + peripheral.UUID)
             check_status=genMap(peripheral.UUID,peripheral.RSSI)
+            pageData.debug = check_status
         },
         skipPermissionCheck: false,
     }).then(function() {
         console.log("scanning complete")
         cb(check_status) 
     }, function (err) {
+        pageData.debug = "error while scanning: " + err
         console.log("error while scanning: " + err)
     })
 }

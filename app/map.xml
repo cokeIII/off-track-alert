@@ -4,31 +4,31 @@
 
   <!-- Your UI components go here -->
   
-  <DockLayout  width="100%" height="100%" class="fas">
+  <DockLayout  width="100%" height="100%" class="fas text-color">
     <AbsoluteLayout dock="top" width="100%" height="90%" class="map">
     <ScrollView width="100%"  height="100%">
         <AbsoluteLayout  width="100%"  height="100%" id="mapLayout" >
-
+          <StackLayout><label text="{{ debug }}"/><label text="{{ debug.startScanning }}"/></StackLayout>
         </AbsoluteLayout>
     </ScrollView>
       <StackLayout width="80%" height="26%" class="detail-map" id="detailMap">
-        <Label text="&#xf057;" width="30" height="20"  marginTop="5%" marginLeft="88%" tap="hideDetailMap" class="close"></Label>
+        <label text="&#xf057;" width="30" height="20"  marginTop="5%" marginLeft="88%" tap="hideDetailMap" class="close"></label>
         <StackLayout id="testView" width="100%" orientation="horizontal">
-          <Label text="&#xf3c5;" color="#C70039" class="map-mark"></Label>
-          <Label text="{{ roadName }}" class="track-name"></Label>
+          <label text="&#xf3c5;" color="#C70039" class="map-mark"></label>
+          <label text="{{ roadName }}" class="track-name"></label>
         </StackLayout>
         
         <StackLayout class="hr-light m-t-10" width="90%"></StackLayout>
         <StackLayout width="100%" orientation="horizontal">
-          <Label class="user-RSSI" text="&#xf09e;"></Label>
-          <Label text="{{ rssi }}" class="rssis"></Label>
-          <Label class="user-road" text="&#xf018;"></Label>
-          <Label class="road-total" text=" {{ km +'m'}}"></Label>
+          <label class="user-RSSI" text="&#xf09e;"></label>
+          <label text="{{ rssi }}" class="rssis"></label>
+          <label class="user-road" text="&#xf018;"/>
+          <label class="road-total" text=" {{ km +'m'}}"/>
         </StackLayout>
       </StackLayout>
       
       <StackLayout width="26" height="26"  marginTop="3%" marginLeft="90%" class="detailMapBtn" id="detailMapBtn" tap="showDetailMap">
-        <Label text="&#xf06e;"></Label>
+        <label text="&#xf06e;"></label>
       </StackLayout>
       <!-- dlg User-->
       <StackLayout class="lg-dialog" tap="hideDialog" id="user-data">
@@ -36,24 +36,24 @@
 
             <FlexboxLayout  orientation="horizontal" class="title headermenu" height="11%">
              <Image src="~/images/icons8-resume-96.png" text="User information" stretch="none"  width="18" height="18" class="" horizontalAlignment="center"></Image>
-                <Label text="Profile" class="text "></Label>
+                <label text="Profile" class="text "></label>
                 <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
             </FlexboxLayout>
        
             <StackLayout class="content bg_dlg_User " id="txtData" visibility="collapse">
 
               <StackLayout width="100%" orientation="horizontal" class="m-t-25p">
-                <Label text="id card" class="txt-s"></Label>
+                <label text="id card" class="txt-s"></label>
                 <TextField hint="" text="{{ idCard }}" keyboardType="number" class="selectbox_id" id="idCard"/>
               </StackLayout>
 
               <StackLayout width="100%" orientation="horizontal" class="m-t-10">
-                <Label text="Name" class="txt-s"></Label>
+                <label text="Name" class="txt-s"></label>
                 <TextField hint="" class="selectbox_user" text="{{ userName }}" id="userName"/>
               </StackLayout>
 
               <StackLayout width="100%" orientation="horizontal" class="m-t-10">
-                <Label text="Tel" class="txt-s"></Label>
+                <label text="Tel" class="txt-s"></label>
                 <TextField hint="" class="selectbox_tel" text="{{ phoneNumber }}" keyboardType="number" id="phoneNumber"/>
               </StackLayout>
 
@@ -61,17 +61,17 @@
 
             </StackLayout>
             <!-- PIC DATA -->
-           <StackLayout class="content bg_dlg_User" id="picData" visibility="collapse">
+           <StackLayout class="content bg_dlg_User" id="picData" visibility="collapse" tap="noop">
             
               <StackLayout>
-                <Label text="Card" class="txt-s"></Label>
+                <label text="Card" class="txt-s"></label>
                 <AbsoluteLayout>
-                  <Image id="userCard"  class="user-pic" width="250" height="150"></Image>
-                  <Label  width="24" height="24" class="camera" text="&#xf030;" tap="changPic"></Label>
+                  <!-- <Image id="userCard"  class="user-pic" width="250" height="150"></Image> -->
+                  <label  width="24" height="24" class="camera" text="&#xf030;" tap="changPic"></label>
                 </AbsoluteLayout>
               </StackLayout>
               <StackLayout width="100%" orientation="horizontal" class="lable_left">
-                <Label text="Tel" class="txt-s "></Label>
+                <label text="Tel" class="txt-s "></label>
                 <TextField hint="" class="txt-f" text="{{ phoneNumber }}" keyboardType="number" id="phoneNumber"/>
               </StackLayout>
               
@@ -96,7 +96,7 @@
             </FlexboxLayout>
             <StackLayout class="content">
               <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
-                <Label text="Out of the way" class="txt-s"></Label>
+                <label text="Out of the way" class="txt-s"></label>
               </StackLayout>
             </StackLayout>
             <FlexboxLayout class="actions">
@@ -116,13 +116,13 @@
             <StackLayout class="content">
              
               <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
-                <Label text="wait data..." class="txt-s "></Label>  
+                <label text="wait data..." class="txt-s "></label>  
                 <ActivityIndicator busy="true" class="m-t-30p"/><!-- londing-->
               </StackLayout>
                   <StackLayout class="content">
-                     <Label text="annotation/หมายเหตุ:" class="m-t-50p set_thai1"></Label>
-                      <Label text="*กด REFRESH เพื่อค้นหาอุปกรณ์" class="set_thai1"></Label>  
-                      <Label text="*Press REFRESH to search for devices " class="set_thai1"></Label>
+                     <label text="annotation/หมายเหตุ:" class="m-t-50p set_thai1"></label>
+                      <label text="*กด REFRESH เพื่อค้นหาอุปกรณ์" class="set_thai1"></label>  
+                      <label text="*Press REFRESH to search for devices " class="set_thai1"></label>
                    </StackLayout>
             </StackLayout>
             <FlexboxLayout class="actions">
@@ -141,15 +141,15 @@
             </FlexboxLayout>
             <StackLayout class="content">
                 <StackLayout orientation="horizontal" class="total-users">
-                  <Label text="Total : " width="80%"></Label>
-                  <Label text="{{countUser[0].countUser}}"  width="20%"></Label>
+                  <label text="Total : " width="80%"></label>
+                  <label text="{{countUser[0].countUser}}"  width="20%"></label>
                 </StackLayout>
               <ListView items="{{ countUser }}" itemTap="removeCard" class="users-selector">
                   <ListView.itemTemplate  let-country="item" let-i="index" let-odd="odd" let-even="even" class="list-item">
                       <StackLayout class="item" orientation="horizontal">
-                          <Label text="&#xf21d;" color="#3898E7" class="txt-count-icon"></Label>
-                          <Label text="{{ phone_number }}" class="txt-count-name"></Label>
-                          <Label text="{{ name }}" class="txt-count-point"></Label>
+                          <label text="&#xf21d;" color="#3898E7" class="txt-count-icon"></label>
+                          <label text="{{ phone_number }}" class="txt-count-name"></label>
+                          <label text="{{ name }}" class="txt-count-point"></label>
                       </StackLayout>
                   </ListView.itemTemplate>
               </ListView>
@@ -167,7 +167,7 @@
                 <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
             </FlexboxLayout>
             <StackLayout class="content">
-              <Label text="Start..." class="txt-s"></Label>
+              <label text="Start..." class="txt-s"></label>
             </StackLayout>
             <FlexboxLayout class="actions">
                 <Button  tap="hideDialog" text="OK" class="action"/>
@@ -184,7 +184,7 @@
                 <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
             </FlexboxLayout>
             <StackLayout class="content">
-              <Label text="End..." class="txt-s"></Label>
+              <label text="End..." class="txt-s"></label>
             </StackLayout>
             <FlexboxLayout class="actions">
                 <Button tap="hideDialog" text="OK" class="action"/>
@@ -204,16 +204,16 @@
             <ScrollView width="100%"  height="100%">
              <GridLayout class="m-10" rows="auto auto auto auto auto">
                 <StackLayout  row="0" orientation="horizontal">
-                  <Label text="&#xf2bb;" class="aboute-txt"></Label><Label class="aboute-txt-detail" width="100%" height="auto" text="personal Information"></Label>
+                  <label text="&#xf2bb;" class="aboute-txt"></label><label class="aboute-txt-detail" width="100%" height="auto" text="personal Information"></label>
                 </StackLayout>
                 <StackLayout class="m-10" row="1" orientation="horizontal">
-                  <Label text="&#xf554;" class="aboute-txt"></Label><Label class="aboute-txt-detail"  height="auto" text="Total number of people on the route" textWrap="true"></Label>
+                  <label text="&#xf554;" class="aboute-txt"></label><label class="aboute-txt-detail"  height="auto" text="Total number of people on the route" textWrap="true"></label>
                 </StackLayout>
                 <StackLayout class="m-10" row="2" orientation="horizontal">
-                  <Label text="&#xf09e;" class="aboute-txt"></Label><Label class="aboute-txt-detail"  height="auto" text="Signal strength bluetooth (RSSI)" textWrap="true"></Label>
+                  <label text="&#xf09e;" class="aboute-txt"></label><label class="aboute-txt-detail"  height="auto" text="Signal strength bluetooth (RSSI)" textWrap="true"></label>
                 </StackLayout>
                 <StackLayout class="m-10" row="3" orientation="horizontal">
-                  <Label text="&#xf018;" class="aboute-txt"></Label><Label class="aboute-txt-detail"  height="auto" text="The distance from the current point" textWrap="true"></Label>
+                  <label text="&#xf018;" class="aboute-txt"></label><label class="aboute-txt-detail"  height="auto" text="The distance from the current point" textWrap="true"></label>
                 </StackLayout>
                 <Image row="4" src="~/images/FITMlogo.png" class="fas t-28 m-10 aboute-logo"></Image>
               </GridLayout>
@@ -227,9 +227,9 @@
     </AbsoluteLayout>
         <StackLayout width="100%"  class="bgmap ">
       <FlexboxLayout  width="100%" height="100%" class=" map-menu ">
-          <Label text="&#xf2bb;" tap="user"></Label>
-          <Label text="&#xf554;" tap="userCount"></Label>
-           <Label text="&#xf059;" tap="aboute"></Label>
+          <label text="&#xf2bb;" tap="user"></label>
+          <label text="&#xf554;" tap="userCount"></label>
+           <label text="&#xf059;" tap="aboute"/>
       </FlexboxLayout>
      </StackLayout>
     

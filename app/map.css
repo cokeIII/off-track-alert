@@ -6,6 +6,9 @@
     background-size: cover;  */
     /* transform: scale(1);  */
 }
+.text-color{
+    color: black;
+}
 .map-layout{
     background-repeat: no-repeat;
     background-position: center;
@@ -236,8 +239,8 @@
 }
 .camera{
     background-color: white;
-    margin-top: 40%;
-    margin-left: 60%;
+    margin-top: 50%;
+    margin-left: 85%;
     font-size: 24;
     color: black;
     border-radius: 10;

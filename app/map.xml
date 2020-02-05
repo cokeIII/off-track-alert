@@ -43,7 +43,7 @@
 
               <StackLayout width="100%" orientation="horizontal" class="m-t-25p">
                 <Label text="id card" class="txt-s"></Label>
-                <TextField hint="" text="{{ idCard }}" keyboardType="number" class="selectbox_id" id="idCard"/>
+                <TextField hint="" text="{{ idCard }}"  class="selectbox_id" id="idCard"/>
               </StackLayout>
 
               <StackLayout width="100%" orientation="horizontal" class="m-t-10">

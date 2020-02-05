@@ -7,7 +7,7 @@
     <StackLayout id="mRegis" visibility="collapse" class=" m-t-30p">
       <GridLayout columns="auto, *, auto" rows="auto,0" verticalAlignment="top" >
           <Image src="~/images/baseline_vpn_key_black_24dp.png" stretch="none" class="iconID  "></Image>
-          <TextField  height="11%" hint="ID Card" class="selectbox "   text="{{ idCard }}" keyboardType="number"  id="idCard"/>
+          <TextField  height="11%" hint="ID Card" class="selectbox "   text="{{ idCard }}"  id="idCard"/>
       </GridLayout>
       <GridLayout columns="auto, *, auto" rows="auto,0" verticalAlignment="top" >
           <Image src="~/images/baseline_person_black_18dp.png" stretch="none" class="iconID"></Image>

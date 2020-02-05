@@ -1,30 +1,30 @@
 {
-  "_from": "nativescript-bluetooth",
-  "_id": "nativescript-bluetooth@1.3.1",
+  "_from": "nativescript-bluetooth@1.1.6",
+  "_id": "nativescript-bluetooth@1.1.6",
   "_inBundle": false,
-  "_integrity": "sha1-9h6Cressk5nT45L5EffwdrKdHXI=",
+  "_integrity": "sha1-Tff0EappjQ/FZaf7H/NgbjY/m/Q=",
   "_location": "/nativescript-bluetooth",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "nativescript-bluetooth",
+    "raw": "nativescript-bluetooth@1.1.6",
     "name": "nativescript-bluetooth",
     "escapedName": "nativescript-bluetooth",
-    "rawSpec": "",
+    "rawSpec": "1.1.6",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "1.1.6"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/nativescript-bluetooth/-/nativescript-bluetooth-1.3.1.tgz",
-  "_shasum": "f61e82adeb2c9399d3e392f911f7f076b29d1d72",
-  "_spec": "nativescript-bluetooth",
+  "_resolved": "https://registry.npmjs.org/nativescript-bluetooth/-/nativescript-bluetooth-1.1.6.tgz",
+  "_shasum": "4df7f411aa698d0fc565a7fb1ff3606e363f9bf4",
+  "_spec": "nativescript-bluetooth@1.1.6",
   "_where": "/Users/Multimedia/Documents/off-track-alert",
   "author": {
-    "name": "Eddy Verbruggen",
+    "name": "Telerik / Eddy Verbruggen",
     "email": "eddyverbruggen@gmail.com"
   },
   "bugs": {
@@ -33,13 +33,8 @@
   "bundleDependencies": false,
   "deprecated": false,
   "description": "Connect to and interact with Bluetooth LE peripherals",
-  "devDependencies": {
-    "tns-core-modules": "~3.4.0",
-    "tns-platform-declarations": "~3.4.0"
-  },
   "homepage": "https://github.com/eddyverbruggen/nativescript-bluetooth",
   "keywords": [
-    "ecosystem:NativeScript",
     "NativeScript",
     "BLE",
     "Bluetooth",
@@ -47,7 +42,10 @@
     "Bluetooth Smart",
     "Bluetooth Low Energy"
   ],
-  "license": "MIT",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/eddyverbruggen/nativescript-bluetooth/blob/master/LICENSE"
+  },
   "main": "bluetooth",
   "name": "nativescript-bluetooth",
   "nativescript": {
@@ -66,6 +64,6 @@
     "type": "git",
     "url": "git+https://github.com/eddyverbruggen/nativescript-bluetooth.git"
   },
-  "typings": "index.d.ts",
-  "version": "1.3.1"
+  "typings": "bluetooth.d.ts",
+  "version": "1.1.6"
 }

@@ -1,0 +1,55 @@
+{
+  "_from": "nativescript-perms",
+  "_id": "nativescript-perms@2.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-jLvZnS35SG7jBgExnb4I64hXNGjmKH/ZYA16n0gSNqFD4AV7cuonpHheLcu208pa+X38yR3+WzwH77V9wBxOnA==",
+  "_location": "/nativescript-perms",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-perms",
+    "name": "nativescript-perms",
+    "escapedName": "nativescript-perms",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-perms/-/nativescript-perms-2.0.3.tgz",
+  "_shasum": "4c00b4977b3115aa5cafffd9aa4cace26c86ad59",
+  "_spec": "nativescript-perms",
+  "_where": "/Users/Multimedia/Documents/off-track-alert",
+  "author": {
+    "name": "Martin Guillon",
+    "email": "martin@akylas.fr"
+  },
+  "bugs": {
+    "url": "https://github.com/Akylas/nativescript-perms/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Nativescript Permissions plugin.",
+  "gitHead": "7b58f859c2ddfae9692aa0a37b407d33dc98de49",
+  "homepage": "https://github.com/Akylas/nativescript-perms",
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "Android",
+    "iOS"
+  ],
+  "license": "Apache-2.0",
+  "main": "./permissions",
+  "name": "nativescript-perms",
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.0",
+      "ios": "3.0.0"
+    }
+  },
+  "typings": "./permissions.d.ts",
+  "version": "2.0.3"
+}

@@ -1,0 +1,77 @@
+{
+  "_from": "nativescript-mip-ble",
+  "_id": "nativescript-mip-ble@0.2.5",
+  "_inBundle": false,
+  "_integrity": "sha1-8+dVlNg4URxHIPClsqvFE9BIHD4=",
+  "_location": "/nativescript-mip-ble",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-mip-ble",
+    "name": "nativescript-mip-ble",
+    "escapedName": "nativescript-mip-ble",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-mip-ble/-/nativescript-mip-ble-0.2.5.tgz",
+  "_shasum": "f3e75594d838511c4720f0a5b2abc513d0481c3e",
+  "_spec": "nativescript-mip-ble",
+  "_where": "/Users/Multimedia/Documents/off-track-alert",
+  "author": {
+    "name": "Sebastian Witalec",
+    "email": "sebawita@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/sebawita/nativescript-mip-ble/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "nativescript-bluetooth": "^1.1.4"
+  },
+  "deprecated": false,
+  "description": "NativeScript plugin that allows to control a Mip robot.",
+  "devDependencies": {
+    "tns-core-modules": "^2.4.4",
+    "tns-platform-declarations": "2.4.4",
+    "typescript": "^2.0.10"
+  },
+  "homepage": "https://github.com/sebawita/nativescript-mip-ble",
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "Android",
+    "iOS"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/sebawita/nativescript-mip-ble/blob/master/LICENSE"
+  },
+  "main": "mip.js",
+  "name": "nativescript-mip-ble",
+  "nativescript": {
+    "platforms": {
+      "android": "2.4.1",
+      "ios": "2.4.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebawita/nativescript-mip-ble.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "demo.android": "npm run preparedemo && cd demo && tns run android",
+    "demo.ios": "npm run preparedemo && cd demo && tns emulate ios",
+    "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-mip-ble && tns plugin add .. && tns install",
+    "preparedemo-ng": "npm run build && cd demo-ng && tns plugin remove nativescript-mip-ble && tns plugin add .. && tns install",
+    "setup": "npm i && cd demo && npm i && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
+  },
+  "typings": "index.d.ts",
+  "version": "0.2.5"
+}

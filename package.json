@@ -4,7 +4,7 @@
 	"readme": "NativeScript Application",
 	"repository": "<fill-your-repository-here>",
 	"nativescript": {
-		"id": "offtrackalertmaster",
+		"id": "kmutnb.offtrackalertmasterTests",
 		"tns-android": {
 			"version": "5.2.1"
 		},
@@ -15,15 +15,17 @@
 	"dependencies": {
 		"base-64": "^0.1.0",
 		"nativescript-background-http": "^3.3.1",
-		"nativescript-bluetooth": "^1.3.1",
+		"nativescript-bluetooth": "^1.1.6",
 		"nativescript-camera": "^4.5.0",
 		"nativescript-dom": "^2.0.2",
 		"nativescript-downloader": "^1.1.0",
 		"nativescript-imagepicker": "^7.1.0",
 		"nativescript-insomnia": "^1.2.3",
 		"nativescript-loading-indicator-new": "^2.1.0",
+		"nativescript-mip-ble": "^0.2.5",
 		"nativescript-orientation": "^2.2.1",
 		"nativescript-permissions": "^1.3.8",
+		"nativescript-perms": "^2.0.3",
 		"nativescript-platform": "^1.3.2",
 		"nativescript-sound": "^1.0.4",
 		"nativescript-telephony": "^1.0.4",
@@ -34,6 +36,7 @@
 		"utf8": "^3.0.0"
 	},
 	"devDependencies": {
-		"@fortawesome/fontawesome-free": "^5.9.0"
+		"@fortawesome/fontawesome-free": "^5.9.0",
+		"nativescript-dev-typescript": "^0.10.0"
 	}
 }

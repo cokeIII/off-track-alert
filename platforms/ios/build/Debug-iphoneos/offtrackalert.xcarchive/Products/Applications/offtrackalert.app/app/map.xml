@@ -8,7 +8,6 @@
     <AbsoluteLayout dock="top" width="100%" height="90%" class="map">
     <ScrollView width="100%"  height="100%">
         <AbsoluteLayout  width="100%"  height="100%" id="mapLayout" >
-          <StackLayout><label text="{{ debug }}"/><label text="{{ debug.startScanning }}"/></StackLayout>
         </AbsoluteLayout>
     </ScrollView>
       <StackLayout width="80%" height="26%" class="detail-map" id="detailMap">
@@ -21,7 +20,7 @@
         <StackLayout class="hr-light m-t-10" width="90%"></StackLayout>
         <StackLayout width="100%" orientation="horizontal">
           <label class="user-RSSI" text="&#xf09e;"></label>
-          <label text="{{ rssi }}" class="rssis"></label>
+          <label text="{{ debug }}" class="rssis"></label>
           <label class="user-road" text="&#xf018;"/>
           <label class="road-total" text=" {{ km +'m'}}"/>
         </StackLayout>
@@ -31,16 +30,16 @@
         <label text="&#xf06e;"></label>
       </StackLayout>
       <!-- dlg User-->
-      <StackLayout class="lg-dialog" tap="hideDialog" id="user-data">
+      <StackLayout class="lg-dialog" tap="hideDialog" id="user-data" tap="noop">
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
 
             <FlexboxLayout  orientation="horizontal" class="title headermenu" height="11%">
-             <Image src="~/images/icons8-resume-96.png" text="User information" stretch="none"  width="18" height="18" class="" horizontalAlignment="center"></Image>
+             <!-- <Image src="~/images/icons8-resume-96.png" text="User information" stretch="none"  width="18" height="18" class="" horizontalAlignment="center"></Image> -->
                 <label text="Profile" class="text "></label>
                 <Button  horizontalAlignment="left" tap="hideDialog" text="&#xf057;"  class="close  left  "/>
             </FlexboxLayout>
        
-            <StackLayout class="content bg_dlg_User " id="txtData" visibility="collapse">
+            <StackLayout class="content bg_dlg_User " id="txtData" visibility="collapse" tap="noop">
 
               <StackLayout width="100%" orientation="horizontal" class="m-t-25p">
                 <label text="id card" class="txt-s"></label>
@@ -66,7 +65,7 @@
               <StackLayout>
                 <label text="Card" class="txt-s"></label>
                 <AbsoluteLayout>
-                  <!-- <Image id="userCard"  class="user-pic" width="250" height="150"></Image> -->
+                  <Image id="userCard"  class="user-pic" width="250" height="150"></Image>
                   <label  width="24" height="24" class="camera" text="&#xf030;" tap="changPic"></label>
                 </AbsoluteLayout>
               </StackLayout>

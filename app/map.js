@@ -17,6 +17,8 @@ var imageSourceModule = require("image-source")
 // var imagepicker = require("nativescript-imagepicker")
 const httpModule = require("tns-core-modules/http")
 var myPlatform = require( "nativescript-platform" )
+var Permissions = require("nativescript-permissions");
+
 // var context = imagepicker.create({ mode: "single" })
 let logData = {}
 
@@ -36,7 +38,7 @@ var pageData = new Observable.fromObject({
     route:0,
     km:0,
     picCard:'',
-    debug:'',
+    debug:[{"test": "tests"}],
 })
 let urlMap = API_URL + '/maps'
 let dlg = null
@@ -69,6 +71,7 @@ let documents = fs.knownFolders.documents()
 let picPath = null
 let tempPath = null
 exports.pageLoaded = function(args) {
+    
     if(time_loop)
     timerModule.clearInterval(time_loop);
     if(time_loop_log)
@@ -94,7 +97,7 @@ exports.pageLoaded = function(args) {
     romoveMap()
     const arrayToObject = (array) =>
     array.reduce((obj, item) => {
-        obj[item.uuid] = item
+        obj[item.uuid_ios] = item
         return obj
     }, {})
     if(appSettings.getString("userData")){
@@ -151,12 +154,25 @@ exports.pageLoaded = function(args) {
     }
     bluetooth.hasCoarseLocationPermission().then(
         function(granted) {
-          // if this is 'false' you probably want to call 'requestCoarseLocationPermission' now
-        //   pageData.debug = "Has Location Permission? " + granted+"/ "
-          console.log("Has Location Permission? " + granted);
-          check_route(function(cb){
+        console.log("Has Location Permission? " + granted);
+
+        }
+    );
+    bluetooth.requestCoarseLocationPermission().then(
+        function(granted) {
+          console.log("Location permission requested, user granted? " + granted);
+        }
+    );
+
+    bluetooth.isBluetoothEnabled().then(
+        function(enabled) {
+          console.log("Enabled? " + enabled)
+          console.log("BLE ENABLE")
+          if(enabled){
+            check_route(function(cb){
             pageData.route = cb
             BLE_scan()
+            pageData.debug.push({"UUID": ""})
             if(cb) {
                 dlgCheckdata.style.visibility = 'collapse'
                 BLE_scan()
@@ -165,36 +181,26 @@ exports.pageLoaded = function(args) {
                 bluetooth.stopScanning().then(function() {
                     BLE_scan()
                 })
-                }, 8000) 
+                }, 10000) 
                 updateLog(logData)
                 time_loop_log = timerModule.setInterval(function(){ 
                     updateLog(logData)
                 }, 30000) 
                 } else {
-                    dlgCheckdata.style.visibility = 'visible'
+                    //dlgCheckdata.style.visibility = 'visible'
                 }
-            })
-        }
-    );
-    bluetooth.requestCoarseLocationPermission().then(
-        function(granted) {
-        //    pageData.debug = pageData.debug+"Location permission requested, user granted? " + granted+"/ "
-          console.log("Location permission requested, user granted? " + granted);
-        }
-    );
-    bluetooth.isBluetoothEnabled().then(
-        function(enabled) {
-          console.log("Enabled? " + enabled)
-          console.log("BLE ENABLE")
-
+            })    
+          } else {
+            dlgCheckdata.style.visibility = 'visible'
+          }
         }
     );
 
     if (myPlatform.android) {
-        bluetooth.enable().then(
-            function(enabled) {
-            }
-        )
+        // bluetooth.enable().then(
+        //     function(enabled) {
+        //     }
+        // )
     }     
 }
 exports.pageUnloaded = () =>{
@@ -221,21 +227,20 @@ function romoveMap() {
 
 }
 function check_route(cb) {
-    let check_status = null
+    let check_status = 0
     bluetooth.startScanning({
         serviceUUIDs: [],
         seconds: 5,
         onDiscovered: function (peripheral) {
             // console.log("Periperhal found with UUID: " + peripheral.UUID)
             check_status=genMap(peripheral.UUID,peripheral.RSSI)
-            pageData.debug = check_status
+            pageData.debug.push({"UUID": JSON.stringify(peripheral)})
         },
         skipPermissionCheck: false,
     }).then(function() {
         console.log("scanning complete")
         cb(check_status) 
     }, function (err) {
-        pageData.debug = "error while scanning: " + err
         console.log("error while scanning: " + err)
     })
 }
@@ -244,7 +249,7 @@ function BLE_scan(){
     let alert = true
     bluetooth.startScanning({
         serviceUUIDs: [],
-        seconds: 5,
+        seconds: 9,
         onDiscovered: function (peripheral) {
             console.log("Periperhal found with UUID: " + peripheral.UUID)
             genStatus = walkMap(peripheral.UUID,peripheral.RSSI)
@@ -276,6 +281,7 @@ function BLE_scan(){
                 logData.uuid = pageData.uuid
                 logData.status = pageData.status
             }
+            pageData.debug = alert
             
         },
         skipPermissionCheck: false,
@@ -317,13 +323,13 @@ function countPoint(route) {
 function walkMap(UUID,RSSI) {
     let status = false
     if(Object.keys(pageData.map).length !== 0){
-        if(pageData.map[UUID] !== undefined) {
+        if(pageData.map[UUID] != undefined) {
             console.log(pageData.map[UUID])
             rssi = RSSI
             pageData.km = calculateDistance(rssi).toFixed(2)
             // if(RSSI > -91){
                 status = true
-                
+                pageData.debug = "FOUND"
                 roadName = pageData.map[UUID].name  
                                      
                 pageData.uuid = UUID
@@ -339,7 +345,7 @@ function walkMap(UUID,RSSI) {
                     pointEnd = false
                 } 
             // } 
-        }
+        } 
     }
     return status
 }
@@ -448,23 +454,23 @@ exports.user = function() {
     }
 }
 exports.changPic = function() {
-    // context
-    // .authorize()
-    // .then(function() {
-    //     return context.present();
-    // })
-    // .then(function(selection) {
-    //     selection.forEach(function(selected) {
-    //         console.log(selected)
-    //         // process the selected image
-    //         imageAssetChang = selected
-    //         userCard.style.backgroundImage  = selected._android
+    context
+    .authorize()
+    .then(function() {
+        return context.present();
+    })
+    .then(function(selection) {
+        selection.forEach(function(selected) {
+            console.log(selected)
+            // process the selected image
+            imageAssetChang = selected
+            userCard.style.backgroundImage  = selected._android
 
-    //     });
-    //     list.items = selection;
-    // }).catch(function (e) {
-    //     // process error
-    // });
+        });
+        list.items = selection;
+    }).catch(function (e) {
+        // process error 
+    });
 }   
 exports.setUser = function() {
     let saveData = {}

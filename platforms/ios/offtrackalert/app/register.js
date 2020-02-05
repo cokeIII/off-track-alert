@@ -28,6 +28,7 @@ let mRegisBtn =null
 
 
 exports.pageLoaded = function(args) {
+
     // Removes all values.
     // appSettings.clear();
     // orientation.setOrientation("portrait")
@@ -97,59 +98,65 @@ exports.pageLoaded = function(args) {
     
 }
 exports.takeCamera =  function() {
-    if (pageData.phoneNumber.length < 10) {
-        var toast = new toasty({ text: 'Please enter your mobile phone number to complete 10 digits.' })
+    if (myPlatform.android) {
+        if (pageData.phoneNumber.length < 10) {
+            var toast = new toasty({ text: 'Please enter your mobile phone number to complete 10 digits.' })
+            toast.show()
+            return 
+        } 
+        camera.requestPermissions().then(
+            function success() {
+                var options = {keepAspectRatio: false, saveToGallery: false };
+                camera.takePicture(options)   
+                .then(function (imageAsset) {
+                    console.log("Result is an image asset instance");
+                    var image = new imageModule.Image();
+                    image.src = imageAsset;
+                    var file =  image.src._android;
+                    var url = API_URL+"/cards";
+                    var request = {
+                        url: url,
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/octet-stream",
+                            "File-Name": "photo"
+                        },
+                        description: "Uploading"
+                    };
+                    let params = [
+                        { name: "idCard", value: pageData.phoneNumber },
+                        { name: "deviceId", value: pageData.deviceId },
+                        { name: "bleId", value: pageData.bleId },
+                        { "name": 'photo', "filename": file, "mimeType": "image/jpg" }
+                    ];
+                    let task = session.multipartUpload(params, request);
+                    task.on("progress", progressHandler);
+                    task.on("error", errorHandler);
+                    task.on("responded", respondedHandler);
+                    // task.on("complete", completeHandler);
+                    let documents = fs.knownFolders.documents();
+                    let path = fs.path.join(documents.path, pageData.phoneNumber+".jpg");
+                    console.log(path)
+                    imageSourceModule.fromAsset(imageAsset)
+                    .then(imageSource => {
+                        imageSource.saveToFile(path, "jpg");
+                    });
+
+                }).catch((err) => {
+                console.log('applyFilter ERROR: ' + err);
+                });
+
+            }, 
+            function failure() {
+            // permission request rejected
+            // ... tell the user ...
+            }
+        );
+    } else {
+        var toast = new toasty({ text: "spport next version" })
         toast.show()
-        return 
-    } 
-    camera.requestPermissions().then(
-        function success() {
-            var options = {keepAspectRatio: false, saveToGallery: false };
-            camera.takePicture(options)   
-            .then(function (imageAsset) {
-                console.log("Result is an image asset instance");
-                var image = new imageModule.Image();
-                image.src = imageAsset;
-                var file =  image.src._android;
-                var url = API_URL+"/cards";
-                var request = {
-                    url: url,
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/octet-stream",
-                        "File-Name": "photo"
-                    },
-                    description: "Uploading"
-                };
-                let params = [
-                    { name: "idCard", value: pageData.phoneNumber },
-                    { name: "deviceId", value: pageData.deviceId },
-                    { name: "bleId", value: pageData.bleId },
-                    { "name": 'photo', "filename": file, "mimeType": "image/jpg" }
-                ];
-                let task = session.multipartUpload(params, request);
-                task.on("progress", progressHandler);
-                task.on("error", errorHandler);
-                task.on("responded", respondedHandler);
-                // task.on("complete", completeHandler);
-                let documents = fs.knownFolders.documents();
-                let path = fs.path.join(documents.path, pageData.phoneNumber+".jpg");
-                console.log(path)
-                imageSourceModule.fromAsset(imageAsset)
-                .then(imageSource => {
-                     imageSource.saveToFile(path, "jpg");
-                 });
-
-            }).catch((err) => {
-            console.log('applyFilter ERROR: ' + err);
-            });
-
-        }, 
-        function failure() {
-        // permission request rejected
-        // ... tell the user ...
-        }
-    );
+        return
+    }
 }
 exports.register =  function() {
     var jsonData = {}

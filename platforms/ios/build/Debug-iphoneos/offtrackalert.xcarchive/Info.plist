@@ -7,7 +7,7 @@
 		<key>ApplicationPath</key>
 		<string>Applications/offtrackalert.app</string>
 		<key>CFBundleIdentifier</key>
-		<string>offtrackalertmaster</string>
+		<string>kmutnb.offtrackalertmasterTests</string>
 		<key>CFBundleShortVersionString</key>
 		<string>1.0</string>
 		<key>CFBundleVersion</key>
@@ -20,7 +20,7 @@
 	<key>ArchiveVersion</key>
 	<integer>2</integer>
 	<key>CreationDate</key>
-	<date>2020-01-17T13:18:41Z</date>
+	<date>2020-02-05T17:24:45Z</date>
 	<key>Name</key>
 	<string>offtrackalert</string>
 	<key>SchemeName</key>

@@ -1,3 +1,4 @@
-.idea/
-.vscode/
-media/
+.idea
+.vscode
+bluetooth.gif
+platforms/android/libraryproject

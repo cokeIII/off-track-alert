@@ -7,8 +7,9 @@
     /* transform: scale(1);  */
 }
 .text-color{
-    color: black;
+    color: rgb(10, 10, 10); 
 }
+.debug{ color: #fff; word-wrap: break-word;}
 .map-layout{
     background-repeat: no-repeat;
     background-position: center;

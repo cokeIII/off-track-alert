@@ -53,8 +53,10 @@
       <string>UIInterfaceOrientationLandscapeLeft</string>
       <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Custom iOS Target Properties</string>
     <key>CFBundleIdentifier</key>
-    <string>offtrackalertmaster</string>
+    <string>kmutnb.offtrackalertmasterTests</string>
     <key>CFBundleURLTypes</key>
     <array>
       <dict>
@@ -62,7 +64,7 @@
         <string>Editor</string>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>offtrackalertmaster</string>
+          <string>kmutnbofftrackalertmasterTests</string>
         </array>
       </dict>
     </array>

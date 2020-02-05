@@ -17,7 +17,7 @@ Bluetooth.hasCoarseLocationPermission = function () {
 };
 
 Bluetooth._base64ToArrayBuffer = function (b64) {
-  var stringToArrayBuffer = function (str) {
+  var stringToArrayBuffer = function(str) {
     var ret = new Uint8Array(str.length);
     for (var i = 0; i < str.length; i++) {
       ret[i] = str.charCodeAt(i);
@@ -29,6 +29,6 @@ Bluetooth._base64ToArrayBuffer = function (b64) {
 
 Bluetooth.setCharacteristicLogging = function (enable) {
   Bluetooth.characteristicLogging = enable;
-};
+}
 
 module.exports = Bluetooth;

@@ -1,4 +1,4 @@
-# NativeScript <img src="https://github.com/EddyVerbruggen/nativescript-bluetooth/raw/master/media/bluetooth.gif" height="20px" alt="Bluetooth"/> plugin
+# NativeScript <img src="https://github.com/EddyVerbruggen/nativescript-bluetooth/raw/master/bluetooth.gif" height="20px" alt="Bluetooth"/> plugin
 
 [![NPM version][npm-image]][npm-url]
 [![Downloads][downloads-image]][npm-url]
@@ -9,6 +9,19 @@
 [downloads-image]:http://img.shields.io/npm/dm/nativescript-bluetooth.svg
 [twitter-image]:https://img.shields.io/twitter/follow/eddyverbruggen.svg?style=social&label=Follow%20me
 [twitter-url]:https://twitter.com/eddyverbruggen
+
+### Use when you want to
+* scan for Bluetooth LE / Smart peripherals,
+* connect to those peripherals,
+* read values of a characteristic,
+* write new values to them,
+* get notified when the value of a characteristic changes.
+
+### Supported platforms
+* iOS
+* Android 4.3 and up
+
+Note that a simulator can't be used to test conneting to Bluetooth peripherals.
 
 ## Installation
 From the command prompt go to your app's root folder and execute:
@@ -30,7 +43,6 @@ Want to dive in quickly? Check out [the demo app](https://github.com/EddyVerbrug
 - [isBluetoothEnabled](#isbluetoothenabled)
 - [hasCoarseLocationPermission](#hascoarselocationpermission)
 - [requestCoarseLocationPermission](#requestcoarselocationpermission)
-- [turnBluetoothOn](#turnBluetoothOn)
 
 #### Discovery
 - [startScanning](#startscanning)
@@ -61,8 +73,6 @@ bluetooth.isBluetoothEnabled().then(
 );
 ```
 ### hasCoarseLocationPermission
-__Since plugin version 1.2.0 the `startScanning` function will handle this internally so it's no longer mandatory to add permission checks to your code.__
-
 On Android 6 you need to request permission to be able to interact with a Bluetooth peripheral (when the app is in the background) when targeting API level 23+. Even if the `uses-permission` tag for `ACCESS_COARSE_LOCATION` is present in `AndroidManifest.xml`.
 
 Note that for `BLUETOOTH` and `BLUETOOTH_ADMIN` you don't require runtime permission; adding those to `AndroidManifest.xml` suffices (which the plugin does for you).
@@ -83,25 +93,11 @@ bluetooth.hasCoarseLocationPermission().then(
 ```
 
 ### requestCoarseLocationPermission
-__Since plugin version 1.2.0 the `startScanning` function will handle this internally so it's no longer mandatory to add permission checks to your code.__
-
 ```js
 // if no permission was granted previously this will open a user consent screen
 bluetooth.requestCoarseLocationPermission().then(
-  function(granted) {
-    console.log("Location permission requested, user granted? " + granted);
-  }
-);
-```
-
-### enable (Android only)
-The promise will be rejected on iOS
-
-```js
-// This turns bluetooth on, will return false if the user denied the request.
-bluetooth.enable().then(
-  function(enabled) {
-    // use Bluetooth features if enabled is true 
+  function() {
+    console.log("Location permission requested");
   }
 );
 ```
@@ -112,11 +108,6 @@ A few of the optional params require a bit of explanation:
 #### seconds
 Scanning for peripherals drains the battery quickly, so you better not scan any longer than necessary. If a peripheral is in range and not engaged in another connection it usually pops up in under a second. If you don't pass in a number of seconds you will need to manually call `stopScanning`.
 
-#### skipPermissionCheck
-Set this to true if you don't want the plugin to check (and request) the required Bluetooth permissions.
-Particularly useful if you're running this function on a non-UI thread (ie. a Worker).
-Relvant on Android only.
-
 #### serviceUUIDs
 It's inefficient to scan for all available Bluetooth peripherals and have them report all services they offer.
 
@@ -125,15 +116,7 @@ If you're only interested in finding a heartrate peripheral for instance, pass i
 Note that UUID's are ALWAYS strings; don't pass integers.
 
 #### onDiscovered
-While scanning the plugin will immediately report back uniquely discovered peripherals.
-
-This function will receive an object representing the peripheral which contains these properties (and types):
-* `UUID: string`
-* `name: string`
-* `RSSI: number` (relative signal strength, can be used for distance measurement)
-* `services?:` (optional - this is set once connected to the peripheral)
-* `manufacturerId?: number` (optional)
-* `manufacturerData?: ArrayBuffer` (optional)
+While scanning the plugin will immediately report back uniquely discovered peripherals. This function will receive an object representing the peripheral which contains the properties `UUID`, `name` and `RSSI` (relative signal strength).
 
 ```js
 bluetooth.startScanning({
@@ -215,7 +198,7 @@ bluetooth.disconnect({
   UUID: '34234-5453-4453-54545'
 }).then(function() {
   console.log("disconnected successfully");
-}, function (err) {
+}).then(function(err) {
   // in this case you're probably best off treating this as a disconnected peripheral though
   console.log("disconnection error: " + err);
 });
@@ -245,7 +228,7 @@ bluetooth.read({
   // fi. a heartrate monitor value (Uint8) can be retrieved like this:
   var data = new Uint8Array(result.value);
   console.log("Your heartrate is: " + data[1] + " bpm");  
-}, function (err) {
+}).then(function(err) {
   console.log("read error: " + err);
 });
 ```
@@ -263,7 +246,7 @@ bluetooth.write({
   value: '0x01' // a hex 1
 }).then(function(result) {
   console.log("value written");
-}, function (err) {
+}).then(function(err) {
   console.log("write error: " + err);
 });
 ```
@@ -310,18 +293,13 @@ The app using bluetooth can generate many console.log messages - one for each ch
 This can be reduced by calling `bluetooth.setCharacteristicLogging(false)`.
 
 ## Changelog
-* 1.3.0  Added `manufacturerId` and `manufacturerData` to the `onDiscovered` callback of `startScanning`.
-* 1.2.0  Automatic permission handling on Android. Added `enable` so your app can now switch on Bluetooth if the user allows it (Android only).
-* 1.1.5  Added `setCharacteristicLogging` to reduce logging
+* 1.1.5  Added setCharacteristicLogging function to reduce logging
 * 1.1.4  TypeScript fix and TS definition fix in package.json
 * 1.1.3  TypeScript fix
 * 1.1.2  Better Android M compatibility
 * 1.1.1  Better Android permission handling
 * 1.1.0  To be compatible with any Bluetooth device out there, the value returned from `read` and `notify` is now an `ArrayBuffer`.
 * 1.0.0  Initial release
-
-## Troubleshooting
-Get a merge issue in AndroidManifest.xml? Remove the platforms/android folder and rebuild.
 
 ## Future work
 * Find an even better way to write values.

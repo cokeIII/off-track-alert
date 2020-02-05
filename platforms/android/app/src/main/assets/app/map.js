@@ -67,6 +67,7 @@ let documents = fs.knownFolders.documents()
 let picPath = null
 let tempPath = null
 exports.pageLoaded = function(args) {
+
     if(time_loop)
     timerModule.clearInterval(time_loop);
     if(time_loop_log)
@@ -160,7 +161,7 @@ exports.pageLoaded = function(args) {
                     updateLog(logData)
                     time_loop_log = timerModule.setInterval(function(){ 
                         updateLog(logData)
-                    }, 30000) 
+                    }, 20000) 
                 } else {
                     dlgCheckdata.style.visibility = 'visible'
                 }
@@ -210,10 +211,11 @@ function check_route(cb) {
 }
 function BLE_scan(){
     let genStatus = false
-    let alert = true
+    let alert = false
+    rssi = -100
     bluetooth.startScanning({
         serviceUUIDs: [],
-        seconds: 5,
+        seconds: 7,
         onDiscovered: function (peripheral) {
             console.log("Periperhal found with UUID: " + peripheral.UUID)
             genStatus = walkMap(peripheral.UUID,peripheral.RSSI)
@@ -223,7 +225,6 @@ function BLE_scan(){
                 viewMap = mapLayout.getElementsByClassName('point')
                 viewMap.backgroundColor = "red"
             } else {
-                alert = false
                 if(roadName !== oldPoinName){
                     if(oldPoinName) {
                         oldPoint = page.getViewById(oldPoinName)
@@ -285,13 +286,16 @@ function countPoint(route) {
 
 function walkMap(UUID,RSSI) {
     let status = false
+    
     if(Object.keys(pageData.map).length !== 0){
         if(pageData.map[UUID] !== undefined) {
             console.log(pageData.map[UUID])
-            rssi = RSSI
-            pageData.km = calculateDistance(rssi).toFixed(2)
-            // if(RSSI > -91){
-                status = true
+            status = true
+            console.log(RSSI)
+            console.log(rssi)
+            if(RSSI >= rssi){
+                rssi = RSSI
+                pageData.km = calculateDistance(rssi).toFixed(2)
                 
                 roadName = pageData.map[UUID].name  
                                      
@@ -307,7 +311,7 @@ function walkMap(UUID,RSSI) {
                     pageData.status = "finish"
                     pointEnd = false
                 } 
-            // } 
+            } 
         }
     }
     return status
@@ -383,7 +387,7 @@ function genMap(UUID,RSSI){
                     myLabelText.id = "txtMap"
                     myLabelText.class = "txt-map"
                     myLabelText.marginLeft = ""+element.x+"%"
-                    myLabelText.marginTop = ""+(element.y-4)+"%"
+                    myLabelText.marginTop = ""+(element.y-2)+"%"
 
                     mapLayout.addChild(myLabel)
                     mapLayout.addChild(myLabelText)

@@ -67,6 +67,7 @@ let documents = fs.knownFolders.documents()
 let picPath = null
 let tempPath = null
 exports.pageLoaded = function(args) {
+
     if(time_loop)
     timerModule.clearInterval(time_loop);
     if(time_loop_log)
@@ -386,7 +387,7 @@ function genMap(UUID,RSSI){
                     myLabelText.id = "txtMap"
                     myLabelText.class = "txt-map"
                     myLabelText.marginLeft = ""+element.x+"%"
-                    myLabelText.marginTop = ""+(element.y-4)+"%"
+                    myLabelText.marginTop = ""+(element.y-2)+"%"
 
                     mapLayout.addChild(myLabel)
                     mapLayout.addChild(myLabelText)

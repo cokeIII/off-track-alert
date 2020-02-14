@@ -29,7 +29,6 @@ var pageData = new Observable.fromObject({
     userName:"",
     phoneNumber:"",
     deviceId:"",
-    status:"",
     uuid:"",
     countUser:[],
     route:0,
@@ -158,7 +157,7 @@ exports.pageLoaded = function(args) {
                         BLE_scan()
                     })
                     }, 8000) 
-                    updateLog(logData)
+
                     time_loop_log = timerModule.setInterval(function(){ 
                         updateLog(logData)
                     }, 20000) 
@@ -210,7 +209,6 @@ function check_route(cb) {
     })
 }
 function BLE_scan(){
-    let genStatus = false
     let alert = false
     rssi = -100
     bluetooth.startScanning({
@@ -218,13 +216,14 @@ function BLE_scan(){
         seconds: 7,
         onDiscovered: function (peripheral) {
             console.log("Periperhal found with UUID: " + peripheral.UUID)
-            genStatus = walkMap(peripheral.UUID,peripheral.RSSI)
-            if(!genStatus){
-                alert = true
-                mapLayout = page.getViewById("mapLayout")
-                viewMap = mapLayout.getElementsByClassName('point')
-                viewMap.backgroundColor = "red"
-            } else {
+            walkMap(peripheral.UUID,peripheral.RSSI,function(cb){
+                if(cb){
+                    alert = true
+                    mapLayout = page.getViewById("mapLayout")
+                    viewMap = mapLayout.getElementsByClassName('point')
+                    viewMap.backgroundColor = "red"
+                    logData.status="traveling"
+                } 
                 if(roadName !== oldPoinName){
                     if(oldPoinName) {
                         oldPoint = page.getViewById(oldPoinName)
@@ -234,7 +233,6 @@ function BLE_scan(){
                     }
                     
                 }
-
                 if(roadName) {
                     oldPoinName = roadName
                     pageData.roadName = roadName
@@ -244,24 +242,22 @@ function BLE_scan(){
                         pointWalkMap.backgroundColor = "green"
                 }  
                 logData.uuid = pageData.uuid
-                logData.status = pageData.status
-            }
-            
+                   
+            })
         },
         skipPermissionCheck: false,
     }).then(function() {
         console.log("scanning complete")
-        
-        if(!alert){
-            alertUser()
-            logData.status="detours"
-            updateLog(logData)
-        } else {
-            logData.status="traveling"
-            dlgAlert.style.visibility = 'collapse'
+        if(pointDanger){
+            if(!alert){
+                alertUser()
+                logData.status="detours"
+                updateLog(logData)
+            } else {
+                logData.status="traveling"
+                dlgAlert.style.visibility = 'collapse'
+            }
         }
-        alert = true
-
     }, function (err) {
         console.log("error while scanning: " + err)
     })
@@ -284,15 +280,13 @@ function countPoint(route) {
     return count
 }
 
-function walkMap(UUID,RSSI) {
-    let status = true
+function walkMap(UUID,RSSI,cb) {
+    let status = false
     
     if(Object.keys(pageData.map).length !== 0){
         if(pageData.map[UUID] !== undefined) {
+            status = true
             pointDanger = false
-            console.log(pageData.map[UUID])
-            console.log(RSSI)
-            console.log(rssi)
             rssi = RSSI
             pageData.km = calculateDistance(rssi).toFixed(2)
             
@@ -304,7 +298,6 @@ function walkMap(UUID,RSSI) {
                 pointDanger =true
             }
             //if(RSSI >= rssi){
-
             if(pageData.map[UUID].map_status == "S"){
                 dlgPiontStart()
                 pageData.status = "traveling"
@@ -316,13 +309,9 @@ function walkMap(UUID,RSSI) {
                 pointEnd = false
             } 
             //} 
-        } else {
-            if(pointDanger) {
-                status = false
-            } 
-        }
+        } 
     }
-    return status
+    cb(status)
 }
 
 function updateLog(data) {

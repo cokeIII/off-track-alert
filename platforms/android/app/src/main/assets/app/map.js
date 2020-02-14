@@ -57,7 +57,7 @@ let dlgEnd = null
 let roadName = null
 let txtData = null
 let picData = null
-let pointChecked = {}
+let pointDanger = false
 let userCard = null
 let imageAssetChang = {_android: null}
 insomnia.keepAwake().then(function() {
@@ -219,7 +219,7 @@ function BLE_scan(){
         onDiscovered: function (peripheral) {
             console.log("Periperhal found with UUID: " + peripheral.UUID)
             genStatus = walkMap(peripheral.UUID,peripheral.RSSI)
-            if(genStatus){
+            if(!genStatus){
                 alert = true
                 mapLayout = page.getViewById("mapLayout")
                 viewMap = mapLayout.getElementsByClassName('point')
@@ -285,32 +285,40 @@ function countPoint(route) {
 }
 
 function walkMap(UUID,RSSI) {
-    let status = false
+    let status = true
     
     if(Object.keys(pageData.map).length !== 0){
         if(pageData.map[UUID] !== undefined) {
+            pointDanger = false
             console.log(pageData.map[UUID])
-            status = true
             console.log(RSSI)
             console.log(rssi)
-            if(RSSI >= rssi){
-                rssi = RSSI
-                pageData.km = calculateDistance(rssi).toFixed(2)
-                
-                roadName = pageData.map[UUID].name  
-                                     
-                pageData.uuid = UUID
+            rssi = RSSI
+            pageData.km = calculateDistance(rssi).toFixed(2)
+            
+            roadName = pageData.map[UUID].name  
+                                    
+            pageData.uuid = UUID
 
-                if(pageData.map[UUID].map_status == "S"){
-                    dlgPiontStart()
-                    pageData.status = "traveling"
-                    pointStart = false
+            if(pageData.map[UUID].map_status == "D"){
+                pointDanger =true
+            }
+            //if(RSSI >= rssi){
 
-                }  else if(pageData.map[UUID].map_status == "E") {
-                    dlgPiontEnd()
-                    pageData.status = "finish"
-                    pointEnd = false
-                } 
+            if(pageData.map[UUID].map_status == "S"){
+                dlgPiontStart()
+                pageData.status = "traveling"
+                pointStart = false
+
+            }  else if(pageData.map[UUID].map_status == "E") {
+                dlgPiontEnd()
+                pageData.status = "finish"
+                pointEnd = false
+            } 
+            //} 
+        } else {
+            if(pointDanger) {
+                status = false
             } 
         }
     }
@@ -343,6 +351,7 @@ function genMap(UUID,RSSI){
         viewMap = mapLayout.getElementsByClassName('point')
         if(pageData.map[UUID] != undefined){
             route=pageData.map[UUID].route
+            pageData.roadName =  pageData.map[UUID].name
             bluetooth.stopScanning().then(function() {
                 console.log("scanning stopped");
             });

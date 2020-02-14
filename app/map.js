@@ -219,7 +219,7 @@ function BLE_scan(){
         onDiscovered: function (peripheral) {
             console.log("Periperhal found with UUID: " + peripheral.UUID)
             genStatus = walkMap(peripheral.UUID,peripheral.RSSI)
-            if(genStatus){
+            if(!genStatus){
                 alert = true
                 mapLayout = page.getViewById("mapLayout")
                 viewMap = mapLayout.getElementsByClassName('point')
@@ -351,6 +351,7 @@ function genMap(UUID,RSSI){
         viewMap = mapLayout.getElementsByClassName('point')
         if(pageData.map[UUID] != undefined){
             route=pageData.map[UUID].route
+            pageData.roadName =  pageData.map[UUID].name
             bluetooth.stopScanning().then(function() {
                 console.log("scanning stopped");
             });

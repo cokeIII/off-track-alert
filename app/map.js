@@ -287,28 +287,29 @@ function walkMap(UUID,RSSI,cb) {
         if(pageData.map[UUID] !== undefined) {
             status = true
             pointDanger = false
-            rssi = RSSI
-            pageData.km = calculateDistance(rssi).toFixed(2)
-            
-            roadName = pageData.map[UUID].name  
-                                    
-            pageData.uuid = UUID
+            if(RSSI >= rssi){
+                rssi = RSSI
+                pageData.km = calculateDistance(rssi).toFixed(2)
+                
+                roadName = pageData.map[UUID].name  
+                                        
+                pageData.uuid = UUID
 
-            if(pageData.map[UUID].map_status == "D"){
-                pointDanger =true
-            }
-            //if(RSSI >= rssi){
-            if(pageData.map[UUID].map_status == "S"){
-                dlgPiontStart()
-                pageData.status = "traveling"
-                pointStart = false
+                if(pageData.map[UUID].map_status == "D"){
+                    pointDanger =true
+                }
+                
+                if(pageData.map[UUID].map_status == "S"){
+                    dlgPiontStart()
+                    pageData.status = "traveling"
+                    pointStart = false
 
-            }  else if(pageData.map[UUID].map_status == "E") {
-                dlgPiontEnd()
-                pageData.status = "finish"
-                pointEnd = false
+                }  else if(pageData.map[UUID].map_status == "E") {
+                    dlgPiontEnd()
+                    pageData.status = "finish"
+                    pointEnd = false
+                } 
             } 
-            //} 
         } 
     }
     cb(status)

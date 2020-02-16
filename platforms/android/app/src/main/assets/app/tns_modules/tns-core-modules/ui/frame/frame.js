@@ -20,7 +20,7 @@ var sdkVersion = lazy_1.default(function () { return parseInt(platform_1.device.
 var navDepth = -1;
 var fragmentId = -1;
 if (global && global.__inspector) {
-    var devtools = require("tns-core-modules/debugger/devtools-elements.js");
+    var devtools = require("tns-core-modules/debugger/devtools-elements");
     devtools.attachDOMInspectorEventCallbacks(global.__inspector);
     devtools.attachDOMInspectorCommandCallbacks(global.__inspector);
 }

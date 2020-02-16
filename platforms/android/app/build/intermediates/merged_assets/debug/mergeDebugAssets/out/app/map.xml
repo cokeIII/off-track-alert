@@ -105,6 +105,25 @@
       </StackLayout> 
       <!-- dlg Alert-->
 
+      <!-- dlg offline-->
+      <StackLayout class="lg-dialog" tap="hideDialog" id="user-offline">
+        <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
+            <FlexboxLayout orientation="horizontal" class="title">
+                <label text="offline" class="text"/>
+                <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
+            </FlexboxLayout>
+            <StackLayout class="content">
+              <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
+                <Label text="You are in offline mode. The map may not be updated." class="txt-s"></Label>
+              </StackLayout>
+            </StackLayout>
+            <FlexboxLayout class="actions">
+                <Button  tap="hideDialog" text="OK" class="action"/>
+            </FlexboxLayout>
+        </FlexboxLayout>
+      </StackLayout> 
+      <!-- dlg offline-->
+
       <!-- dlg checkdata-->
       <StackLayout class="lg-dialog" tap="noop" id="checkdata">
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">

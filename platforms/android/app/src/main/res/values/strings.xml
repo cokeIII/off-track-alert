@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">offtrackalertAOTMASTER</string>
-    <string name="title_activity_kimera">offtrackalertAOTMASTER</string>
+    <string name="app_name">offtrackalert</string>
+    <string name="title_activity_kimera">offtrackalert</string>
 </resources>

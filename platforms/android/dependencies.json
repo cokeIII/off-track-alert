@@ -28,10 +28,6 @@
         "directory": "..\\..\\node_modules\\nativescript-insomnia"
     },
     {
-        "name": "nativescript-loading-indicator-new",
-        "directory": "..\\..\\node_modules\\nativescript-loading-indicator-new"
-    },
-    {
         "name": "nativescript-orientation",
         "directory": "..\\..\\node_modules\\nativescript-orientation"
     },

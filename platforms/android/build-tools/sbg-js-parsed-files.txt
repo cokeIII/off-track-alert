@@ -17,10 +17,6 @@ E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules
 E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\nativescript-imagepicker\imagepicker.common.js
 E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\nativescript-imagepicker\imagepicker.js
 E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\nativescript-insomnia\insomnia.js
-E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\nativescript-loading-indicator-new\loading-indicator.js
-E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\nativescript-loading-indicator-new\src\android\progress-dialog.js
-E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\nativescript-loading-indicator-new\src\interfaces.js
-E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\nativescript-loading-indicator-new\src\ios\mbprogress-hud.js
 E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\nativescript-orientation\orientation.js
 E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\nativescript-permissions\permissions.js
 E:\Project\off-track-alert\platforms\android\app\src\main\assets\app\tns_modules\nativescript-sound\sound-common.js

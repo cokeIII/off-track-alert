@@ -20,7 +20,7 @@ var context = imagepicker.create({ mode: "single" })
 let logData = {}
 
 //192.168.43.50:3001
-const API_URL = "http://202.129.16.68:7777"
+const API_URL = "http://192.168.43.50:7778"
 var pageData = new Observable.fromObject({
     roadName: "",
     map:{},
@@ -29,16 +29,17 @@ var pageData = new Observable.fromObject({
     userName:"",
     phoneNumber:"",
     deviceId:"",
-    status:"",
     uuid:"",
     countUser:[],
     route:0,
     km:0,
     picCard:'',
+    bleId: null,
 })
 let urlMap = API_URL + '/maps'
 let dlg = null
 let dlgAlert = null
+let dlgOffline = null
 let mapLayout = null
 let viewMap = null
 let detailMap = null 
@@ -60,6 +61,7 @@ let picData = null
 let pointDanger = false
 let userCard = null
 let imageAssetChang = {_android: null}
+let tempMaps = {"maps":[{"uuid":"3D:84:E8:A8:EF:ED","uuid_ios":"505171D0-BBF9-4D74-BE62-6EDD210913F0","x":42,"y":40,"name":"point_7","route":1,"map_status":"N"},{"uuid":"43:2F:ED:5C:3C:EF","uuid_ios":"9BB645AC-EB26-B5DB-1787-BBE99F457491","x":47,"y":35,"name":"point_8","route":1,"map_status":"N"},{"uuid":"46:B2:20:8D:30:CB","uuid_ios":"BD03F4F4-45B0-00A7-EFFB-BF76C0F98B2E","x":50,"y":22,"name":"point_10_End","route":1,"map_status":"E"},{"uuid":"8F:4A:1C:93:03:D7","uuid_ios":"AEA9ED04-A9B9-2768-EA03-A9A6943FE82B","x":52,"y":29,"name":"point_9","route":1,"map_status":"N"},{"uuid":"90:D0:E9:5C:CB:CB","uuid_ios":"9B16F74B-B1A6-21E2-614F-EEA5C319933D","x":35,"y":44,"name":"point_6","route":1,"map_status":"N"},{"uuid":"B4:26:7C:71:C8:D7","uuid_ios":"505171D0-BBF9-4D74-BE62-6EDD210913F0","x":26,"y":77,"name":"point_1","route":1,"map_status":"S"},{"uuid":"B6:7D:7C:9F:A7:E2","uuid_ios":"5F2EADF2-E85B-9FAC-ED9A-9ED74BEFD946","x":35,"y":54,"name":"point_4","route":1,"map_status":"D"},{"uuid":"E1:51:83:0B:70:DE","uuid_ios":"E3FA7F93-9235-60F7-B724-8C39032D16F4","x":38,"y":59,"name":"point_3","route":1,"map_status":"N"},{"uuid":"E3:6B:F7:31:5B:FE","uuid_ios":"51398D28-A39A-CCD3-056B-8E99263EDC04","x":36,"y":68,"name":"point_2","route":1,"map_status":"N"},{"uuid":"EC:18:B9:C0:CF:C3","uuid_ios":"5303A213-E1D4-D346-0C72-E5511AA259AB","x":33,"y":49,"name":"point_5","route":1,"map_status":"N"},{"uuid":"F2:AE:DB:70:B1:B6","uuid_ios":"6E732E63-6F2E-7468-2D69-626561636F6E","x":12,"y":80,"name":"demo_point","route":1,"map_status":"D"}]}
 insomnia.keepAwake().then(function() {
     console.log("Insomnia is active");
 })
@@ -67,17 +69,22 @@ let documents = fs.knownFolders.documents()
 let picPath = null
 let tempPath = null
 exports.pageLoaded = function(args) {
+    if(appSettings.getString("bleId"))
+        pageData.bleId = appSettings.getString("bleId")
 
     if(time_loop)
-    timerModule.clearInterval(time_loop);
+        timerModule.clearInterval(time_loop);
     if(time_loop_log)
         timerModule.clearInterval(time_loop_log);
 
     page = args.object
     page.bindingContext = pageData
+    const navigationContext = page.navigationContext
+    console.log(navigationContext)
     orientation.setOrientation("portrait")
     dlg = page.getViewById('user-data')
     dlgAlert = page.getViewById('user-alert')
+    dlgOffline = page.getViewById('user-offline')
     dlgCheckdata = page.getViewById('checkdata')
     detailMap = page.getViewById('detailMap')
     detailMapBtn = page.getViewById('detailMapBtn')
@@ -87,6 +94,14 @@ exports.pageLoaded = function(args) {
     dlgEnd = page.getViewById('pointEnd')
     picData = page.getViewById('picData')
     txtData = page.getViewById('txtData')
+
+    if(!appSettings.getString("offline")) {
+        if(navigationContext.mode == "offline") {
+            dlgOffline.style.visibility = 'visible'
+            appSettings.setString("maps", JSON.stringify(tempMaps))
+        }
+        appSettings.setString("offline", "false")
+    }   
 
     romoveMap()
     const arrayToObject = (array) =>
@@ -114,7 +129,7 @@ exports.pageLoaded = function(args) {
         jsonData = arrayToObject(jsonData.maps)
         pageData.map = jsonData
         }).catch(e => {
-        console.log('***fetch error***')
+            console.log('***fetch error***')
         })
     }
 
@@ -158,7 +173,7 @@ exports.pageLoaded = function(args) {
                         BLE_scan()
                     })
                     }, 8000) 
-                    updateLog(logData)
+
                     time_loop_log = timerModule.setInterval(function(){ 
                         updateLog(logData)
                     }, 20000) 
@@ -210,7 +225,6 @@ function check_route(cb) {
     })
 }
 function BLE_scan(){
-    let genStatus = false
     let alert = false
     rssi = -100
     bluetooth.startScanning({
@@ -218,13 +232,14 @@ function BLE_scan(){
         seconds: 7,
         onDiscovered: function (peripheral) {
             console.log("Periperhal found with UUID: " + peripheral.UUID)
-            genStatus = walkMap(peripheral.UUID,peripheral.RSSI)
-            if(genStatus){
-                alert = true
-                mapLayout = page.getViewById("mapLayout")
-                viewMap = mapLayout.getElementsByClassName('point')
-                viewMap.backgroundColor = "red"
-            } else {
+            walkMap(peripheral.UUID,peripheral.RSSI,function(cb){
+                if(cb){
+                    alert = true
+                    mapLayout = page.getViewById("mapLayout")
+                    viewMap = mapLayout.getElementsByClassName('point')
+                    viewMap.backgroundColor = "red"
+                    logData.status="traveling"
+                } 
                 if(roadName !== oldPoinName){
                     if(oldPoinName) {
                         oldPoint = page.getViewById(oldPoinName)
@@ -234,7 +249,6 @@ function BLE_scan(){
                     }
                     
                 }
-
                 if(roadName) {
                     oldPoinName = roadName
                     pageData.roadName = roadName
@@ -244,24 +258,22 @@ function BLE_scan(){
                         pointWalkMap.backgroundColor = "green"
                 }  
                 logData.uuid = pageData.uuid
-                logData.status = pageData.status
-            }
-            
+                   
+            })
         },
         skipPermissionCheck: false,
     }).then(function() {
         console.log("scanning complete")
-        
-        if(!alert){
-            alertUser()
-            logData.status="detours"
-            updateLog(logData)
-        } else {
-            logData.status="traveling"
-            dlgAlert.style.visibility = 'collapse'
+        if(pointDanger){
+            if(!alert){
+                alertUser()
+                logData.status="detours"
+                updateLog(logData)
+            } else {
+                logData.status="traveling"
+                dlgAlert.style.visibility = 'collapse'
+            }
         }
-        alert = true
-
     }, function (err) {
         console.log("error while scanning: " + err)
     })
@@ -284,45 +296,39 @@ function countPoint(route) {
     return count
 }
 
-function walkMap(UUID,RSSI) {
-    let status = true
+function walkMap(UUID,RSSI,cb) {
+    let status = false
     
     if(Object.keys(pageData.map).length !== 0){
         if(pageData.map[UUID] !== undefined) {
+            status = true
             pointDanger = false
-            console.log(pageData.map[UUID])
-            console.log(RSSI)
-            console.log(rssi)
-            rssi = RSSI
-            pageData.km = calculateDistance(rssi).toFixed(2)
-            
-            roadName = pageData.map[UUID].name  
-                                    
-            pageData.uuid = UUID
+            if(RSSI >= rssi){
+                rssi = RSSI
+                pageData.km = calculateDistance(rssi).toFixed(2)
+                
+                roadName = pageData.map[UUID].name  
+                                        
+                pageData.uuid = UUID
 
-            if(pageData.map[UUID].map_status == "D"){
-                pointDanger =true
-            }
-            //if(RSSI >= rssi){
+                if(pageData.map[UUID].map_status == "D"){
+                    pointDanger =true
+                }
+                
+                if(pageData.map[UUID].map_status == "S"){
+                    dlgPiontStart()
+                    pageData.status = "traveling"
+                    pointStart = false
 
-            if(pageData.map[UUID].map_status == "S"){
-                dlgPiontStart()
-                pageData.status = "traveling"
-                pointStart = false
-
-            }  else if(pageData.map[UUID].map_status == "E") {
-                dlgPiontEnd()
-                pageData.status = "finish"
-                pointEnd = false
+                }  else if(pageData.map[UUID].map_status == "E") {
+                    dlgPiontEnd()
+                    pageData.status = "finish"
+                    pointEnd = false
+                } 
             } 
-            //} 
-        } else {
-            if(pointDanger) {
-                status = false
-            } 
-        }
+        } 
     }
-    return status
+    cb(status)
 }
 
 function updateLog(data) {
@@ -351,6 +357,7 @@ function genMap(UUID,RSSI){
         viewMap = mapLayout.getElementsByClassName('point')
         if(pageData.map[UUID] != undefined){
             route=pageData.map[UUID].route
+            pageData.roadName =  pageData.map[UUID].name
             bluetooth.stopScanning().then(function() {
                 console.log("scanning stopped");
             });
@@ -419,7 +426,10 @@ exports.user = function() {
         pageData.picCard = jsonData.pic
     }
     dlg.style.visibility = 'visible'
-    if(pageData.picCard != ""){
+    console.log("picCard picCard picCard = "+pageData.picCard)
+    if(pageData.picCard  == undefined)
+        pageData.picCard  = ''
+    if(pageData.picCard != ''){
         userCard.style.backgroundImage  = picPath
         picData.style.visibility = 'visible'
         txtData.style.visibility = 'collapse'
@@ -448,12 +458,14 @@ exports.changPic = function() {
     });
 }   
 exports.setUser = function() {
+    console.log("pageData.picCard = = = = = = = ="+pageData.picCard)
     let saveData = {}
     saveData.idCard = pageData.idCard
     saveData.userName = pageData.userName
     saveData.phoneNumber = pageData.phoneNumber
     saveData.deviceId = pageData.deviceId
     saveData.picCard = pageData.picCard
+    saveData.bleId = pageData.bleId
     let text = null
     var tester = /^[a-zA-Z0-9ก-๙ ]*$/
     if (saveData.userName.length === 0 && saveData.picCard == "") {
@@ -462,9 +474,11 @@ exports.setUser = function() {
     text = 'Please enter your mobile phone number to complete 10 digits.'
     } else if (saveData.deviceId.length < 0) {
     text = 'NO Device ID.'
-    } else if (saveData.idCard.length < 7 && saveData.picCard == "") {
-    text = 'ID Card incorrect.'
-    }else if (!tester.test(pageData.userName) && saveData.picCard == "") {
+    } 
+    // else if (saveData.idCard.length < 7 && saveData.picCard == "") {
+    // text = 'ID Card incorrect.'
+    // }
+    else if (!tester.test(pageData.userName) && saveData.picCard == "") {
         text = 'Please enter the first and last name in the alphabet. a-z, A-Z, 0-9, A-9'
     }
     if (text != null) {
@@ -472,7 +486,7 @@ exports.setUser = function() {
         return
     }
 
-
+    console.log(saveData)
     if(pageData.picCard == ''){
         fetch(API_URL+"/updateUser", {
             method: "POST",
@@ -510,7 +524,7 @@ exports.setUser = function() {
             description: "Uploading"
         };
         let params = [
-            { name: "idCard", value: pageData.phoneNumber },
+            { name: "phoneNumber", value: pageData.phoneNumber },
             { name: "deviceId", value: pageData.deviceId },
             { "name": 'photo', "filename": file, "mimeType": "image/jpg" }
         ];
@@ -556,6 +570,7 @@ exports.hideDialog = function() {
     dlgEnd.style.visibility = 'collapse'
     dlgStart.style.visibility = 'collapse'
     dlgAboute.style.visibility = 'collapse'
+    dlgOffline.style.visibility = 'collapse'
 }
 
 function dlgHide() {

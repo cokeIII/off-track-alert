@@ -11,7 +11,7 @@ var imageSourceModule = require("image-source");
 var fs = require("tns-core-modules/file-system");
 var orientation = require('nativescript-orientation')
 
-var pageData = new Observable.fromObject({
+ var pageData = new Observable.fromObject({
     idCard: "",
     userName: "",
     deviceId:"",
@@ -20,16 +20,15 @@ var pageData = new Observable.fromObject({
 })
 // 192.168.43.50
 //http://202.129.16.68:7777
-const API_URL = "http://202.129.16.68:7777"
+const API_URL = "http://192.168.43.50:7778"
 let mRegis = null
 let btnCamera =null
 let mRegisBtn =null
-
+let btnofflineMode = null
 
 exports.pageLoaded = function(args) {
-
     // Removes all values.
-    // appSettings.clear();
+    appSettings.clear();
     orientation.setOrientation("portrait")
     var en = java.net.NetworkInterface.getNetworkInterfaces();
     for(var obj in en){
@@ -44,8 +43,9 @@ exports.pageLoaded = function(args) {
             if (macAddress == null) {
                 return "";
             }
-            console.log(toHexString(macAddress))
+            // console.log(toHexString(macAddress))
             pageData.bleId = toHexString(macAddress)
+            appSettings.setString("bleId",pageData.bleId+"")
         }
     }
     function toHexString(byteArray) {
@@ -59,7 +59,12 @@ exports.pageLoaded = function(args) {
     if(appSettings.getString("userData")){
         let userData = JSON.parse(appSettings.getString("userData"))
         if(userData.phoneNumber != ""){
-            frameModule.topmost().navigate("map");            
+            const navigationEntry = {
+                moduleName: "map",
+                context: { mode: "online" },
+                animated: false
+            };
+            frameModule.topmost().navigate(navigationEntry);
         }
     } 
 
@@ -82,6 +87,7 @@ exports.pageLoaded = function(args) {
     btnCamera = page.getViewById('btnCamera')
     mRegis = page.getViewById('mRegis')
     mRegisBtn = page.getViewById('mRegisBtn')
+    btnofflineMode = page.getViewById('btnofflineMode')
     
     idCardLength[0] = new android.text.InputFilter.LengthFilter(13)
     userNameLength[0] = new android.text.InputFilter.LengthFilter(30)
@@ -116,7 +122,7 @@ exports.takeCamera =  function() {
                     description: "Uploading"
                 };
                 let params = [
-                    { name: "idCard", value: pageData.phoneNumber },
+                    { name: "phoneNumber", value: pageData.phoneNumber },
                     { name: "deviceId", value: pageData.deviceId },
                     { name: "bleId", value: pageData.bleId },
                     { "name": 'photo', "filename": file, "mimeType": "image/jpg" }
@@ -154,8 +160,7 @@ exports.register =  function() {
     jsonData.phoneNumber = pageData.phoneNumber
     jsonData.bleId = pageData.bleId
     jsonData.pic = ''
-    appSettings.setString("userData", JSON.stringify(jsonData))
-    console.log(jsonData)
+
     let text = null
     var tester = /^[a-zA-Z0-9ก-๙ ]*$/
     if (jsonData.userName.length === 0) {
@@ -164,9 +169,11 @@ exports.register =  function() {
       text = 'Please enter your mobile phone number to complete 10 digits.'
     } else if (jsonData.deviceId.length < 0) {
       text = 'NO Device ID.'
-    } else if (jsonData.idCard.length < 7) {
-      text = 'ID Card incorrect.'
-    }else if (!tester.test(pageData.userName)) {
+    } 
+    // else if (jsonData.idCard.length < 7) {
+    //   text = 'ID Card incorrect.'
+    // }
+    else if (!tester.test(pageData.userName)) {
         text = 'Please enter the first and last name in the alphabet. a-z, A-Z, 0-9, A-9'
     }
     if (text != null) {
@@ -181,9 +188,16 @@ exports.register =  function() {
     .then((response) => {
         if(response.status == "Success"){
             console.log("Success")
+            appSettings.setString("userData", JSON.stringify(jsonData))
+            console.log(jsonData)
             toast = Toast.makeText("register success","long")
             toast.show()
-            frameModule.topmost().navigate("map");
+            const navigationEntry = {
+                moduleName: "map",
+                context: { mode: "online" },
+                animated: false
+            };
+            frameModule.topmost().navigate(navigationEntry);
         }
         else if(response.status == "Fail"){
             toast = Toast.makeText("register fail")
@@ -194,6 +208,9 @@ exports.register =  function() {
         }
     }).catch((e) => {
         console.log('***fetch error***')
+        toast = Toast.makeText("not send data to server","long")
+        toast.show()
+
     });
 
 }
@@ -204,13 +221,37 @@ exports.showMRegis = () => {
         mRegisBtn.style.visibility = 'visible'
     } else {
         btnCamera.style.visibility = 'visible'
+        btnofflineMode.style.visibility = 'visible'
         mRegis.style.visibility = 'collapse'
         mRegisBtn.style.visibility = 'collapse'
     }
 }
 exports.noop = () => {
 }
+exports.offlineMode = () => {
+    var jsonData = {}
+    var toast = null
+    jsonData.idCard = pageData.idCard
+    jsonData.userName = pageData.userName
+    jsonData.deviceId = pageData.deviceId
+    jsonData.phoneNumber = pageData.phoneNumber
+    jsonData.bleId = pageData.bleId
+    jsonData.pic = ''
 
+    if (pageData.phoneNumber.length < 10) {
+        return Toast.makeText('Please enter your mobile phone number to complete 10 digits.').show()
+    } 
+    appSettings.setString("userData", JSON.stringify(jsonData))
+    console.log(jsonData)
+    toast = Toast.makeText("offline mode success","long")
+    toast.show()
+    const navigationEntry = {
+        moduleName: "map",
+        context: { mode: "offline" },
+        animated: false
+    };
+    frameModule.topmost().navigate(navigationEntry);
+}
 // event arguments:
 // task: Task
 // currentBytes: number
@@ -226,7 +267,7 @@ function progressHandler(e) {
 // response: net.gotev.uploadservice.ServerResponse (Android) / NSHTTPURLResponse (iOS)
 function errorHandler(e) {
      console.log("received " + e.responseCode + " code.");
-     toast = Toast.makeText("regiser fail")
+     toast = Toast.makeText("regiser fail not send picture to server","long")
      toast.show()
 
     var serverResponse = e.response;
@@ -253,8 +294,13 @@ function respondedHandler(e) {
         appSettings.setString("userData", JSON.stringify(jsonData))
         toast = Toast.makeText("register success","long")
         toast.show()
-        frameModule.topmost().navigate("map");
-    }
+        const navigationEntry = {
+            moduleName: "map",
+            context: { mode: "online" },
+            animated: false
+        };
+        frameModule.topmost().navigate(navigationEntry);
+}
     else if(e.data["status"]== "Fail"){
         toast = Toast.makeText("register fail")
         toast.show()

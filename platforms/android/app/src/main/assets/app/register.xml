@@ -30,7 +30,7 @@
       <button text="Submit" class="m-t-10p btn-submit buttons" tap="register" id="mRegisBtn" visibility="collapse"></button>
       <button text="Manule Register" class="m-t-5p buttons" tap="showInput" tap="showMRegis"></button>
       <button text="&#xf030; Scan Card Register" class="m-t-10 buttons" tap="takeCamera" id="btnCamera"></button>
-    
+      <button text="Offline Mode" class="m-t-10 buttons" tap="offlineMode" id="btnofflineMode"></button>
   </StackLayout>
 
 </Page>

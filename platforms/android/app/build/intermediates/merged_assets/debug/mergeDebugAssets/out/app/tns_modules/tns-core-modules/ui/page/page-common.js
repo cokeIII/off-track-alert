@@ -129,7 +129,6 @@ var PageBase = (function (_super) {
         enumerable: true,
         configurable: true
     });
-    var PageBase_1;
     PageBase.navigatingToEvent = "navigatingTo";
     PageBase.navigatedToEvent = "navigatedTo";
     PageBase.navigatingFromEvent = "navigatingFrom";
@@ -150,6 +149,7 @@ var PageBase = (function (_super) {
         content_view_1.CSSType("Page")
     ], PageBase);
     return PageBase;
+    var PageBase_1;
 }(content_view_1.ContentView));
 exports.PageBase = PageBase;
 PageBase.prototype.recycleNativeView = "never";

@@ -105,6 +105,25 @@
       </StackLayout> 
       <!-- dlg Alert-->
 
+      <!-- dlg offline-->
+      <StackLayout class="lg-dialog" tap="hideDialog" id="user-offline">
+        <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
+            <FlexboxLayout orientation="horizontal" class="title">
+                <label text="offline" class="text"/>
+                <Button  tap="hideDialog" text="&#xf00d;" class="close"/>
+            </FlexboxLayout>
+            <StackLayout class="content">
+              <StackLayout width="100%" orientation="horizontal" class="m-t-10p">
+                <Label textWrap="true" text="You are in offline mode. The map may not be updated." class="txt-s"></Label>
+              </StackLayout>
+            </StackLayout>
+            <FlexboxLayout class="actions">
+                <Button  tap="hideDialog" text="OK" class="action"/>
+            </FlexboxLayout>
+        </FlexboxLayout>
+      </StackLayout> 
+      <!-- dlg offline-->
+
       <!-- dlg checkdata-->
       <StackLayout class="lg-dialog" tap="noop" id="checkdata">
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
@@ -118,14 +137,12 @@
                 <Label text="wait data..." class="txt-s "></Label>  
                 <ActivityIndicator busy="true" class="m-t-30p"/><!-- londing-->
               </StackLayout>
-                  <StackLayout class="content">
-                     <Label text="annotation/หมายเหตุ:" class="m-t-50p set_thai1"></Label>
-                      <Label text="*กด REFRESH เพื่อค้นหาอุปกรณ์" class="set_thai1"></Label>  
-                      <Label text="*Press REFRESH to search for devices " class="set_thai1"></Label>
+                  <StackLayout class="content"> 
+                      <Label textWrap="true" text="*Press REFRESH to load map data and search for devices." class="set_thai1"></Label>
                    </StackLayout>
             </StackLayout>
             <FlexboxLayout class="actions">
-                <Button  tap="reMap" text="refresh " class="action"/>
+                <Button  tap="reMap" text="refresh " class="action" backgroundColor="#ADF873"/>
             </FlexboxLayout>
         </FlexboxLayout>
       </StackLayout> 

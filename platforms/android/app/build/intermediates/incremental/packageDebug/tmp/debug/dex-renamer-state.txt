@@ -1,4 +1,0 @@
-#Sun Feb 16 14:35:21 ICT 2020
-base.0=E\:\\Project\\off-track-alert\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex

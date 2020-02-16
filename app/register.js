@@ -25,7 +25,7 @@ let mRegis = null
 let btnCamera =null
 let mRegisBtn =null
 let btnofflineMode = null
-
+let dlgPageMap = null
 exports.pageLoaded = function(args) {
     // Removes all values.
     appSettings.clear();
@@ -88,7 +88,8 @@ exports.pageLoaded = function(args) {
     mRegis = page.getViewById('mRegis')
     mRegisBtn = page.getViewById('mRegisBtn')
     btnofflineMode = page.getViewById('btnofflineMode')
-    
+    dlgPageMap = page.getViewById('user-pageMap')
+
     idCardLength[0] = new android.text.InputFilter.LengthFilter(13)
     userNameLength[0] = new android.text.InputFilter.LengthFilter(30)
     phoneNumberLength[0] = new android.text.InputFilter.LengthFilter(10)
@@ -107,6 +108,7 @@ exports.takeCamera =  function() {
             var options = {keepAspectRatio: false, saveToGallery: false };
             camera.takePicture(options)   
             .then(function (imageAsset) {
+                dlgPageMap.style.visibility = 'visible'
                 console.log("Result is an image asset instance");
                 var image = new imageModule.Image();
                 image.src = imageAsset;
@@ -267,6 +269,7 @@ function progressHandler(e) {
 // response: net.gotev.uploadservice.ServerResponse (Android) / NSHTTPURLResponse (iOS)
 function errorHandler(e) {
      console.log("received " + e.responseCode + " code.");
+     dlgPageMap.style.visibility = 'collapse'
      toast = Toast.makeText("regiser fail not send picture to server","long")
      toast.show()
 
@@ -279,6 +282,7 @@ function errorHandler(e) {
 // responseCode: number
 // data: string
 function respondedHandler(e) {
+    
      console.log("received " + e.responseCode + " code. Server sent: " + e.data);
      e.data = JSON.parse(e.data)
      if(e.data["status"] == "Success"){
@@ -290,7 +294,7 @@ function respondedHandler(e) {
         jsonData.bleId = pageData.bleId
         jsonData.phoneNumber = pageData.phoneNumber
         jsonData.pic = pageData.phoneNumber+'.jpg'
-    
+        dlgPageMap.style.visibility = 'collapse'
         appSettings.setString("userData", JSON.stringify(jsonData))
         toast = Toast.makeText("register success","long")
         toast.show()
@@ -302,6 +306,7 @@ function respondedHandler(e) {
         frameModule.topmost().navigate(navigationEntry);
 }
     else if(e.data["status"]== "Fail"){
+        dlgPageMap.style.visibility = 'collapse'
         toast = Toast.makeText("register fail")
         toast.show()
     }

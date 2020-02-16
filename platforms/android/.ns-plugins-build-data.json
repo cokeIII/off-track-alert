@@ -1,7 +1,4 @@
 {
-	"@essent/nativescript-loading-indicator": {
-		"E:\\Project\\off-track-alert\\node_modules\\@essent\\nativescript-loading-indicator\\platforms\\android\\kprogresshud.aar": "697dfdc441635e925b4b14634153746986dd3864"
-	},
 	"nativescript-background-http": {
 		"E:\\Project\\off-track-alert\\node_modules\\nativescript-background-http\\platforms\\android\\include.gradle": "4fc0f9ce06df5336df8da8c7b7a2ce2c43356a93",
 		"E:\\Project\\off-track-alert\\node_modules\\nativescript-background-http\\platforms\\android\\nativescript_background_http.aar": "e0648afae01c1d8a82bbe927b6017710e103bbf9"
@@ -27,14 +24,11 @@
 		"E:\\Project\\off-track-alert\\node_modules\\nativescript-telephony\\platforms\\android\\nativescript_telephony.aar": "137d3699bf0669dc148de379effba4854c7b386d"
 	},
 	"nativescript-vibrate": {
-		"E:\\Project\\off-track-alert\\node_modules\\nativescript-vibrate\\platforms\\android\\nativescript_vibrate.aar": "31bc4bfd8ba4c2caa17b12b63f51bed004caa1d1",
 		"E:\\Project\\off-track-alert\\node_modules\\nativescript-vibrate\\platforms\\android\\include.gradle": "06e7e1be49eb6d614094596003280aa7eea789f3",
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-vibrate\\platforms\\android\\nativescript_vibrate.aar": "31bc4bfd8ba4c2caa17b12b63f51bed004caa1d1",
 		"E:\\Project\\off-track-alert\\node_modules\\nativescript-vibrate\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
 	},
 	"tns-core-modules-widgets": {
 		"E:\\Project\\off-track-alert\\node_modules\\tns-core-modules-widgets\\platforms\\android\\widgets-release.aar": "85168be13bc1b546c0f1d53f46bb892118ba3d9f"
-	},
-	"@nstudio/nativescript-loading-indicator": {
-		"E:\\Project\\off-track-alert\\node_modules\\@nstudio\\nativescript-loading-indicator\\platforms\\android\\nativescript_loading_indicator.aar": "4e2a39f50d19fb7ef98ee50c586b6a2d68adbd4f"
 	}
 }

@@ -20,7 +20,7 @@ var orientation = require('nativescript-orientation')
 })
 // 192.168.43.50
 //http://202.129.16.68:7777
-const API_URL = "http://192.168.43.50:7778"
+const API_URL = "http://202.129.16.68:7777"
 let mRegis = null
 let btnCamera =null
 let mRegisBtn =null

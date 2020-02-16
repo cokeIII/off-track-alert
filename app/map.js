@@ -386,6 +386,12 @@ function genMap(UUID,RSSI){
             mapLayout.backgroundImage = path
         }, (e) => {
             console.log(e)
+            img = imageSourceModule.fromFile("~/images/r"+route+".jpg");
+            var folder = fs.knownFolders.documents();
+            var path = fs.path.join(folder.path, "r"+route+".jpg");
+            appSettings.setString("bgMaps", path)
+            img.saveToFile(path)
+            mapLayout.backgroundImage = path
         });    
 
         bgMaps = appSettings.getString("bgMaps")

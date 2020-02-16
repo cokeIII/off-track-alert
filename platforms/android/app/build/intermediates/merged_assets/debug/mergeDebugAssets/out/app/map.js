@@ -20,7 +20,7 @@ var context = imagepicker.create({ mode: "single" })
 let logData = {}
 
 //192.168.43.50:3001
-const API_URL = "http://192.168.43.50:7778"
+const API_URL = "http://202.129.16.68:7777"
 var pageData = new Observable.fromObject({
     roadName: "",
     map:{},
@@ -94,7 +94,7 @@ exports.pageLoaded = function(args) {
     dlgEnd = page.getViewById('pointEnd')
     picData = page.getViewById('picData')
     txtData = page.getViewById('txtData')
-
+    
     if(!appSettings.getString("offline")) {
         if(navigationContext.mode == "offline") {
             dlgOffline.style.visibility = 'visible'
@@ -109,6 +109,7 @@ exports.pageLoaded = function(args) {
         obj[item.uuid] = item
         return obj
     }, {})
+    
     if(appSettings.getString("userData")){
         let jsonData = JSON.parse(appSettings.getString("userData"))
         pageData.idCard = jsonData.idCard
@@ -117,7 +118,7 @@ exports.pageLoaded = function(args) {
         pageData.deviceId = jsonData.deviceId
         pageData.picCard = jsonData.pic
     }
-
+    
     logData.deviceId = pageData.deviceId
     getMaps()
     function getMaps(){
@@ -132,7 +133,7 @@ exports.pageLoaded = function(args) {
             console.log('***fetch error***')
         })
     }
-
+    
     if(appSettings.getString("maps")){
         arrMaps = JSON.parse(appSettings.getString("maps"))
         pageData.map = arrayToObject(arrMaps.maps)
@@ -147,6 +148,7 @@ exports.pageLoaded = function(args) {
     let userName = page.getViewById('userName')
     let phoneNumber = page.getViewById('phoneNumber')
     userCard = page.getViewById('userCard')
+    
 
     idCardLength[0] = new android.text.InputFilter.LengthFilter(13)
     userNameLength[0] = new android.text.InputFilter.LengthFilter(30)
@@ -155,11 +157,14 @@ exports.pageLoaded = function(args) {
     idCard.android.setFilters(idCardLength)
     userName.android.setFilters(userNameLength)
     phoneNumber.android.setFilters(phoneNumberLength)
+    
     if(tempPath){
         picPath = tempPath
     } else {
-        picPath = fs.path.join(documents.path, pageData.picCard)
+        if(pageData.picCard != undefined)
+            picPath = fs.path.join(documents.path, pageData.picCard)
     }
+    
     bluetooth.enable().then(
         function(enabled) {
             check_route(function(cb){
@@ -182,7 +187,8 @@ exports.pageLoaded = function(args) {
                 }
             })
         }
-    )       
+    ) 
+         
 }
 exports.pageUnloaded = () =>{
     console.log("pageUnloaded")
@@ -379,7 +385,13 @@ function genMap(UUID,RSSI){
             img.saveToFile(path)
             mapLayout.backgroundImage = path
         }, (e) => {
-            console.log(e)
+            console.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"+e)
+            img = imageSourceModule.fromFile("/images/r"+route+".jpg");
+            var folder = fs.knownFolders.documents();
+            var path = fs.path.join(folder.path, "r"+route+".jpg");
+            appSettings.setString("bgMaps", path)
+            img.saveToFile(path)
+            mapLayout.backgroundImage = path
         });    
 
         bgMaps = appSettings.getString("bgMaps")
@@ -458,7 +470,6 @@ exports.changPic = function() {
     });
 }   
 exports.setUser = function() {
-    console.log("pageData.picCard = = = = = = = ="+pageData.picCard)
     let saveData = {}
     saveData.idCard = pageData.idCard
     saveData.userName = pageData.userName
@@ -486,7 +497,7 @@ exports.setUser = function() {
         return
     }
 
-    console.log(saveData)
+    console.log(JSON.parse(JSON.stringify(saveData)))
     if(pageData.picCard == ''){
         fetch(API_URL+"/updateUser", {
             method: "POST",
@@ -619,7 +630,7 @@ exports.reMap=()=>{
 }
 function errorHandler(e) {
     console.log("received " + e.responseCode + " code.");
-    toast = Toast.makeText("regiser fail")
+    toast = Toast.makeText("Update fail please try again")
     toast.show()
 
    var serverResponse = e.response;

@@ -1,0 +1,6 @@
+framework module Pods_offtrackalertnewVersion {
+  umbrella header "Pods-offtrackalertnewVersion-umbrella.h"
+
+  export *
+  module * { export * }
+}

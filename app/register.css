@@ -1,0 +1,237 @@
+.txt-h{
+    font-size: 28;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.txt-s{
+    font-size: 18;
+    margin: 5%,0,0,8%;
+}
+
+.txt-f{
+    width:50%;
+}
+.m-t-4p{
+    margin-top: 4%;
+   
+}
+.m-t-5p{
+    margin-top: 5%;
+   
+}
+.m-t-10p{
+    margin-top: 10%;
+   
+}
+.m-t-20p{
+    margin-top: 20%;
+   
+}
+.m-t-30p{
+    margin-top: 30%;
+    
+}
+.m-t-36p{
+    margin-top: 36%;
+    
+}
+.m-t-40p{
+    margin-top: 40%;
+   
+}
+
+.btn-scan{
+    width: 42%;
+}
+
+.btn-submit{
+    width: 42%;
+}
+
+.bg{
+    background-image: url("~/images/pexels-photo-1282264.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.lg-dialog {
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);
+    visibility: collapse;
+}
+.lg-dialog .dialog {
+    /* background-image: url('~/images/bg.png'); */
+    background-position: center;
+    background-size: cover;
+    border-radius: 4;
+    width: 280;
+    height: 400;
+    margin: 48 auto;
+    /* background-color: #fff; */
+    background-color: rgba(0,0,0,0.5);
+    flex-direction: column;
+}
+.dialog .title{
+    position: center;
+    width: 100%;
+    height: 40;
+    padding:0;
+    margin-bottom: 8;
+    flex-shrink: 0;   
+}
+
+.title .text {
+    font-size: 20;
+    color: black;
+    margin: 0;
+    padding: 6 8 0 8;
+    flex-grow: 1;
+}
+.close {
+    /* flex-shrink: 0; */
+    width: 40;
+    margin: 4;
+    /* font-size: 16; */
+    text-align: center;
+}
+
+
+.content {
+    flex-grow: 1;
+}
+.actions {
+    flex-shrink: 0;
+    color: rgb(78, 71, 71);
+    margin: 0 0;
+    height: 50;
+}
+.actions .action {
+    flex-grow: 1;
+}
+.header{
+
+    background-image: url('~/images/bg_header.jpg');
+}
+/*-----------------form textbox---------------------------------------------*/
+
+.selectbox{
+    width: 80%;
+    height: 15%;
+    margin: 5px 10%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: rgba(154, 163, 163, 0.562);
+    transform: translateY(4px);
+    font-size: 15px;
+  }
+  /*---------------------------------------------------------------------------*/
+  
+/* -----------------------buttons scan card----------------------------------- */
+
+.btn-group .buttons2 {
+    background-color: #4CAF50; 
+    border: 1px solid green;
+    color:white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .buttons2 {
+
+    width: 80%;
+    height: 11%;
+    border: 1px solid rgb(0, 0, 0);
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgba(222, 230, 230, 0.815);
+    border: 2px;
+    border-radius: 50px;
+    box-shadow: 0 9px #999;
+  }
+  .buttons2:hover {background-color: #3e8e41}
+    
+  .buttons2:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+  /* ----------------------------------------------------------- */
+  
+/* -----------------------buttons----------------------------------- */
+.btn-group .buttons {
+    background-color: rgb(22, 240, 240); 
+    border: 1px solid green;
+    color:white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .buttons {
+    width: 80%;
+    /* height: 10%; */
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgba(20, 197, 94, 0.747);
+    border: 1px;
+    border-radius: 50px;
+    box-shadow: 0 9px #999;
+  }
+
+  .buttons:hover {background-color: #3e8e41}
+  
+  .buttons:active {
+    background-color: #bcc4bc;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  /* ----------------------------------------------------------- */
+  /*--------------------------ActionBar------------------------------------*/
+  .ActionBar{
+    background-color: rgba(163, 162, 162, 0.623);
+  }
+  
+  /*-----------------------end---ActionBar------------------------------------*/
+  /*---------------------------icon id-------------------------------------*/
+  .iconID {
+    height: 10%;
+    margin: 2% 0% 0% -10%;
+    width: 500px;
+    position: relative;
+    resize: vertical;
+    overflow: auto;
+}
+ /*----------------------------------------------------------------*/
+  .bgtest{
+    background-color: #4CAF50; 
+  }

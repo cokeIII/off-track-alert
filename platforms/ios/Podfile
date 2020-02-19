@@ -1,0 +1,16 @@
+use_frameworks!
+
+target "offtrackalertnewVersion" do
+# Begin Podfile - /Users/Multimedia/Downloads/off-track-alert-newVersion/node_modules/nativescript-downloader/platforms/ios/Podfile
+pod 'AFNetworking', '~> 3.0'
+# End Podfile
+
+# Begin Podfile - /Users/Multimedia/Downloads/off-track-alert-newVersion/node_modules/nativescript-imagepicker/platforms/ios/Podfile
+pod 'QBImagePickerController', '~> 3.4.0'
+# End Podfile
+
+# Begin Podfile - /Users/Multimedia/Downloads/off-track-alert-newVersion/node_modules/nativescript-toasty/platforms/ios/Podfile
+pod 'Toast-Swift', :git => 'https://github.com/triniwiz/Toast-Swift.git'
+
+# End Podfile
+end

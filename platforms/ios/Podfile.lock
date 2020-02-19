@@ -1,0 +1,46 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - QBImagePickerController (3.4.0)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - QBImagePickerController (~> 3.4.0)
+  - Toast-Swift (from `https://github.com/triniwiz/Toast-Swift.git`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - QBImagePickerController
+
+EXTERNAL SOURCES:
+  Toast-Swift:
+    :git: https://github.com/triniwiz/Toast-Swift.git
+
+CHECKOUT OPTIONS:
+  Toast-Swift:
+    :commit: 59d58d55c178b19e819e7fcf442e086cc4e2d2fa
+    :git: https://github.com/triniwiz/Toast-Swift.git
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 3c3f3b5f7054051115570e1128df707bf4d9711f
+
+COCOAPODS: 1.8.4

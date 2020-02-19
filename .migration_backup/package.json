@@ -1,0 +1,37 @@
+{
+	"description": "NativeScript Application",
+	"license": "SEE LICENSE IN <your-license-filename>",
+	"readme": "NativeScript Application",
+	"repository": "<fill-your-repository-here>",
+	"nativescript": {
+		"id": "kmutnb.offtrackalertmasterTests",
+		"tns-android": {
+			"version": "5.2.1"
+		},
+		"tns-ios": {
+			"version": "5.4.2"
+		}
+	},
+	"dependencies": {
+		"base-64": "^0.1.0",
+		"nativescript-background-http": "^3.3.1",
+		"nativescript-bluetooth": "^1.3.1",
+		"nativescript-camera": "^4.5.0",
+		"nativescript-dom": "^2.0.2",
+		"nativescript-downloader": "^1.1.0",
+		"nativescript-imagepicker": "^7.1.0",
+		"nativescript-insomnia": "^1.2.3",
+		"nativescript-orientation": "^2.2.1",
+		"nativescript-permissions": "^1.3.8",
+		"nativescript-sound": "^1.0.4",
+		"nativescript-telephony": "^1.0.4",
+		"nativescript-theme-core": "~1.0.4",
+		"nativescript-toast": "^2.0.0",
+		"nativescript-vibrate": "^2.1.3",
+		"tns-core-modules": "^4.1.0",
+		"utf8": "^3.0.0"
+	},
+	"devDependencies": {
+		"@fortawesome/fontawesome-free": "^5.9.0"
+	}
+}

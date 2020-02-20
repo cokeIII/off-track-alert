@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>offtrackalertnewVersion2.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>8C2FBBF352787CE892049F678066F927BF5E0197</string>
+				<key>dateExpires</key>
+				<string>19/2/2564 BE</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>8C2FBBF352787CE892049F678066F927BF5E0197</string>
+						<key>dateExpires</key>
+						<string>19/2/2564 BE</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>AFNetworking.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>3QURC5FD8V</string>
+						<key>name</key>
+						<string>Tanasak Puttaraksa</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>8C2FBBF352787CE892049F678066F927BF5E0197</string>
+						<key>dateExpires</key>
+						<string>19/2/2564 BE</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>NativeScript.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>3QURC5FD8V</string>
+						<key>name</key>
+						<string>Tanasak Puttaraksa</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>8C2FBBF352787CE892049F678066F927BF5E0197</string>
+						<key>dateExpires</key>
+						<string>19/2/2564 BE</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>QBImagePickerController.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>3QURC5FD8V</string>
+						<key>name</key>
+						<string>Tanasak Puttaraksa</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>8C2FBBF352787CE892049F678066F927BF5E0197</string>
+						<key>dateExpires</key>
+						<string>19/2/2564 BE</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>SAMKeychain.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>3QURC5FD8V</string>
+						<key>name</key>
+						<string>Tanasak Puttaraksa</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>8C2FBBF352787CE892049F678066F927BF5E0197</string>
+						<key>dateExpires</key>
+						<string>19/2/2564 BE</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>TNSWidgets.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>3QURC5FD8V</string>
+						<key>name</key>
+						<string>Tanasak Puttaraksa</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>8C2FBBF352787CE892049F678066F927BF5E0197</string>
+						<key>dateExpires</key>
+						<string>19/2/2564 BE</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>Toast_Swift.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>3QURC5FD8V</string>
+						<key>name</key>
+						<string>Tanasak Puttaraksa</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>3QURC5FD8V.kmutnb.kmutnb-offtrackalertIOS</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>3QURC5FD8V</string>
+				<key>get-task-allow</key>
+				<true/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>3QURC5FD8V.kmutnb.kmutnb-offtrackalertIOS</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>offtrackalertnewVersion2.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>42a34f18-1fe3-401d-8d2e-a4705b5523c8</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: kmutnb.kmutnb-offtrackalertIOS</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>3QURC5FD8V</string>
+				<key>name</key>
+				<string>Tanasak Puttaraksa</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

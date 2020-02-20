@@ -1,0 +1,120 @@
+{
+  "_from": "nativescript-dna-deviceinfo",
+  "_id": "nativescript-dna-deviceinfo@2.4.3",
+  "_inBundle": false,
+  "_integrity": "sha512-YgOx2ozFwE+Ci2x7kHrsFdThdGhqMftdJfJZhJOfjN0asH9ulhCQC9N2arApU2rhRhXerBLvNpeg9168/bRxTA==",
+  "_location": "/nativescript-dna-deviceinfo",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-dna-deviceinfo",
+    "name": "nativescript-dna-deviceinfo",
+    "escapedName": "nativescript-dna-deviceinfo",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-dna-deviceinfo/-/nativescript-dna-deviceinfo-2.4.3.tgz",
+  "_shasum": "524c44b8e833810761cc6727bbd95e782250c6d4",
+  "_spec": "nativescript-dna-deviceinfo",
+  "_where": "/Users/Multimedia/Downloads/off-track-alert-newVersion 2",
+  "author": {
+    "name": "Deepak Arora",
+    "email": "deepak.arora76@gmail.com"
+  },
+  "bootstrapper": "nativescript-plugin-seed",
+  "bugs": {
+    "url": "https://github.com/DeepakArora76/nativescript-dna-deviceinfo/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "NativeScript plugin to acquire device information.",
+  "devDependencies": {
+    "prompt": "^1.0.0",
+    "rimraf": "^2.6.3",
+    "semver": "^5.6.0",
+    "tns-core-modules": "^6.0.0",
+    "tns-platform-declarations": "^6.0.0",
+    "tslint": "^5.12.1",
+    "typescript": "~3.4.5"
+  },
+  "homepage": "https://github.com/DeepakArora76/nativescript-dna-deviceinfo",
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "Angular",
+    "Android",
+    "iOS",
+    "Device",
+    "Disk",
+    "Storage",
+    "Memory",
+    "RAM",
+    "Locale",
+    "CPU",
+    "Battery",
+    "Charging",
+    "Tablet",
+    "Cellular",
+    "Network Provider",
+    "SIM",
+    "Operator",
+    "Carrier",
+    "CDMA",
+    "GSM",
+    "LTE",
+    "4G",
+    "3G",
+    "5G",
+    "SD Card",
+    "SDCard",
+    "USB OTG",
+    "USB On The Go",
+    "External Storage Card",
+    "WiFi",
+    "SSID",
+    "WiFi SSID",
+    "Bluetooth",
+    "Orientation",
+    "Display",
+    "Display Metrics",
+    "Metrics",
+    "Location",
+    "Location Service"
+  ],
+  "license": "MIT",
+  "main": "deviceinfo",
+  "name": "nativescript-dna-deviceinfo",
+  "nativescript": {
+    "platforms": {
+      "android": "6.0.0",
+      "ios": "6.0.1"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeepakArora76/nativescript-dna-deviceinfo.git"
+  },
+  "scripts": {
+    "build": "npm run tsc && npm run build.native",
+    "build.native": "node scripts/build-native.js",
+    "ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**' --exclude '**/platforms/**'",
+    "clean": "npm run demo.reset && npx rimraf -- node_modules package-lock.json && npm i",
+    "demo.android": "npm i && cd ../demo && tns run android",
+    "demo.ios": "npm i && cd ../demo && tns run ios",
+    "demo.ios.debug": "npm run tsc && cd ../demo && tns debug ios",
+    "demo.reset": "cd ../demo && npx rimraf -- hooks node_modules platforms package-lock.json",
+    "plugin.prepare": "npm run build && cd ../demo && tns plugin remove nativescript-dna-deviceinfo && tns plugin add ../src",
+    "prepack": "npm run build.native",
+    "tsc": "npm i && tsc",
+    "tslint": "cd .. && tslint \"**/*.ts\" --config tslint.json --exclude \"**/node_modules/**\""
+  },
+  "typings": "index.d.ts",
+  "version": "2.4.3"
+}

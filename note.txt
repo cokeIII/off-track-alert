@@ -1,0 +1,2 @@
+tns build android --release --key-store-path E:\Project\off-track-alert-democss\demoapk.keystore --key-store-password 212224 --key-store-alias demoapk --key-store-alias-password 212224
+

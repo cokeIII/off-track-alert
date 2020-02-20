@@ -1,0 +1,56 @@
+<Page loaded="pageLoaded" id="Page" >
+  <!-- <ActionBar title="AOT" class="action-bar"></ActionBar> -->
+  <ActionBar  title="off-track alert system"  class="header actions " ></ActionBar>
+  <!-- Your UI components go here -->
+  <AbsoluteLayout  width="100%"  height="100%" >
+    <StackLayout width="100%" height="100%" class="fas bg  " >
+
+      <StackLayout id="mRegis" visibility="collapse" class=" m-t-30p">
+        <GridLayout columns="auto, *, auto" rows="auto,0" verticalAlignment="top" >
+            <Image src="~/images/baseline_vpn_key_black_24dp.png" stretch="none" class="iconID  "></Image>
+            <TextField  height="11%" hint="ID Card" class="selectbox "   text="{{ idCard }}"  id="idCard"/>
+        </GridLayout>
+        <GridLayout columns="auto, *, auto" rows="auto,0" verticalAlignment="top" >
+            <Image src="~/images/baseline_person_black_18dp.png" stretch="none" class="iconID"></Image>
+            <TextField  height="11%" hint="UserName" class="selectbox " text="{{ userName }}" id="userName"/>
+        </GridLayout>
+          <GridLayout columns="auto, *, auto" rows="auto,0"  class="">
+            <Image src="~/images/baseline_local_phone_black_18dp.png" stretch="none" class="iconID"></Image>
+            <TextField text="&#xf030;" abItem="title: 'Tab 1', iconSource: 'res://icon'"  height="13%" hint="telephone number" class="selectbox " keyboardType="number" text="{{ phoneNumber }}" id="phoneNumber"/>
+        </GridLayout>
+        <button text="Submit" class="m-t-10p btn-submit buttons" tap="register" id="mRegisBtn" ></button>
+        <button text="Back" class="m-t-4p buttons2" tap="showInput" tap="showMRegis"></button>
+      </StackLayout>
+
+      <StackLayout id="mRegis" visibility="" class=" m-t-36p">
+        <GridLayout columns="auto, *, auto" rows="auto,0" verticalAlignment="top"  class="" >
+            <Image src="~/images/baseline_local_phone_black_18dp.png" stretch="none" class="iconID"></Image>
+            <TextField text="&#xf030;" abItem="title: 'Tab 1', iconSource: 'res://icon'"  height="12%" hint="telephone number" class="selectbox " keyboardType="number" text="{{ phoneNumber }}" id="phoneNumber"/>
+        </GridLayout>
+      </StackLayout>
+        <button text="Submit" class="m-t-10p btn-submit buttons" tap="register" id="mRegisBtn" visibility="collapse"></button>
+        <button text="Manule Register" class="m-t-5p buttons" tap="showInput" tap="showMRegis"></button>
+        <button text="&#xf030; Scan Card Register" class="m-t-10 buttons" tap="takeCamera" id="btnCamera"></button>
+        <button text="Offline Mode" class="m-t-10 buttons" tap="offlineMode" id="btnofflineMode"></button>
+    </StackLayout>
+
+    <!-- dlg pageMap-->
+    <StackLayout class="lg-dialog" tap="hideDialog" id="user-pageMap">
+      <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
+          <FlexboxLayout orientation="horizontal" class="title">
+              <label text="Load" class="text"/>
+          </FlexboxLayout>
+          <StackLayout class="content">
+            <StackLayout width="100%" class="m-t-10p">
+                <ActivityIndicator busy="true" class="m-t-30p"/><!-- londing-->
+                <Label textWrap="true" text="Loeding..." class="loading"></Label>
+            </StackLayout>
+          </StackLayout>
+          <FlexboxLayout class="actions">
+          </FlexboxLayout>
+      </FlexboxLayout>
+    </StackLayout> 
+    <!-- dlg pageMap-->
+
+  </AbsoluteLayout>
+</Page>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/offtrackalertnewVersion2.app</string>
+		<key>CFBundleIdentifier</key>
+		<string>kmutnb.kmutnb-offtrackalertIOS</string>
+		<key>CFBundleShortVersionString</key>
+		<string>1.0</string>
+		<key>CFBundleVersion</key>
+		<string>1.0</string>
+		<key>SigningIdentity</key>
+		<string>Apple Development: cqone9641@gmail.com (AR55BA8TXK)</string>
+		<key>Team</key>
+		<string>3QURC5FD8V</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2020-02-20T18:04:30Z</date>
+	<key>Name</key>
+	<string>offtrackalertnewVersion2</string>
+	<key>SchemeName</key>
+	<string>offtrackalertnewVersion2</string>
+</dict>
+</plist>

@@ -1,0 +1,34 @@
+{
+	"nativescript-background-http": {
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-background-http\\platforms\\android\\include.gradle": "4fc0f9ce06df5336df8da8c7b7a2ce2c43356a93",
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-background-http\\platforms\\android\\nativescript_background_http.aar": "e0648afae01c1d8a82bbe927b6017710e103bbf9"
+	},
+	"nativescript-bluetooth": {
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-bluetooth\\platforms\\android\\AndroidManifest.xml": "f59c6776083721a3c2da7f9ecc73a524ac07e41d",
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-bluetooth\\platforms\\android\\nativescript_bluetooth.aar": "fbc02a7ccc3ef83bae0bbdba12e5f7ee3d54b90a"
+	},
+	"nativescript-camera": {
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-camera\\platforms\\android\\nativescript_camera.aar": "076643dd1be5b20235184a9c65703fa02a930b9b"
+	},
+	"nativescript-downloader": {
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-downloader\\platforms\\android\\AndroidManifest.xml": "e90ad50426ab67680488898daaaa98d1b1bd7cce",
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-downloader\\platforms\\android\\include.gradle": "c2271b34550e7a0b5d4e9b93bfe39afb57351e55",
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-downloader\\platforms\\android\\nativescript_downloader.aar": "3f9f85f0ecd90933b4f823f7487ac9a8c5493b8b"
+	},
+	"nativescript-imagepicker": {
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-imagepicker\\platforms\\android\\nativescript_imagepicker.aar": "90efff56ef584bda767622569467189cf5c1f236",
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-imagepicker\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
+	},
+	"nativescript-telephony": {
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-telephony\\platforms\\android\\AndroidManifest.xml": "19bc7f757ef5ea28b0f7503973cd61b1a16cfbb5",
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-telephony\\platforms\\android\\nativescript_telephony.aar": "137d3699bf0669dc148de379effba4854c7b386d"
+	},
+	"nativescript-vibrate": {
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-vibrate\\platforms\\android\\include.gradle": "06e7e1be49eb6d614094596003280aa7eea789f3",
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-vibrate\\platforms\\android\\nativescript_vibrate.aar": "31bc4bfd8ba4c2caa17b12b63f51bed004caa1d1",
+		"E:\\Project\\off-track-alert\\node_modules\\nativescript-vibrate\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
+	},
+	"tns-core-modules-widgets": {
+		"E:\\Project\\off-track-alert\\node_modules\\tns-core-modules-widgets\\platforms\\android\\widgets-release.aar": "85168be13bc1b546c0f1d53f46bb892118ba3d9f"
+	}
+}

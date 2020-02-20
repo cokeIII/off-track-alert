@@ -30,7 +30,7 @@
         <Label text="&#xf06e;"></Label>
       </StackLayout>
       <!-- dlg User-->
-      <StackLayout class="lg-dialog" tap="hideDialog" id="user-data">
+      <StackLayout class="lg-dialog" tap="noop" id="user-data">
         <FlexboxLayout stretchLastChild="true" class="dialog" tap="noop">
 
             <FlexboxLayout  orientation="horizontal" class="title headermenu" height="11%">

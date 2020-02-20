@@ -109,7 +109,7 @@ exports.pageLoaded = function(args) {
     picData = page.getViewById('picData')
     txtData = page.getViewById('txtData')
     theQuery = page.getViewById('theQuery')
-    
+
     if(appSettings.getString("theQuery")){
         if(appSettings.getString("theQuery") == "true"){
             theQuery.style.visibility = 'visible'
@@ -527,6 +527,7 @@ exports.setUser = function() {
 
     console.log(JSON.parse(JSON.stringify(saveData)))
     if(pageData.picCard == ''){
+        console.log("Noooooooooo imageAssetChang")
         fetch(API_URL+"/updateUser", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -545,6 +546,8 @@ exports.setUser = function() {
             console.log('***fetch error***')
         });
     } else {
+        console.log("imageAssetChang")
+        console.log(pageData.deviceId)
         if(imageAssetChang._android == null){
             let documents = fs.knownFolders.documents()
             let path = fs.path.join(documents.path, pageData.picCard);
@@ -552,7 +555,8 @@ exports.setUser = function() {
         }
         tempPath = imageAssetChang._android
         var file =  imageAssetChang._android
-        var url = API_URL+"/updateUser";
+        var url = API_URL+"/updateUserPic";
+
         var request = {
             url: url,
             method: "POST",
@@ -565,6 +569,7 @@ exports.setUser = function() {
         let params = [
             { name: "phoneNumber", value: pageData.phoneNumber },
             { name: "deviceId", value: pageData.deviceId },
+            { name: "bleId", value: pageData.bleId },
             { "name": 'photo', "filename": file, "mimeType": "image/jpg" }
         ];
         let task = session.multipartUpload(params, request);

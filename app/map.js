@@ -8,6 +8,7 @@ var insomnia = require("nativescript-insomnia")
 require("nativescript-dom")
 var Vibrate = require("nativescript-vibrate").Vibrate
 var vibrator = new Vibrate()
+var dialogs = require("tns-core-modules/ui/dialogs")
 const frameModule = require("ui/frame")
 var fs = require("tns-core-modules/file-system")
 var bghttp = require("nativescript-background-http")
@@ -60,6 +61,8 @@ let txtData = null
 let picData = null
 let pointDanger = false
 let userCard = null
+let theQueryC = false
+let theQuery = null
 let imageAssetChang = {_android: null}
 let tempMaps = {"maps":[
     {"uuid":"3D:84:E8:A8:EF:ED","uuid_ios":"505171D0-BBF9-4D74-BE62-6EDD210913F0","x":42,"y":40,"name":"point_7","route":1,"map_status":"N"},
@@ -105,7 +108,15 @@ exports.pageLoaded = function(args) {
     dlgEnd = page.getViewById('pointEnd')
     picData = page.getViewById('picData')
     txtData = page.getViewById('txtData')
+    theQuery = page.getViewById('theQuery')
     
+    if(appSettings.getString("theQuery")){
+        if(appSettings.getString("theQuery") == "true"){
+            theQuery.style.visibility = 'visible'
+            appSettings.setString("theQuery","false")
+        }
+    }
+
     if(!appSettings.getString("offline")) {
         if(navigationContext.mode == "offline") {
             dlgOffline.style.visibility = 'visible'
@@ -211,6 +222,11 @@ exports.pageUnloaded = () =>{
         logData.status = "appNotWorking"
         updateLog(logData)
     }
+
+    if(!appSettings.getString("theQuery") && theQueryC){
+        appSettings.setString("theQuery","true")
+        console.log("theQuery")
+    }
 }
 function romoveMap() {
     mapLayout = page.getViewById("mapLayout")
@@ -252,6 +268,7 @@ function BLE_scan(){
             walkMap(peripheral.UUID,peripheral.RSSI,function(cb){
                 if(cb){
                     alert = true
+                    theQueryC = true
                     mapLayout = page.getViewById("mapLayout")
                     viewMap = mapLayout.getElementsByClassName('point')
                     viewMap.backgroundColor = "red"
@@ -593,6 +610,29 @@ exports.hideDialog = function() {
     dlgStart.style.visibility = 'collapse'
     dlgAboute.style.visibility = 'collapse'
     dlgOffline.style.visibility = 'collapse'
+    theQuery.style.visibility = 'collapse'
+}
+exports.hideDialogTheQuery = function() {
+    imageAssetChang._android = null
+    dlg.style.visibility = 'collapse'
+    dlgAlert.style.visibility = 'collapse'
+    dlgcountUser.style.visibility = 'collapse'
+    dlgEnd.style.visibility = 'collapse'
+    dlgStart.style.visibility = 'collapse'
+    dlgAboute.style.visibility = 'collapse'
+    dlgOffline.style.visibility = 'collapse'
+    dialogs.confirm({
+        title: "Confirm",
+        message: "Want to turn off dialog?",
+        okButtonText: "Yes",
+        cancelButtonText: "Cancel",
+    }).then(function (result) {
+        // result argument is boolean
+        console.log("Dialog result: " + result);
+        if(result)
+            theQuery.style.visibility = 'collapse'
+    });
+    
 }
 
 function dlgHide() {
@@ -602,6 +642,7 @@ function dlgHide() {
     dlgEnd.style.visibility = 'collapse'
     dlgStart.style.visibility = 'collapse'
     dlgAboute.style.visibility = 'collapse'
+    theQuery.style.visibility = 'collapse'
 }
 
 exports.hideDetailMap = function(){

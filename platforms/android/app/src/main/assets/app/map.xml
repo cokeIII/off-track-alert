@@ -209,6 +209,22 @@
       </StackLayout> 
       <!-- dlg End-->
 
+      <!-- dlg The query-->
+      <StackLayout class="lg-dialog" tap="noop" id="theQuery">
+        <FlexboxLayout stretchLastChild="true" class="dialogQuery" tap="noop">
+            <FlexboxLayout orientation="horizontal" class="title">
+                <label text="The query" class="text"/>
+                <Button  tap="hideDialogTheQuery" text="&#xf00d;" class="close"/>
+            </FlexboxLayout>
+            <StackLayout class="contennt">
+              <WebView row="1" loaded="onWebViewLoaded" id="myWebView" src="https://docs.google.com/forms/d/e/1FAIpQLScAq1ZZcVxgkhVBvakHFjcrfi6ImxRl-6xPOL5MqlbYJTSp4w/viewform" />
+            </StackLayout>
+            <FlexboxLayout class="actions">
+            </FlexboxLayout>
+        </FlexboxLayout>
+      </StackLayout> 
+      <!-- dlg The query-->
+
       <!-- dlg aboute-->
       <StackLayout class="lg-dialog" tap="noop" id="aboute">
         <FlexboxLayout   stretchLastChild="true" class="dialog  " tap="noop">

@@ -28,7 +28,7 @@ let btnofflineMode = null
 let dlgPageMap = null
 exports.pageLoaded = function(args) {
     // Removes all values.
-    // appSettings.clear();
+    //  appSettings.clear();
     orientation.setOrientation("portrait")
     var en = java.net.NetworkInterface.getNetworkInterfaces();
     for(var obj in en){

@@ -46,7 +46,26 @@
     background-color: #fff;
     flex-direction: column;
 }
+.lg-dialog .dialogQuery {
+    /* background-image: url('~/images/bg.png'); */
+    background-position: center;
+    background-size: cover;
+    border-radius: 4;
+    width: 350;
+    height: 500;
+    margin: 48 auto;
+    background-color: #fff;
+    flex-direction: column;
+}
 .dialog .title{
+    position: center;
+    width: 100%;
+    height: 40;
+    padding:0;
+    margin-bottom: 8;
+    flex-shrink: 0;   
+}
+.dialogQuery .title{
     position: center;
     width: 100%;
     height: 40;
@@ -428,5 +447,5 @@
 /* ---------------------end set font waitdata------------------------------ */
 
 .bgtest{
-        background-color: #4CAF50; 
+        background-color: rgba(0, 128, 0, 0.301); 
       }
